@@ -1,0 +1,866 @@
+/* =========================================================
+   AudienceSwitcher — segmented control + reordering
+   ========================================================= */
+function AudienceSwitcher() {
+  const { audience, setAudience } = useApp();
+  return (
+    <div style={{background:'var(--bg-primary)', padding:'40px 0 0'}}>
+      <div className="wrap" style={{display:'flex', justifyContent:'center'}}>
+        <div style={{
+          display:'inline-flex', border:'1px solid var(--hairline)',
+          padding:4, gap:4, background:'rgba(0,0,0,.2)'
+        }}>
+          {[
+            {id:'homeowner', label:"I'm a Homeowner"},
+            {id:'developer', label:"I'm a Developer / GC"},
+          ].map(o=>{
+            const on = audience===o.id;
+            return (
+              <button key={o.id} onClick={()=>setAudience(o.id)}
+                className="mono"
+                style={{
+                  padding:'14px 22px',
+                  background: on? 'var(--accent)':'transparent',
+                  color: on? '#fff':'var(--fg-muted)',
+                  transition:'all .25s ease',
+                }}>{o.label.toUpperCase()}</button>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* =========================================================
+   Who We Are
+   ========================================================= */
+function WhoWeAre() {
+  const { audience } = useApp();
+  const homeCopy = (
+    <>
+      <p>For a quarter-century, JK Prestige has been the builder families trust when the outcome matters — the forever home, the long-planned remodel, the roof that has to last.</p>
+      <p>We're family-owned. We self-perform framing, concrete, drywall, finish carpentry and roofing, and we vet every specialty trade we bring in. You sign one contract. You talk to a principal — not a call center.</p>
+      <p>Honest numbers from day one. Fixed-price contracts available. Licensed, bonded and insured in every state we operate.</p>
+    </>
+  );
+  const devCopy = (
+    <>
+      <p>Developers, hospital systems, logistics owners and architects have relied on JK Prestige for 25 years to deliver ground-up builds on schedule, on spec, and within a defensible pricing envelope.</p>
+      <p>Turnkey or trade-partner — we self-perform the critical path (concrete, framing, finish, roofing) and manage a vetted, insured sub network across every discipline. One contract. One schedule. One line of accountability.</p>
+      <p>Licensed, bonded and insured in every state we operate. Preconstruction, VDC, lean scheduling and owner-first communication baked in.</p>
+    </>
+  );
+  return (
+    <section className="section" style={{background:'var(--bg-primary)'}}>
+      <div className="wrap" style={{display:'grid', gridTemplateColumns:'1.15fr 1fr', gap:'clamp(40px,6vw,96px)', alignItems:'stretch'}}>
+        <Reveal>
+          <Kicker>WHO WE ARE</Kicker>
+          <h2 className="display" style={{fontSize:'clamp(40px, 5.6vw, 84px)', marginTop:18, marginBottom:28}}>
+            Your Trusted Builder,<br/>From Foundation to Finish.
+          </h2>
+          <div style={{fontSize:17, lineHeight:1.7, color:'var(--fg-muted)', display:'grid', gap:18, maxWidth:600}}>
+            {audience==='developer' ? devCopy : homeCopy}
+          </div>
+          <div style={{display:'flex', gap:28, marginTop:36, flexWrap:'wrap'}}>
+            {['Family owned','Self-perform trades','Vetted sub network','One guarantee'].map(t=>(
+              <div key={t} style={{display:'flex', alignItems:'center', gap:10}}>
+                <span style={{width:6, height:6, background:'var(--accent)'}}/>
+                <span className="mono" style={{color:'#fff'}}>{t.toUpperCase()}</span>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+        <Reveal delay={100}>
+          <TopoWatermark/>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function TopoWatermark(){
+  return (
+    <div style={{position:'relative', width:'100%', height:'100%', minHeight:380, border:'1px solid var(--hairline)', overflow:'hidden', background:'var(--bg-primary)'}}>
+      <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 600 500" style={{position:'absolute', inset:0, opacity:.6}}>
+        {Array.from({length:16}).map((_,i)=>(
+          <path key={i}
+            d={`M 0 ${80+i*25} C 150 ${60+i*25} 250 ${120+i*25} 400 ${90+i*25} S 600 ${70+i*25} 600 ${70+i*25}`}
+            fill="none" stroke="#526FAE" strokeWidth=".6" opacity={.2+i*.03}/>
+        ))}
+      </svg>
+      <div style={{position:'absolute', left:32, top:32, right:32}}>
+        <div className="mono" style={{color:'var(--accent)'}}>// EST. 2000 · FAMILY OPERATED</div>
+        <div style={{fontFamily:'var(--display)', fontSize:'clamp(36px,4vw,56px)', letterSpacing:'-.02em', lineHeight:.95, marginTop:12}}>
+          Twenty-five years.<br/>One standard.
+        </div>
+      </div>
+      <div style={{position:'absolute', left:32, bottom:32, right:32, display:'flex', justifyContent:'space-between', alignItems:'flex-end'}}>
+        <div>
+          <div className="mono" style={{color:'var(--fg-dim)'}}>LATITUDE</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>40°42′46″N</div>
+        </div>
+        <div>
+          <div className="mono" style={{color:'var(--fg-dim)'}}>LONGITUDE</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>74°00′21″W</div>
+        </div>
+        <div>
+          <div className="mono" style={{color:'var(--fg-dim)'}}>FILE</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>JKP-2000-2025</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* =========================================================
+   Stats strip
+   ========================================================= */
+function StatsStrip(){
+  const stats = [
+    {n:25, suffix:'', label:'YEARS ESTABLISHED', sub:'Est. 2000'},
+    {n:500, suffix:'+', label:'PROJECTS DELIVERED', sub:'Residential · Commercial · Medical'},
+    {n:100, suffix:'%', label:'LICENSED & BONDED', sub:'Fully insured in every state we operate'},
+    {n:48, suffix:' HRS', label:'AVG ESTIMATE TURNAROUND', sub:'Owner-first communication'},
+  ];
+  return (
+    <section className="section-tight" style={{background:'var(--bg-elev)', borderTop:'1px solid rgba(0,0,0,.25)', borderBottom:'1px solid rgba(0,0,0,.25)'}}>
+      <div className="wrap" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:0}}>
+        {stats.map((s,i)=>(
+          <Reveal key={i} delay={i*80} className="stat-tile" style={{
+            padding:'clamp(28px, 4vw, 48px) clamp(18px, 2.4vw, 36px)',
+            borderRight: i<3 ? '1px solid rgba(255,255,255,.12)' : 'none',
+            position:'relative'
+          }}>
+            <div style={{fontFamily:'var(--display)', fontSize:'clamp(56px, 7vw, 120px)', lineHeight:.9, color:'#fff', letterSpacing:'-.03em'}}>
+              <CountUp to={s.n} suffix={s.suffix}/>
+            </div>
+            <div className="mono" style={{marginTop:14, color:'#fff', opacity:.95}}>{s.label}</div>
+            <div style={{marginTop:6, fontSize:13, color:'rgba(255,255,255,.75)'}}>{s.sub}</div>
+          </Reveal>
+        ))}
+      </div>
+      <style>{`
+        @media (max-width:900px){
+          .stat-tile{border-right:none !important; border-bottom:1px solid rgba(255,255,255,.12)}
+        }
+        @media (max-width:900px){
+          section .wrap{grid-template-columns:repeat(2,1fr) !important}
+        }
+      `}</style>
+    </section>
+  );
+}
+
+/* =========================================================
+   Expertise grid
+   ========================================================= */
+const EXPERTISE = [
+  { id:'medical', title:'Hospitals & Medical', kicker:'GROUND-UP', blurb:'Infection-control-ready medical facilities with ICRA discipline.', slug:'expertise-medical-4x3' },
+  { id:'homes', title:'Custom Homes', kicker:'RESIDENTIAL', blurb:'From architect-led new builds to multi-generational estates.', slug:'expertise-custom-home-4x3' },
+  { id:'warehouses', title:'Warehouses & Industrial', kicker:'LOGISTICS', blurb:'Tilt-up shells, clear-span spaces, loading docks and yards.', slug:'expertise-warehouse-4x3' },
+  { id:'commercial', title:'Commercial & Retail', kicker:'TENANT FIT-OUT', blurb:'Multi-tenant, retail, restaurant, and office tenant improvements.', slug:'expertise-commercial-4x3' },
+  { id:'reno', title:'Full Renovations', kicker:'GUT-RENO', blurb:'Historic, residential and commercial transformations.', slug:'expertise-renovation-4x3' },
+  { id:'roofing', title:'Roofing', kicker:'RESI + COMMERCIAL', blurb:'Shingle, metal, TPO and EPDM. Storm and insurance claims.', slug:'expertise-roofing-4x3' },
+];
+
+function ExpertiseCard({ item, onClick }) {
+  const [hover, setHover] = useState(false);
+  return (
+    <a href="#" onClick={(e)=>{e.preventDefault(); onClick?.();}}
+      onMouseEnter={()=>setHover(true)}
+      onMouseLeave={()=>setHover(false)}
+      style={{display:'block', position:'relative', overflow:'hidden', background:'var(--bg-primary)', border:'1px solid var(--hairline)'}}>
+      <div style={{aspectRatio:'4/3', position:'relative', overflow:'hidden'}}>
+        <div style={{position:'absolute', inset:0, transform: hover? 'scale(1.05)':'scale(1)', transition:'transform .45s ease'}}>
+          <Placeholder slug={item.slug} w={800} h={600} tag="EXPERTISE"/>
+        </div>
+        <div style={{
+          position:'absolute', inset:0, background:'var(--accent)',
+          opacity: hover? .88 : 0, transition:'opacity .25s ease',
+          display:'flex', alignItems:'center', justifyContent:'center'
+        }}>
+          <div style={{
+            width:120, height:120, borderRadius:'50%', background:'#fff', color:'var(--accent)',
+            display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column',
+            fontFamily:'var(--mono)', fontSize:10, fontWeight:600, letterSpacing:'.2em',
+            transform: hover? 'scale(1)':'scale(.8)', transition:'transform .3s ease'
+          }}>
+            LEARN<br/>MORE
+            <div style={{marginTop:6}}><Arrow size={18}/></div>
+          </div>
+        </div>
+      </div>
+      <div style={{padding:'24px 28px', display:'flex', alignItems:'flex-start', justifyContent:'space-between', gap:16}}>
+        <div>
+          <div className="mono" style={{color:'var(--accent)'}}>// {item.kicker}</div>
+          <div style={{fontFamily:'var(--display)', fontSize:26, letterSpacing:'-.015em', marginTop:8, color:'#fff'}}>{item.title}</div>
+          <div style={{fontSize:14, color:'var(--fg-muted)', marginTop:10, maxWidth:320}}>{item.blurb}</div>
+        </div>
+        <div style={{padding:6, border:'1px solid var(--hairline)', color:'var(--fg-muted)'}}>
+          <Arrow size={14}/>
+        </div>
+      </div>
+    </a>
+  );
+}
+
+function ExpertiseGrid() {
+  const { navigate } = useApp();
+  return (
+    <section className="section" style={{background:'var(--bg-primary)'}}>
+      <div className="wrap">
+        <Reveal>
+          <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-end', flexWrap:'wrap', gap:24, marginBottom:40}}>
+            <div>
+              <Kicker>WHAT WE BUILD</Kicker>
+              <h2 className="display" style={{fontSize:'clamp(40px, 5.6vw, 84px)', marginTop:16}}>
+                Six disciplines.<br/>One standard of prestige.
+              </h2>
+            </div>
+            <button onClick={()=>navigate('/expertise')} className="btn btn-outline">
+              All expertise <Arrow/>
+            </button>
+          </div>
+        </Reveal>
+        <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:1, background:'var(--hairline)'}} className="exp-grid">
+          {EXPERTISE.map((it,i)=>(
+            <Reveal key={it.id} delay={i*60}>
+              <ExpertiseCard item={it} onClick={()=>navigate('/expertise')}/>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+      <style>{`
+        @media (max-width:900px){ .exp-grid{grid-template-columns:repeat(2,1fr) !important} }
+        @media (max-width:600px){ .exp-grid{grid-template-columns:1fr !important} }
+      `}</style>
+    </section>
+  );
+}
+
+/* =========================================================
+   Turnkey Promise 3-step
+   ========================================================= */
+function TurnkeyPromise() {
+  const steps = [
+    {n:'01', t:'We scope & price.', d:'Site visit, scope definition, transparent numbers in 48 hours.'},
+    {n:'02', t:'We hire & manage every trade.', d:'Self-perform + vetted subs. One schedule. One supervisor. One line of accountability.'},
+    {n:'03', t:'You get one contract, one guarantee, 100% satisfaction.', d:'No finger-pointing. No change-order theatre. A principal owns the outcome.'},
+  ];
+  return (
+    <section className="section" style={{background:'var(--bg-invert)', color:'#fff'}}>
+      <div className="wrap">
+        <Reveal>
+          <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-end', flexWrap:'wrap', gap:24, marginBottom:48}}>
+            <div>
+              <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// THE TURNKEY PROMISE</span>
+              <h2 className="display" style={{fontSize:'clamp(40px, 5.6vw, 84px)', marginTop:16, maxWidth:900}}>
+                One contract. One guarantee. 100% satisfaction.
+              </h2>
+            </div>
+          </div>
+        </Reveal>
+        <div style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'rgba(255,255,255,.2)'}} className="turnkey-grid">
+          {steps.map((s,i)=>(
+            <Reveal key={s.n} delay={i*100} style={{background:'var(--bg-invert)', padding:'clamp(28px,4vw,48px)'}}>
+              <div style={{fontFamily:'var(--display)', fontSize:96, letterSpacing:'-.03em', color:'rgba(255,255,255,.25)', lineHeight:.9}}>{s.n}</div>
+              <div style={{fontFamily:'var(--display)', fontSize:30, letterSpacing:'-.02em', marginTop:16, lineHeight:1.05}}>{s.t}</div>
+              <div style={{marginTop:18, fontSize:15, lineHeight:1.65, color:'rgba(255,255,255,.88)', maxWidth:340}}>{s.d}</div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+      <style>{`
+        @media (max-width:900px){ .turnkey-grid{grid-template-columns:1fr !important} }
+      `}</style>
+    </section>
+  );
+}
+
+/* =========================================================
+   Letter-mask video (BUILT TO LAST)
+   — Scroll-pinned. Letters fill progressively LEFT→RIGHT with the
+     hero construction video as the user scrubs. User cannot scroll
+     past the section until the letters are 100% filled (natural
+     consequence of pin + 260vh dwell distance).
+   ========================================================= */
+const JK_LETTERS_MASK = encodeURIComponent(
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid meet">'+
+  '<text x="800" y="190" text-anchor="middle" dominant-baseline="middle" '+
+  'font-family="Archivo Black, Inter, sans-serif" font-weight="900" font-size="230" letter-spacing="-10" fill="white">BUILT TO</text>'+
+  '<text x="800" y="410" text-anchor="middle" dominant-baseline="middle" '+
+  'font-family="Archivo Black, Inter, sans-serif" font-weight="900" font-size="230" letter-spacing="-10" fill="white">LAST.</text>'+
+  '</svg>'
+);
+const JK_LETTERS_MASK_URL = `url("data:image/svg+xml;utf8,${JK_LETTERS_MASK}")`;
+
+function LetterMaskVideo() {
+  const wrapRef = useRef(null);
+  const videoRef = useRef(null);
+  const [t, setT] = useState(0);
+
+  useEffect(()=>{
+    const el = wrapRef.current; if (!el) return;
+    let raf = 0;
+    const compute = ()=>{
+      const rect = el.getBoundingClientRect();
+      const total = rect.height - window.innerHeight;
+      const prog = Math.max(0, Math.min(1, -rect.top / total));
+      setT(prog);
+    };
+    const onScroll = ()=>{ cancelAnimationFrame(raf); raf = requestAnimationFrame(compute); };
+    window.addEventListener('scroll', onScroll, { passive:true });
+    window.addEventListener('resize', onScroll);
+    compute();
+    return ()=>{
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      cancelAnimationFrame(raf);
+    };
+  },[]);
+
+  useEffect(()=>{ const v=videoRef.current; if(v) v.play().catch(()=>{}); },[]);
+
+  const pct = Math.round(t*100);
+  const clip = `inset(0 ${(1-t)*100}% 0 0)`;
+
+  return (
+    <section ref={wrapRef} style={{height:'260vh', position:'relative', background:'var(--bg-primary)'}}>
+      <div style={{position:'sticky', top:0, height:'100vh', overflow:'hidden', display:'flex', alignItems:'center', justifyContent:'center'}}>
+        {/* backdrop */}
+        <div style={{position:'absolute', inset:0, background:'var(--bg-primary)'}}/>
+
+        {/* Outlined letters — always visible so the user sees what's filling */}
+        <svg viewBox="0 0 1600 500" preserveAspectRatio="xMidYMid meet"
+             style={{position:'absolute', width:'95vw', height:'auto', zIndex:1, pointerEvents:'none'}}>
+          <text x="800" y="190" textAnchor="middle" dominantBaseline="middle"
+                style={{fontFamily:'Archivo Black, Inter, sans-serif', fontWeight:900, fontSize:230, letterSpacing:'-10'}}
+                fill="none" stroke="#ffffff" strokeWidth="1.2" opacity=".35">BUILT TO</text>
+          <text x="800" y="410" textAnchor="middle" dominantBaseline="middle"
+                style={{fontFamily:'Archivo Black, Inter, sans-serif', fontWeight:900, fontSize:230, letterSpacing:'-10'}}
+                fill="none" stroke="#ffffff" strokeWidth="1.2" opacity=".35">LAST.</text>
+        </svg>
+
+        {/* Filled layer — hero video masked by letter shapes, clipped L→R by scroll progress */}
+        <div style={{
+          position:'absolute',
+          width:'95vw',
+          aspectRatio:'1600 / 500',
+          zIndex:2,
+          WebkitMaskImage: JK_LETTERS_MASK_URL,
+          maskImage: JK_LETTERS_MASK_URL,
+          WebkitMaskSize:'100% 100%',
+          maskSize:'100% 100%',
+          WebkitMaskRepeat:'no-repeat',
+          maskRepeat:'no-repeat',
+          WebkitMaskPosition:'center',
+          maskPosition:'center',
+          pointerEvents:'none',
+        }}>
+          <div style={{
+            position:'absolute', inset:0,
+            clipPath: clip,
+            WebkitClipPath: clip,
+            willChange:'clip-path',
+          }}>
+            <div style={{position:'absolute', inset:0, background:'var(--accent)'}}/>
+            <video
+              ref={videoRef}
+              src="assets/videos/hero.mp4"
+              autoPlay muted loop playsInline preload="auto"
+              style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover', mixBlendMode:'screen', opacity:.9}}
+            />
+            <svg style={{position:'absolute', inset:0, width:'100%', height:'100%', opacity:.18, pointerEvents:'none'}}>
+              <defs>
+                <pattern id="lmv-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#fff" strokeWidth=".6"/>
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#lmv-grid)"/>
+            </svg>
+          </div>
+
+          {/* leading edge glow at the fill front */}
+          <div style={{
+            position:'absolute', top:0, bottom:0,
+            left:`calc(${t*100}% - 2px)`,
+            width:4,
+            background:'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.95) 50%, rgba(255,255,255,0) 100%)',
+            opacity: t>0.002 && t<0.998 ? 1 : 0,
+            transition:'opacity .2s',
+            filter:'blur(.5px)',
+          }}/>
+        </div>
+
+        {/* top overlay */}
+        <div style={{position:'absolute', top:40, left:0, right:0, padding:'0 clamp(20px,4vw,48px)', display:'flex', justifyContent:'space-between', zIndex:3, flexWrap:'wrap', gap:12}}>
+          <span className="mono" style={{color:'var(--fg-muted)'}}>// OUR STANDARD</span>
+          <span className="mono" style={{color:'var(--fg-muted)'}}>ONE CONTRACT · ONE GUARANTEE · 100% SATISFACTION</span>
+        </div>
+
+        {/* bottom overlay — kicker + progress */}
+        <div style={{position:'absolute', bottom:48, left:0, right:0, padding:'0 clamp(20px,4vw,48px)', display:'flex', justifyContent:'space-between', alignItems:'center', gap:24, flexWrap:'wrap', zIndex:3}}>
+          <div className="mono" style={{color:'var(--accent)'}}>// 25 YEARS OF CRAFTSMANSHIP · SCROLL TO REVEAL</div>
+          <div style={{display:'flex', alignItems:'center', gap:14}}>
+            <span className="mono" style={{color:'#fff'}}>{String(pct).padStart(3,'0')}%</span>
+            <div style={{width:220, height:3, background:'rgba(255,255,255,.15)', position:'relative', overflow:'hidden'}}>
+              <div style={{position:'absolute', top:0, left:0, height:'100%', width:(t*100)+'%', background:'var(--accent)'}}/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* =========================================================
+   USMap — project pins
+   ========================================================= */
+const US_PINS = [
+  {state:'NY', x:780, y:160, type:'HQ', label:'Headquarters · Long Island, NY'},
+  {state:'NJ', x:760, y:180, type:'Active'},
+  {state:'PA', x:720, y:175, type:'Active'},
+  {state:'MD', x:745, y:205, type:'Active'},
+  {state:'VA', x:730, y:220, type:'Active'},
+  {state:'NC', x:715, y:260, type:'Active'},
+  {state:'FL', x:710, y:360, type:'Active'},
+  {state:'GA', x:685, y:295, type:'Active'},
+  {state:'TX', x:450, y:340, type:'Active'},
+  {state:'CO', x:360, y:230, type:'Active'},
+  {state:'AZ', x:250, y:290, type:'Active'},
+  {state:'CA', x:115, y:240, type:'Active'},
+  {state:'IL', x:580, y:200, type:'Active'},
+  {state:'OH', x:660, y:195, type:'Active'},
+  {state:'MA', x:815, y:140, type:'Active'},
+];
+
+function USMap() {
+  const [visible, setVisible] = useState(false);
+  const ref = useRef(null);
+  useEffect(()=>{
+    const io = new IntersectionObserver(([e])=> { if(e.isIntersecting){ setVisible(true); io.disconnect(); }}, {threshold:.3});
+    if (ref.current) io.observe(ref.current);
+    return ()=>io.disconnect();
+  },[]);
+  return (
+    <section className="section" style={{background:'var(--bg-primary)'}} ref={ref}>
+      <div className="wrap">
+        <Reveal>
+          <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-end', flexWrap:'wrap', gap:24, marginBottom:32}}>
+            <div>
+              <Kicker>WHERE WE WORK</Kicker>
+              <h2 className="display" style={{fontSize:'clamp(40px,5.6vw,84px)', marginTop:16}}>
+                Licensed, bonded, insured —<br/>in every state we operate.
+              </h2>
+            </div>
+            <div style={{display:'flex', gap:24, alignItems:'center'}}>
+              <Legend dot="var(--accent-hot)" label="Headquarters"/>
+              <Legend dot="var(--accent)" label="Active projects"/>
+            </div>
+          </div>
+        </Reveal>
+
+        <div style={{position:'relative', background:'#25252E', border:'1px solid var(--hairline)', padding:'clamp(20px,3vw,40px)'}}>
+          <svg viewBox="0 0 960 520" style={{width:'100%', height:'auto', display:'block'}}>
+            <SimplifiedUS/>
+            {visible && US_PINS.map((p,i)=>(
+              <g key={p.state} style={{animation:`pinDrop .6s ease-out ${i*80}ms both`}}>
+                {/* pulse ring */}
+                <circle cx={p.x} cy={p.y} r={p.type==='HQ'?8:6} fill="none" stroke={p.type==='HQ'?'#B10C2A':'#526FAE'} strokeWidth="1.5" opacity=".9"
+                  style={{transformOrigin:`${p.x}px ${p.y}px`, animation:`pinPulse 2s ease-out ${i*80}ms infinite`}}
+                />
+                <circle cx={p.x} cy={p.y} r={p.type==='HQ'?6:4} fill={p.type==='HQ'?'#B10C2A':'#526FAE'}/>
+                <text x={p.x+10} y={p.y+4} fontFamily="var(--mono)" fontSize="10" fill={p.type==='HQ'?'#fff':'#ACB2C3'} letterSpacing=".15em">{p.state}</text>
+              </g>
+            ))}
+          </svg>
+          <div style={{display:'flex', justifyContent:'space-between', marginTop:24, flexWrap:'wrap', gap:16}}>
+            <div className="mono" style={{color:'var(--fg-muted)'}}>15 STATES · 47 MARKETS</div>
+            <div className="mono" style={{color:'var(--fg-muted)'}}>HQ · LONG ISLAND, NY</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+function Legend({dot,label}){
+  return (
+    <div style={{display:'flex', alignItems:'center', gap:8}}>
+      <span style={{width:10, height:10, background:dot, borderRadius:'50%'}}/>
+      <span className="mono" style={{color:'var(--fg-muted)'}}>{label}</span>
+    </div>
+  );
+}
+function SimplifiedUS() {
+  // Abstract blocky US — not a real geographic SVG, avoids copying a real map asset.
+  // Rectangles approximate rough regions so pins sit on plausible coordinates.
+  return (
+    <g fill="#3A3A46" stroke="#4A4A58" strokeWidth="1">
+      {/* West */}
+      <path d="M 60 150 L 180 145 L 200 250 L 185 340 L 90 330 L 70 270 Z"/>
+      {/* Mountain */}
+      <path d="M 200 150 L 320 150 L 340 280 L 220 290 Z"/>
+      {/* SW */}
+      <path d="M 220 290 L 340 280 L 350 360 L 240 370 Z"/>
+      {/* Central */}
+      <path d="M 340 140 L 460 135 L 480 240 L 360 250 Z"/>
+      {/* Texas */}
+      <path d="M 360 250 L 480 240 L 520 390 L 400 400 Z"/>
+      {/* N Plains */}
+      <path d="M 460 135 L 580 130 L 600 225 L 480 230 Z"/>
+      {/* Midwest */}
+      <path d="M 540 140 L 680 140 L 700 230 L 560 235 Z"/>
+      {/* Great Lakes / OH */}
+      <path d="M 620 140 L 740 135 L 760 215 L 640 230 Z"/>
+      {/* NE */}
+      <path d="M 740 120 L 840 115 L 855 180 L 755 195 Z"/>
+      {/* Mid-Atlantic */}
+      <path d="M 680 170 L 800 165 L 790 230 L 690 240 Z"/>
+      {/* Southeast */}
+      <path d="M 600 230 L 740 225 L 750 320 L 610 325 Z"/>
+      {/* FL */}
+      <path d="M 650 320 L 740 315 L 760 410 L 700 420 Z"/>
+    </g>
+  );
+}
+
+/* =========================================================
+   Subcontracting band
+   ========================================================= */
+function SubcontractingBand() {
+  const { navigate } = useApp();
+  return (
+    <section className="section" style={{background:'var(--bg-elev)'}}>
+      <div className="wrap" style={{display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:'clamp(32px,5vw,72px)', alignItems:'center'}}>
+        <Reveal>
+          <span className="mono" style={{color:'#fff', opacity:.85}}>// FOR FELLOW GCs</span>
+          <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:16, color:'#fff'}}>
+            Need a trade partner who shows up clean, on time, insured?
+          </h2>
+          <p style={{marginTop:22, fontSize:17, lineHeight:1.65, color:'rgba(255,255,255,.9)', maxWidth:620}}>
+            We self-perform framing, concrete, drywall, finish carpentry, and roofing crews. Bonded, fully insured, OSHA 30. Fast mobilization. Foremen who read prints and close out punch lists without drama.
+          </p>
+          <div style={{display:'flex', gap:12, marginTop:28, flexWrap:'wrap'}}>
+            <button className="btn btn-primary" onClick={()=>navigate('/contact')}>Request our trade packet <Arrow/></button>
+            <button className="btn btn-ghost" onClick={()=>navigate('/expertise')}>See self-perform scopes</button>
+          </div>
+        </Reveal>
+        <Reveal delay={100}>
+          <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:1, background:'rgba(0,0,0,.25)'}}>
+            {['Framing','Concrete','Drywall','Finish carpentry','Roofing crews','Self-perform trades'].map((t,i)=>(
+              <div key={t} style={{background:'var(--bg-elev)', padding:'22px 20px', display:'flex', flexDirection:'column', gap:8}}>
+                <span style={{width:16, height:16, border:'1px solid var(--accent)', position:'relative'}}>
+                  <span style={{position:'absolute', inset:3, background:'var(--accent)'}}/>
+                </span>
+                <span className="mono" style={{color:'#fff'}}>{t.toUpperCase()}</span>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+/* =========================================================
+   TestimonialBlock
+   ========================================================= */
+function TestimonialBlock() {
+  const quotes = [
+    { body:"They walked our family through every decision. The numbers never moved unless we moved them. The house feels like us.", who:"Homeowner · Full custom build, NC", kicker:"HOMEOWNER" },
+    { body:"Delivered our 96-bed tower on a compressed schedule without a single ICRA breach. Real preconstruction, real self-perform, real answers.", who:"Director of Capital Projects · Regional hospital system", kicker:"DEVELOPER" },
+    { body:"JK's framing crew pulled a 38,000 sqft mixed-use out of the mud and handed it to us ready for MEP in seven weeks. Rare these days.", who:"GC Partner · Northeast", kicker:"FELLOW GC" },
+  ];
+  return (
+    <section style={{background:'var(--bg-invert)', color:'#fff'}}>
+      <div className="wrap" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}} >
+        <Reveal>
+          <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// WHAT PEOPLE SAY</span>
+          <h2 style={{color:'#000', fontFamily:'var(--display)', fontSize:'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.9, marginTop:20}}>
+            Prestige Is In The&nbsp;Details.
+          </h2>
+          <div style={{marginTop:24, color:'rgba(255,255,255,.9)', fontSize:16, maxWidth:420}}>
+            Three audiences. One operating standard. Twenty-five years of repeat business and referrals.
+          </div>
+        </Reveal>
+        <div style={{display:'grid', gap:1, background:'rgba(255,255,255,.3)', alignSelf:'start'}}>
+          {quotes.map((q,i)=>(
+            <Reveal key={i} delay={i*100} style={{background:'var(--bg-invert)', padding:'28px 28px'}}>
+              <span className="mono" style={{color:'rgba(255,255,255,.85)'}}>// {q.kicker}</span>
+              <p style={{fontFamily:'var(--display)', fontSize:'clamp(22px,2.2vw,30px)', letterSpacing:'-.015em', lineHeight:1.2, marginTop:14, color:'#fff'}}>
+                &ldquo;{q.body}&rdquo;
+              </p>
+              <div style={{marginTop:16, fontSize:12, letterSpacing:'.15em', textTransform:'uppercase', color:'rgba(255,255,255,.8)', fontFamily:'var(--mono)'}}>{q.who}</div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* =========================================================
+   Affordability Band
+   ========================================================= */
+function AffordabilityBand() {
+  const { navigate } = useApp();
+  return (
+    <section className="section-tight" style={{background:'var(--bg-primary)', borderTop:'1px solid var(--hairline)', borderBottom:'1px solid var(--hairline)'}}>
+      <div className="wrap" style={{display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:24}}>
+        <div style={{display:'flex', alignItems:'center', gap:'clamp(14px,2.4vw,40px)', flexWrap:'wrap'}}>
+          <span className="mono" style={{color:'var(--accent)'}}>// AFFORDABILITY</span>
+          <div style={{fontFamily:'var(--display)', fontSize:'clamp(22px, 2.4vw, 32px)', letterSpacing:'-.015em', color:'#fff', maxWidth:820, lineHeight:1.2}}>
+            Premium craftsmanship shouldn't be priced out of reach. Honest numbers from day one. Fixed-price contracts available.
+          </div>
+        </div>
+        <button className="btn btn-outline" onClick={()=>navigate('/contact')}>Talk to a principal <Arrow/></button>
+      </div>
+    </section>
+  );
+}
+
+/* =========================================================
+   News strip
+   ========================================================= */
+const NEWS = [
+  { cat:'ON THE JOBSITE', date:'04.18.26', title:'Topping out the Meridian Medical Tower — 14 weeks ahead of schedule', slug:'news-meridian-topping-16x9' },
+  { cat:'HOMEOWNER TIPS', date:'04.02.26', title:'Five questions every homeowner should ask before signing a renovation contract', slug:'news-homeowner-questions-16x9' },
+  { cat:'COMPANY NEWS', date:'03.22.26', title:'JK Prestige crosses 500 delivered projects in our 25th year', slug:'news-500-projects-16x9' },
+];
+function NewsStrip() {
+  const { navigate } = useApp();
+  return (
+    <section className="section" style={{background:'var(--bg-primary)'}}>
+      <div className="wrap">
+        <Reveal>
+          <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-end', flexWrap:'wrap', gap:24, marginBottom:32}}>
+            <div>
+              <Kicker>LATEST FROM THE NEWSROOM</Kicker>
+              <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:14}}>News, insight, and jobsite dispatches.</h2>
+            </div>
+            <button className="btn btn-outline" onClick={()=>navigate('/newsroom')}>All posts <Arrow/></button>
+          </div>
+        </Reveal>
+        <div style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'var(--hairline)'}} className="news-grid">
+          {NEWS.map((n,i)=>(
+            <Reveal key={i} delay={i*80}>
+              <a href="#" onClick={(e)=>{e.preventDefault(); navigate('/newsroom');}} style={{display:'block', background:'var(--bg-primary)', height:'100%'}}>
+                <Placeholder slug={n.slug} w={800} h={500} tag="NEWS HERO"/>
+                <div style={{padding:'22px 24px'}}>
+                  <div style={{display:'flex', justifyContent:'space-between', color:'var(--fg-dim)'}} className="mono">
+                    <span>// {n.cat}</span><span>{n.date}</span>
+                  </div>
+                  <div style={{fontFamily:'var(--display)', fontSize:22, letterSpacing:'-.015em', color:'#fff', marginTop:14, lineHeight:1.15}}>{n.title}</div>
+                  <div style={{marginTop:18, display:'inline-flex', alignItems:'center', gap:8, color:'var(--accent)'}} className="mono">READ &nbsp;<Arrow size={12}/></div>
+                </div>
+              </a>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+      <style>{`
+        @media (max-width:900px){ .news-grid{grid-template-columns:1fr !important} }
+      `}</style>
+    </section>
+  );
+}
+
+/* =========================================================
+   Free Estimate Form
+   ========================================================= */
+const PROJECT_TYPES = ['New Home','Home Renovation','Roofing','Commercial New Build','Warehouse','Hospital/Medical','Subcontracting Inquiry','Other'];
+
+function FreeEstimateForm({ compact=false }) {
+  const [form, setForm] = useState({ name:'', email:'', phone:'', zip:'', type:'New Home', message:'', consent:false });
+  const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
+
+  const update = (k,v)=> setForm(f=>({...f, [k]:v}));
+
+  const submit = (e)=>{
+    e.preventDefault();
+    const errs = {};
+    if (!form.name.trim()) errs.name = 'Required';
+    if (!/^\S+@\S+\.\S+$/.test(form.email)) errs.email = 'Valid email required';
+    if (form.phone.replace(/\D/g,'').length < 7) errs.phone = 'Valid phone required';
+    if (!/^\d{5}$/.test(form.zip)) errs.zip = '5-digit zip';
+    if (!form.consent) errs.consent = 'Please consent';
+    setErrors(errs);
+    if (Object.keys(errs).length===0) setSubmitted(true);
+  };
+
+  if (submitted) {
+    return (
+      <div style={{padding:'48px', border:'1px solid var(--accent)', background:'rgba(82,111,174,.08)'}}>
+        <span className="mono" style={{color:'var(--accent)'}}>// REQUEST RECEIVED</span>
+        <h3 className="display" style={{fontSize:'clamp(28px, 3.2vw, 44px)', marginTop:14, color:'#fff'}}>We'll be in touch within 48 hours.</h3>
+        <p style={{marginTop:14, color:'var(--fg-muted)', maxWidth:520}}>A principal will review your project brief and reach out directly. If it's an active roofing emergency, call our hotline at <span style={{color:'#fff'}}>1-800-JK-ROOFS</span>.</p>
+      </div>
+    );
+  }
+
+  return (
+    <form onSubmit={submit} style={{display:'grid', gap:18}}>
+      <div style={{display:'grid', gridTemplateColumns: compact?'1fr 1fr':'1fr 1fr', gap:14}}>
+        <Field label="Full name" error={errors.name}>
+          <input className="jk-input" placeholder="Your name" value={form.name} onChange={e=>update('name', e.target.value)}/>
+        </Field>
+        <Field label="Email" error={errors.email}>
+          <input className="jk-input" placeholder="you@domain.com" value={form.email} onChange={e=>update('email', e.target.value)}/>
+        </Field>
+      </div>
+      <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:14}}>
+        <Field label="Phone" error={errors.phone}>
+          <input className="jk-input" placeholder="(555) 555-5555" value={form.phone} onChange={e=>update('phone', e.target.value)}/>
+        </Field>
+        <Field label="Zip" error={errors.zip}>
+          <input className="jk-input" placeholder="12345" value={form.zip} onChange={e=>update('zip', e.target.value)}/>
+        </Field>
+      </div>
+      <Field label="Project type">
+        <select className="jk-input" value={form.type} onChange={e=>update('type', e.target.value)}>
+          {PROJECT_TYPES.map(t=> <option key={t} value={t} style={{background:'var(--bg-primary)'}}>{t}</option>)}
+        </select>
+      </Field>
+      <Field label="Tell us about your project">
+        <textarea className="jk-input" rows={compact? 3:5} placeholder="Scope, timing, site, anything else we should know…" value={form.message} onChange={e=>update('message', e.target.value)}/>
+      </Field>
+      <label style={{display:'flex', alignItems:'flex-start', gap:12, cursor:'pointer'}}>
+        <span className={"cbx "+(form.consent?'on':'')} onClick={()=>update('consent', !form.consent)}>
+          {form.consent && <svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 5 L4 8 L9 2" stroke="#fff" strokeWidth="1.6" fill="none"/></svg>}
+        </span>
+        <span style={{fontSize:13, color:'var(--fg-muted)', lineHeight:1.5}}>
+          I authorize JK Prestige Corporation to contact me about my inquiry. No spam. We don't sell data.
+        </span>
+      </label>
+      {errors.consent && <div style={{color:'#ff7a8c', fontSize:12}} className="mono">{errors.consent}</div>}
+      <div>
+        <button type="submit" className="btn btn-primary" style={{padding:'18px 28px'}}>
+          Request free estimate <Arrow/>
+        </button>
+      </div>
+    </form>
+  );
+}
+function Field({ label, error, children }) {
+  return (
+    <label style={{display:'block'}}>
+      <span className="field-label">{label}{error && <span style={{color:'#ff7a8c', marginLeft:8, textTransform:'none', letterSpacing:0}}>· {error}</span>}</span>
+      {children}
+    </label>
+  );
+}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+function Footer() {
+  const { navigate } = useApp();
+  return (
+    <footer style={{background:'var(--bg-primary)', borderTop:'1px solid var(--hairline)'}}>
+      {/* Form band */}
+      <div className="wrap" style={{padding:'clamp(48px,7vw,96px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1fr 1.1fr', gap:'clamp(40px,6vw,80px)'}} id="estimate">
+        <div>
+          <Kicker>FREE 48-HOUR ESTIMATE</Kicker>
+          <h2 className="display" style={{fontSize:'clamp(36px,4.6vw,68px)', marginTop:16, maxWidth:560}}>
+            Tell us what you're building. A principal will reply.
+          </h2>
+          <div style={{marginTop:22, color:'var(--fg-muted)', maxWidth:480, lineHeight:1.6}}>
+            No call center. No gated salesperson. Owner-first communication from the first reply to the final walkthrough.
+          </div>
+          <div style={{marginTop:28, display:'grid', gap:14, maxWidth:420}}>
+            <FooterRow k="EMERGENCY ROOF HOTLINE" v="1-800-JK-ROOFS"/>
+            <FooterRow k="GENERAL" v="info@jkprestige.com"/>
+            <FooterRow k="HQ" v="Long Island, NY · M–F 7a–6p"/>
+          </div>
+        </div>
+        <div>
+          <FreeEstimateForm compact/>
+        </div>
+      </div>
+
+      <div className="hairline"/>
+
+      {/* Main footer */}
+      <div className="wrap" style={{padding:'48px clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.2fr 2.5fr 1fr', gap:48}}>
+        <div>
+          <LogoMark/>
+          <div style={{marginTop:22, color:'var(--fg-muted)', fontSize:13, lineHeight:1.65, maxWidth:280}}>
+            JK Prestige Corporation. Family-operated general contractor since 2000. Licensed, bonded and insured in every state we operate.
+          </div>
+          <div style={{marginTop:28, display:'flex', flexWrap:'wrap', gap:10}}>
+            {['NAHB','AGC','ABC','BBB A+','OSHA 30'].map(t=>(
+              <div key={t} style={{padding:'8px 12px', border:'1px solid var(--hairline)', fontFamily:'var(--mono)', fontSize:10, letterSpacing:'.2em', color:'var(--fg-muted)'}}>{t}</div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:32}}>
+          <FooterCol title="COMPANY" items={[
+            ['About','/about'],['The JK Way','/the-jk-way'],['Careers','/careers'],['Newsroom','/newsroom']
+          ]} navigate={navigate}/>
+          <FooterCol title="EXPERTISE" items={[
+            ['Hospitals','/expertise'],['Custom Homes','/expertise'],['Warehouses','/expertise'],['Renovations','/expertise']
+          ]} navigate={navigate}/>
+          <FooterCol title="SERVICES" items={[
+            ['Ground-up','/expertise'],['Roofing','/roofing'],['Subcontracting','/expertise'],['Preconstruction','/the-jk-way']
+          ]} navigate={navigate}/>
+          <FooterCol title="CONNECT" items={[
+            ['Contact','/contact'],['Free estimate','/contact'],['Trade packet','/contact'],['Projects','/projects']
+          ]} navigate={navigate}/>
+        </div>
+
+        <div style={{display:'flex', flexDirection:'column', gap:18, alignItems:'flex-end'}}>
+          <div className="mono" style={{color:'var(--fg-muted)'}}>// SOCIAL</div>
+          <div style={{display:'flex', gap:8}}>
+            {['IG','LI','FB','YT','TT'].map(s=>(
+              <div key={s} style={{width:40, height:40, border:'1px solid var(--hairline)', display:'flex', alignItems:'center', justifyContent:'center', fontFamily:'var(--mono)', fontSize:10, color:'#fff', letterSpacing:'.15em', cursor:'pointer'}}>{s}</div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="hairline"/>
+
+      {/* Promise + legal */}
+      <div className="wrap" style={{padding:'28px clamp(20px,4vw,64px)', display:'flex', flexWrap:'wrap', justifyContent:'space-between', alignItems:'center', gap:20}}>
+        <div className="mono" style={{color:'var(--fg-muted)'}}>
+          GROUND-UP OR GUT-RENO · HOSPITALS TO HOMES · ONE CONTRACT · 100% SATISFACTION
+        </div>
+        <div style={{display:'flex', gap:20, color:'var(--fg-dim)'}} className="mono">
+          <span>© 2000–2025 JK PRESTIGE</span>
+          <span>PRIVACY</span>
+          <span>TERMS</span>
+          <span>ACCESSIBILITY</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+function FooterRow({k,v}){
+  return (
+    <div style={{display:'flex', justifyContent:'space-between', gap:16, paddingBottom:12, borderBottom:'1px solid var(--hairline)'}}>
+      <span className="mono" style={{color:'var(--fg-dim)'}}>{k}</span>
+      <span style={{color:'#fff', fontSize:14}}>{v}</span>
+    </div>
+  );
+}
+function FooterCol({ title, items, navigate }) {
+  return (
+    <div>
+      <div className="mono" style={{color:'var(--fg-muted)', marginBottom:16}}>// {title}</div>
+      <div style={{display:'grid', gap:10}}>
+        {items.map(([l,href])=>(
+          <a key={l} href={'#'+href} onClick={(e)=>{e.preventDefault(); navigate(href);}} style={{color:'#fff', fontSize:14}}>{l}</a>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+Object.assign(window, {
+  AudienceSwitcher, WhoWeAre, StatsStrip, ExpertiseGrid, TurnkeyPromise,
+  LetterMaskVideo, USMap, SubcontractingBand, TestimonialBlock, AffordabilityBand,
+  NewsStrip, FreeEstimateForm, Footer, EXPERTISE, NEWS
+});
