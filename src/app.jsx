@@ -65,6 +65,11 @@ function App() {
         {route === '/' && <HomePage/>}
         {route === '/the-jk-way' && <JKWayPage/>}
         {route === '/expertise' && <ExpertisePage/>}
+        {route === '/expertise/hospitals' && <HospitalsPage/>}
+        {route === '/expertise/homes' && <CustomHomesPage/>}
+        {route === '/expertise/warehouses' && <WarehousesPage/>}
+        {route === '/expertise/commercial' && <CommercialPage/>}
+        {route === '/expertise/renovations' && <RenovationsPage/>}
         {route === '/projects' && <ProjectsPage/>}
         {route === '/roofing' && <RoofingPage/>}
         {route === '/contact' && <ContactPage/>}

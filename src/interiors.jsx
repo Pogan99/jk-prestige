@@ -123,6 +123,7 @@ const VERTICALS = [
     copy: "JK Prestige is Jacksonville's custom home builder of choice for clients who want a principal on site and a single point of accountability from lot to CO. We self-perform framing, finish carpentry, and critical MEP rough-ins — meaning fewer hands touching your home and zero finger-pointing when a detail matters. Every home carries a full one-year workmanship warranty and a named superintendent from day one.",
     slug: 'expertise-custom-homes-16x9',
     tag: 'CUSTOM HOME BUILD',
+    route: '/expertise/homes',
   },
   {
     id: 'medical',
@@ -131,6 +132,7 @@ const VERTICALS = [
     copy: 'From ground-up hospital towers to ambulatory surgery centers and medical office fit-outs, JK Prestige has delivered infection-control-compliant construction across Florida and the Southeast. Our teams are trained in ICRA protocols, NFPA 99 life-safety requirements, and phased construction inside live facilities — so patient care never stops. We coordinate directly with owners, AOR, and commissioning agents under a single GMP contract.',
     slug: 'expertise-medical-hospital-16x9',
     tag: 'HOSPITAL CONSTRUCTION',
+    route: '/expertise/hospitals',
   },
   {
     id: 'warehouse',
@@ -139,6 +141,7 @@ const VERTICALS = [
     copy: 'Distribution centers, cold storage, manufacturing facilities, and flex industrial — JK Prestige delivers clear-span structures on aggressive schedules across Florida and beyond. We self-perform concrete, tilt-up panel erection, and dock equipment installation. Our preconstruction team optimizes column grids, floor flatness specs, and trailer court geometry before a shovel breaks ground, keeping change-order risk at zero.',
     slug: 'expertise-warehouse-industrial-16x9',
     tag: 'WAREHOUSE CONSTRUCTION',
+    route: '/expertise/warehouses',
   },
   {
     id: 'commercial',
@@ -147,6 +150,7 @@ const VERTICALS = [
     copy: 'Tenant improvements, ground-up retail shells, restaurant build-outs, and corporate interiors: JK Prestige has the licensing, bonding, and vetted subcontractor network to deliver commercial projects from $500K to $50M. We run a single contract, produce weekly owner reports, and hit the turnover dates that protect your lease commencement. Our commercial team operates across Jacksonville, FL and nationally.',
     slug: 'expertise-commercial-16x9',
     tag: 'COMMERCIAL CONSTRUCTION',
+    route: '/expertise/commercial',
   },
   {
     id: 'renovations',
@@ -155,6 +159,7 @@ const VERTICALS = [
     copy: "Whole-home remodels, kitchen and bath renovations, historic restorations, and occupied-building phasing — JK Prestige has been Jacksonville's renovation contractor since 2017. We open walls with a plan: pre-demo documentation, asbestos/lead clearance where required, and a fully sequenced schedule so you're not living in a construction zone longer than necessary. Our renovation clients get the same licensed principal accountability as our commercial clients.",
     slug: 'expertise-renovations-16x9',
     tag: 'RENOVATION CONTRACTOR',
+    route: '/expertise/renovations',
   },
   {
     id: 'roofing',
@@ -163,6 +168,7 @@ const VERTICALS = [
     copy: "JK Prestige's roofing division covers residential shingle, standing-seam metal, slate, and cedar shake alongside commercial flat systems — TPO, EPDM, modified bitumen, and PVC. We are a manufacturer-certified installer with a 24-point free inspection program, 24-hour emergency tarp response, and a dedicated storm and insurance-adjuster liaison team. One call covers the inspection, the claim, and the installation.",
     slug: 'expertise-roofing-16x9',
     tag: 'ROOFING CONTRACTOR',
+    route: '/roofing',
   },
 ];
 
@@ -189,9 +195,18 @@ function VerticalSection({vertical, flip, i}) {
             <p style={{color:'var(--fg-muted)', fontSize:16, lineHeight:1.75, marginTop:20}}>
               {vertical.copy}
             </p>
-            <div style={{marginTop:28}}>
+            <div style={{marginTop:28, display:'flex', gap:12, flexWrap:'wrap'}}>
+              {vertical.route && vertical.route !== '/roofing' && (
+                <button
+                  className="btn btn-primary"
+                  onClick={()=>navigate(vertical.route)}
+                  style={{display:'inline-flex', alignItems:'center', gap:8}}
+                >
+                  See full scope <Arrow/>
+                </button>
+              )}
               <button
-                className="btn btn-primary"
+                className="btn btn-outline"
                 onClick={()=>navigate('/contact')}
                 style={{display:'inline-flex', alignItems:'center', gap:8}}
               >
@@ -1847,4 +1862,477 @@ function LegalSection({ title, children }) {
   );
 }
 
-Object.assign(window, { AboutPage, ExpertisePage, RoofingPage, ProjectsPage, ContactPage, NewsroomPage, CareersPage, JKWayPage, TermsPage, PrivacyPage, PROJECTS });
+/* =========================================================
+   EXPERTISE SUB-PAGES
+   Reusable shell + 5 vertical pages
+   ========================================================= */
+
+function ExpertiseSubPage({ schemaId, schema, kicker, h1, description, ctaScrollId, services, stats, projectHighlights, faqs, children }) {
+  const { navigate } = useApp();
+
+  useEffect(()=>{
+    const existing = document.getElementById(schemaId);
+    if (existing) existing.remove();
+    const tag = document.createElement('script');
+    tag.id = schemaId;
+    tag.type = 'application/ld+json';
+    tag.textContent = JSON.stringify(schema);
+    document.head.appendChild(tag);
+    return ()=>{ const el = document.getElementById(schemaId); if (el) el.remove(); };
+  }, []);
+
+  return (
+    <div className="page-enter" style={{minHeight:'60vh'}}>
+
+      {/* SEO Hero */}
+      <section className="section" style={{background:'var(--bg-primary)', borderBottom:'1px solid var(--hairline)'}}>
+        <div className="wrap">
+          <Kicker>{kicker}</Kicker>
+          <h1 className="display" style={{fontSize:'clamp(40px,7vw,120px)', marginTop:18, lineHeight:.9}}>{h1}</h1>
+          <p style={{marginTop:24, maxWidth:760, color:'var(--fg-muted)', fontSize:18, lineHeight:1.6}}>{description}</p>
+          <div style={{display:'flex', gap:12, marginTop:32, flexWrap:'wrap'}}>
+            <button className="btn btn-primary" onClick={()=>document.getElementById(ctaScrollId)?.scrollIntoView({behavior:'smooth', block:'start'})}>
+              Get a free estimate <Arrow/>
+            </button>
+            <a href="tel:9049440278" className="btn btn-outline">Call (904) 944-0278</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats strip */}
+      <section style={{background:'var(--bg-elev)', borderBottom:'1px solid rgba(0,0,0,.25)'}}>
+        <div className="wrap" style={{display:'grid', gridTemplateColumns:`repeat(${stats.length},1fr)`, gap:1, background:'rgba(0,0,0,.3)'}} className="sub-stats-grid">
+          {stats.map(([num, label], i)=>(
+            <Reveal key={label} delay={i*70} style={{background:'var(--bg-elev)', padding:'32px 24px', textAlign:'center'}}>
+              <div style={{fontFamily:'var(--display)', fontSize:'clamp(32px,3.5vw,52px)', letterSpacing:'-.025em', color:'var(--accent)'}}>{num}</div>
+              <div className="mono" style={{color:'rgba(255,255,255,.7)', fontSize:11, marginTop:8}}>{label.toUpperCase()}</div>
+            </Reveal>
+          ))}
+        </div>
+        <style>{`.sub-stats-grid{} @media(max-width:700px){.sub-stats-grid{grid-template-columns:repeat(2,1fr) !important}}`}</style>
+      </section>
+
+      {/* Services detail */}
+      <section className="section" style={{background:'var(--bg-primary)'}}>
+        <div className="wrap">
+          <Kicker>CAPABILITIES</Kicker>
+          <h2 className="display" style={{fontSize:'clamp(32px,4.5vw,64px)', marginTop:14}}>What we deliver.</h2>
+          <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:1, background:'var(--hairline)', marginTop:40}} className="sub-svc-grid">
+            {services.map(([title, detail], i)=>(
+              <Reveal key={title} delay={i*60} style={{background:'var(--bg-primary)', padding:'36px 32px'}}>
+                <div style={{fontFamily:'var(--display)', fontSize:40, color:'var(--accent)', letterSpacing:'-.025em', lineHeight:1}}>{String(i+1).padStart(2,'0')}</div>
+                <div className="mono" style={{color:'#fff', marginTop:16, fontSize:11, letterSpacing:'.14em'}}>{title.toUpperCase()}</div>
+                <p style={{fontSize:15, color:'var(--fg-muted)', marginTop:12, lineHeight:1.7}}>{detail}</p>
+              </Reveal>
+            ))}
+          </div>
+          <style>{`@media(max-width:760px){.sub-svc-grid{grid-template-columns:1fr !important}}`}</style>
+        </div>
+      </section>
+
+      {/* Project highlights */}
+      <section className="section" style={{background:'var(--bg-elev)'}}>
+        <div className="wrap">
+          <Kicker>PROJECT HIGHLIGHTS</Kicker>
+          <h2 className="display" style={{fontSize:'clamp(32px,4.5vw,64px)', marginTop:14, color:'#fff'}}>Work from the field.</h2>
+          <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:24, marginTop:40}} className="sub-proj-grid">
+            {projectHighlights.map((p, i)=>(
+              <Reveal key={p.id} delay={i*80} style={{background:'var(--bg-primary)', border:'1px solid rgba(255,255,255,.08)'}}>
+                <Placeholder slug={p.slug} w={1200} h={700} tag="PROJECT"/>
+                <div style={{padding:'24px 28px'}}>
+                  <div className="mono" style={{color:'var(--accent)', fontSize:10}}>// {p.cat.toUpperCase()} · {p.state} · {p.year} · {p.size}</div>
+                  <div style={{fontFamily:'var(--display)', fontSize:'clamp(20px,2.5vw,30px)', letterSpacing:'-.015em', marginTop:10, color:'#fff'}}>{p.title}</div>
+                  <p style={{fontSize:14, color:'var(--fg-muted)', marginTop:12, lineHeight:1.65}}>{p.description}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <style>{`@media(max-width:760px){.sub-proj-grid{grid-template-columns:1fr !important}}`}</style>
+          <div style={{marginTop:32, textAlign:'center'}}>
+            <button className="btn btn-outline" onClick={()=>navigate('/projects')}>See all projects <Arrow/></button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section" style={{background:'var(--bg-primary)'}}>
+        <div className="wrap">
+          <div style={{display:'grid', gridTemplateColumns:'1fr 1.4fr', gap:'clamp(32px,5vw,72px)', alignItems:'start'}} className="sub-faq-grid">
+            <div>
+              <Kicker>FAQ</Kicker>
+              <h2 className="display" style={{fontSize:'clamp(28px,3.5vw,52px)', marginTop:14}}>
+                Common questions.
+              </h2>
+              <p style={{color:'var(--fg-muted)', marginTop:18, lineHeight:1.7, maxWidth:380}}>
+                {"Don't see yours? Call "}
+                <a href="tel:9049440278" style={{color:'#fff'}}>(904) 944-0278</a>
+                {" — a principal answers."}
+              </p>
+            </div>
+            <div>
+              {faqs.map(([q,a], i)=>(<FAQ key={i} q={q} a={a}/>))}
+            </div>
+          </div>
+          <style>{`@media(max-width:860px){.sub-faq-grid{grid-template-columns:1fr !important}}`}</style>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id={ctaScrollId} className="section" style={{background:'var(--bg-invert)'}}>
+        <div className="wrap" style={{display:'grid', gridTemplateColumns:'1fr 1.3fr', gap:'clamp(40px,6vw,80px)', alignItems:'start'}} className="sub-cta-grid">
+          <div>
+            <Kicker>FREE ESTIMATE</Kicker>
+            <h2 className="display" style={{fontSize:'clamp(32px,4.2vw,60px)', marginTop:16, lineHeight:.92, color:'#fff'}}>
+              Get a line-item estimate in 48 hours.
+            </h2>
+            <p style={{marginTop:20, color:'rgba(255,255,255,.7)', lineHeight:1.7, maxWidth:400}}>
+              A principal reviews every inquiry. No coordinator, no call center. Tell us the project type, size, and timeline — we'll get back to you with a real number.
+            </p>
+            <div style={{marginTop:28}}>
+              <a href="tel:9049440278" style={{display:'block', fontFamily:'var(--display)', fontSize:28, color:'#fff', textDecoration:'none', letterSpacing:'-.01em', marginTop:24}}>(904) 944-0278</a>
+              <a href="mailto:jerekaine@hotmail.com" style={{display:'block', fontSize:14, color:'rgba(255,255,255,.6)', marginTop:8, textDecoration:'none'}}>jerekaine@hotmail.com</a>
+            </div>
+          </div>
+          <div style={{background:'var(--bg-primary)', padding:'clamp(24px,4vw,48px)', border:'1px solid rgba(255,255,255,.1)'}}>
+            <FreeEstimateForm/>
+          </div>
+        </div>
+        <style>{`@media(max-width:860px){.sub-cta-grid{grid-template-columns:1fr !important}}`}</style>
+      </section>
+
+      {children}
+    </div>
+  );
+}
+
+/* --------- HOSPITALS PAGE --------- */
+function HospitalsPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "GeneralContractor"],
+        "@id": "https://www.jkprestigeconstructor.com/#organization",
+        "name": "JK Prestige Constructor",
+        "telephone": "+19049440278",
+        "email": "jerekaine@hotmail.com",
+        "url": "https://www.jkprestigeconstructor.com",
+        "foundingDate": "2017",
+        "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+        "areaServed": { "@type": "Country", "name": "United States" }
+      },
+      {
+        "@type": "Service",
+        "name": "Hospital Construction Jacksonville FL",
+        "provider": { "@id": "https://www.jkprestigeconstructor.com/#organization" },
+        "serviceType": "Healthcare Facility Construction",
+        "description": "Ground-up hospital construction, ambulatory surgery centers, medical office build-outs, and phased occupied-facility renovations. ICRA-trained crews, NFPA 99 compliance, GMP delivery.",
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "url": "https://www.jkprestigeconstructor.com/expertise/hospitals"
+      }
+    ]
+  };
+
+  const services = [
+    ["Ground-Up Hospital & Tower Programs", "JK Prestige has delivered multi-story acute-care facilities from slab to certificate of occupancy under a single GMP contract. Our preconstruction team integrates with the AOR and clinical programming team early to lock the bed count, departmental adjacencies, and MEP routing before a single shovel breaks ground — protecting the schedule from day one."],
+    ["Ambulatory Surgery Centers & Outpatient Clinics", "ASC and outpatient delivery requires surgical suite classifications, medical gas manifolds, laminar-flow HVAC, and lead-lined radiology rooms — all within a compressed design-build window. JK self-performs the critical rough-ins and coordinates specialty contractors directly under our superintendent, not through a management layer."],
+    ["ICRA-Compliant Phased Construction in Live Facilities", "Occupied hospital renovations require Infection Control Risk Assessment planning, negative-pressure enclosures, anteroom construction, and 24/7 dust monitoring. Our ICRA-trained superintendents have sequenced phased work inside ICUs, emergency departments, and sterile processing areas without a single patient-care disruption."],
+    ["Medical Office Building & MOB Fit-Out", "From Class A shell to physician-ready interiors, JK Prestige delivers medical office buildings with the same NFPA 101 life-safety rigor as hospital work. We coordinate nurse-call rough-ins, medical gas stub-outs, and exam-room accessibility compliance under one package — and deliver a commissioning report at turnover, not a list of punch items."],
+  ];
+
+  const stats = [
+    ["320K sqft", "Largest hospital delivered"],
+    ["ICRA Trained", "All supers on medical projects"],
+    ["NFPA 99", "Life-safety code compliance"],
+    ["22 months", "Avg tower program duration"],
+  ];
+
+  const highlights = PROJECTS.filter(p => ['p1','p2'].includes(p.id));
+
+  const faqs = [
+    ["What is ICRA and why does it matter for hospital construction?", "ICRA — Infection Control Risk Assessment — is a planning and monitoring protocol required by The Joint Commission and CMS for any construction activity in or adjacent to occupied healthcare facilities. JK Prestige superintendents are ICRA-trained, meaning we build and inspect negative-pressure containment barriers, monitor particulate counts, and maintain a documented ICRA log throughout construction. Failure to comply can result in patient harm and hospital accreditation risk — we treat it as a non-negotiable."],
+    ["Can JK Prestige work inside a live hospital without shutting down departments?", "Yes. We have sequenced construction inside active ICUs, OR suites, and emergency departments using phased corridor closures, swing-space fit-outs, and off-hours structural work. Every phase is coordinated with the hospital's infection control officer and facilities director before mobilization."],
+    ["What contract type do you use for hospital projects?", "We prefer Guaranteed Maximum Price (GMP) with an open-book cost ledger accessible to the owner throughout construction. For design-build hospital programs we include a preconstruction services agreement that converts to GMP at design development — so you have a firm number before construction documents are complete."],
+  ];
+
+  return (
+    <ExpertiseSubPage
+      schemaId="jk-hospitals-schema"
+      schema={schema}
+      kicker="HOSPITAL CONSTRUCTION — JACKSONVILLE FL & NATIONWIDE"
+      h1={<>Hospital Construction<br/>Jacksonville FL.</>}
+      description="JK Prestige Constructor delivers ground-up hospital towers, ambulatory surgery centers, and phased occupied-facility renovations. ICRA-trained crews, NFPA 99 life-safety compliance, and a single GMP contract from slab to certificate of occupancy. Operating across Florida and the US since 2017."
+      ctaScrollId="hospitals-cta"
+      services={services}
+      stats={stats}
+      projectHighlights={highlights}
+      faqs={faqs}
+    />
+  );
+}
+
+/* --------- CUSTOM HOMES PAGE --------- */
+function CustomHomesPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "GeneralContractor"],
+        "@id": "https://www.jkprestigeconstructor.com/#organization",
+        "name": "JK Prestige Constructor",
+        "telephone": "+19049440278",
+        "email": "jerekaine@hotmail.com",
+        "url": "https://www.jkprestigeconstructor.com",
+        "foundingDate": "2017",
+        "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+        "areaServed": { "@type": "Country", "name": "United States" }
+      },
+      {
+        "@type": "Service",
+        "name": "Custom Home Builder Jacksonville FL",
+        "provider": { "@id": "https://www.jkprestigeconstructor.com/#organization" },
+        "serviceType": "Custom Home Construction",
+        "description": "Custom home building in Jacksonville, FL and nationwide. Principal-led process, self-perform framing and finish carpentry, one-year workmanship warranty.",
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "url": "https://www.jkprestigeconstructor.com/expertise/homes"
+      }
+    ]
+  };
+
+  const services = [
+    ["Architect-Integrated Design-Build", "JK Prestige works directly with your architect of record from schematic design through construction documents, sitting in on design reviews to flag constructability issues, material lead times, and budget drift before the drawings are final. For clients who do not yet have an architect, we maintain relationships with residential design firms in Jacksonville and across the US who share our commitment to finish quality."],
+    ["Self-Perform Framing & Finish Carpentry", "The critical trade work — framing, drywall, finish carpentry, and trim — is performed by our own crews, not brokered out. This means the same foreman who frames the wall installs the casing and reports to a JK superintendent, not a separate sub foreman. The result is tighter tolerances, faster punch-list close-out, and one person accountable for every visible finish."],
+    ["Smart Home & Systems Integration", "We coordinate audio-visual, lighting control, security, and geothermal or solar systems as part of the construction package — not as afterthoughts handed off to the homeowner post-close. Rough-in for every system is documented in our BIM model, conduit runs are future-proofed, and the commissioning walkthrough covers every device before keys are handed over."],
+    ["One-Year Workmanship Warranty", "Every JK Prestige custom home ships with a signed one-year workmanship warranty document at closing — covering structural, MEP, and finish work. The warranty contact is a named principal, not a call center. Issues are logged, assigned, and closed in writing within 30 days of notification. No run-arounds."],
+  ];
+
+  const stats = [
+    ["11,200 sqft", "Largest custom home delivered"],
+    ["1-year", "Workmanship warranty, standard"],
+    ["Self-perform", "Framing, finish carpentry & millwork"],
+    ["48 hrs", "Preliminary estimate turnaround"],
+  ];
+
+  const highlights = PROJECTS.filter(p => ['p3','p4','p5'].includes(p.id));
+
+  const faqs = [
+    ["How involved is JK Prestige during the design phase?", "We join the design process as early as schematic design — before any documents are sent for pricing. We review each design milestone for constructability, identify long-lead items (windows, cabinetry, structural steel), and provide a running cost model so you are never surprised by a number at the end of design development. Our pre-construction fee is credited against the construction contract at signing."],
+    ["Do you build custom homes outside Jacksonville, FL?", "Yes. We have delivered custom homes in New York, Connecticut, and North Carolina, among other states. Our project management model travels with us — a JK superintendent and named principal on every project regardless of geography. We manage local trade packages and perform critical self-perform scopes with our own crew."],
+    ["What is included in the one-year workmanship warranty?", "The warranty covers defects in workmanship for all JK-performed trades: framing, drywall, finish carpentry, painting, and roofing. Manufacturer warranties on windows, appliances, mechanical equipment, and roofing materials are passed through to you at closing with documentation. Warranty claims are handled by a named JK principal — not a general inbox."],
+  ];
+
+  return (
+    <ExpertiseSubPage
+      schemaId="jk-homes-schema"
+      schema={schema}
+      kicker="CUSTOM HOME BUILDER — JACKSONVILLE FL"
+      h1={<>Custom Home Builder<br/>Jacksonville FL.</>}
+      description="JK Prestige Constructor builds principal-led custom homes in Jacksonville, FL and across the US. Self-perform framing and finish carpentry, architect-integrated design-build, smart home systems coordination, and a signed one-year workmanship warranty on every project. Licensed, bonded, and insured since 2017."
+      ctaScrollId="homes-cta"
+      services={services}
+      stats={stats}
+      projectHighlights={highlights}
+      faqs={faqs}
+    />
+  );
+}
+
+/* --------- WAREHOUSES PAGE --------- */
+function WarehousesPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "GeneralContractor"],
+        "@id": "https://www.jkprestigeconstructor.com/#organization",
+        "name": "JK Prestige Constructor",
+        "telephone": "+19049440278",
+        "email": "jerekaine@hotmail.com",
+        "url": "https://www.jkprestigeconstructor.com",
+        "foundingDate": "2017",
+        "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+        "areaServed": { "@type": "Country", "name": "United States" }
+      },
+      {
+        "@type": "Service",
+        "name": "Warehouse Construction Jacksonville FL",
+        "provider": { "@id": "https://www.jkprestigeconstructor.com/#organization" },
+        "serviceType": "Industrial & Warehouse Construction",
+        "description": "Tilt-up concrete warehouse and industrial facility construction. Distribution centers, cold storage, manufacturing halls, and flex industrial. Self-perform concrete and tilt-up panel erection. GMP delivery.",
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "url": "https://www.jkprestigeconstructor.com/expertise/warehouses"
+      }
+    ]
+  };
+
+  const services = [
+    ["Tilt-Up Concrete Construction", "JK Prestige self-performs tilt-up concrete panel design coordination, slab casting, and panel erection — the fastest and most cost-efficient structural system for distribution and manufacturing facilities above 50,000 square feet. We optimize panel thickness, embed layout, and lift sequence during preconstruction to compress the structural milestone and get the shell enclosed weeks ahead of steel-frame alternatives."],
+    ["Distribution Center & Cross-Dock Design-Build", "Logistics facility design demands column-free clear spans, optimized truck court geometry, dock door counts matched to trailer volume, and floor flatness specifications tied to lift equipment. Our preconstruction team runs a logistics simulation before the site plan is finalized, locking the trailer apron, maneuvering radius, and ESFR fire suppression layout simultaneously — so the building works for operations on day one."],
+    ["Cold Storage & Temperature-Controlled Facilities", "Cold storage construction adds insulated panel systems, refrigeration equipment coordination, vapor barriers, and concrete floor heating to the standard warehouse scope. JK Prestige has coordinated refrigeration system rough-ins, blast-freeze room construction, and dock leveler specifications with refrigeration engineers and food-safety consultants on occupied and new-build facilities."],
+    ["Heavy-Power & Manufacturing Fit-Out", "Manufacturing facilities require 480V/3-phase power distribution, compressed air mains, process-cooling loops, and overhead crane runway design — all coordinated before the slab is poured. We integrate with the owner's equipment vendor and civil engineer during preconstruction to confirm anchor bolt locations, slab thicknesses, and utility stub-out points, eliminating field-coordination failures that blow manufacturing project schedules."],
+  ];
+
+  const stats = [
+    ["480K sqft", "Largest warehouse delivered"],
+    ["40 ft", "Max clear height achieved"],
+    ["14 months", "PortLogix — slab to CO"],
+    ["96 doors", "Dock doors on single project"],
+  ];
+
+  const highlights = PROJECTS.filter(p => ['p6','p7'].includes(p.id));
+
+  const faqs = [
+    ["What is tilt-up construction and why is it faster?", "Tilt-up is a construction method where concrete panels are cast flat on the building slab, then lifted into position with a crane. It eliminates the off-site fabrication and delivery lead time of precast panels and the multi-week erection schedule of structural steel framing. For buildings above 50,000 sqft in the Southeast, tilt-up typically saves four to eight weeks on the structural milestone and reduces material cost by 15–25% versus comparable steel systems."],
+    ["Can you handle the civil and site work as well as the building?", "Yes. JK Prestige manages civil and sitework as part of the GMP — grading, underground utilities, paving, trailer court, and storm drainage are included in our scope. We have established relationships with civil engineers in Jacksonville and across Florida who work from our project templates, which reduces the coordination gap between site and building that causes most logistics facility change orders."],
+    ["Do you build cold storage or food-grade facilities?", "Yes. Cold storage and food-grade facility construction require USDA/FDA finish standards, insulated metal panel systems, epoxy or resinous flooring, floor drains designed for sanitation, and specific door hardware. We coordinate with the refrigeration engineer and health department plan reviewers during preconstruction to ensure permit-ready documents and a compliant handover."],
+  ];
+
+  return (
+    <ExpertiseSubPage
+      schemaId="jk-warehouses-schema"
+      schema={schema}
+      kicker="WAREHOUSE & INDUSTRIAL CONSTRUCTION — JACKSONVILLE FL"
+      h1={<>Warehouse Construction<br/>Jacksonville FL.</>}
+      description="JK Prestige Constructor delivers tilt-up concrete warehouses, distribution centers, cold storage facilities, and manufacturing halls across Florida and the US. We self-perform concrete and tilt-up panel erection — compressing structural milestones and eliminating change-order risk from day one. GMP contracts, 14-month average schedule on 400K+ sqft projects."
+      ctaScrollId="warehouses-cta"
+      services={services}
+      stats={stats}
+      projectHighlights={highlights}
+      faqs={faqs}
+    />
+  );
+}
+
+/* --------- COMMERCIAL PAGE --------- */
+function CommercialPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "GeneralContractor"],
+        "@id": "https://www.jkprestigeconstructor.com/#organization",
+        "name": "JK Prestige Constructor",
+        "telephone": "+19049440278",
+        "email": "jerekaine@hotmail.com",
+        "url": "https://www.jkprestigeconstructor.com",
+        "foundingDate": "2017",
+        "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+        "areaServed": { "@type": "Country", "name": "United States" }
+      },
+      {
+        "@type": "Service",
+        "name": "Commercial Construction Jacksonville FL",
+        "provider": { "@id": "https://www.jkprestigeconstructor.com/#organization" },
+        "serviceType": "Commercial General Contracting",
+        "description": "Ground-up retail, tenant improvement, restaurant build-out, office fit-out, and mixed-use commercial construction in Jacksonville, FL and nationwide. Single-contract delivery, weekly owner reports, lease-commencement-date accountability.",
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "url": "https://www.jkprestigeconstructor.com/expertise/commercial"
+      }
+    ]
+  };
+
+  const services = [
+    ["Retail Shell & Anchor Pad Construction", "Ground-up retail shells, lifestyle centers, and big-box anchor pads from permit to turnover. JK Prestige manages landlord work across multi-tenant developments, coordinating phased openings that get anchor tenants trading before full-site completion — protecting the developer's lease commencement and anchor co-tenancy clauses simultaneously."],
+    ["Tenant Improvement & Interior Build-Out", "From vanilla-box white-tagging to full gut-and-rebuild tenant improvements, JK Prestige delivers on the turnover dates written into your lease. We read your lease exhibits, scope directly from the tenant improvement allowance document, and produce a punch-list-free handover that triggers your rent-free period — not a re-inspection cycle."],
+    ["Restaurant & Food-Service Construction", "Restaurant construction is one of the most complex tenant improvement types — commercial kitchen MEP, Type I hood coordination, walk-in refrigeration, fire suppression, grease trap installation, and health department plan review all run concurrently. JK Prestige has a standard pre-opening restaurant package that sequences these scopes to hit the liquor license inspection window and opening night without rework."],
+    ["Office Fit-Out & Corporate Interior", "Class A and creative office fit-outs, including raised-access flooring, structured cabling rough-in, full-height demountable partitions, and acoustic ceiling systems. JK manages the IT infrastructure coordination with your technology vendor, keeps the Certificate of Occupancy on the critical path, and delivers a commissioning walkthrough covering every system before your staff moves in."],
+  ];
+
+  const stats = [
+    ["$500K–$50M", "Commercial project range"],
+    ["52K sqft", "Largest retail center delivered"],
+    ["8 tenants", "Multi-tenant phased delivery"],
+    ["48 hrs", "Prelim estimate from documents"],
+  ];
+
+  const highlights = PROJECTS.filter(p => ['p8','p9'].includes(p.id));
+
+  const faqs = [
+    ["How do you protect our lease commencement date?", "We schedule backward from the lease commencement date on day one of preconstruction. Long-lead items — storefront systems, specialty flooring, kitchen equipment — are identified and ordered in the preconstruction phase, before the building permit is issued. We maintain a weekly look-ahead schedule and flag every constraint before it hits the critical path, not after."],
+    ["Can you handle multi-tenant projects where tenants have different architects?", "Yes. Multi-tenant commercial projects are a core competency for JK Prestige. We maintain a landlord work scope and coordinate each tenant's architect and their TI scope under a single master schedule. We run weekly coordination meetings with each tenant's team and document every interface decision — protecting the landlord from change-order exposure caused by tenant scope conflicts."],
+    ["Do you build outside Jacksonville, FL?", "Yes. JK Prestige operates nationally. We have delivered commercial projects in Florida, Illinois, Texas, and the Northeast. Our project management model — weekly owner reporting, principal accountability, GMP contracts — travels with us. We source local trade partners through our established subcontractor network and vet them against our standard safety and quality requirements."],
+  ];
+
+  return (
+    <ExpertiseSubPage
+      schemaId="jk-commercial-schema"
+      schema={schema}
+      kicker="COMMERCIAL CONSTRUCTION — JACKSONVILLE FL"
+      h1={<>Commercial Construction<br/>Jacksonville FL.</>}
+      description="JK Prestige Constructor delivers retail shell construction, tenant improvements, restaurant build-outs, and corporate office fit-outs across Jacksonville, FL and the US. Single GMP contract, weekly owner reports, and a named principal accountable to your lease commencement date. Projects from $500K to $50M."
+      ctaScrollId="commercial-cta"
+      services={services}
+      stats={stats}
+      projectHighlights={highlights}
+      faqs={faqs}
+    />
+  );
+}
+
+/* --------- RENOVATIONS PAGE --------- */
+function RenovationsPage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "GeneralContractor"],
+        "@id": "https://www.jkprestigeconstructor.com/#organization",
+        "name": "JK Prestige Constructor",
+        "telephone": "+19049440278",
+        "email": "jerekaine@hotmail.com",
+        "url": "https://www.jkprestigeconstructor.com",
+        "foundingDate": "2017",
+        "address": { "@type": "PostalAddress", "addressLocality": "Jacksonville", "addressRegion": "FL", "addressCountry": "US" },
+        "areaServed": { "@type": "Country", "name": "United States" }
+      },
+      {
+        "@type": "Service",
+        "name": "Renovation Contractor Jacksonville FL",
+        "provider": { "@id": "https://www.jkprestigeconstructor.com/#organization" },
+        "serviceType": "Renovation & Remodeling Contractor",
+        "description": "Whole-home renovations, kitchen and bath remodels, historic restorations, and occupied-building phased construction in Jacksonville, FL and nationwide. Pre-demo documentation, licensed principal accountability, single mobilization.",
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "url": "https://www.jkprestigeconstructor.com/expertise/renovations"
+      }
+    ]
+  };
+
+  const services = [
+    ["Whole-Home Gut Renovation", "A full gut renovation — where every surface, system, and structural element is addressed in a single mobilization — is the most efficient way to modernize a home and reset its systems life cycle. JK Prestige pre-documents every wall cavity before demo begins, coordinates the permit package for structural, electrical, and plumbing simultaneously, and sequences the work so the home is water-tight and mechanically complete before finish trades begin. One contract. One schedule. One principal."],
+    ["Kitchen & Bath Renovation", "Kitchen and bath renovations live and die on subcontractor coordination. JK Prestige self-performs the rough carpentry and finish millwork and manages the plumber, electrician, tile setter, and appliance installer as a sequenced package — not individual subs you have to chase. We produce a cabinet and fixture shop drawing review before a single item ships, so field conflicts are resolved on paper, not in your kitchen."],
+    ["Historic Restoration & Adaptive Reuse", "Historic renovation adds a layer of regulatory complexity — SHPO review, Secretary of the Interior's Standards compliance, existing material documentation, and mortar analysis for masonry repointing. JK Prestige has navigated historic-district requirements in Boston and New York, delivering gut-renovated interiors within fully preserved facades without a single historic-district variance denial."],
+    ["Occupied-Building Phased Construction", "When the building cannot go dark during renovation — whether a commercial tenant, multi-family building, or occupied residence — construction must be sequenced in phases around the occupants' schedule. JK Prestige produces a phasing plan before mobilization, including temporary partitions, dust containment barriers, utility swing connections, and a room-by-room completion sequence that minimizes disruption while maintaining a buildable critical path."],
+  ];
+
+  const stats = [
+    ["5,600 sqft", "Largest whole-home remodel"],
+    ["7 months", "Avg occupied renovation duration"],
+    ["1 permit", "Single mobilization, one package"],
+    ["SHPO", "Historic-district compliant experience"],
+  ];
+
+  const highlights = PROJECTS.filter(p => ['p10','p11'].includes(p.id));
+
+  const faqs = [
+    ["How do you price a whole-home renovation before walls are open?", "We start with an allowance-based preliminary budget based on the visible scope and finish level — then we build in a pre-construction line item for selective demolition and an investigative scope to open targeted walls and assess MEP condition before the full contract is signed. This eliminates the most common renovation surprise: unknown conditions discovered mid-project. You have a firm number before the majority of work begins."],
+    ["Can we live in the house during renovation?", "In most cases, yes — with conditions. JK Prestige specializes in occupied-building phasing, which means we isolate active work areas with HEPA-filtered dust barriers, maintain one functioning bathroom and kitchen at all times during the sequence, and schedule noisy or disruptive work (demo, structural) during agreed daytime hours. The phasing plan is presented to you before mobilization and updated weekly."],
+    ["Do you handle asbestos and lead abatement?", "We conduct a pre-demo hazardous material assessment on all renovation projects built before 1980. If asbestos-containing materials or lead paint are identified, we engage a licensed abatement contractor — coordinated under our permit and schedule — before any demolition begins. All abatement work is documented with clearance reports provided to the owner at project close."],
+  ];
+
+  return (
+    <ExpertiseSubPage
+      schemaId="jk-renovations-schema"
+      schema={schema}
+      kicker="RENOVATION CONTRACTOR — JACKSONVILLE FL"
+      h1={<>Renovation Contractor<br/>Jacksonville FL.</>}
+      description="JK Prestige Constructor has been Jacksonville's renovation contractor since 2017 — whole-home gut renovations, kitchen and bath remodels, historic restorations, and occupied-building phased construction. Pre-demo documentation, hazardous material assessment, and a licensed principal accountable from the first site walk through the final punch list."
+      ctaScrollId="renovations-cta"
+      services={services}
+      stats={stats}
+      projectHighlights={highlights}
+      faqs={faqs}
+    />
+  );
+}
+
+Object.assign(window, { AboutPage, ExpertisePage, RoofingPage, ProjectsPage, ContactPage, NewsroomPage, CareersPage, JKWayPage, TermsPage, PrivacyPage, PROJECTS, HospitalsPage, CustomHomesPage, WarehousesPage, CommercialPage, RenovationsPage });

@@ -226,12 +226,12 @@ function StatsStrip(){
    Expertise grid
    ========================================================= */
 const EXPERTISE = [
-  { id:'medical', title:'Hospitals & Medical', kicker:'GROUND-UP', blurb:'Infection-control-ready medical facilities with ICRA discipline.', slug:'expertise-medical-4x3' },
-  { id:'homes', title:'Custom Homes', kicker:'RESIDENTIAL', blurb:'From architect-led new builds to multi-generational estates.', slug:'expertise-custom-home-4x3' },
-  { id:'warehouses', title:'Warehouses & Industrial', kicker:'LOGISTICS', blurb:'Tilt-up shells, clear-span spaces, loading docks and yards.', slug:'expertise-warehouse-4x3' },
-  { id:'commercial', title:'Commercial & Retail', kicker:'TENANT FIT-OUT', blurb:'Multi-tenant, retail, restaurant, and office tenant improvements.', slug:'expertise-commercial-4x3' },
-  { id:'reno', title:'Full Renovations', kicker:'GUT-RENO', blurb:'Historic, residential and commercial transformations.', slug:'expertise-renovation-4x3' },
-  { id:'roofing', title:'Roofing', kicker:'RESI + COMMERCIAL', blurb:'Shingle, metal, TPO and EPDM. Storm and insurance claims.', slug:'expertise-roofing-4x3' },
+  { id:'medical', title:'Hospitals & Medical', kicker:'GROUND-UP', blurb:'Infection-control-ready medical facilities with ICRA discipline.', slug:'expertise-medical-4x3', route:'/expertise/hospitals' },
+  { id:'homes', title:'Custom Homes', kicker:'RESIDENTIAL', blurb:'From architect-led new builds to multi-generational estates.', slug:'expertise-custom-home-4x3', route:'/expertise/homes' },
+  { id:'warehouses', title:'Warehouses & Industrial', kicker:'LOGISTICS', blurb:'Tilt-up shells, clear-span spaces, loading docks and yards.', slug:'expertise-warehouse-4x3', route:'/expertise/warehouses' },
+  { id:'commercial', title:'Commercial & Retail', kicker:'TENANT FIT-OUT', blurb:'Multi-tenant, retail, restaurant, and office tenant improvements.', slug:'expertise-commercial-4x3', route:'/expertise/commercial' },
+  { id:'reno', title:'Full Renovations', kicker:'GUT-RENO', blurb:'Historic, residential and commercial transformations.', slug:'expertise-renovation-4x3', route:'/expertise/renovations' },
+  { id:'roofing', title:'Roofing', kicker:'RESI + COMMERCIAL', blurb:'Shingle, metal, TPO and EPDM. Storm and insurance claims.', slug:'expertise-roofing-4x3', route:'/roofing' },
 ];
 
 function ExpertiseCard({ item, onClick }) {
@@ -296,7 +296,7 @@ function ExpertiseGrid() {
         <div style={{display:'grid', gridTemplateColumns:'repeat(3, 1fr)', gap:1, background:'var(--hairline)'}} className="exp-grid">
           {EXPERTISE.map((it,i)=>(
             <Reveal key={it.id} delay={i*60}>
-              <ExpertiseCard item={it} onClick={()=>navigate('/expertise')}/>
+              <ExpertiseCard item={it} onClick={()=>navigate(it.route || '/expertise')}/>
             </Reveal>
           ))}
         </div>
@@ -911,7 +911,7 @@ function Footer() {
             ['The JK Way','/the-jk-way'],['Expertise','/expertise'],['Projects','/projects'],['Contact','/contact']
           ]} navigate={navigate}/>
           <FooterCol title="EXPERTISE" items={[
-            ['Hospitals','/expertise'],['Custom Homes','/expertise'],['Warehouses','/expertise'],['Renovations','/expertise']
+            ['Hospitals','/expertise/hospitals'],['Custom Homes','/expertise/homes'],['Warehouses','/expertise/warehouses'],['Renovations','/expertise/renovations']
           ]} navigate={navigate}/>
           <FooterCol title="SERVICES" items={[
             ['Ground-up','/expertise'],['Roofing','/roofing'],['Subcontracting','/expertise'],['Preconstruction','/the-jk-way']
