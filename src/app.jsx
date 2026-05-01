@@ -51,6 +51,13 @@ function App() {
     return ()=> window.removeEventListener('hashchange', onHash);
   },[]);
 
+  /* Footer link events (dispatched from sections.jsx footer) */
+  useEffect(()=>{
+    const handler = (e)=> navigate(e.detail);
+    window.addEventListener('jk-navigate', handler);
+    return ()=> window.removeEventListener('jk-navigate', handler);
+  },[route]);
+
   return (
     <AppCtx.Provider value={{ route, navigate, audience, setAudience, tweaks, setTweaks }}>
       <Nav/>
@@ -61,6 +68,8 @@ function App() {
         {route === '/projects' && <ProjectsPage/>}
         {route === '/roofing' && <RoofingPage/>}
         {route === '/contact' && <ContactPage/>}
+        {route === '/terms' && <TermsPage/>}
+        {route === '/privacy' && <PrivacyPage/>}
       </div>
       <Footer/>
 

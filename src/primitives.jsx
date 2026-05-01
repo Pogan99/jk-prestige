@@ -165,50 +165,51 @@ const JK_ASSET_MAP = {
   'hero-poster':                 'assets/images/hf_20260422_074803_534a61f3-bedb-4292-bbf9-ff8a891eaa96.png',
 
   /* ---- roofing division ---- */
-  'roofing-hero-residential-gable-16x9': 'assets/images/hf_20260501_174359_f58bf292-56d0-4d44-bd7c-e18188cfb45e.png',
+  /* download order by actual file timestamp (stat -f %Sm) — 174513 was regenerated late */
+  'roofing-hero-residential-gable-16x9': 'assets/images/hf_20260501_174359_f58bf292-56d0-4d44-bd7c-e18188cfb45e.jpg',
 
   /* ---- mega menu — about ---- */
-  'mega-about-story-16x9':       'assets/images/hf_20260501_174410_19d6fb4e-bda3-4062-acbb-81d3143102ae.png',
-  'mega-about-leadership-16x9':  'assets/images/hf_20260501_174425_06a5a5ef-fade-4f8c-8f6b-61821c3adb75.png',
-  'mega-about-community-16x9':   'assets/images/hf_20260501_174436_3967cfc6-11a0-4815-872c-fda18966016d.png',
+  'mega-about-story-16x9':       'assets/images/hf_20260501_174410_19d6fb4e-bda3-4062-acbb-81d3143102ae.jpg',
+  'mega-about-leadership-16x9':  'assets/images/hf_20260501_174425_06a5a5ef-fade-4f8c-8f6b-61821c3adb75.jpg',
+  'mega-about-community-16x9':   'assets/images/hf_20260501_174436_3967cfc6-11a0-4815-872c-fda18966016d.jpg',
 
   /* ---- mega menu — expertise ---- */
-  'mega-expertise-homes-16x9':       'assets/images/hf_20260501_174449_3d873deb-256f-48b3-b190-d4fa4c3a3b15.png',
-  'mega-expertise-medical-16x9':     'assets/images/hf_20260501_174453_6207600b-290c-4599-a252-8c6706bbcfd8.png',
-  'mega-expertise-warehouses-16x9':  'assets/images/hf_20260501_174501_820b60d0-99ee-4455-b136-1990c1a3cc37.png',
+  'mega-expertise-homes-16x9':       'assets/images/hf_20260501_174449_3d873deb-256f-48b3-b190-d4fa4c3a3b15.jpg',
+  'mega-expertise-medical-16x9':     'assets/images/hf_20260501_174453_6207600b-290c-4599-a252-8c6706bbcfd8.jpg',
+  'mega-expertise-warehouses-16x9':  'assets/images/hf_20260501_174501_820b60d0-99ee-4455-b136-1990c1a3cc37.jpg',
 
-  /* ---- mega menu — jk way ---- */
-  'mega-jkway-lean-16x9':        'assets/images/hf_20260501_174513_59396b79-de97-4537-99f8-0297dd5c52fa.png',
-  'mega-jkway-safety-16x9':      'assets/images/hf_20260501_174520_8e97d7a0-924f-4376-8c31-47b46dbe62cf.png',
-  'mega-jkway-vdc-16x9':         'assets/images/hf_20260501_174525_82f6ff4b-9691-4d3e-b9bf-3aeaedd7114d.png',
+  /* ---- mega menu — jk way (174520 is actual #8 by download time; 174513 was late) ---- */
+  'mega-jkway-lean-16x9':        'assets/images/hf_20260501_174520_8e97d7a0-924f-4376-8c31-47b46dbe62cf.jpg',
+  'mega-jkway-safety-16x9':      'assets/images/hf_20260501_174525_82f6ff4b-9691-4d3e-b9bf-3aeaedd7114d.jpg',
+  'mega-jkway-vdc-16x9':         'assets/images/hf_20260501_174533_2fc30839-3a4d-47fe-8231-18524ac7b56b.jpg',
 
   /* ---- mega menu — roofing ---- */
-  'mega-roofing-residential-16x9':'assets/images/hf_20260501_174533_2fc30839-3a4d-47fe-8231-18524ac7b56b.png',
-  'mega-roofing-commercial-16x9': 'assets/images/hf_20260501_174539_d6e2468a-2dd1-41e1-93ad-12dc392f7827.png',
-  'mega-roofing-claims-16x9':     'assets/images/hf_20260501_174546_4a0cdb5e-2476-44c4-a6c9-e42013cbe376.png',
+  'mega-roofing-residential-16x9':'assets/images/hf_20260501_174539_d6e2468a-2dd1-41e1-93ad-12dc392f7827.jpg',
+  'mega-roofing-commercial-16x9': 'assets/images/hf_20260501_174546_4a0cdb5e-2476-44c4-a6c9-e42013cbe376.jpg',
+  'mega-roofing-claims-16x9':     'assets/images/hf_20260501_174551_0b35da03-6f83-4b7a-9ab3-109f100bf874.jpg',
 
   /* ---- news / from the field ---- */
-  'news-budget-reno-16x9':       'assets/images/hf_20260501_174551_0b35da03-6f83-4b7a-9ab3-109f100bf874.png',
-  'news-roofing-winter-16x9':    'assets/images/hf_20260501_174558_f441e1f6-a055-426d-ada1-fb356bea6acc.png',
-  'news-tiltup-16x9':            'assets/images/hf_20260501_174605_97cb11ae-5314-48a9-8faf-ae4ea2d094b4.png',
+  'news-budget-reno-16x9':       'assets/images/hf_20260501_174558_f441e1f6-a055-426d-ada1-fb356bea6acc.jpg',
+  'news-roofing-winter-16x9':    'assets/images/hf_20260501_174605_97cb11ae-5314-48a9-8faf-ae4ea2d094b4.jpg',
+  'news-tiltup-16x9':            'assets/images/hf_20260501_174610_438bda6b-f1f5-4eec-89fe-d66529aac53c.jpg',
 
   /* ---- project cards ---- */
-  'proj-meridian-medical-16x9':  'assets/images/hf_20260501_174610_438bda6b-f1f5-4eec-89fe-d66529aac53c.png',
-  'proj-cedar-pediatric-16x9':   'assets/images/hf_20260501_174615_bc52d3f1-3560-436e-ab4c-222c18e87599.png',
-  'proj-hollowbrook-16x9':       'assets/images/hf_20260501_174622_d4e5ee71-855d-4b35-8e49-236179bbc1f7.png',
-  'proj-silvergrove-16x9':       'assets/images/hf_20260501_174628_b9ac2329-3c4c-4a44-9273-8b10829a6a78.png',
-  'proj-oakhill-16x9':           'assets/images/hf_20260501_174635_17e7358c-bba1-40c9-8eac-bafd643c11e6.png',
-  'proj-portlogix-16x9':         'assets/images/hf_20260501_174640_9ddf4397-539a-4ad8-8a80-f8ac1191d951.png',
-  'proj-northbeam-16x9':         'assets/images/hf_20260501_174647_193cfc12-0149-46ac-916e-0585d4854c35.png',
-  'proj-promenade-16x9':         'assets/images/hf_20260501_174654_167b383b-725d-433b-a264-45c7723b1308.png',
-  'proj-ironworks-16x9':         'assets/images/hf_20260501_174659_7803e113-b006-4945-ae35-22d22533044c.png',
-  'proj-harbor-reno-16x9':       'assets/images/hf_20260501_174705_246bb94e-ca30-45c3-881c-6e802e39bfdd.png',
-  'proj-linden-reno-16x9':       'assets/images/hf_20260501_174709_54ace871-aedd-4195-aea5-23f5674712cc.png',
-  'proj-parkside-roofing-16x9':  'assets/images/hf_20260501_174716_2950dfd7-923a-4142-bbb3-29727dd3d2de.png',
+  'proj-meridian-medical-16x9':  'assets/images/hf_20260501_174615_bc52d3f1-3560-436e-ab4c-222c18e87599.jpg',
+  'proj-cedar-pediatric-16x9':   'assets/images/hf_20260501_174622_d4e5ee71-855d-4b35-8e49-236179bbc1f7.jpg',
+  'proj-hollowbrook-16x9':       'assets/images/hf_20260501_174628_b9ac2329-3c4c-4a44-9273-8b10829a6a78.jpg',
+  'proj-silvergrove-16x9':       'assets/images/hf_20260501_174635_17e7358c-bba1-40c9-8eac-bafd643c11e6.jpg',
+  'proj-oakhill-16x9':           'assets/images/hf_20260501_174640_9ddf4397-539a-4ad8-8a80-f8ac1191d951.jpg',
+  'proj-portlogix-16x9':         'assets/images/hf_20260501_174647_193cfc12-0149-46ac-916e-0585d4854c35.jpg',
+  'proj-northbeam-16x9':         'assets/images/hf_20260501_174654_167b383b-725d-433b-a264-45c7723b1308.jpg',
+  'proj-promenade-16x9':         'assets/images/hf_20260501_174659_7803e113-b006-4945-ae35-22d22533044c.jpg',
+  'proj-ironworks-16x9':         'assets/images/hf_20260501_174705_246bb94e-ca30-45c3-881c-6e802e39bfdd.jpg',
+  'proj-harbor-reno-16x9':       'assets/images/hf_20260501_174709_54ace871-aedd-4195-aea5-23f5674712cc.jpg',
+  'proj-linden-reno-16x9':       'assets/images/hf_20260501_174716_2950dfd7-923a-4142-bbb3-29727dd3d2de.jpg',
+  'proj-parkside-roofing-16x9':  'assets/images/hf_20260501_174513_59396b79-de97-4537-99f8-0297dd5c52fa.jpg',
 
   /* ---- leadership headshots ---- */
-  'leader-1-3x4':                'assets/images/hf_20260501_174721_5b01324c-b3e0-40b0-af61-b9bdb93724c5.png',
-  'leader-2-3x4':                'assets/images/hf_20260501_174730_604fa6a3-483e-44da-9e8d-ac565900d4d5.png',
+  'leader-1-3x4':                'assets/images/hf_20260501_174721_5b01324c-b3e0-40b0-af61-b9bdb93724c5.jpg',
+  'leader-2-3x4':                'assets/images/hf_20260501_174730_604fa6a3-483e-44da-9e8d-ac565900d4d5.jpg',
   /* leader-3-3x4, leader-4-3x4, leader-5-3x4 — images pending */
 };
 

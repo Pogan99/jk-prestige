@@ -18,7 +18,7 @@ const MEGA_CONTENT = {
   },
   jkway: {
     title:'How we deliver',
-    body:"One contract. One guarantee. 100% satisfaction. Here's the operating system behind it.",
+    body:"Our 5-step process — Preconstruction through Closeout. VDC, lean scheduling, OSHA 30 safety culture, and owner-direct communication on every project.",
     cards:[
       {k:'SAFETY', t:'Lead With Safety', slug:'mega-jkway-safety-16x9'},
       {k:'LEAN', t:'Lean Delivery Playbook', slug:'mega-jkway-lean-16x9'},
@@ -27,7 +27,7 @@ const MEGA_CONTENT = {
   },
   expertise: {
     title:'What we build',
-    body:"Ground-up or gut-reno. From hospitals to homes — and every trade in between.",
+    body:"Ground-up construction, custom homes, hospitals, warehouses & industrial, commercial builds, and full renovations. Licensed, bonded and insured. Jacksonville, FL.",
     cards:[
       {k:'GROUND-UP', t:'Hospitals & Medical', slug:'mega-expertise-medical-16x9'},
       {k:'RESIDENTIAL', t:'Custom Homes', slug:'mega-expertise-homes-16x9'},
@@ -36,12 +36,22 @@ const MEGA_CONTENT = {
   },
   roofing: {
     title:'Roofing division',
-    body:"New roofs. Tear-offs. Re-roofs. Storm repair. Residential shingle + commercial flat.",
+    body:"Residential and commercial roofing. New roofs, tear-offs, storm & insurance claims. GAF Master Elite certified. Free inspection. Jacksonville, FL.",
     cards:[
       {k:'RESIDENTIAL', t:'Shingle & Metal Roofing', slug:'mega-roofing-residential-16x9'},
       {k:'COMMERCIAL', t:'TPO · EPDM · Flat Systems', slug:'mega-roofing-commercial-16x9'},
       {k:'CLAIMS', t:'Storm & Insurance Claims', slug:'mega-roofing-claims-16x9'},
     ],
+  },
+  projects: {
+    title:'Our work',
+    body:"500+ projects delivered since 2017. Hospitals, custom homes, warehouses, commercial, renovations, and roofing across Florida and the US.",
+    cards:[],
+  },
+  contact: {
+    title:'Get in touch',
+    body:"Get a free 48-hour estimate. Talk to a principal — not a call center. Call (904) 944-0278 or email jerekaine@hotmail.com.",
+    cards:[],
   },
 };
 

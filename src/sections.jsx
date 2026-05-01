@@ -2,32 +2,102 @@
    AudienceSwitcher — segmented control + reordering
    ========================================================= */
 function AudienceSwitcher() {
-  const { audience, setAudience } = useApp();
+  const { audience, setAudience, navigate } = useApp();
+
+  const homePanel = {
+    headline: "Your home. Your timeline. Your budget — protected.",
+    body: "We work directly with homeowners on custom new builds, full renovations, roofing replacements, and everything in between. No layers of middlemen. You deal with a principal from day one.",
+    bullets: [
+      "Fixed-price contracts — no surprise change orders",
+      "Self-perform framing, drywall, roofing, and finish work",
+      "48-hour written estimate turnaround",
+      "One supervisor on your jobsite, one number to call",
+      "Licensed, bonded, and insured in Florida",
+      "Transparent scope documentation before we break ground",
+    ],
+    cta: "Get a free estimate",
+    href: '/contact',
+  };
+
+  const devPanel = {
+    headline: "Ground-up. On spec. On schedule. One contract.",
+    body: "Developers, hospital systems, logistics owners, and GC partners choose JK Prestige Constructor for complex Florida builds where execution risk is not an option. We self-perform, we preconstruct, and we close punch lists.",
+    bullets: [
+      "Ground-up construction — commercial, medical, industrial",
+      "Hospital and medical facility builds (ICRA-compliant)",
+      "Self-perform concrete, framing, drywall, roofing",
+      "Vetted, insured sub network for every remaining trade",
+      "Lean scheduling and owner-direct milestone reporting",
+      "Available as a trade partner or full general contractor",
+    ],
+    cta: "See our expertise",
+    href: '/expertise',
+  };
+
+  const panel = audience === 'developer' ? devPanel : homePanel;
+
   return (
-    <div style={{background:'var(--bg-primary)', padding:'40px 0 0'}}>
-      <div className="wrap" style={{display:'flex', justifyContent:'center'}}>
+    <div style={{background:'var(--bg-primary)', padding:'40px 0'}}>
+      <div className="wrap">
+        {/* Toggle */}
+        <div style={{display:'flex', justifyContent:'center', marginBottom:40}}>
+          <div style={{
+            display:'inline-flex', border:'1px solid var(--hairline)',
+            padding:4, gap:4, background:'rgba(0,0,0,.2)'
+          }}>
+            {[
+              {id:'homeowner', label:"I'm a Homeowner"},
+              {id:'developer', label:"I'm a Developer / GC"},
+            ].map(o=>{
+              const on = audience===o.id;
+              return (
+                <button key={o.id} onClick={()=>setAudience(o.id)}
+                  className="mono"
+                  style={{
+                    padding:'14px 22px',
+                    background: on? 'var(--accent)':'transparent',
+                    color: on? '#fff':'var(--fg-muted)',
+                    transition:'all .25s ease',
+                  }}>{o.label.toUpperCase()}</button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Panel */}
         <div style={{
-          display:'inline-flex', border:'1px solid var(--hairline)',
-          padding:4, gap:4, background:'rgba(0,0,0,.2)'
-        }}>
-          {[
-            {id:'homeowner', label:"I'm a Homeowner"},
-            {id:'developer', label:"I'm a Developer / GC"},
-          ].map(o=>{
-            const on = audience===o.id;
-            return (
-              <button key={o.id} onClick={()=>setAudience(o.id)}
-                className="mono"
-                style={{
-                  padding:'14px 22px',
-                  background: on? 'var(--accent)':'transparent',
-                  color: on? '#fff':'var(--fg-muted)',
-                  transition:'all .25s ease',
-                }}>{o.label.toUpperCase()}</button>
-            );
-          })}
+          border:'1px solid var(--hairline)',
+          background:'var(--bg-elev)',
+          display:'grid',
+          gridTemplateColumns:'1.1fr 1fr',
+          gap:'clamp(32px,5vw,64px)',
+          padding:'clamp(32px,4vw,56px)',
+          transition:'opacity .2s ease',
+        }} className="audience-panel">
+          <div>
+            <h3 style={{fontFamily:'var(--display)', fontSize:'clamp(28px,3.2vw,48px)', letterSpacing:'-.02em', lineHeight:1.05, color:'#fff', marginBottom:18}}>
+              {panel.headline}
+            </h3>
+            <p style={{fontSize:16, lineHeight:1.7, color:'var(--fg-muted)', marginBottom:28, maxWidth:520}}>
+              {panel.body}
+            </p>
+            <button className="btn btn-primary" onClick={()=>navigate(panel.href)}>
+              {panel.cta} <Arrow/>
+            </button>
+          </div>
+          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(0,0,0,.25)', alignSelf:'start'}}>
+            {panel.bullets.map((b,i)=>(
+              <div key={i} style={{background:'var(--bg-elev)', padding:'18px 16px', display:'flex', alignItems:'flex-start', gap:10}}>
+                <span style={{width:6, height:6, background:'var(--accent)', marginTop:6, flexShrink:0}}/>
+                <span style={{fontSize:13, lineHeight:1.5, color:'#fff', fontFamily:'var(--mono)', letterSpacing:'.04em'}}>{b.toUpperCase()}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+      <style>{`
+        @media (max-width:860px){ .audience-panel{grid-template-columns:1fr !important} }
+      `}</style>
     </div>
   );
 }
@@ -39,16 +109,16 @@ function WhoWeAre() {
   const { audience } = useApp();
   const homeCopy = (
     <>
-      <p>For a quarter-century, JK Prestige has been the builder families trust when the outcome matters — the forever home, the long-planned remodel, the roof that has to last.</p>
-      <p>We're family-owned. We self-perform framing, concrete, drywall, finish carpentry and roofing, and we vet every specialty trade we bring in. You sign one contract. You talk to a principal — not a call center.</p>
-      <p>Honest numbers from day one. Fixed-price contracts available. Licensed, bonded and insured. Based in Jacksonville, FL.</p>
+      <p>JK Prestige Constructor is a family-operated general contractor headquartered in Jacksonville, FL. Founded in 2017, we've built our reputation on one principle: the person who signs your contract is the person who answers your calls and walks your jobsite.</p>
+      <p>We self-perform framing, concrete, drywall, finish carpentry, and roofing — trades most GCs sub out. That means tighter schedules, cleaner handoffs, and one throat to choke if anything falls short. Every specialty trade we bring in is licensed, insured, and personally vetted by our principals.</p>
+      <p>Fixed-price contracts available. Honest estimates in 48 hours. Licensed, bonded, and insured across Florida and beyond.</p>
     </>
   );
   const devCopy = (
     <>
-      <p>Developers, hospital systems, logistics owners and architects have relied on JK Prestige since 2017 to deliver ground-up builds on schedule, on spec, and within a defensible pricing envelope.</p>
-      <p>Turnkey or trade-partner — we self-perform the critical path (concrete, framing, finish, roofing) and manage a vetted, insured sub network across every discipline. One contract. One schedule. One line of accountability.</p>
-      <p>Licensed, bonded and insured. Based in Jacksonville, FL. Preconstruction, VDC, lean scheduling and owner-first communication baked in.</p>
+      <p>Since 2017, developers, hospital systems, logistics owners, and GC partners across Florida have trusted JK Prestige Constructor for ground-up construction that closes on schedule and on budget. We're not a broker — we build.</p>
+      <p>We self-perform the critical-path trades (concrete, framing, drywall, finish carpentry, roofing) and manage a vetted, insured subcontractor network across every remaining discipline. One contract. One schedule. One line of accountability from preconstruction through punch list. Our hospital construction work in Florida is ICRA-compliant and infection-control ready.</p>
+      <p>Based in Jacksonville, FL. Licensed, bonded, and insured. Owner-direct communication at every milestone — no account managers, no hand-offs.</p>
     </>
   );
   return (
@@ -90,19 +160,19 @@ function TopoWatermark(){
         ))}
       </svg>
       <div style={{position:'absolute', left:32, top:32, right:32}}>
-        <div className="mono" style={{color:'var(--accent)'}}>// EST. 2000 · FAMILY OPERATED</div>
+        <div className="mono" style={{color:'var(--accent)'}}>// EST. 2017 · FAMILY OPERATED</div>
         <div style={{fontFamily:'var(--display)', fontSize:'clamp(36px,4vw,56px)', letterSpacing:'-.02em', lineHeight:.95, marginTop:12}}>
-          Twenty-five years.<br/>One standard.
+          Built in Florida.<br/>One standard.
         </div>
       </div>
       <div style={{position:'absolute', left:32, bottom:32, right:32, display:'flex', justifyContent:'space-between', alignItems:'flex-end'}}>
         <div>
           <div className="mono" style={{color:'var(--fg-dim)'}}>LATITUDE</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>40°42′46″N</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>30°19′55″N</div>
         </div>
         <div>
           <div className="mono" style={{color:'var(--fg-dim)'}}>LONGITUDE</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>74°00′21″W</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>81°39′21″W</div>
         </div>
         <div>
           <div className="mono" style={{color:'var(--fg-dim)'}}>FILE</div>
@@ -244,9 +314,21 @@ function ExpertiseGrid() {
    ========================================================= */
 function TurnkeyPromise() {
   const steps = [
-    {n:'01', t:'We scope & price.', d:'Site visit, scope definition, transparent numbers in 48 hours.'},
-    {n:'02', t:'We hire & manage every trade.', d:'Self-perform + vetted subs. One schedule. One supervisor. One line of accountability.'},
-    {n:'03', t:'You get one contract, one guarantee, 100% satisfaction.', d:'No finger-pointing. No change-order theatre. A principal owns the outcome.'},
+    {
+      n:'01',
+      t:'Self-Perform Trades.',
+      d:'We put our own crews on concrete, framing, drywall, finish carpentry, and roofing — not brokers, not strangers. Owners and GC partners get faster schedules, tighter quality control, and one foreman who reads prints and closes punch lists without drama.',
+    },
+    {
+      n:'02',
+      t:'Fixed-Price Contracts.',
+      d:'Before we break ground, you have a number and a scope in writing. We don\'t run change-order theater. If scope doesn\'t change, the price doesn\'t change. That commitment is what separates JK Prestige from every other general contractor in Jacksonville, FL.',
+    },
+    {
+      n:'03',
+      t:'Owner-Direct Communication.',
+      d:'You\'ll never be handed off to a project coordinator you\'ve never met. A JK principal is reachable by phone from first call to final walkthrough. One decision-maker. One line of accountability. One guarantee behind every project we deliver.',
+    },
   ];
   return (
     <section className="section" style={{background:'var(--bg-invert)', color:'#fff'}}>
@@ -401,7 +483,7 @@ function LetterMaskVideo() {
 
         {/* bottom overlay — kicker + progress */}
         <div style={{position:'absolute', bottom:48, left:0, right:0, padding:'0 clamp(20px,4vw,48px)', display:'flex', justifyContent:'space-between', alignItems:'center', gap:24, flexWrap:'wrap', zIndex:3}}>
-          <div className="mono" style={{color:'var(--accent)'}}>// 25 YEARS OF CRAFTSMANSHIP · SCROLL TO REVEAL</div>
+          <div className="mono" style={{color:'var(--accent)'}}>// EST. 2017 · BUILT IN FLORIDA · SCROLL TO REVEAL</div>
           <div style={{display:'flex', alignItems:'center', gap:14}}>
             <span className="mono" style={{color:'#fff'}}>{String(pct).padStart(3,'0')}%</span>
             <div style={{width:220, height:3, background:'rgba(255,255,255,.15)', position:'relative', overflow:'hidden'}}>
@@ -415,34 +497,19 @@ function LetterMaskVideo() {
 }
 
 /* =========================================================
-   USMap — project pins
+   USMap — Google Maps embed + past project states
    ========================================================= */
-const US_PINS = [
-  {state:'FL', x:710, y:360, type:'HQ', label:'Headquarters · Jacksonville, FL'},
-  {state:'NJ', x:760, y:180, type:'Active'},
-  {state:'PA', x:720, y:175, type:'Active'},
-  {state:'MD', x:745, y:205, type:'Active'},
-  {state:'VA', x:730, y:220, type:'Active'},
-  {state:'NC', x:715, y:260, type:'Active'},
-  {state:'NY', x:780, y:160, type:'Active'},
-  {state:'GA', x:685, y:295, type:'Active'},
-  {state:'TX', x:450, y:340, type:'Active'},
-  {state:'CO', x:360, y:230, type:'Active'},
-  {state:'AZ', x:250, y:290, type:'Active'},
-  {state:'CA', x:115, y:240, type:'Active'},
-  {state:'IL', x:580, y:200, type:'Active'},
-  {state:'OH', x:660, y:195, type:'Active'},
-  {state:'MA', x:815, y:140, type:'Active'},
-];
+const PAST_PROJECT_STATES = ['FL','NJ','PA','MD','VA','NC','NY','GA','TX','CO','AZ','CA','IL','OH','MA'];
 
 function USMap() {
-  const [visible, setVisible] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const ref = useRef(null);
   useEffect(()=>{
-    const io = new IntersectionObserver(([e])=> { if(e.isIntersecting){ setVisible(true); io.disconnect(); }}, {threshold:.3});
+    const io = new IntersectionObserver(([e])=> { if(e.isIntersecting){ setLoaded(true); io.disconnect(); }}, {threshold:.15});
     if (ref.current) io.observe(ref.current);
     return ()=>io.disconnect();
   },[]);
+
   return (
     <section className="section" style={{background:'var(--bg-primary)'}} ref={ref}>
       <div className="wrap">
@@ -456,28 +523,49 @@ function USMap() {
             </div>
             <div style={{display:'flex', gap:24, alignItems:'center'}}>
               <Legend dot="var(--accent-hot)" label="Headquarters"/>
-              <Legend dot="var(--accent)" label="Active projects"/>
+              <Legend dot="var(--accent)" label="Past projects"/>
             </div>
           </div>
         </Reveal>
 
-        <div style={{position:'relative', background:'#25252E', border:'1px solid var(--hairline)', padding:'clamp(20px,3vw,40px)'}}>
-          <svg viewBox="0 0 960 520" style={{width:'100%', height:'auto', display:'block'}}>
-            <SimplifiedUS/>
-            {visible && US_PINS.map((p,i)=>(
-              <g key={p.state} style={{animation:`pinDrop .6s ease-out ${i*80}ms both`}}>
-                {/* pulse ring */}
-                <circle cx={p.x} cy={p.y} r={p.type==='HQ'?8:6} fill="none" stroke={p.type==='HQ'?'#B10C2A':'#526FAE'} strokeWidth="1.5" opacity=".9"
-                  style={{transformOrigin:`${p.x}px ${p.y}px`, animation:`pinPulse 2s ease-out ${i*80}ms infinite`}}
-                />
-                <circle cx={p.x} cy={p.y} r={p.type==='HQ'?6:4} fill={p.type==='HQ'?'#B10C2A':'#526FAE'}/>
-                <text x={p.x+10} y={p.y+4} fontFamily="var(--mono)" fontSize="10" fill={p.type==='HQ'?'#fff':'#ACB2C3'} letterSpacing=".15em">{p.state}</text>
-              </g>
-            ))}
-          </svg>
-          <div style={{display:'flex', justifyContent:'space-between', marginTop:24, flexWrap:'wrap', gap:16}}>
-            <div className="mono" style={{color:'var(--fg-muted)'}}>JACKSONVILLE, FL · OPERATIONS ACROSS THE US</div>
-            <div className="mono" style={{color:'var(--fg-muted)'}}>HQ · LONG ISLAND, NY</div>
+        {/* Google Maps embed */}
+        <div style={{position:'relative', background:'#1c1c24', border:'1px solid var(--hairline)', overflow:'hidden'}}>
+          <div style={{position:'relative', paddingBottom:'42%', minHeight:320}}>
+            {loaded ? (
+              <iframe
+                title="JK Prestige Constructor — Jacksonville, FL"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500000!2d-81.65565!3d30.33218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5b716f1ceafeb%3A0xc4cd7d3896fcc7aa!2sJacksonville%2C%20FL!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus"
+                style={{position:'absolute', inset:0, width:'100%', height:'100%', border:0, filter:'invert(.92) hue-rotate(180deg) saturate(.8) brightness(.9)'}}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            ) : (
+              <div style={{position:'absolute', inset:0, display:'flex', alignItems:'center', justifyContent:'center'}}>
+                <span className="mono" style={{color:'var(--fg-dim)', fontSize:11}}>// LOADING MAP...</span>
+              </div>
+            )}
+          </div>
+
+          {/* Overlay stats bar */}
+          <div style={{
+            position:'absolute', bottom:0, left:0, right:0,
+            background:'linear-gradient(transparent, rgba(24,24,30,.97) 40%)',
+            padding:'40px clamp(16px,2vw,32px) 20px',
+            display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:16, alignItems:'flex-end',
+          }}>
+            <div>
+              <div className="mono" style={{color:'var(--accent-hot)', fontSize:11}}>// HEADQUARTERS</div>
+              <div style={{fontFamily:'var(--display)', fontSize:'clamp(16px,1.8vw,22px)', letterSpacing:'-.01em', color:'#fff', marginTop:6}}>
+                Jacksonville, FL · M–F 7:00 AM – 6:00 PM
+              </div>
+            </div>
+            <div style={{display:'flex', gap:'clamp(12px,2vw,32px)', flexWrap:'wrap'}}>
+              {PAST_PROJECT_STATES.slice(0,8).map(s=>(
+                <span key={s} className="mono" style={{color:'rgba(255,255,255,.45)', fontSize:11}}>{s}</span>
+              ))}
+              <span className="mono" style={{color:'rgba(255,255,255,.45)', fontSize:11}}>+{PAST_PROJECT_STATES.length - 8} MORE</span>
+            </div>
           </div>
         </div>
       </div>
@@ -492,38 +580,6 @@ function Legend({dot,label}){
     </div>
   );
 }
-function SimplifiedUS() {
-  // Abstract blocky US — not a real geographic SVG, avoids copying a real map asset.
-  // Rectangles approximate rough regions so pins sit on plausible coordinates.
-  return (
-    <g fill="#3A3A46" stroke="#4A4A58" strokeWidth="1">
-      {/* West */}
-      <path d="M 60 150 L 180 145 L 200 250 L 185 340 L 90 330 L 70 270 Z"/>
-      {/* Mountain */}
-      <path d="M 200 150 L 320 150 L 340 280 L 220 290 Z"/>
-      {/* SW */}
-      <path d="M 220 290 L 340 280 L 350 360 L 240 370 Z"/>
-      {/* Central */}
-      <path d="M 340 140 L 460 135 L 480 240 L 360 250 Z"/>
-      {/* Texas */}
-      <path d="M 360 250 L 480 240 L 520 390 L 400 400 Z"/>
-      {/* N Plains */}
-      <path d="M 460 135 L 580 130 L 600 225 L 480 230 Z"/>
-      {/* Midwest */}
-      <path d="M 540 140 L 680 140 L 700 230 L 560 235 Z"/>
-      {/* Great Lakes / OH */}
-      <path d="M 620 140 L 740 135 L 760 215 L 640 230 Z"/>
-      {/* NE */}
-      <path d="M 740 120 L 840 115 L 855 180 L 755 195 Z"/>
-      {/* Mid-Atlantic */}
-      <path d="M 680 170 L 800 165 L 790 230 L 690 240 Z"/>
-      {/* Southeast */}
-      <path d="M 600 230 L 740 225 L 750 320 L 610 325 Z"/>
-      {/* FL */}
-      <path d="M 650 320 L 740 315 L 760 410 L 700 420 Z"/>
-    </g>
-  );
-}
 
 /* =========================================================
    Subcontracting band
@@ -534,12 +590,15 @@ function SubcontractingBand() {
     <section className="section" style={{background:'var(--bg-elev)'}}>
       <div className="wrap" style={{display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:'clamp(32px,5vw,72px)', alignItems:'center'}}>
         <Reveal>
-          <span className="mono" style={{color:'#fff', opacity:.85}}>// FOR FELLOW GCs</span>
+          <span className="mono" style={{color:'#fff', opacity:.85}}>// FOR GC PARTNERS</span>
           <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:16, color:'#fff'}}>
-            Need a trade partner who shows up clean, on time, insured?
+            A trade partner who performs — not just shows up.
           </h2>
           <p style={{marginTop:22, fontSize:17, lineHeight:1.65, color:'rgba(255,255,255,.9)', maxWidth:620}}>
-            We self-perform framing, concrete, drywall, finish carpentry, and roofing crews. Bonded, fully insured, OSHA 30. Fast mobilization. Foremen who read prints and close out punch lists without drama.
+            JK Prestige Constructor self-performs drywall, framing, and roofing with our own bonded, OSHA-30 crews. We mobilize fast, read prints, and hand off clean. If you're a GC who needs a dependable sub in Florida — or needs to fill a critical-path trade without risk — we're the call to make.
+          </p>
+          <p style={{marginTop:14, fontSize:15, lineHeight:1.6, color:'rgba(255,255,255,.75)', maxWidth:560}}>
+            Request our trade packet for licensing, insurance certificates, scope sheets, and references from GC partners who've worked with us across Florida and beyond.
           </p>
           <div style={{display:'flex', gap:12, marginTop:28, flexWrap:'wrap'}}>
             <button className="btn btn-primary" onClick={()=>navigate('/contact')}>Request our trade packet <Arrow/></button>
@@ -566,29 +625,61 @@ function SubcontractingBand() {
 /* =========================================================
    TestimonialBlock
    ========================================================= */
+function StarRating({ count=5 }) {
+  return (
+    <div style={{display:'flex', gap:4, marginBottom:14}}>
+      {Array.from({length:count}).map((_,i)=>(
+        <svg key={i} width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M7 1l1.545 3.13L12 4.635l-2.5 2.435.59 3.44L7 8.885l-3.09 1.625.59-3.44L2 4.635l3.455-.505L7 1z" fill="#526FAE"/>
+        </svg>
+      ))}
+    </div>
+  );
+}
+
 function TestimonialBlock() {
+  const { navigate } = useApp();
   const quotes = [
-    { body:"They walked our family through every decision. The numbers never moved unless we moved them. The house feels like us.", who:"Homeowner · Full custom build, NC", kicker:"HOMEOWNER" },
-    { body:"Delivered our 96-bed tower on a compressed schedule without a single ICRA breach. Real preconstruction, real self-perform, real answers.", who:"Director of Capital Projects · Regional hospital system", kicker:"DEVELOPER" },
-    { body:"JK's framing crew pulled a 38,000 sqft mixed-use out of the mud and handed it to us ready for MEP in seven weeks. Rare these days.", who:"GC Partner · Northeast", kicker:"FELLOW GC" },
+    {
+      body:"JK Prestige walked our family through every decision — scope, budget, material choices. The numbers never moved unless we moved them. They self-performed the framing and drywall themselves, and the quality showed at every stage. The house feels exactly like us, delivered on time.",
+      who:"Homeowner · Full custom build, Jacksonville, FL",
+      kicker:"HOMEOWNER",
+    },
+    {
+      body:"They delivered our 96-bed medical tower on a compressed schedule without a single ICRA breach. The preconstruction process was the most organized we've worked through — real self-perform, real schedule accountability, and a principal who answered his phone every time. We've already awarded them our next phase.",
+      who:"Director of Capital Projects · Regional hospital system, Florida",
+      kicker:"HEALTHCARE DEVELOPER",
+    },
+    {
+      body:"JK's framing crew pulled a 38,000 sqft mixed-use shell out of the mud and handed it to us ready for MEP rough-in in seven weeks. Clean site, no punch-list surprises, no insurance headaches. That kind of trade partner is rare. We put them on our preferred list immediately.",
+      who:"GC Partner · Southeast division",
+      kicker:"FELLOW GC",
+    },
   ];
   return (
     <section style={{background:'var(--bg-invert)', color:'#fff'}}>
-      <div className="wrap" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}} >
+      <div className="wrap" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}}>
         <Reveal>
           <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// WHAT PEOPLE SAY</span>
           <h2 style={{color:'#000', fontFamily:'var(--display)', fontSize:'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.9, marginTop:20}}>
             Prestige Is In The&nbsp;Details.
           </h2>
-          <div style={{marginTop:24, color:'rgba(255,255,255,.9)', fontSize:16, maxWidth:420}}>
-            Three audiences. One operating standard. Twenty-five years of repeat business and referrals.
+          <div style={{marginTop:24, color:'rgba(255,255,255,.9)', fontSize:16, maxWidth:420, lineHeight:1.65}}>
+            Homeowners, developers, and GC partners. One operating standard since 2017. Every referral we've earned has come from delivering exactly what we promised.
+          </div>
+          <div style={{marginTop:28}}>
+            <button className="btn btn-outline" onClick={()=>navigate('/contact')}
+              style={{color:'rgba(255,255,255,.9)', borderColor:'rgba(255,255,255,.3)'}}>
+              Read more reviews <Arrow/>
+            </button>
           </div>
         </Reveal>
         <div style={{display:'grid', gap:1, background:'rgba(255,255,255,.3)', alignSelf:'start'}}>
           {quotes.map((q,i)=>(
             <Reveal key={i} delay={i*100} style={{background:'var(--bg-invert)', padding:'28px 28px'}}>
+              <StarRating/>
               <span className="mono" style={{color:'rgba(255,255,255,.85)'}}>// {q.kicker}</span>
-              <p style={{fontFamily:'var(--display)', fontSize:'clamp(22px,2.2vw,30px)', letterSpacing:'-.015em', lineHeight:1.2, marginTop:14, color:'#fff'}}>
+              <p style={{fontFamily:'var(--display)', fontSize:'clamp(18px,1.8vw,24px)', letterSpacing:'-.015em', lineHeight:1.3, marginTop:14, color:'#fff'}}>
                 &ldquo;{q.body}&rdquo;
               </p>
               <div style={{marginTop:16, fontSize:12, letterSpacing:'.15em', textTransform:'uppercase', color:'rgba(255,255,255,.8)', fontFamily:'var(--mono)'}}>{q.who}</div>
@@ -609,9 +700,9 @@ function AffordabilityBand() {
     <section className="section-tight" style={{background:'var(--bg-primary)', borderTop:'1px solid var(--hairline)', borderBottom:'1px solid var(--hairline)'}}>
       <div className="wrap" style={{display:'flex', alignItems:'center', justifyContent:'space-between', flexWrap:'wrap', gap:24}}>
         <div style={{display:'flex', alignItems:'center', gap:'clamp(14px,2.4vw,40px)', flexWrap:'wrap'}}>
-          <span className="mono" style={{color:'var(--accent)'}}>// AFFORDABILITY</span>
+          <span className="mono" style={{color:'var(--accent)'}}>// TRANSPARENT PRICING</span>
           <div style={{fontFamily:'var(--display)', fontSize:'clamp(22px, 2.4vw, 32px)', letterSpacing:'-.015em', color:'#fff', maxWidth:820, lineHeight:1.2}}>
-            Premium craftsmanship shouldn't be priced out of reach. Honest numbers from day one. Fixed-price contracts available.
+            Transparent pricing. No surprises. Fixed-price contracts available — so you build with confidence, not anxiety.
           </div>
         </div>
         <button className="btn btn-outline" onClick={()=>navigate('/contact')}>Talk to a principal <Arrow/></button>
@@ -624,9 +715,9 @@ function AffordabilityBand() {
    News strip
    ========================================================= */
 const NEWS = [
-  { cat:'ON THE JOBSITE', date:'04.18.26', title:'Topping out the Meridian Medical Tower — 14 weeks ahead of schedule', slug:'news-meridian-topping-16x9' },
-  { cat:'HOMEOWNER TIPS', date:'04.02.26', title:'Five questions every homeowner should ask before signing a renovation contract', slug:'news-homeowner-questions-16x9' },
-  { cat:'COMPANY NEWS', date:'03.22.26', title:'JK Prestige crosses 500 delivered projects — still going strong since 2017', slug:'news-500-projects-16x9' },
+  { cat:'ON THE JOBSITE', date:'04.18.26', title:'Topping out the Meridian Medical Tower — 14 weeks ahead of schedule', teaser:'Our Florida hospital construction crew hit structural completion on a compressed ICRA-compliant schedule, handing over a clean shell ready for MEP rough-in.', slug:'news-meridian-topping-16x9' },
+  { cat:'HOMEOWNER TIPS', date:'04.02.26', title:'Five questions every homeowner should ask before signing a renovation contract', teaser:'Before you hand over a deposit, make sure you understand who\'s actually on your jobsite, what\'s in the fixed-price scope, and who answers the phone when something goes wrong.', slug:'news-homeowner-questions-16x9' },
+  { cat:'FROM THE FIELD', date:'03.22.26', title:'JK Prestige crosses 500 delivered projects — still going strong since 2017', teaser:'Eight years after opening our doors in Jacksonville, FL, our team has completed over 500 projects across residential, commercial, and medical sectors — with the same principals leading every one.', slug:'news-500-projects-16x9' },
 ];
 function NewsStrip() {
   const { navigate } = useApp();
@@ -636,8 +727,8 @@ function NewsStrip() {
         <Reveal>
           <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-end', flexWrap:'wrap', gap:24, marginBottom:32}}>
             <div>
-              <Kicker>LATEST FROM THE NEWSROOM</Kicker>
-              <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:14}}>News, insight, and jobsite dispatches.</h2>
+              <Kicker>FROM THE FIELD</Kicker>
+              <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:14}}>Jobsite dispatches. Real projects. Straight talk.</h2>
             </div>
             <button className="btn btn-outline" onClick={()=>navigate('/contact')}>Work with us <Arrow/></button>
           </div>
@@ -652,6 +743,7 @@ function NewsStrip() {
                     <span>// {n.cat}</span><span>{n.date}</span>
                   </div>
                   <div style={{fontFamily:'var(--display)', fontSize:22, letterSpacing:'-.015em', color:'#fff', marginTop:14, lineHeight:1.15}}>{n.title}</div>
+                  <div style={{marginTop:12, fontSize:14, lineHeight:1.65, color:'var(--fg-muted)'}}>{n.teaser}</div>
                   <div style={{marginTop:18, display:'inline-flex', alignItems:'center', gap:8, color:'var(--accent)'}} className="mono">READ &nbsp;<Arrow size={12}/></div>
                 </div>
               </a>
@@ -843,9 +935,9 @@ function Footer() {
           GROUND-UP OR GUT-RENO · HOSPITALS TO HOMES · ONE CONTRACT · 100% SATISFACTION
         </div>
         <div style={{display:'flex', gap:20, color:'var(--fg-dim)'}} className="mono">
-          <span>© 2017–2025 JK PRESTIGE</span>
-          <span>PRIVACY</span>
-          <span>TERMS</span>
+          <span>© 2017–2025 JK PRESTIGE CONSTRUCTOR CORP</span>
+          <a href="#/privacy" onClick={(e)=>{e.preventDefault(); window.dispatchEvent(new CustomEvent('jk-navigate',{detail:'/privacy'}));}} style={{color:'inherit', textDecoration:'none'}}>PRIVACY</a>
+          <a href="#/terms" onClick={(e)=>{e.preventDefault(); window.dispatchEvent(new CustomEvent('jk-navigate',{detail:'/terms'}));}} style={{color:'inherit', textDecoration:'none'}}>TERMS</a>
           <span>ACCESSIBILITY</span>
         </div>
       </div>
@@ -876,5 +968,5 @@ function FooterCol({ title, items, navigate }) {
 Object.assign(window, {
   AudienceSwitcher, WhoWeAre, StatsStrip, ExpertiseGrid, TurnkeyPromise,
   LetterMaskVideo, USMap, SubcontractingBand, TestimonialBlock, AffordabilityBand,
-  NewsStrip, FreeEstimateForm, Footer, EXPERTISE, NEWS
+  NewsStrip, FreeEstimateForm, Footer, EXPERTISE, NEWS, StarRating
 });
