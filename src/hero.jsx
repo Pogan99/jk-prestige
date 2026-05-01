@@ -137,18 +137,18 @@ function Hero() {
             <div style={{position:'relative', display:'inline-block', whiteSpace:'nowrap'}}>
               {(()=>{
                 const titleStyle = {
-                  fontFamily:"'Archivo Black', Inter, sans-serif",
+                  fontFamily:"'Bebas Neue', 'Archivo Black', Inter, sans-serif",
                   fontWeight:900,
                   fontSize: isMobile ? 'clamp(40px, 13vw, 84px)' : 'clamp(48px, 9.5vw, 160px)',
                   lineHeight:.92,
-                  letterSpacing:'-.035em',
+                  letterSpacing:'.02em',
                   textTransform:'uppercase',
                   margin:0, padding:0,
                 };
                 return (
                   <>
                     <h1 style={{...titleStyle, color:'transparent', WebkitTextStroke:'1px rgba(255,255,255,.55)'}}>
-                      JK<br/>PRESTIGE<br/>CORPORATION
+                      JK<br/>PRESTIGE<br/>CONSTRUCTOR
                     </h1>
                     <h1 aria-hidden="true" style={{
                       ...titleStyle,
@@ -158,7 +158,7 @@ function Hero() {
                       WebkitClipPath:`inset(0 ${insetRight}% 0 0)`,
                       willChange:'clip-path',
                     }}>
-                      JK<br/>PRESTIGE<br/>CORPORATION
+                      JK<br/>PRESTIGE<br/>CONSTRUCTOR
                     </h1>
                   </>
                 );
