@@ -73,7 +73,7 @@ function Hero() {
 
   const pct = Math.round(progress*100);
   const insetRight = (1 - progress) * 100;
-  const sectionHeight = isMobile ? '220vh' : '300vh';
+  const sectionHeight = isMobile ? '180vh' : '200vh';
 
   return (
     <section ref={sectionRef} style={{
@@ -139,7 +139,7 @@ function Hero() {
                 const titleStyle = {
                   fontFamily:"'Bebas Neue', 'Archivo Black', Inter, sans-serif",
                   fontWeight:900,
-                  fontSize: isMobile ? 'clamp(40px, 13vw, 84px)' : 'clamp(48px, 9.5vw, 160px)',
+                  fontSize: isMobile ? 'clamp(40px, 13vw, 84px)' : 'clamp(80px, 15vw, 240px)',
                   lineHeight:.92,
                   letterSpacing:'.02em',
                   textTransform:'uppercase',
