@@ -211,6 +211,14 @@ const JK_ASSET_MAP = {
   'leader-1-3x4':                'assets/images/hf_20260501_174721_5b01324c-b3e0-40b0-af61-b9bdb93724c5.jpg',
   'leader-2-3x4':                'assets/images/hf_20260501_174730_604fa6a3-483e-44da-9e8d-ac565900d4d5.jpg',
   /* leader-3-3x4, leader-4-3x4, leader-5-3x4 — images pending */
+
+  /* ---- expertise sub-page vertical aliases (interiors.jsx VERTICALS uses these slugs) ---- */
+  'expertise-custom-homes-16x9':        'assets/images/hf_20260422_074618_3c7e330a-766a-4edb-ac46-c312d4678c02.png',
+  'expertise-medical-hospital-16x9':    'assets/images/hf_20260422_074637_b2e0630e-99f9-4eef-a8b1-5be0a42b4ac4.png',
+  'expertise-warehouse-industrial-16x9':'assets/images/hf_20260422_074757_84eb700d-7200-4c76-82f0-04a6fa0dd744.png',
+  'expertise-commercial-16x9':          'assets/images/hf_20260422_074925_07b9ea0d-f6c2-4d7e-b9b5-f8f77eb67595.png',
+  'expertise-renovations-16x9':         'assets/images/hf_20260422_074745_2f8c1856-7dc3-4e57-8464-5c91d76f2353.png',
+  'expertise-roofing-16x9':             'assets/images/hf_20260422_074751_429e0c7d-115e-45ec-a295-1d2e6a6cd643.png',
 };
 
 function Placeholder({ slug, w, h, duration, ratio, tag='JK PRESTIGE ASSET', style, className='' }) {
