@@ -41,14 +41,14 @@ function WhoWeAre() {
     <>
       <p>For a quarter-century, JK Prestige has been the builder families trust when the outcome matters — the forever home, the long-planned remodel, the roof that has to last.</p>
       <p>We're family-owned. We self-perform framing, concrete, drywall, finish carpentry and roofing, and we vet every specialty trade we bring in. You sign one contract. You talk to a principal — not a call center.</p>
-      <p>Honest numbers from day one. Fixed-price contracts available. Licensed, bonded and insured in every state we operate.</p>
+      <p>Honest numbers from day one. Fixed-price contracts available. Licensed, bonded and insured. Based in Jacksonville, FL.</p>
     </>
   );
   const devCopy = (
     <>
-      <p>Developers, hospital systems, logistics owners and architects have relied on JK Prestige for 25 years to deliver ground-up builds on schedule, on spec, and within a defensible pricing envelope.</p>
+      <p>Developers, hospital systems, logistics owners and architects have relied on JK Prestige since 2017 to deliver ground-up builds on schedule, on spec, and within a defensible pricing envelope.</p>
       <p>Turnkey or trade-partner — we self-perform the critical path (concrete, framing, finish, roofing) and manage a vetted, insured sub network across every discipline. One contract. One schedule. One line of accountability.</p>
-      <p>Licensed, bonded and insured in every state we operate. Preconstruction, VDC, lean scheduling and owner-first communication baked in.</p>
+      <p>Licensed, bonded and insured. Based in Jacksonville, FL. Preconstruction, VDC, lean scheduling and owner-first communication baked in.</p>
     </>
   );
   return (
@@ -106,7 +106,7 @@ function TopoWatermark(){
         </div>
         <div>
           <div className="mono" style={{color:'var(--fg-dim)'}}>FILE</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>JKP-2000-2025</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>JKP-2017-2025</div>
         </div>
       </div>
     </div>
@@ -118,9 +118,9 @@ function TopoWatermark(){
    ========================================================= */
 function StatsStrip(){
   const stats = [
-    {n:25, suffix:'', label:'YEARS ESTABLISHED', sub:'Est. 2000'},
+    {n:8, suffix:'', label:'YEARS ESTABLISHED', sub:'Est. 2017'},
     {n:500, suffix:'+', label:'PROJECTS DELIVERED', sub:'Residential · Commercial · Medical'},
-    {n:100, suffix:'%', label:'LICENSED & BONDED', sub:'Fully insured in every state we operate'},
+    {n:100, suffix:'%', label:'LICENSED & BONDED', sub:'Fully insured on every project we take on'},
     {n:48, suffix:' HRS', label:'AVG ESTIMATE TURNAROUND', sub:'Owner-first communication'},
   ];
   return (
@@ -451,7 +451,7 @@ function USMap() {
             <div>
               <Kicker>WHERE WE WORK</Kicker>
               <h2 className="display" style={{fontSize:'clamp(40px,5.6vw,84px)', marginTop:16}}>
-                Licensed, bonded, insured —<br/>in every state we operate.
+                Licensed, bonded, insured —<br/>based in Jacksonville, FL.
               </h2>
             </div>
             <div style={{display:'flex', gap:24, alignItems:'center'}}>
@@ -476,7 +476,7 @@ function USMap() {
             ))}
           </svg>
           <div style={{display:'flex', justifyContent:'space-between', marginTop:24, flexWrap:'wrap', gap:16}}>
-            <div className="mono" style={{color:'var(--fg-muted)'}}>15 STATES · 47 MARKETS</div>
+            <div className="mono" style={{color:'var(--fg-muted)'}}>JACKSONVILLE, FL · OPERATIONS ACROSS THE US</div>
             <div className="mono" style={{color:'var(--fg-muted)'}}>HQ · LONG ISLAND, NY</div>
           </div>
         </div>
@@ -626,7 +626,7 @@ function AffordabilityBand() {
 const NEWS = [
   { cat:'ON THE JOBSITE', date:'04.18.26', title:'Topping out the Meridian Medical Tower — 14 weeks ahead of schedule', slug:'news-meridian-topping-16x9' },
   { cat:'HOMEOWNER TIPS', date:'04.02.26', title:'Five questions every homeowner should ask before signing a renovation contract', slug:'news-homeowner-questions-16x9' },
-  { cat:'COMPANY NEWS', date:'03.22.26', title:'JK Prestige crosses 500 delivered projects in our 25th year', slug:'news-500-projects-16x9' },
+  { cat:'COMPANY NEWS', date:'03.22.26', title:'JK Prestige crosses 500 delivered projects — still going strong since 2017', slug:'news-500-projects-16x9' },
 ];
 function NewsStrip() {
   const { navigate } = useApp();
@@ -787,10 +787,10 @@ function Footer() {
         <div>
           <LogoMark/>
           <div style={{marginTop:22, color:'var(--fg-muted)', fontSize:13, lineHeight:1.65, maxWidth:280}}>
-            JK Prestige Constructor. Family-operated general contractor since 2000. Headquartered in Jacksonville, FL. Licensed, bonded and insured in every state we operate.
+            JK Prestige Constructor. Family-operated general contractor since 2017. Headquartered in Jacksonville, FL. Licensed, bonded and insured.
           </div>
           <div style={{marginTop:28, display:'flex', flexWrap:'wrap', gap:10}}>
-            {['NAHB','AGC','ABC','BBB A+','OSHA 30'].map(t=>(
+            {['NAHB','AGC','ABC','OSHA 30'].map(t=>(
               <div key={t} style={{padding:'8px 12px', border:'1px solid var(--hairline)', fontFamily:'var(--mono)', fontSize:10, letterSpacing:'.2em', color:'var(--fg-muted)'}}>{t}</div>
             ))}
           </div>
@@ -829,7 +829,7 @@ function Footer() {
           GROUND-UP OR GUT-RENO · HOSPITALS TO HOMES · ONE CONTRACT · 100% SATISFACTION
         </div>
         <div style={{display:'flex', gap:20, color:'var(--fg-dim)'}} className="mono">
-          <span>© 2000–2025 JK PRESTIGE</span>
+          <span>© 2017–2025 JK PRESTIGE</span>
           <span>PRIVACY</span>
           <span>TERMS</span>
           <span>ACCESSIBILITY</span>

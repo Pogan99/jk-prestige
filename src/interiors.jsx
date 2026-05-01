@@ -28,16 +28,16 @@ function AboutPage() {
     {k:'COMMUNITY', d:'Local hiring, local trades, local giving. We build where we live.'},
   ];
   const timeline = [
-    {y:'2000', t:'Founded as a 3-person residential crew in Jacksonville, FL.'},
-    {y:'2005', t:'First commercial tenant improvement. Self-perform drywall begins.'},
-    {y:'2010', t:'Licensed in 5 states. Roofing division formally launches.'},
-    {y:'2015', t:'First ground-up medical facility delivered on schedule.'},
-    {y:'2019', t:'Cross 250 projects. VDC and lean delivery playbook codified.'},
+    {y:'2017', t:'Founded in Jacksonville, FL — residential crew with a commitment to quality.'},
+    {y:'2018', t:'First commercial tenant improvement. Self-perform trades expand.'},
+    {y:'2019', t:'Roofing division formally launches. First multi-family delivery.'},
+    {y:'2021', t:'First ground-up medical facility delivered on schedule.'},
+    {y:'2022', t:'Cross 250 projects. Lean delivery playbook codified.'},
     {y:'2023', t:'Hospital tower program. Subcontracting packet opened to fellow GCs.'},
-    {y:'2025', t:'25 years. 500+ projects. Licensed in 15 states and counting.'},
+    {y:'2025', t:'500+ projects delivered. Operations across the US. Still family-run.'},
   ];
   return (
-    <PageShell kicker="ABOUT JK PRESTIGE" title={<>A family business,<br/>built to last.</>} sub="Started in 2000 with a truck, two framers, and a handshake. Twenty-five years later, still family-operated — still on the jobsite.">
+    <PageShell kicker="ABOUT JK PRESTIGE" title={<>A family business,<br/>built to last.</>} sub="Started in 2017 with a truck, two framers, and a handshake. Still family-operated — still on the jobsite.">
       <section className="section" style={{background:'var(--bg-primary)'}}>
         <div className="wrap" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'clamp(32px,5vw,72px)'}}>
           <div>
@@ -47,9 +47,9 @@ function AboutPage() {
             <span className="mono" style={{color:'var(--accent)'}}>// OUR STORY</span>
             <h2 className="display" style={{fontSize:'clamp(32px,4vw,54px)', marginTop:16}}>Built the way we'd want our own homes built.</h2>
             <div style={{color:'var(--fg-muted)', fontSize:16, lineHeight:1.7, marginTop:20, display:'grid', gap:16}}>
-              <p>JK Prestige was founded in 2000 around a simple promise: show up, do the work right, and stand behind it. A quarter-century later, that's still the whole playbook.</p>
+              <p>JK Prestige was founded in 2017 around a simple promise: show up, do the work right, and stand behind it. Still the whole playbook.</p>
               <p>We self-perform the critical trades, vet and manage every specialty sub, and run a single contract so you have one principal responsible for the outcome — not a carousel of companies pointing at each other.</p>
-              <p>We've grown from one crew into a licensed, bonded and insured multi-state operation delivering hospitals, homes, warehouses, and everything in between.</p>
+              <p>We've grown from one crew into a licensed, bonded and insured operation delivering hospitals, homes, warehouses, and everything in between — based in Jacksonville, FL.</p>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ function AboutPage() {
       <section className="section" style={{background:'var(--bg-invert)'}}>
         <div className="wrap">
           <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// TIMELINE</span>
-          <h2 className="display" style={{fontSize:'clamp(36px,5vw,72px)', color:'#fff', marginTop:14}}>2000 → today.</h2>
+          <h2 className="display" style={{fontSize:'clamp(36px,5vw,72px)', color:'#fff', marginTop:14}}>2017 → today.</h2>
           <div style={{marginTop:40, position:'relative'}}>
             <div style={{position:'absolute', left:0, right:0, top:22, height:1, background:'rgba(255,255,255,.35)'}}/>
             <div style={{display:'grid', gridTemplateColumns:`repeat(${timeline.length},1fr)`, gap:16}} className="tl-grid">
@@ -221,7 +221,7 @@ function RoofingPage() {
           </div>
           <div>
             {[
-              ['How fast can you tarp an emergency leak?','Within 24 hours, 7 days a week, across every state we operate.'],
+              ['How fast can you tarp an emergency leak?','Within 24 hours, 7 days a week, across Florida and beyond.'],
               ['Do you bill insurance directly?','Yes — our storm team coordinates directly with adjusters.'],
               ['How long does a full tear-off and re-roof take?','Typical single-family: 1–3 days. Commercial flat: days to weeks depending on system.'],
               ['What warranty do I get?','Manufacturer warranty plus JK Prestige\'s workmanship guarantee — one signed document.'],
@@ -279,7 +279,7 @@ function ProjectsPage() {
   const years = [...new Set(PROJECTS.map(p=>p.year))].sort((a,b)=>b-a);
 
   return (
-    <PageShell kicker="PROJECTS" title={<>Twenty-five years.<br/>500+ projects delivered.</>} sub="Filter by type, state, or year. Click a tile for the case study.">
+    <PageShell kicker="PROJECTS" title={<>Since 2017.<br/>500+ projects delivered.</>} sub="Filter by type, state, or year. Click a tile for the case study.">
       <section className="section" style={{background:'var(--bg-primary)'}}>
         <div className="wrap">
           <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom:24, flexWrap:'wrap', gap:16}}>

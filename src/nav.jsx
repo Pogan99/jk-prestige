@@ -10,9 +10,9 @@ const NAV_ITEMS = [
 const MEGA_CONTENT = {
   about: {
     title:'The JK story',
-    body:"A family-run general contractor since 2000. Licensed, bonded and insured in every state we operate.",
+    body:"A family-run general contractor since 2017. Licensed, bonded and insured. Based in Jacksonville, FL.",
     cards:[
-      {k:'OUR STORY', t:'25 Years of Building Prestige', slug:'mega-about-story-16x9'},
+      {k:'OUR STORY', t:'Building Prestige Since 2017', slug:'mega-about-story-16x9'},
       {k:'LEADERSHIP', t:'Owner-first Communication', slug:'mega-about-leadership-16x9'},
       {k:'COMMUNITY', t:'Giving Back Where We Build', slug:'mega-about-community-16x9'},
     ],

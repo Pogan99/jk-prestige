@@ -109,13 +109,13 @@ function Hero() {
               pointerEvents:'none',
             }}
           />
-          <div style={{position:'absolute', inset:0, background:'linear-gradient(180deg, rgba(18,18,26,.35) 0%, rgba(18,18,26,.75) 100%)'}}/>
+          <div style={{position:'absolute', inset:0, background:'linear-gradient(180deg, rgba(18,18,26,.15) 0%, rgba(18,18,26,.45) 100%)'}}/>
         </div>
 
         {/* Vignette */}
         <div aria-hidden style={{
           position:'absolute', inset:0, zIndex:1,
-          background:'radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 100%)'
+          background:'radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,.30) 100%)'
         }}/>
 
         {/* Top kicker */}
@@ -123,7 +123,7 @@ function Hero() {
           position:'absolute', left:0, right:0, top:'clamp(20px,5vh,64px)', zIndex:5,
           opacity: mounted? 1:0, transition:'opacity .6s ease .4s',
         }}>
-          <Kicker>BUILDING PRESTIGE SINCE 2000</Kicker>
+          <Kicker>BUILDING PRESTIGE SINCE 2017</Kicker>
         </div>
 
         {/* Title — left-aligned, outline + L→R fill */}
@@ -139,7 +139,7 @@ function Hero() {
                 const titleStyle = {
                   fontFamily:"'Big Shoulders Display', 'Bebas Neue', 'Archivo Black', sans-serif",
                   fontWeight:900,
-                  fontSize: isMobile ? 'clamp(40px, 13vw, 84px)' : 'clamp(80px, 15vw, 240px)',
+                  fontSize: isMobile ? 'clamp(36px, 11vw, 72px)' : 'clamp(60px, 10.5vw, 180px)',
                   lineHeight:.92,
                   letterSpacing:'.02em',
                   textTransform:'uppercase',
@@ -212,14 +212,14 @@ function Hero() {
           </div>
           {!isMobile && (
             <div style={{display:'flex', gap:'clamp(10px,1.8vw,28px)', flexWrap:'wrap', alignItems:'center'}}>
-              {['Licensed','Bonded','Insured','25 Years','BBB A+','OSHA 30'].map(t=>(
+              {['Licensed','Bonded','Insured','Est. 2017','OSHA 30'].map(t=>(
                 <span key={t} className="mono" style={{color:'var(--fg-muted)'}}>{t}</span>
               ))}
             </div>
           )}
           {isMobile && (
             <div style={{display:'flex', gap:14, flexWrap:'wrap', alignItems:'center', flex:'1 1 100%'}}>
-              {['Licensed','Bonded','Insured','25 Years'].map(t=>(
+              {['Licensed','Bonded','Insured','Est. 2017'].map(t=>(
                 <span key={t} className="mono" style={{color:'var(--fg-muted)', fontSize:10}}>{t}</span>
               ))}
             </div>
