@@ -145,6 +145,7 @@ function Kicker({ children, className='', style }) {
    Placeholder — brand-spec compliant
    ========================================================= */
 const JK_ASSET_MAP = {
+  /* ---- original assets ---- */
   'expertise-custom-home-4x3':   'assets/images/hf_20260422_074618_3c7e330a-766a-4edb-ac46-c312d4678c02.png',
   'expertise-medical-4x3':       'assets/images/hf_20260422_074637_b2e0630e-99f9-4eef-a8b1-5be0a42b4ac4.png',
   'stat-tile-48hrs':             'assets/images/hf_20260422_074644_b83b6bfb-414c-44d8-a330-f29822e7876f.png',
@@ -162,6 +163,53 @@ const JK_ASSET_MAP = {
   'expertise-commercial-4x3':    'assets/images/hf_20260422_074925_07b9ea0d-f6c2-4d7e-b9b5-f8f77eb67595.png',
   'news-500-projects-16x9':      'assets/images/hf_20260422_074936_ee416caf-3cc2-41e4-a84e-833005b7bf6c.png',
   'hero-poster':                 'assets/images/hf_20260422_074803_534a61f3-bedb-4292-bbf9-ff8a891eaa96.png',
+
+  /* ---- roofing division ---- */
+  'roofing-hero-residential-gable-16x9': 'assets/images/hf_20260501_174359_f58bf292-56d0-4d44-bd7c-e18188cfb45e.png',
+
+  /* ---- mega menu — about ---- */
+  'mega-about-story-16x9':       'assets/images/hf_20260501_174410_19d6fb4e-bda3-4062-acbb-81d3143102ae.png',
+  'mega-about-leadership-16x9':  'assets/images/hf_20260501_174425_06a5a5ef-fade-4f8c-8f6b-61821c3adb75.png',
+  'mega-about-community-16x9':   'assets/images/hf_20260501_174436_3967cfc6-11a0-4815-872c-fda18966016d.png',
+
+  /* ---- mega menu — expertise ---- */
+  'mega-expertise-homes-16x9':       'assets/images/hf_20260501_174449_3d873deb-256f-48b3-b190-d4fa4c3a3b15.png',
+  'mega-expertise-medical-16x9':     'assets/images/hf_20260501_174453_6207600b-290c-4599-a252-8c6706bbcfd8.png',
+  'mega-expertise-warehouses-16x9':  'assets/images/hf_20260501_174501_820b60d0-99ee-4455-b136-1990c1a3cc37.png',
+
+  /* ---- mega menu — jk way ---- */
+  'mega-jkway-lean-16x9':        'assets/images/hf_20260501_174513_59396b79-de97-4537-99f8-0297dd5c52fa.png',
+  'mega-jkway-safety-16x9':      'assets/images/hf_20260501_174520_8e97d7a0-924f-4376-8c31-47b46dbe62cf.png',
+  'mega-jkway-vdc-16x9':         'assets/images/hf_20260501_174525_82f6ff4b-9691-4d3e-b9bf-3aeaedd7114d.png',
+
+  /* ---- mega menu — roofing ---- */
+  'mega-roofing-residential-16x9':'assets/images/hf_20260501_174533_2fc30839-3a4d-47fe-8231-18524ac7b56b.png',
+  'mega-roofing-commercial-16x9': 'assets/images/hf_20260501_174539_d6e2468a-2dd1-41e1-93ad-12dc392f7827.png',
+  'mega-roofing-claims-16x9':     'assets/images/hf_20260501_174546_4a0cdb5e-2476-44c4-a6c9-e42013cbe376.png',
+
+  /* ---- news / from the field ---- */
+  'news-budget-reno-16x9':       'assets/images/hf_20260501_174551_0b35da03-6f83-4b7a-9ab3-109f100bf874.png',
+  'news-roofing-winter-16x9':    'assets/images/hf_20260501_174558_f441e1f6-a055-426d-ada1-fb356bea6acc.png',
+  'news-tiltup-16x9':            'assets/images/hf_20260501_174605_97cb11ae-5314-48a9-8faf-ae4ea2d094b4.png',
+
+  /* ---- project cards ---- */
+  'proj-meridian-medical-16x9':  'assets/images/hf_20260501_174610_438bda6b-f1f5-4eec-89fe-d66529aac53c.png',
+  'proj-cedar-pediatric-16x9':   'assets/images/hf_20260501_174615_bc52d3f1-3560-436e-ab4c-222c18e87599.png',
+  'proj-hollowbrook-16x9':       'assets/images/hf_20260501_174622_d4e5ee71-855d-4b35-8e49-236179bbc1f7.png',
+  'proj-silvergrove-16x9':       'assets/images/hf_20260501_174628_b9ac2329-3c4c-4a44-9273-8b10829a6a78.png',
+  'proj-oakhill-16x9':           'assets/images/hf_20260501_174635_17e7358c-bba1-40c9-8eac-bafd643c11e6.png',
+  'proj-portlogix-16x9':         'assets/images/hf_20260501_174640_9ddf4397-539a-4ad8-8a80-f8ac1191d951.png',
+  'proj-northbeam-16x9':         'assets/images/hf_20260501_174647_193cfc12-0149-46ac-916e-0585d4854c35.png',
+  'proj-promenade-16x9':         'assets/images/hf_20260501_174654_167b383b-725d-433b-a264-45c7723b1308.png',
+  'proj-ironworks-16x9':         'assets/images/hf_20260501_174659_7803e113-b006-4945-ae35-22d22533044c.png',
+  'proj-harbor-reno-16x9':       'assets/images/hf_20260501_174705_246bb94e-ca30-45c3-881c-6e802e39bfdd.png',
+  'proj-linden-reno-16x9':       'assets/images/hf_20260501_174709_54ace871-aedd-4195-aea5-23f5674712cc.png',
+  'proj-parkside-roofing-16x9':  'assets/images/hf_20260501_174716_2950dfd7-923a-4142-bbb3-29727dd3d2de.png',
+
+  /* ---- leadership headshots ---- */
+  'leader-1-3x4':                'assets/images/hf_20260501_174721_5b01324c-b3e0-40b0-af61-b9bdb93724c5.png',
+  'leader-2-3x4':                'assets/images/hf_20260501_174730_604fa6a3-483e-44da-9e8d-ac565900d4d5.png',
+  /* leader-3-3x4, leader-4-3x4, leader-5-3x4 — images pending */
 };
 
 function Placeholder({ slug, w, h, duration, ratio, tag='JK PRESTIGE ASSET', style, className='' }) {

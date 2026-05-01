@@ -125,7 +125,7 @@ function Hero() {
           pointerEvents:'none', overflow:'hidden',
         }}>
           <div className="wrap" style={{width:'100%'}}>
-            <div style={{position:'relative', display:'block'}}>
+            <div style={{position:'relative', display:'block', marginTop:'-5px'}}>
               <h1 style={{...titleStyle, color:'transparent', WebkitTextStroke:'1.5px rgba(255,255,255,.6)'}}>
                 JK<br/>PRESTIGE<br/>CONSTRUCTOR
               </h1>
