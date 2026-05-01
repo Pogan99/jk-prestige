@@ -4,8 +4,6 @@ const NAV_ITEMS = [
   { id:'expertise', label:'EXPERTISE', hasMega:true, route:'/expertise' },
   { id:'projects', label:'PROJECTS', hasMega:false, route:'/projects' },
   { id:'roofing', label:'ROOFING', hasMega:true, route:'/roofing' },
-  { id:'newsroom', label:'NEWSROOM', hasMega:false, route:'/newsroom' },
-  { id:'careers', label:'CAREERS', hasMega:false, route:'/careers' },
   { id:'contact', label:'CONTACT', hasMega:false, route:'/contact' },
 ];
 

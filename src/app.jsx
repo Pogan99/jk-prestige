@@ -61,8 +61,6 @@ function App() {
         {route === '/expertise' && <ExpertisePage/>}
         {route === '/projects' && <ProjectsPage/>}
         {route === '/roofing' && <RoofingPage/>}
-        {route === '/newsroom' && <NewsroomPage/>}
-        {route === '/careers' && <CareersPage/>}
         {route === '/contact' && <ContactPage/>}
       </div>
       <Footer/>

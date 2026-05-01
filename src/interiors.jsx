@@ -28,7 +28,7 @@ function AboutPage() {
     {k:'COMMUNITY', d:'Local hiring, local trades, local giving. We build where we live.'},
   ];
   const timeline = [
-    {y:'2000', t:'Founded as a 3-person residential crew on Long Island.'},
+    {y:'2000', t:'Founded as a 3-person residential crew in Jacksonville, FL.'},
     {y:'2005', t:'First commercial tenant improvement. Self-perform drywall begins.'},
     {y:'2010', t:'Licensed in 5 states. Roofing division formally launches.'},
     {y:'2015', t:'First ground-up medical facility delivered on schedule.'},
@@ -174,7 +174,7 @@ function RoofingPage() {
           </p>
           <div style={{display:'flex', gap:12, marginTop:28, flexWrap:'wrap'}}>
             <button className="btn btn-primary">Book a free inspection <Arrow/></button>
-            <a href="tel:18005576637" className="btn btn-outline">Emergency hotline: 1-800-JK-ROOFS</a>
+            <a href="tel:9049440278" className="btn btn-outline">Call us: (904) 944-0278</a>
           </div>
         </div>
       </section>
@@ -426,14 +426,15 @@ function ContactPage() {
           <div style={{display:'grid', gap:20, alignContent:'start'}}>
             <div style={{border:'1px solid var(--hairline)', padding:28}}>
               <div className="mono" style={{color:'var(--accent)'}}>// HEADQUARTERS</div>
-              <div style={{fontFamily:'var(--display)', fontSize:22, marginTop:10}}>Long Island, NY</div>
-              <div style={{fontSize:14, color:'var(--fg-muted)', marginTop:8, lineHeight:1.6}}>2400 Industrial Blvd, Suite 300<br/>Melville, NY 11747</div>
+              <div style={{fontFamily:'var(--display)', fontSize:22, marginTop:10}}>Jacksonville, FL</div>
+              <div style={{fontSize:14, color:'var(--fg-muted)', marginTop:8, lineHeight:1.6}}>Jacksonville, Florida</div>
               <div style={{fontSize:14, color:'#fff', marginTop:14}}>M–F · 7:00a–6:00p</div>
             </div>
             <div style={{border:'1px solid var(--hairline)', padding:28}}>
               <div className="mono" style={{color:'var(--accent-hot)'}}>// 24/7 EMERGENCY</div>
-              <div style={{fontFamily:'var(--display)', fontSize:22, marginTop:10}}>Roofing hotline</div>
-              <a href="tel:18005576637" style={{fontSize:18, color:'#fff', marginTop:12, display:'block'}}>1-800-JK-ROOFS</a>
+              <div style={{fontFamily:'var(--display)', fontSize:22, marginTop:10}}>Direct line</div>
+              <a href="tel:9049440278" style={{fontSize:18, color:'#fff', marginTop:12, display:'block'}}>(904) 944-0278</a>
+              <a href="mailto:jerekaine@hotmail.com" style={{fontSize:13, color:'var(--fg-muted)', marginTop:8, display:'block'}}>jerekaine@hotmail.com</a>
             </div>
             <Placeholder slug="contact-map-embed-16x9" w={800} h={500} tag="MAP EMBED"/>
           </div>
@@ -445,7 +446,7 @@ function ContactPage() {
             {[
               ['HOMEOWNER?','Start here — full home builds, remodels, roofs.','/expertise'],
               ['DEVELOPER OR GC?','Start here — ground-up, trade partner, subcontracting.','/expertise'],
-              ['NEED ROOFING NOW?','Call 1-800-JK-ROOFS, 24/7 emergency response.','/roofing'],
+              ['NEED ROOFING NOW?','Call (904) 944-0278, 24/7 emergency response.','/roofing'],
             ].map(([k,d,r],i)=>(
               <Reveal key={k} delay={i*80} style={{background:'var(--bg-primary)', padding:32, border:'1px solid rgba(255,255,255,.1)'}}>
                 <div className="mono" style={{color:'var(--accent)'}}>// {k}</div>

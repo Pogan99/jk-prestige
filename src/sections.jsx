@@ -418,13 +418,13 @@ function LetterMaskVideo() {
    USMap — project pins
    ========================================================= */
 const US_PINS = [
-  {state:'NY', x:780, y:160, type:'HQ', label:'Headquarters · Long Island, NY'},
+  {state:'FL', x:710, y:360, type:'HQ', label:'Headquarters · Jacksonville, FL'},
   {state:'NJ', x:760, y:180, type:'Active'},
   {state:'PA', x:720, y:175, type:'Active'},
   {state:'MD', x:745, y:205, type:'Active'},
   {state:'VA', x:730, y:220, type:'Active'},
   {state:'NC', x:715, y:260, type:'Active'},
-  {state:'FL', x:710, y:360, type:'Active'},
+  {state:'NY', x:780, y:160, type:'Active'},
   {state:'GA', x:685, y:295, type:'Active'},
   {state:'TX', x:450, y:340, type:'Active'},
   {state:'CO', x:360, y:230, type:'Active'},
@@ -639,13 +639,13 @@ function NewsStrip() {
               <Kicker>LATEST FROM THE NEWSROOM</Kicker>
               <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:14}}>News, insight, and jobsite dispatches.</h2>
             </div>
-            <button className="btn btn-outline" onClick={()=>navigate('/newsroom')}>All posts <Arrow/></button>
+            <button className="btn btn-outline" onClick={()=>navigate('/contact')}>Work with us <Arrow/></button>
           </div>
         </Reveal>
         <div style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'var(--hairline)'}} className="news-grid">
           {NEWS.map((n,i)=>(
             <Reveal key={i} delay={i*80}>
-              <a href="#" onClick={(e)=>{e.preventDefault(); navigate('/newsroom');}} style={{display:'block', background:'var(--bg-primary)', height:'100%'}}>
+              <a href="#" onClick={(e)=>{e.preventDefault(); navigate('/contact');}} style={{display:'block', background:'var(--bg-primary)', height:'100%'}}>
                 <Placeholder slug={n.slug} w={800} h={500} tag="NEWS HERO"/>
                 <div style={{padding:'22px 24px'}}>
                   <div style={{display:'flex', justifyContent:'space-between', color:'var(--fg-dim)'}} className="mono">
@@ -731,7 +731,7 @@ function FreeEstimateForm({ compact=false }) {
           {form.consent && <svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 5 L4 8 L9 2" stroke="#fff" strokeWidth="1.6" fill="none"/></svg>}
         </span>
         <span style={{fontSize:13, color:'var(--fg-muted)', lineHeight:1.5}}>
-          I authorize JK Prestige Corporation to contact me about my inquiry. No spam. We don't sell data.
+          I authorize JK Prestige Constructor to contact me about my inquiry. No spam. We don't sell data.
         </span>
       </label>
       {errors.consent && <div style={{color:'#ff7a8c', fontSize:12}} className="mono">{errors.consent}</div>}
@@ -770,9 +770,9 @@ function Footer() {
             No call center. No gated salesperson. Owner-first communication from the first reply to the final walkthrough.
           </div>
           <div style={{marginTop:28, display:'grid', gap:14, maxWidth:420}}>
-            <FooterRow k="EMERGENCY ROOF HOTLINE" v="1-800-JK-ROOFS"/>
-            <FooterRow k="GENERAL" v="info@jkprestige.com"/>
-            <FooterRow k="HQ" v="Long Island, NY · M–F 7a–6p"/>
+            <FooterRow k="PHONE" v="(904) 944-0278"/>
+            <FooterRow k="EMAIL" v="jerekaine@hotmail.com"/>
+            <FooterRow k="HQ" v="Jacksonville, FL · M–F 7a–6p"/>
           </div>
         </div>
         <div>
@@ -787,7 +787,7 @@ function Footer() {
         <div>
           <LogoMark/>
           <div style={{marginTop:22, color:'var(--fg-muted)', fontSize:13, lineHeight:1.65, maxWidth:280}}>
-            JK Prestige Corporation. Family-operated general contractor since 2000. Licensed, bonded and insured in every state we operate.
+            JK Prestige Constructor. Family-operated general contractor since 2000. Headquartered in Jacksonville, FL. Licensed, bonded and insured in every state we operate.
           </div>
           <div style={{marginTop:28, display:'flex', flexWrap:'wrap', gap:10}}>
             {['NAHB','AGC','ABC','BBB A+','OSHA 30'].map(t=>(
@@ -798,7 +798,7 @@ function Footer() {
 
         <div style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:32}}>
           <FooterCol title="COMPANY" items={[
-            ['About','/about'],['The JK Way','/the-jk-way'],['Careers','/careers'],['Newsroom','/newsroom']
+            ['About','/about'],['The JK Way','/the-jk-way'],['Projects','/projects'],['Contact','/contact']
           ]} navigate={navigate}/>
           <FooterCol title="EXPERTISE" items={[
             ['Hospitals','/expertise'],['Custom Homes','/expertise'],['Warehouses','/expertise'],['Renovations','/expertise']
