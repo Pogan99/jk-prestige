@@ -712,7 +712,7 @@ function FreeEstimateForm({ compact=false }) {
       <div style={{padding:'48px', border:'1px solid var(--accent)', background:'rgba(82,111,174,.08)'}}>
         <span className="mono" style={{color:'var(--accent)'}}>// REQUEST RECEIVED</span>
         <h3 className="display" style={{fontSize:'clamp(28px, 3.2vw, 44px)', marginTop:14, color:'#fff'}}>We'll be in touch within 48 hours.</h3>
-        <p style={{marginTop:14, color:'var(--fg-muted)', maxWidth:520}}>A principal will review your project brief and reach out directly. For anything urgent, call <span style={{color:'#fff'}}>(904) 944-0278</span>.</p>
+        <p style={{marginTop:14, color:'var(--fg-muted)', maxWidth:520}}>A principal will review your project brief and reach out directly. For anything urgent, call us at <a href="tel:9049440278" style={{color:'#fff'}}>(904) 944-0278</a> or email <a href="mailto:jerekaine@hotmail.com" style={{color:'#fff'}}>jerekaine@hotmail.com</a>.</p>
       </div>
     );
   }
@@ -816,7 +816,7 @@ function Footer() {
 
         <div className="jk-footer-cols" style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:32}}>
           <FooterCol title="COMPANY" items={[
-            ['About','/about'],['The JK Way','/the-jk-way'],['Projects','/projects'],['Contact','/contact']
+            ['The JK Way','/the-jk-way'],['Expertise','/expertise'],['Projects','/projects'],['Contact','/contact']
           ]} navigate={navigate}/>
           <FooterCol title="EXPERTISE" items={[
             ['Hospitals','/expertise'],['Custom Homes','/expertise'],['Warehouses','/expertise'],['Renovations','/expertise']

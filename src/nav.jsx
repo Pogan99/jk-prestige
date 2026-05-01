@@ -1,5 +1,4 @@
 const NAV_ITEMS = [
-  { id:'about', label:'ABOUT', hasMega:true, route:'/about' },
   { id:'jkway', label:'THE JK WAY', hasMega:true, route:'/the-jk-way' },
   { id:'expertise', label:'EXPERTISE', hasMega:true, route:'/expertise' },
   { id:'projects', label:'PROJECTS', hasMega:false, route:'/projects' },

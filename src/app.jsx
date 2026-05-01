@@ -56,7 +56,6 @@ function App() {
       <Nav/>
       <div key={route} className={transitioning? '' : 'page-enter'} style={{position:'relative'}}>
         {route === '/' && <HomePage/>}
-        {route === '/about' && <AboutPage/>}
         {route === '/the-jk-way' && <JKWayPage/>}
         {route === '/expertise' && <ExpertisePage/>}
         {route === '/projects' && <ProjectsPage/>}
