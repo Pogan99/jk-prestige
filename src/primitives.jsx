@@ -91,6 +91,34 @@ const { useState, useEffect, useRef, useMemo, useLayoutEffect, createContext, us
       *{animation-duration:.001s !important;transition-duration:.001s !important}
     }
     .reduce-motion *{animation-duration:.001s !important;transition-duration:.001s !important}
+
+    /* ============ MOBILE ============ */
+    @media (max-width: 720px) {
+      .wrap{padding:0 18px}
+      .section{padding:56px 0}
+      .section-tight{padding:36px 0}
+      .btn{padding:13px 18px;font-size:11px;letter-spacing:.16em}
+      .kicker{font-size:10px;letter-spacing:.18em}
+      .mono{font-size:10px}
+
+      /* Roofing ribbon stacks vertically */
+      .jk-roof-grid{
+        grid-template-columns:1fr !important;
+        gap:14px !important;
+        padding:18px !important;
+      }
+      .jk-roof-list{font-size:13px !important;gap:10px !important}
+      .jk-roof-cta{justify-self:start}
+
+      /* Generic grids collapse to single column */
+      .jk-grid-3, .jk-grid-2, .jk-grid-4{grid-template-columns:1fr !important}
+
+      h1, h2, h3{word-break:break-word}
+    }
+    @media (max-width: 480px) {
+      .wrap{padding:0 14px}
+      .btn{padding:12px 14px;font-size:10.5px}
+    }
   `;
   document.head.appendChild(css);
 })();
