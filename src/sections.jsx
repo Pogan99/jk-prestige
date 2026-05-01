@@ -670,24 +670,41 @@ function NewsStrip() {
    Free Estimate Form
    ========================================================= */
 const PROJECT_TYPES = ['New Home','Home Renovation','Roofing','Commercial New Build','Warehouse','Hospital/Medical','Subcontracting Inquiry','Other'];
+const CONTACT_API = 'https://3hzgy43jwgdzkv47j7qmwxrck40mdmnr.lambda-url.us-east-1.on.aws/';
 
 function FreeEstimateForm({ compact=false }) {
   const [form, setForm] = useState({ name:'', email:'', phone:'', zip:'', type:'New Home', message:'', consent:false });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState('');
 
   const update = (k,v)=> setForm(f=>({...f, [k]:v}));
 
-  const submit = (e)=>{
+  const submit = async (e)=>{
     e.preventDefault();
     const errs = {};
     if (!form.name.trim()) errs.name = 'Required';
     if (!/^\S+@\S+\.\S+$/.test(form.email)) errs.email = 'Valid email required';
     if (form.phone.replace(/\D/g,'').length < 7) errs.phone = 'Valid phone required';
-    if (!/^\d{5}$/.test(form.zip)) errs.zip = '5-digit zip';
     if (!form.consent) errs.consent = 'Please consent';
     setErrors(errs);
-    if (Object.keys(errs).length===0) setSubmitted(true);
+    if (Object.keys(errs).length > 0) return;
+    setSending(true);
+    setSendError('');
+    try {
+      const res = await fetch(CONTACT_API, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error('Server error');
+      setSubmitted(true);
+    } catch(err) {
+      setSendError('Something went wrong — please call us at (904) 944-0278.');
+    } finally {
+      setSending(false);
+    }
   };
 
   if (submitted) {
@@ -695,14 +712,14 @@ function FreeEstimateForm({ compact=false }) {
       <div style={{padding:'48px', border:'1px solid var(--accent)', background:'rgba(82,111,174,.08)'}}>
         <span className="mono" style={{color:'var(--accent)'}}>// REQUEST RECEIVED</span>
         <h3 className="display" style={{fontSize:'clamp(28px, 3.2vw, 44px)', marginTop:14, color:'#fff'}}>We'll be in touch within 48 hours.</h3>
-        <p style={{marginTop:14, color:'var(--fg-muted)', maxWidth:520}}>A principal will review your project brief and reach out directly. If it's an active roofing emergency, call our hotline at <span style={{color:'#fff'}}>1-800-JK-ROOFS</span>.</p>
+        <p style={{marginTop:14, color:'var(--fg-muted)', maxWidth:520}}>A principal will review your project brief and reach out directly. For anything urgent, call <span style={{color:'#fff'}}>(904) 944-0278</span>.</p>
       </div>
     );
   }
 
   return (
     <form onSubmit={submit} style={{display:'grid', gap:18}}>
-      <div style={{display:'grid', gridTemplateColumns: compact?'1fr 1fr':'1fr 1fr', gap:14}}>
+      <div className="jk-form-row" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:14}}>
         <Field label="Full name" error={errors.name}>
           <input className="jk-input" placeholder="Your name" value={form.name} onChange={e=>update('name', e.target.value)}/>
         </Field>
@@ -710,7 +727,7 @@ function FreeEstimateForm({ compact=false }) {
           <input className="jk-input" placeholder="you@domain.com" value={form.email} onChange={e=>update('email', e.target.value)}/>
         </Field>
       </div>
-      <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:14}}>
+      <div className="jk-form-row" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:14}}>
         <Field label="Phone" error={errors.phone}>
           <input className="jk-input" placeholder="(555) 555-5555" value={form.phone} onChange={e=>update('phone', e.target.value)}/>
         </Field>
@@ -735,9 +752,10 @@ function FreeEstimateForm({ compact=false }) {
         </span>
       </label>
       {errors.consent && <div style={{color:'#ff7a8c', fontSize:12}} className="mono">{errors.consent}</div>}
+      {sendError && <div style={{color:'#ff7a8c', fontSize:13, padding:'12px', background:'rgba(255,0,0,.08)', border:'1px solid rgba(255,0,0,.2)'}}>{sendError}</div>}
       <div>
-        <button type="submit" className="btn btn-primary" style={{padding:'18px 28px'}}>
-          Request free estimate <Arrow/>
+        <button type="submit" className="btn btn-primary" style={{padding:'18px 28px', opacity:sending?.6:1}} disabled={sending}>
+          {sending ? 'Sending…' : <> Request free estimate <Arrow/> </>}
         </button>
       </div>
     </form>
@@ -760,7 +778,7 @@ function Footer() {
   return (
     <footer style={{background:'var(--bg-primary)', borderTop:'1px solid var(--hairline)'}}>
       {/* Form band */}
-      <div className="wrap" style={{padding:'clamp(48px,7vw,96px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1fr 1.1fr', gap:'clamp(40px,6vw,80px)'}} id="estimate">
+      <div className="wrap jk-footer-top" style={{padding:'clamp(48px,7vw,96px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1fr 1.1fr', gap:'clamp(40px,6vw,80px)'}} id="estimate">
         <div>
           <Kicker>FREE 48-HOUR ESTIMATE</Kicker>
           <h2 className="display" style={{fontSize:'clamp(36px,4.6vw,68px)', marginTop:16, maxWidth:560}}>
@@ -783,7 +801,7 @@ function Footer() {
       <div className="hairline"/>
 
       {/* Main footer */}
-      <div className="wrap" style={{padding:'48px clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.2fr 2.5fr 1fr', gap:48}}>
+      <div className="wrap jk-footer-main" style={{padding:'48px clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.2fr 2.5fr 1fr', gap:48}}>
         <div>
           <LogoMark/>
           <div style={{marginTop:22, color:'var(--fg-muted)', fontSize:13, lineHeight:1.65, maxWidth:280}}>
@@ -796,7 +814,7 @@ function Footer() {
           </div>
         </div>
 
-        <div style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:32}}>
+        <div className="jk-footer-cols" style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:32}}>
           <FooterCol title="COMPANY" items={[
             ['About','/about'],['The JK Way','/the-jk-way'],['Projects','/projects'],['Contact','/contact']
           ]} navigate={navigate}/>
@@ -811,13 +829,9 @@ function Footer() {
           ]} navigate={navigate}/>
         </div>
 
-        <div style={{display:'flex', flexDirection:'column', gap:18, alignItems:'flex-end'}}>
-          <div className="mono" style={{color:'var(--fg-muted)'}}>// SOCIAL</div>
-          <div style={{display:'flex', gap:8}}>
-            {['IG','LI','FB','YT','TT'].map(s=>(
-              <div key={s} style={{width:40, height:40, border:'1px solid var(--hairline)', display:'flex', alignItems:'center', justifyContent:'center', fontFamily:'var(--mono)', fontSize:10, color:'#fff', letterSpacing:'.15em', cursor:'pointer'}}>{s}</div>
-            ))}
-          </div>
+        <div style={{display:'flex', flexDirection:'column', gap:14, alignItems:'flex-end'}}>
+          <FooterRow k="PHONE" v="(904) 944-0278"/>
+          <FooterRow k="EMAIL" v="jerekaine@hotmail.com"/>
         </div>
       </div>
 

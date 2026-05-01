@@ -102,18 +102,23 @@ const { useState, useEffect, useRef, useMemo, useLayoutEffect, createContext, us
       .mono{font-size:10px}
 
       /* Roofing ribbon stacks vertically */
-      .jk-roof-grid{
-        grid-template-columns:1fr !important;
-        gap:14px !important;
-        padding:18px !important;
-      }
+      .jk-roof-grid{grid-template-columns:1fr !important;gap:14px !important;padding:18px !important}
       .jk-roof-list{font-size:13px !important;gap:10px !important}
       .jk-roof-cta{justify-self:start}
 
-      /* Generic grids collapse to single column */
-      .jk-grid-3, .jk-grid-2, .jk-grid-4{grid-template-columns:1fr !important}
+      /* Footer: full-width single column */
+      .jk-footer-top{grid-template-columns:1fr !important}
+      .jk-footer-main{grid-template-columns:1fr !important}
+      .jk-footer-cols{grid-template-columns:1fr 1fr !important;gap:24px !important}
+      .jk-footer-contact{align-items:flex-start !important}
 
-      h1, h2, h3{word-break:break-word}
+      /* Form 2-col → 1-col */
+      .jk-form-row{grid-template-columns:1fr !important}
+
+      /* Generic grids */
+      .jk-grid-3,.jk-grid-2,.jk-grid-4{grid-template-columns:1fr !important}
+
+      h1,h2,h3{word-break:break-word}
     }
     @media (max-width: 480px) {
       .wrap{padding:0 14px}
