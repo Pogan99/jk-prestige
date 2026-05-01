@@ -137,7 +137,7 @@ function Hero() {
             <div style={{position:'relative', display:'inline-block', whiteSpace:'nowrap'}}>
               {(()=>{
                 const titleStyle = {
-                  fontFamily:"'Bebas Neue', 'Archivo Black', Inter, sans-serif",
+                  fontFamily:"'Big Shoulders Display', 'Bebas Neue', 'Archivo Black', sans-serif",
                   fontWeight:900,
                   fontSize: isMobile ? 'clamp(40px, 13vw, 84px)' : 'clamp(80px, 15vw, 240px)',
                   lineHeight:.92,
