@@ -226,7 +226,7 @@ function RoofingRibbon() {
             </span>
           ))}
         </div>
-        <button onClick={()=>navigate('/roofing')} className="btn btn-primary jk-roof-cta" style={{padding:'12px 18px'}}>
+        <button onClick={()=>{ navigate('/roofing'); setTimeout(()=>{ const el=document.getElementById('inspection'); if(el) el.scrollIntoView({behavior:'smooth'}); },400); }} className="btn btn-primary jk-roof-cta" style={{padding:'12px 18px'}}>
           Free roof inspection <Arrow/>
         </button>
       </div>

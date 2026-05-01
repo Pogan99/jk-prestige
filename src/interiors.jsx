@@ -155,8 +155,111 @@ function ExpertisePage() {
 }
 
 /* ---------- ROOFING ---------- */
+function RoofingInspectionForm() {
+  const ROOF_TYPES = ['Asphalt Shingle','Metal','Tile','Flat / TPO','Flat / EPDM','Modified Bitumen','Cedar Shake','Slate','Not sure'];
+  const ISSUES    = ['Annual inspection','Storm damage','Active leak','Replacement quote','New construction','Other'];
+  const [form, setForm]       = useState({ name:'', email:'', phone:'', address:'', roofType:'Asphalt Shingle', issue:'Annual inspection', message:'', consent:false });
+  const [errors, setErrors]   = useState({});
+  const [sending, setSending] = useState(false);
+  const [done, setDone]       = useState(false);
+  const [sendErr, setSendErr] = useState('');
+  const update = (k,v)=> setForm(f=>({...f,[k]:v}));
+
+  const submit = async (e)=>{
+    e.preventDefault();
+    const errs = {};
+    if (!form.name.trim())  errs.name  = 'Required';
+    if (!/^\S+@\S+\.\S+$/.test(form.email)) errs.email = 'Valid email required';
+    if (form.phone.replace(/\D/g,'').length < 7) errs.phone = 'Required';
+    if (!form.address.trim()) errs.address = 'Required';
+    if (!form.consent) errs.consent = 'Please consent';
+    setErrors(errs);
+    if (Object.keys(errs).length) return;
+    setSending(true); setSendErr('');
+    try {
+      const res = await fetch('https://3hzgy43jwgdzkv47j7qmwxrck40mdmnr.lambda-url.us-east-1.on.aws/', {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ ...form, type:`ROOFING INSPECTION — ${form.issue}` }),
+      });
+      if (!res.ok) throw new Error();
+      setDone(true);
+    } catch { setSendErr('Something went wrong — call us at (904) 944-0278.'); }
+    finally { setSending(false); }
+  };
+
+  if (done) return (
+    <div style={{padding:'48px 40px', border:'1px solid var(--accent)', background:'rgba(82,111,174,.08)', textAlign:'center'}}>
+      <span className="mono" style={{color:'var(--accent)'}}>// INSPECTION BOOKED</span>
+      <h3 className="display" style={{fontSize:'clamp(28px,3.5vw,48px)', marginTop:14, color:'#fff'}}>We'll call you within 24 hours.</h3>
+      <p style={{marginTop:14, color:'var(--fg-muted)'}}>Our roofing team will confirm your appointment and walk you through what to expect during the 24-point inspection.</p>
+    </div>
+  );
+
+  return (
+    <form onSubmit={submit} style={{display:'grid', gap:18}}>
+      <div className="jk-form-row" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:14}}>
+        <label style={{display:'block'}}>
+          <span className="field-label">Full name{errors.name && <span style={{color:'#ff7a8c', marginLeft:8, textTransform:'none', letterSpacing:0}}>· {errors.name}</span>}</span>
+          <input className="jk-input" placeholder="Your name" value={form.name} onChange={e=>update('name',e.target.value)}/>
+        </label>
+        <label style={{display:'block'}}>
+          <span className="field-label">Phone{errors.phone && <span style={{color:'#ff7a8c', marginLeft:8, textTransform:'none', letterSpacing:0}}>· {errors.phone}</span>}</span>
+          <input className="jk-input" placeholder="(904) 000-0000" value={form.phone} onChange={e=>update('phone',e.target.value)}/>
+        </label>
+      </div>
+      <div className="jk-form-row" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:14}}>
+        <label style={{display:'block'}}>
+          <span className="field-label">Email{errors.email && <span style={{color:'#ff7a8c', marginLeft:8, textTransform:'none', letterSpacing:0}}>· {errors.email}</span>}</span>
+          <input className="jk-input" placeholder="you@email.com" value={form.email} onChange={e=>update('email',e.target.value)}/>
+        </label>
+        <label style={{display:'block'}}>
+          <span className="field-label">Property address{errors.address && <span style={{color:'#ff7a8c', marginLeft:8, textTransform:'none', letterSpacing:0}}>· {errors.address}</span>}</span>
+          <input className="jk-input" placeholder="123 Main St, Jacksonville FL" value={form.address} onChange={e=>update('address',e.target.value)}/>
+        </label>
+      </div>
+      <div className="jk-form-row" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:14}}>
+        <label style={{display:'block'}}>
+          <span className="field-label">Roof type</span>
+          <select className="jk-input" value={form.roofType} onChange={e=>update('roofType',e.target.value)}>
+            {ROOF_TYPES.map(t=><option key={t} value={t} style={{background:'var(--bg-primary)'}}>{t}</option>)}
+          </select>
+        </label>
+        <label style={{display:'block'}}>
+          <span className="field-label">Reason for inspection</span>
+          <select className="jk-input" value={form.issue} onChange={e=>update('issue',e.target.value)}>
+            {ISSUES.map(t=><option key={t} value={t} style={{background:'var(--bg-primary)'}}>{t}</option>)}
+          </select>
+        </label>
+      </div>
+      <label style={{display:'block'}}>
+        <span className="field-label">Additional details (optional)</span>
+        <textarea className="jk-input" rows={3} placeholder="Describe any visible damage, leaks, age of roof, or anything else that helps…" value={form.message} onChange={e=>update('message',e.target.value)}/>
+      </label>
+      <label style={{display:'flex', alignItems:'flex-start', gap:12, cursor:'pointer'}}>
+        <span className={"cbx "+(form.consent?'on':'')} onClick={()=>update('consent',!form.consent)}>
+          {form.consent && <svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 5 L4 8 L9 2" stroke="#fff" strokeWidth="1.6" fill="none"/></svg>}
+        </span>
+        <span style={{fontSize:13, color:'var(--fg-muted)', lineHeight:1.5}}>
+          I authorize JK Prestige Constructor to contact me about my roofing inspection request. No spam.
+        </span>
+      </label>
+      {errors.consent && <div className="mono" style={{color:'#ff7a8c', fontSize:12}}>{errors.consent}</div>}
+      {sendErr && <div style={{color:'#ff7a8c', fontSize:13, padding:12, background:'rgba(255,0,0,.08)', border:'1px solid rgba(255,0,0,.2)'}}>{sendErr}</div>}
+      <div>
+        <button type="submit" className="btn btn-primary" style={{padding:'18px 28px', opacity:sending?.6:1}} disabled={sending}>
+          {sending ? 'Sending…' : <> Book free inspection <Arrow/> </>}
+        </button>
+      </div>
+    </form>
+  );
+}
+
 function RoofingPage() {
   const { navigate } = useApp();
+  const formRef = useRef(null);
+  const scrollToForm = ()=>{
+    if (formRef.current) formRef.current.scrollIntoView({ behavior:'smooth', block:'start' });
+  };
   return (
     <div className="page-enter">
       <section style={{position:'relative', minHeight:'70vh', background:'var(--bg-primary)', overflow:'hidden'}}>
@@ -173,7 +276,7 @@ function RoofingPage() {
             New roofs. Tear-offs. Re-roofs. Storm & insurance claims. Residential shingle and commercial flat systems — TPO, EPDM, modified bitumen, standing seam.
           </p>
           <div style={{display:'flex', gap:12, marginTop:28, flexWrap:'wrap'}}>
-            <button className="btn btn-primary">Book a free inspection <Arrow/></button>
+            <button className="btn btn-primary" onClick={scrollToForm}>Book a free inspection <Arrow/></button>
             <a href="tel:9049440278" className="btn btn-outline">Call us: (904) 944-0278</a>
           </div>
         </div>
@@ -217,7 +320,7 @@ function RoofingPage() {
           <div>
             <Kicker>FAQ</Kicker>
             <h2 className="display" style={{fontSize:'clamp(36px,5vw,64px)', marginTop:14}}>Common roofing questions.</h2>
-            <p style={{color:'var(--fg-muted)', marginTop:18, maxWidth:420}}>Need something specific? Call our hotline or submit a free inspection request.</p>
+            <p style={{color:'var(--fg-muted)', marginTop:18, maxWidth:420}}>Need something specific? Call us or book a free inspection below.</p>
           </div>
           <div>
             {[
@@ -226,6 +329,39 @@ function RoofingPage() {
               ['How long does a full tear-off and re-roof take?','Typical single-family: 1–3 days. Commercial flat: days to weeks depending on system.'],
               ['What warranty do I get?','Manufacturer warranty plus JK Prestige\'s workmanship guarantee — one signed document.'],
             ].map(([q,a],i)=> <FAQ key={i} q={q} a={a}/>)}
+          </div>
+        </div>
+      </section>
+
+      {/* ---- FREE INSPECTION FORM ---- */}
+      <section ref={formRef} className="section" style={{background:'var(--bg-elev)'}} id="inspection">
+        <div className="wrap" style={{display:'grid', gridTemplateColumns:'1fr 1.2fr', gap:'clamp(40px,6vw,80px)', alignItems:'start'}} className="jk-footer-top">
+          <div>
+            <Kicker>FREE INSPECTION</Kicker>
+            <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:16, lineHeight:.92}}>
+              Book your 24-point roof inspection.
+            </h2>
+            <p style={{marginTop:20, color:'var(--fg-muted)', lineHeight:1.7, maxWidth:420}}>
+              No pressure. No invoice. A certified JK Prestige technician visits your property, documents every issue, and hands you a full written report — free of charge.
+            </p>
+            <div style={{marginTop:32, display:'grid', gap:14, maxWidth:360}}>
+              {[
+                ['RESPONSE TIME','We call within 24 hours to confirm.'],
+                ['ZERO OBLIGATION','Inspection is free, report is yours to keep.'],
+                ['INSURANCE READY','We document damage in adjuster-ready format.'],
+              ].map(([k,v])=>(
+                <div key={k} style={{display:'flex', gap:16, alignItems:'flex-start'}}>
+                  <div style={{width:6, height:6, background:'var(--accent-hot)', borderRadius:'50%', marginTop:6, flexShrink:0}}/>
+                  <div>
+                    <div className="mono" style={{color:'#fff', fontSize:10}}>{k}</div>
+                    <div style={{fontSize:13, color:'var(--fg-muted)', marginTop:4}}>{v}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div style={{background:'var(--bg-primary)', padding:'clamp(24px,4vw,48px)', border:'1px solid var(--hairline)'}}>
+            <RoofingInspectionForm/>
           </div>
         </div>
       </section>
