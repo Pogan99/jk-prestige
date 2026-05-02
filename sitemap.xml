@@ -1,168 +1,658 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ===== Main site ===== -->
   <url>
     <loc>https://jkprestigeconstruction.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-
-  <!-- ===== Homeowner SEO pages ===== -->
-  <url>
-    <loc>https://jkprestigeconstruction.com/general-contractor-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/home-renovation-contractor-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://jkprestigeconstruction.com/custom-home-builder-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://jkprestigeconstruction.com/home-addition-contractor-jacksonville-fl/</loc>
+    <loc>https://jkprestigeconstruction.com/adu-builder-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/kitchen-remodel-contractor-jacksonville-fl/</loc>
+    <loc>https://jkprestigeconstruction.com/affordable-home-renovation-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
     <loc>https://jkprestigeconstruction.com/bathroom-remodel-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/whole-home-renovation-jacksonville-fl/</loc>
+    <loc>https://jkprestigeconstruction.com/bonded-contractor-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/residential-contractor-jacksonville-fl/</loc>
+    <loc>https://jkprestigeconstruction.com/bonded-general-contractor-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/home-builder-jacksonville-fl/</loc>
+    <loc>https://jkprestigeconstruction.com/cold-storage-construction-florida/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://jkprestigeconstruction.com/construction-company-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-
-  <!-- ===== Contractor / Commercial SEO pages ===== -->
-  <url>
-    <loc>https://jkprestigeconstruction.com/commercial-general-contractor-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
     <loc>https://jkprestigeconstruction.com/commercial-construction-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/hospital-construction-florida/</loc>
+    <loc>https://jkprestigeconstruction.com/commercial-contractor-fernandina-beach-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/warehouse-construction-florida/</loc>
+    <loc>https://jkprestigeconstruction.com/commercial-contractor-fleming-island-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/subcontractor-jacksonville-fl/</loc>
+    <loc>https://jkprestigeconstruction.com/commercial-contractor-orange-park-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/design-build-contractor-jacksonville-fl/</loc>
+    <loc>https://jkprestigeconstruction.com/commercial-contractor-ponte-vedra-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/ground-up-construction-florida/</loc>
+    <loc>https://jkprestigeconstruction.com/commercial-contractor-st-augustine-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/preconstruction-services-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://jkprestigeconstruction.com/industrial-construction-jacksonville-fl/</loc>
+    <loc>https://jkprestigeconstruction.com/commercial-general-contractor-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
-    <loc>https://jkprestigeconstruction.com/tilt-up-construction-florida/</loc>
+    <loc>https://jkprestigeconstruction.com/commercial-renovation-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-
-  <!-- ===== Roofing SEO pages ===== -->
-  <url>
-    <loc>https://jkprestigeconstruction.com/roofing-contractor-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://jkprestigeconstruction.com/roof-replacement-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-05-01</lastmod>
-  </url>
-  <url>
-    <loc>https://jkprestigeconstruction.com/storm-damage-roof-repair-jacksonville-fl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
     <loc>https://jkprestigeconstruction.com/commercial-roofing-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/concrete-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/construction-company-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/construction-management-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/custom-home-builder-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/custom-home-builder-northeast-florida/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/deck-builder-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/design-build-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/emergency-roof-repair-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/epdm-roofing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/exterior-renovation-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/flat-roof-repair-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/florida-room-addition-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/gaf-master-elite-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/garage-addition-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/general-contractor-fleming-island-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/general-contractor-jacksonville-beach-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/general-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/general-contractor-mandarin-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/general-contractor-northeast-florida/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/general-contractor-orange-park-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/general-contractor-ponte-vedra-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/general-contractor-san-marco-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/ground-up-construction-florida/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/hail-damage-roof-repair-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/healthcare-construction-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-addition-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-builder-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-builder-ponte-vedra-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-contractor-near-me-jacksonville/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-improvement-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-remodeling-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-renovation-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-renovation-cost-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/home-renovation-financing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/hospital-construction-florida/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/house-renovation-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/hurricane-damage-roof-repair-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/hurricane-resistant-home-builder-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/in-law-suite-builder-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/industrial-construction-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/insurance-roof-claim-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/interior-renovation-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/kitchen-remodel-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/licensed-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/licensed-general-contractor-florida/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/luxury-home-builder-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/master-suite-addition-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/medical-office-construction-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/metal-building-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/metal-roof-vs-shingle-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/metal-roofing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/new-home-construction-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/office-buildout-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/office-renovation-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/osha-30-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/preconstruction-services-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/re-roofing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/residential-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/residential-roofing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/restaurant-construction-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/retail-construction-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roof-coating-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roof-financing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
   </url>
   <url>
     <loc>https://jkprestigeconstruction.com/roof-inspection-jacksonville-fl/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-05-02</lastmod>
   </url>
-
+  <url>
+    <loc>https://jkprestigeconstruction.com/roof-leak-repair-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roof-maintenance-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roof-repair-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roof-replacement-cost-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roof-replacement-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-company-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-contractor-fernandina-beach-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-contractor-fleming-island-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-contractor-jacksonville-beach-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-contractor-mandarin-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-contractor-orange-park-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-contractor-ponte-vedra-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/roofing-contractor-st-augustine-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/room-addition-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/second-story-addition-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/shingle-roofing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/signs-you-need-new-roof-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/steel-building-contractor-florida/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/storm-damage-roof-repair-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/subcontractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/tenant-improvement-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/tile-roofing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/tilt-up-construction-florida/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/tpo-roofing-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/warehouse-construction-florida/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/warehouse-contractor-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/whole-home-renovation-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+  <url>
+    <loc>https://jkprestigeconstruction.com/wind-damage-roof-repair-jacksonville-fl/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
 </urlset>
