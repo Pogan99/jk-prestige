@@ -43,21 +43,22 @@ function AudienceSwitcher() {
         <div style={{display:'flex', justifyContent:'center', marginBottom:40}}>
           <div style={{
             display:'inline-flex', border:'1px solid var(--hairline)',
-            padding:4, gap:4, background:'rgba(0,0,0,.2)'
+            padding:4, gap:4, background:'rgba(0,0,0,.2)', flexWrap:'wrap', justifyContent:'center'
           }}>
             {[
-              {id:'homeowner', label:"I'm a Homeowner"},
-              {id:'developer', label:"I'm a Developer / GC"},
+              {id:'homeowner', label:"Homeowner"},
+              {id:'developer', label:"Developer / GC"},
             ].map(o=>{
               const on = audience===o.id;
               return (
                 <button key={o.id} onClick={()=>setAudience(o.id)}
                   className="mono"
                   style={{
-                    padding:'14px 22px',
+                    padding:'12px 18px',
                     background: on? 'var(--accent)':'transparent',
                     color: on? '#fff':'var(--fg-muted)',
                     transition:'all .25s ease',
+                    whiteSpace:'nowrap',
                   }}>{o.label.toUpperCase()}</button>
               );
             })}
@@ -123,7 +124,7 @@ function WhoWeAre() {
   );
   return (
     <section className="section" style={{background:'var(--bg-primary)'}}>
-      <div className="wrap" style={{display:'grid', gridTemplateColumns:'1.15fr 1fr', gap:'clamp(40px,6vw,96px)', alignItems:'stretch'}}>
+      <div className="wrap jk-who-we-are" style={{display:'grid', gridTemplateColumns:'1.15fr 1fr', gap:'clamp(40px,6vw,96px)', alignItems:'stretch'}}>
         <Reveal>
           <Kicker>WHO WE ARE</Kicker>
           <h2 className="display" style={{fontSize:'clamp(40px, 5.6vw, 84px)', marginTop:18, marginBottom:28}}>
@@ -165,18 +166,18 @@ function TopoWatermark(){
           Built in Florida.<br/>One standard.
         </div>
       </div>
-      <div style={{position:'absolute', left:32, bottom:32, right:32, display:'flex', justifyContent:'space-between', alignItems:'flex-end'}}>
+      <div className="jk-topo-coords" style={{position:'absolute', left:32, bottom:32, right:32, display:'flex', justifyContent:'space-between', alignItems:'flex-end', gap:12}}>
         <div>
-          <div className="mono" style={{color:'var(--fg-dim)'}}>LATITUDE</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>30°19′55″N</div>
+          <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>LAT</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>30°19′N</div>
         </div>
         <div>
-          <div className="mono" style={{color:'var(--fg-dim)'}}>LONGITUDE</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>81°39′21″W</div>
+          <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>LNG</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>81°39′W</div>
         </div>
         <div>
-          <div className="mono" style={{color:'var(--fg-dim)'}}>FILE</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:14, color:'#fff'}}>JKP-2017-2025</div>
+          <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>FILE</div>
+          <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>JKP-2017-2025</div>
         </div>
       </div>
     </div>
@@ -476,17 +477,17 @@ function LetterMaskVideo() {
         </div>
 
         {/* top overlay */}
-        <div style={{position:'absolute', top:40, left:0, right:0, padding:'0 clamp(20px,4vw,48px)', display:'flex', justifyContent:'space-between', zIndex:3, flexWrap:'wrap', gap:12}}>
+        <div style={{position:'absolute', top:40, left:0, right:0, padding:'0 clamp(20px,4vw,48px)', display:'flex', justifyContent:'space-between', zIndex:3, gap:12, alignItems:'center'}}>
           <span className="mono" style={{color:'var(--fg-muted)'}}>// OUR STANDARD</span>
-          <span className="mono" style={{color:'var(--fg-muted)'}}>ONE CONTRACT · ONE GUARANTEE · 100% SATISFACTION</span>
+          <span className="mono jk-lmv-tagline" style={{color:'var(--fg-muted)', textAlign:'right'}}>ONE CONTRACT · ONE GUARANTEE · 100%</span>
         </div>
 
         {/* bottom overlay — kicker + progress */}
-        <div style={{position:'absolute', bottom:48, left:0, right:0, padding:'0 clamp(20px,4vw,48px)', display:'flex', justifyContent:'space-between', alignItems:'center', gap:24, flexWrap:'wrap', zIndex:3}}>
-          <div className="mono" style={{color:'var(--accent)'}}>// EST. 2017 · BUILT IN FLORIDA · SCROLL TO REVEAL</div>
-          <div style={{display:'flex', alignItems:'center', gap:14}}>
-            <span className="mono" style={{color:'#fff'}}>{String(pct).padStart(3,'0')}%</span>
-            <div style={{width:220, height:3, background:'rgba(255,255,255,.15)', position:'relative', overflow:'hidden'}}>
+        <div className="jk-lmv-bottom" style={{position:'absolute', bottom:40, left:0, right:0, padding:'0 clamp(20px,4vw,48px)', display:'flex', justifyContent:'space-between', alignItems:'center', gap:16, zIndex:3}}>
+          <div className="mono jk-lmv-text" style={{color:'var(--accent)', flexShrink:0}}>// EST. 2017 · BUILT IN FL</div>
+          <div style={{display:'flex', alignItems:'center', gap:10, flex:1, justifyContent:'flex-end', minWidth:0}}>
+            <span className="mono" style={{color:'#fff', flexShrink:0}}>{String(pct).padStart(3,'0')}%</span>
+            <div className="jk-lmv-bar" style={{flex:1, maxWidth:220, height:3, background:'rgba(255,255,255,.15)', position:'relative', overflow:'hidden', minWidth:60}}>
               <div style={{position:'absolute', top:0, left:0, height:'100%', width:(t*100)+'%', background:'var(--accent)'}}/>
             </div>
           </div>
@@ -548,23 +549,23 @@ function USMap() {
           </div>
 
           {/* Overlay stats bar */}
-          <div style={{
+          <div className="jk-map-bar" style={{
             position:'absolute', bottom:0, left:0, right:0,
             background:'linear-gradient(transparent, rgba(24,24,30,.97) 40%)',
             padding:'40px clamp(16px,2vw,32px) 20px',
-            display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:16, alignItems:'flex-end',
+            display:'flex', justifyContent:'space-between', flexWrap:'wrap', gap:12, alignItems:'flex-end',
           }}>
             <div>
               <div className="mono" style={{color:'var(--accent-hot)', fontSize:11}}>// HEADQUARTERS</div>
-              <div style={{fontFamily:'var(--display)', fontSize:'clamp(16px,1.8vw,22px)', letterSpacing:'-.01em', color:'#fff', marginTop:6}}>
-                Jacksonville, FL · M–F 7:00 AM – 6:00 PM
+              <div style={{fontFamily:'var(--display)', fontSize:'clamp(14px,1.8vw,22px)', letterSpacing:'-.01em', color:'#fff', marginTop:6}}>
+                Jacksonville, FL · M–F 7am–6pm
               </div>
             </div>
-            <div style={{display:'flex', gap:'clamp(12px,2vw,32px)', flexWrap:'wrap'}}>
+            <div className="jk-map-states" style={{display:'flex', gap:'clamp(8px,2vw,24px)', flexWrap:'wrap', alignItems:'center'}}>
               {PAST_PROJECT_STATES.slice(0,8).map(s=>(
                 <span key={s} className="mono" style={{color:'rgba(255,255,255,.45)', fontSize:11}}>{s}</span>
               ))}
-              <span className="mono" style={{color:'rgba(255,255,255,.45)', fontSize:11}}>+{PAST_PROJECT_STATES.length - 8} MORE</span>
+              <span className="mono" style={{color:'rgba(255,255,255,.45)', fontSize:11}}>+{PAST_PROJECT_STATES.length - 8}</span>
             </div>
           </div>
         </div>
@@ -588,7 +589,7 @@ function SubcontractingBand() {
   const { navigate } = useApp();
   return (
     <section className="section" style={{background:'var(--bg-elev)'}}>
-      <div className="wrap" style={{display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:'clamp(32px,5vw,72px)', alignItems:'center'}}>
+      <div className="wrap jk-sub-band" style={{display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:'clamp(32px,5vw,72px)', alignItems:'center'}}>
         <Reveal>
           <span className="mono" style={{color:'#fff', opacity:.85}}>// FOR GC PARTNERS</span>
           <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:16, color:'#fff'}}>
@@ -658,7 +659,7 @@ function TestimonialBlock() {
   ];
   return (
     <section style={{background:'var(--bg-invert)', color:'#fff'}}>
-      <div className="wrap" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}}>
+      <div className="wrap jk-testimonial-grid" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}}>
         <Reveal>
           <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// WHAT PEOPLE SAY</span>
           <h2 style={{color:'#000', fontFamily:'var(--display)', fontSize:'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.9, marginTop:20}}>

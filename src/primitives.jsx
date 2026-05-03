@@ -118,6 +118,21 @@ const { useState, useEffect, useRef, useMemo, useLayoutEffect, createContext, us
       /* Generic grids */
       .jk-grid-3,.jk-grid-2,.jk-grid-4{grid-template-columns:1fr !important}
 
+      /* Who We Are / Subcontracting / Testimonial — 2-col → 1-col */
+      .jk-who-we-are{grid-template-columns:1fr !important}
+      .jk-sub-band{grid-template-columns:1fr !important}
+      .jk-testimonial-grid{grid-template-columns:1fr !important; padding-left:18px !important; padding-right:18px !important}
+
+      /* Letter mask video — bottom bar */
+      .jk-lmv-text{display:none}
+      .jk-lmv-tagline{display:none}
+
+      /* Topo watermark coords — compact */
+      .jk-topo-coords{font-size:10px}
+
+      /* Map bar — stack on small screens */
+      .jk-map-bar{flex-direction:column !important; align-items:flex-start !important; gap:10px !important}
+
       h1,h2,h3{word-break:break-word}
     }
     @media (max-width: 480px) {
