@@ -86,7 +86,7 @@ function AudienceSwitcher() {
               {panel.cta} <Arrow/>
             </button>
           </div>
-          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(0,0,0,.25)', alignSelf:'start'}}>
+          <div className="jk-audience-bullets" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:1, background:'rgba(0,0,0,.25)', alignSelf:'start'}}>
             {panel.bullets.map((b,i)=>(
               <div key={i} style={{background:'var(--bg-elev)', padding:'18px 16px', display:'flex', alignItems:'flex-start', gap:10}}>
                 <span style={{width:6, height:6, background:'var(--accent)', marginTop:6, flexShrink:0}}/>
@@ -162,7 +162,7 @@ function TopoWatermark(){
       </svg>
       <div style={{position:'absolute', left:32, top:32, right:32}}>
         <div className="mono" style={{color:'var(--accent)'}}>// EST. 2017 · FAMILY OPERATED</div>
-        <div style={{fontFamily:'var(--display)', fontSize:'clamp(36px,4vw,56px)', letterSpacing:'-.02em', lineHeight:.95, marginTop:12}}>
+        <div className="jk-topo-headline" style={{fontFamily:'var(--display)', fontSize:'clamp(36px,4vw,56px)', letterSpacing:'-.02em', lineHeight:.95, marginTop:12}}>
           Built in Florida.<br/>One standard.
         </div>
       </div>
@@ -196,7 +196,7 @@ function StatsStrip(){
   ];
   return (
     <section className="section-tight" style={{background:'var(--bg-elev)', borderTop:'1px solid rgba(0,0,0,.25)', borderBottom:'1px solid rgba(0,0,0,.25)'}}>
-      <div className="wrap" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:0}}>
+      <div className="wrap jk-stats-wrap" style={{display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:0}}>
         {stats.map((s,i)=>(
           <Reveal key={i} delay={i*80} className="stat-tile" style={{
             padding:'clamp(28px, 4vw, 48px) clamp(18px, 2.4vw, 36px)',
@@ -285,7 +285,7 @@ function ExpertiseGrid() {
           <div style={{display:'flex', justifyContent:'space-between', alignItems:'flex-end', flexWrap:'wrap', gap:24, marginBottom:40}}>
             <div>
               <Kicker>WHAT WE BUILD</Kicker>
-              <h2 className="display" style={{fontSize:'clamp(40px, 5.6vw, 84px)', marginTop:16}}>
+              <h2 className="display jk-expertise-h2" style={{fontSize:'clamp(40px, 5.6vw, 84px)', marginTop:16}}>
                 Six disciplines.<br/>One standard of prestige.
               </h2>
             </div>
@@ -662,7 +662,7 @@ function TestimonialBlock() {
       <div className="wrap jk-testimonial-grid" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}}>
         <Reveal>
           <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// WHAT PEOPLE SAY</span>
-          <h2 style={{color:'#000', fontFamily:'var(--display)', fontSize:'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.9, marginTop:20}}>
+          <h2 className="jk-testimonial-h2" style={{color:'#000', fontFamily:'var(--display)', fontSize:'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.9, marginTop:20}}>
             Prestige Is In The&nbsp;Details.
           </h2>
           <div style={{marginTop:24, color:'rgba(255,255,255,.9)', fontSize:16, maxWidth:420, lineHeight:1.65}}>

@@ -134,10 +134,40 @@ const { useState, useEffect, useRef, useMemo, useLayoutEffect, createContext, us
       .jk-map-bar{flex-direction:column !important; align-items:flex-start !important; gap:10px !important}
 
       h1,h2,h3{word-break:break-word}
+
+      /* Prevent horizontal scroll from any oversized element */
+      .section,.section-tight{overflow-x:hidden}
+      body{overflow-x:hidden}
+
+      /* WhoWeAre + SubcontractingBand headlines — reduce minimum size */
+      .jk-who-we-are h2{font-size:clamp(26px,7vw,40px) !important; line-height:1.05 !important}
+      .jk-sub-band h2{font-size:clamp(26px,7vw,40px) !important; line-height:1.05 !important}
+
+      /* TopoWatermark inner text */
+      .jk-topo-headline{font-size:clamp(22px,6vw,32px) !important; line-height:1 !important}
+
+      /* Audience panel inner bullet grid → 1 col on mobile */
+      .jk-audience-bullets{grid-template-columns:1fr !important}
+
+      /* Stats strip → 2 col on mobile */
+      .jk-stats-wrap{grid-template-columns:repeat(2,1fr) !important}
+
+      /* Expertise grid caption */
+      .jk-expertise-h2{font-size:clamp(28px,7vw,40px) !important}
+
+      /* Testimonial headline */
+      .jk-testimonial-h2{font-size:clamp(36px,9vw,56px) !important}
+
+      /* Turnkey promise */
+      .turnkey-grid{grid-template-columns:1fr !important}
+
+      /* USMap states list */
+      .jk-map-states{display:none !important}
     }
     @media (max-width: 480px) {
       .wrap{padding:0 14px}
       .btn{padding:12px 14px;font-size:10.5px}
+      .jk-who-we-are h2{font-size:clamp(22px,7vw,32px) !important}
     }
   `;
   document.head.appendChild(css);
