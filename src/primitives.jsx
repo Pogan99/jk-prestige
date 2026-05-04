@@ -252,6 +252,15 @@ const JK_ASSET_MAP = {
   'proj-linden-reno-16x9':       'assets/images/hf_20260501_174716_2950dfd7-923a-4142-bbb3-29727dd3d2de.jpg',
   'proj-parkside-roofing-16x9':  'assets/images/hf_20260501_174513_59396b79-de97-4537-99f8-0297dd5c52fa.jpg',
 
+  /* ---- roofing service cards ---- */
+  'roofing-residential-1x1':     'assets/images/hf_20260504_202102_44399bad-f04f-41c9-8569-1e2a84e1d91f.png',
+  'roofing-commercial-1x1':      'assets/images/hf_20260504_202107_2c36086e-3014-49d4-9514-3ad456136808.png',
+  'roofing-storm-1x1':           'assets/images/hf_20260504_202112_fc714d05-b4d7-44b1-ad71-be0e49b3bb02.png',
+  'roofing-inspection-1x1':      'assets/images/hf_20260504_202116_27900255-6ba0-49a7-9f49-a8bfcfdc0928.png',
+
+  /* ---- newsroom feature ---- */
+  'newsroom-feature-16x9':       'assets/images/hf_20260504_202125_660f0b31-714c-4aef-9590-ac207ad9308a.png',
+
   /* ---- leadership headshots ---- */
   'leader-1-3x4':                'assets/images/hf_20260501_174721_5b01324c-b3e0-40b0-af61-b9bdb93724c5.jpg',
   'leader-2-3x4':                'assets/images/hf_20260501_174730_604fa6a3-483e-44da-9e8d-ac565900d4d5.jpg',
