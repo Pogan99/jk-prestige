@@ -188,6 +188,24 @@ function BlogPage() {
           <p style={{fontSize:'1.05rem', color:'#9098b0', maxWidth:560, lineHeight:1.7}}>
             Real knowledge from a principal-led GC. Custom homes, hospital construction, roofing, and renovation — written by the people who build it.
           </p>
+          {!loading && posts.length > 0 && (
+            <div style={{marginTop:28, display:'flex', alignItems:'center', gap:20, flexWrap:'wrap'}}>
+              <div style={{display:'flex', alignItems:'center', gap:10}}>
+                <span style={{fontFamily:'var(--display)', fontSize:'clamp(2rem,4vw,3rem)', fontWeight:800, color:'#fff', lineHeight:1}}>{posts.length}</span>
+                <span style={{fontFamily:'var(--mono)', fontSize:10, fontWeight:700, letterSpacing:'.14em', color:'#526FAE', textTransform:'uppercase', lineHeight:1.3}}>Articles<br/>Published</span>
+              </div>
+              <div style={{width:1, height:40, background:'rgba(255,255,255,.15)'}}/>
+              <div style={{display:'flex', alignItems:'center', gap:10}}>
+                <span style={{fontFamily:'var(--display)', fontSize:'clamp(2rem,4vw,3rem)', fontWeight:800, color:'#fff', lineHeight:1}}>9</span>
+                <span style={{fontFamily:'var(--mono)', fontSize:10, fontWeight:700, letterSpacing:'.14em', color:'#526FAE', textTransform:'uppercase', lineHeight:1.3}}>Topic<br/>Categories</span>
+              </div>
+              <div style={{width:1, height:40, background:'rgba(255,255,255,.15)'}}/>
+              <div style={{display:'flex', alignItems:'center', gap:10}}>
+                <span style={{fontFamily:'var(--display)', fontSize:'clamp(2rem,4vw,3rem)', fontWeight:800, color:'#fff', lineHeight:1}}>Free</span>
+                <span style={{fontFamily:'var(--mono)', fontSize:10, fontWeight:700, letterSpacing:'.14em', color:'#526FAE', textTransform:'uppercase', lineHeight:1.3}}>Always<br/>& Always</span>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

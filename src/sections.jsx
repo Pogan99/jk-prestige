@@ -959,7 +959,9 @@ function FooterCol({ title, items, navigate }) {
       <div className="mono" style={{color:'var(--fg-muted)', marginBottom:16}}>// {title}</div>
       <div style={{display:'grid', gap:10}}>
         {items.map(([l,href])=>(
-          <a key={l} href={'#'+href} onClick={(e)=>{e.preventDefault(); navigate(href);}} style={{color:'#fff', fontSize:14}}>{l}</a>
+          href === '/blog'
+            ? <a key={l} href="/blog" style={{color:'#fff', fontSize:14}}>{l}</a>
+            : <a key={l} href={'#'+href} onClick={(e)=>{e.preventDefault(); navigate(href);}} style={{color:'#fff', fontSize:14}}>{l}</a>
         ))}
       </div>
     </div>
