@@ -909,7 +909,7 @@ function Footer() {
 
         <div className="jk-footer-cols" style={{display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:32}}>
           <FooterCol title="COMPANY" items={[
-            ['The JK Way','/the-jk-way'],['Expertise','/expertise'],['Projects','/projects'],['Contact','/contact']
+            ['The JK Way','/the-jk-way'],['Expertise','/expertise'],['Projects','/projects'],['Blog','/blog'],['Contact','/contact']
           ]} navigate={navigate}/>
           <FooterCol title="EXPERTISE" items={[
             ['Hospitals','/expertise/hospitals'],['Custom Homes','/expertise/homes'],['Warehouses','/expertise/warehouses'],['Renovations','/expertise/renovations']
