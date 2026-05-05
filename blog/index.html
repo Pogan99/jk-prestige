@@ -155,14 +155,20 @@
   let allPosts = [];
 
   async function init() {
-    try {
-      const res = await fetch('/blog/index.json', { cache: 'no-store' });
-      if (!res.ok) throw new Error('404');
-      allPosts = await res.json();
-      renderPosts(allPosts, 'all');
-    } catch {
-      document.getElementById('noPosts').style.display = 'block';
+    const urls = [
+      '/blog/index.json',
+      'https://jkprestigeconstruction.com/blog/index.json',
+    ];
+    for (const url of urls) {
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) continue;
+        allPosts = await res.json();
+        renderPosts(allPosts, 'all');
+        return;
+      } catch {}
     }
+    document.getElementById('noPosts').style.display = 'block';
   }
 
   function renderPosts(posts, cat) {

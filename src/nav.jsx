@@ -137,6 +137,16 @@ function Nav() {
               </a>
             );
           })}
+          <a href="/blog/"
+            style={{
+              padding:'10px 14px',
+              fontFamily:'var(--mono)', fontSize:11, fontWeight:600,
+              letterSpacing:'.18em',
+              color:'rgba(255,255,255,.78)',
+              display:'inline-flex', alignItems:'center',
+            }}>
+            BLOG
+          </a>
           <button
             onClick={()=>setSearchOpen(v=>!v)}
             aria-label="Search"
@@ -196,6 +206,10 @@ function Nav() {
               {item.label}
             </a>
           ))}
+          <a href="/blog/"
+            style={{display:'block', padding:'18px 0', borderBottom:'1px solid var(--hairline)', fontFamily:'var(--display)', fontSize:28, letterSpacing:'-.015em'}}>
+            Blog
+          </a>
         </div>
       )}
 
