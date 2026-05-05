@@ -47,13 +47,13 @@ def parse_draft(path: Path) -> dict:
         return m.group(1).strip() if m else default
 
     meta["h1_title"]       = grab(r"^#\s+(.+)$")
-    meta["meta_title"]     = grab(r"\*\*Meta Title\*\*:?\s*(.+)")
-    meta["meta_desc"]      = grab(r"\*\*Meta Description\*\*:?\s*(.+)")
-    meta["slug"]           = grab(r"\*\*(?:URL\s*)?Slug\*\*:?\s*/?([a-z0-9-]+)/?")
-    meta["keyword"]        = grab(r"\*\*(?:Target\s*)?Keyword\*\*:?\s*(.+)")
-    meta["category"]       = grab(r"\*\*Category\*\*:?\s*(.+)").lower().replace(" ", "-")
-    meta["excerpt"]        = grab(r"\*\*(?:Excerpt|Summary)\*\*:?\s*(.+)")
-    meta["read_minutes"]   = int(grab(r"\*\*Read\s*(?:Time|Minutes)\*\*:?\s*(\d+)", "5"))
+    meta["meta_title"]     = grab(r"Meta Title[*\s:]+(.+)")
+    meta["meta_desc"]      = grab(r"Meta Description[*\s:]+(.+)")
+    meta["slug"]           = grab(r"(?:URL\s*)?Slug[*\s:]+([a-z0-9-]+)")
+    meta["keyword"]        = grab(r"(?:Target\s*)?Keyword[*\s:]+(.+)")
+    meta["category"]       = grab(r"Category[*\s:]+(.+)").lower().replace(" ", "-")
+    meta["excerpt"]        = grab(r"(?:Excerpt|Summary)[*\s:]+(.+)")
+    meta["read_minutes"]   = int(grab(r"Read\s*(?:Time|Minutes)[*\s:]+(\d+)", "5"))
 
     # Fallback: use first non-heading paragraph as excerpt
     if not meta["excerpt"] and meta["h1_title"]:
@@ -192,7 +192,7 @@ def md_to_html(md: str) -> str:
             continue
 
         # Skip frontmatter-like lines
-        if re.match(r"^\*\*(Meta Title|Meta Description|URL Slug|Target Keyword|Category|Excerpt|Read Time|Read Minutes|Summary)\*\*", stripped):
+        if re.match(r"^(?:\*\*)?(Meta Title|Meta Description|URL Slug|Target Keyword|Category|Excerpt|Read Time|Read Minutes|Summary)(?:\*\*)?:", stripped):
             flush_p()
             continue
 
