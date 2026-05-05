@@ -137,15 +137,17 @@ function Nav() {
               </a>
             );
           })}
-          <a href="/blog/"
+          <a href="#/blog"
+            onClick={(e)=>{e.preventDefault(); navigate('/blog'); setHovered(null);}}
             style={{
               padding:'10px 14px',
               fontFamily:'var(--mono)', fontSize:11, fontWeight:600,
               letterSpacing:'.18em',
-              color:'rgba(255,255,255,.78)',
-              display:'inline-flex', alignItems:'center',
+              color: route==='/blog' ? '#fff' : 'rgba(255,255,255,.78)',
+              display:'inline-flex', alignItems:'center', position:'relative',
             }}>
             BLOG
+            {route==='/blog' && <span style={{position:'absolute',left:14,right:14,bottom:4,height:2,background:'var(--accent)'}}/>}
           </a>
           <button
             onClick={()=>setSearchOpen(v=>!v)}
@@ -206,7 +208,8 @@ function Nav() {
               {item.label}
             </a>
           ))}
-          <a href="/blog/"
+          <a href="#/blog"
+            onClick={(e)=>{e.preventDefault(); navigate('/blog'); setMobileOpen(false);}}
             style={{display:'block', padding:'18px 0', borderBottom:'1px solid var(--hairline)', fontFamily:'var(--display)', fontSize:28, letterSpacing:'-.015em'}}>
             Blog
           </a>
