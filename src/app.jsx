@@ -10,11 +10,10 @@ const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
 }/*EDITMODE-END*/;
 
 function App() {
-  // If Cloudflare Pages SPA mode serves index.html for /blog, handle it here
-  const pathname = window.location.pathname;
-  if (pathname === '/blog' || pathname === '/blog/') return <><Nav/><BlogPage/><Footer/></>;
+  const isBlogPath = window.location.pathname === '/blog' || window.location.pathname === '/blog/';
 
   const [route, setRoute] = useState(()=> {
+    if (isBlogPath) return '/blog';
     const h = window.location.hash.replace('#','');
     return h || '/';
   });
@@ -28,7 +27,6 @@ function App() {
     try { localStorage.setItem('jk.audience', audience); } catch(e){}
   },[audience]);
 
-  // Apply tweaks to :root
   useEffect(()=>{
     const r = document.documentElement;
     r.style.setProperty('--accent-hot', tweaks.accentHot);
@@ -50,12 +48,12 @@ function App() {
   };
 
   useEffect(()=>{
+    if (isBlogPath) return;
     const onHash = ()=> setRoute(window.location.hash.replace('#','') || '/');
     window.addEventListener('hashchange', onHash);
     return ()=> window.removeEventListener('hashchange', onHash);
   },[]);
 
-  /* Footer link events (dispatched from sections.jsx footer) */
   useEffect(()=>{
     const handler = (e)=> navigate(e.detail);
     window.addEventListener('jk-navigate', handler);
@@ -65,7 +63,7 @@ function App() {
   return (
     <AppCtx.Provider value={{ route, navigate, audience, setAudience, tweaks, setTweaks }}>
       <Nav/>
-      <div key={route} className={transitioning? '' : 'page-enter'} style={{position:'relative'}}>
+      <div key={route} className={isBlogPath || transitioning? '' : 'page-enter'} style={{position:'relative'}}>
         {route === '/' && <HomePage/>}
         {route === '/the-jk-way' && <JKWayPage/>}
         {route === '/expertise' && <ExpertisePage/>}
@@ -79,7 +77,7 @@ function App() {
         {route === '/contact' && <ContactPage/>}
         {route === '/terms' && <TermsPage/>}
         {route === '/privacy' && <PrivacyPage/>}
-        {route === '/blog' && <BlogPage/>}
+        {(isBlogPath || route === '/blog') && <BlogPage/>}
       </div>
       <Footer/>
 
