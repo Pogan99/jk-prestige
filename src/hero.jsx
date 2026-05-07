@@ -68,7 +68,7 @@ function Hero() {
 
   const pct = Math.round(progress*100);
   const insetRight = (1-progress)*100;
-  const sectionHeight = isMobile ? '150vh' : '200vh';
+  const sectionHeight = isMobile ? '180vh' : '200vh';
 
   const titleStyle = {
     fontFamily:"'Big Shoulders Display', 'Bebas Neue', 'Archivo Black', sans-serif",
