@@ -108,6 +108,12 @@ function AudienceSwitcher() {
    ========================================================= */
 function WhoWeAre() {
   const { audience } = useApp();
+  const [mob, setMob] = React.useState(()=>window.innerWidth<=720);
+  React.useEffect(()=>{
+    const check=()=>setMob(window.innerWidth<=720);
+    window.addEventListener('resize',check);
+    return ()=>window.removeEventListener('resize',check);
+  },[]);
   const homeCopy = (
     <>
       <p>JK Prestige Constructor is a family-operated general contractor headquartered in Jacksonville, FL. Founded in 2017, we've built our reputation on one principle: the person who signs your contract is the person who answers your calls and walks your jobsite.</p>
@@ -124,10 +130,10 @@ function WhoWeAre() {
   );
   return (
     <section className="section" style={{background:'var(--bg-primary)'}}>
-      <div className="wrap jk-who-we-are" style={{display:'grid', gridTemplateColumns:'1.15fr 1fr', gap:'clamp(40px,6vw,96px)', alignItems:'stretch'}}>
+      <div className="wrap jk-who-we-are" style={{display:'grid', gridTemplateColumns:mob?'1fr':'1.15fr 1fr', gap:'clamp(40px,6vw,96px)', alignItems:'stretch'}}>
         <Reveal>
           <Kicker>WHO WE ARE</Kicker>
-          <h2 className="display" style={{fontSize:'clamp(40px, 5.6vw, 84px)', marginTop:18, marginBottom:28}}>
+          <h2 className="display" style={{fontSize:mob?'clamp(28px,8vw,48px)':'clamp(40px,5.6vw,84px)', marginTop:18, marginBottom:28, wordBreak:'normal', overflowWrap:'break-word', hyphens:'none'}}>
             Your Trusted Builder,<br/>From Foundation to Finish.
           </h2>
           <div style={{fontSize:17, lineHeight:1.7, color:'var(--fg-muted)', display:'grid', gap:18, maxWidth:600}}>
@@ -587,12 +593,18 @@ function Legend({dot,label}){
    ========================================================= */
 function SubcontractingBand() {
   const { navigate } = useApp();
+  const [mob, setMob] = React.useState(()=>window.innerWidth<=720);
+  React.useEffect(()=>{
+    const check=()=>setMob(window.innerWidth<=720);
+    window.addEventListener('resize',check);
+    return ()=>window.removeEventListener('resize',check);
+  },[]);
   return (
     <section className="section" style={{background:'var(--bg-elev)'}}>
-      <div className="wrap jk-sub-band" style={{display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:'clamp(32px,5vw,72px)', alignItems:'center'}}>
+      <div className="wrap jk-sub-band" style={{display:'grid', gridTemplateColumns:mob?'1fr':'1.3fr 1fr', gap:'clamp(32px,5vw,72px)', alignItems:'center'}}>
         <Reveal>
           <span className="mono" style={{color:'#fff', opacity:.85}}>// FOR GC PARTNERS</span>
-          <h2 className="display" style={{fontSize:'clamp(36px,4.8vw,72px)', marginTop:16, color:'#fff'}}>
+          <h2 className="display" style={{fontSize:mob?'clamp(26px,7vw,40px)':'clamp(36px,4.8vw,72px)', marginTop:16, color:'#fff', wordBreak:'normal', overflowWrap:'break-word', hyphens:'none'}}>
             A trade partner who performs — not just shows up.
           </h2>
           <p style={{marginTop:22, fontSize:17, lineHeight:1.65, color:'rgba(255,255,255,.9)', maxWidth:620}}>
@@ -607,7 +619,7 @@ function SubcontractingBand() {
           </div>
         </Reveal>
         <Reveal delay={100}>
-          <div style={{display:'grid', gridTemplateColumns:'repeat(2,1fr)', gap:1, background:'rgba(0,0,0,.25)'}}>
+          <div style={{display:'grid', gridTemplateColumns:mob?'1fr':'repeat(2,1fr)', gap:1, background:'rgba(0,0,0,.25)'}}>
             {['Framing','Concrete','Drywall','Finish carpentry','Roofing crews','Self-perform trades'].map((t,i)=>(
               <div key={t} style={{background:'var(--bg-elev)', padding:'22px 20px', display:'flex', flexDirection:'column', gap:8}}>
                 <span style={{width:16, height:16, border:'1px solid var(--accent)', position:'relative'}}>
@@ -640,6 +652,12 @@ function StarRating({ count=5 }) {
 
 function TestimonialBlock() {
   const { navigate } = useApp();
+  const [mob, setMob] = React.useState(()=>window.innerWidth<=720);
+  React.useEffect(()=>{
+    const check=()=>setMob(window.innerWidth<=720);
+    window.addEventListener('resize',check);
+    return ()=>window.removeEventListener('resize',check);
+  },[]);
   const quotes = [
     {
       body:"JK Prestige walked our family through every decision — scope, budget, material choices. The numbers never moved unless we moved them. They self-performed the framing and drywall themselves, and the quality showed at every stage. The house feels exactly like us, delivered on time.",
@@ -659,10 +677,10 @@ function TestimonialBlock() {
   ];
   return (
     <section style={{background:'var(--bg-invert)', color:'#fff'}}>
-      <div className="wrap jk-testimonial-grid" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}}>
+      <div className="wrap jk-testimonial-grid" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:mob?'1fr':'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}}>
         <Reveal>
           <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// WHAT PEOPLE SAY</span>
-          <h2 className="jk-testimonial-h2" style={{color:'#000', fontFamily:'var(--display)', fontSize:'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.9, marginTop:20}}>
+          <h2 className="jk-testimonial-h2" style={{color:'#000', fontFamily:'var(--display)', fontSize:mob?'clamp(32px,9vw,48px)':'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.95, marginTop:20, wordBreak:'normal', overflowWrap:'break-word', hyphens:'none'}}>
             Prestige Is In The&nbsp;Details.
           </h2>
           <div style={{marginTop:24, color:'rgba(255,255,255,.9)', fontSize:16, maxWidth:420, lineHeight:1.65}}>
