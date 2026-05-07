@@ -68,7 +68,7 @@ function Hero() {
 
   const pct = Math.round(progress*100);
   const insetRight = (1-progress)*100;
-  const sectionHeight = isMobile ? '100vh' : '200vh';
+  const sectionHeight = isMobile ? '150vh' : '200vh';
 
   const titleStyle = {
     fontFamily:"'Big Shoulders Display', 'Bebas Neue', 'Archivo Black', sans-serif",
@@ -83,7 +83,7 @@ function Hero() {
 
   return (
     <section ref={sectionRef} style={{ position:'relative', height:sectionHeight, background:'var(--bg-primary)' }}>
-      <div style={{ position:isMobile?'relative':'sticky', top:0, height:'100vh', overflow:'hidden', isolation:'isolate' }}>
+      <div style={{ position:'sticky', top:0, height:'100vh', overflow:'hidden', isolation:'isolate' }}>
 
         {/* Video bg — overlay is flat 20% dark so video shows clearly */}
         <div aria-hidden style={{position:'absolute', inset:0, zIndex:0, overflow:'hidden', background:'#111'}}>
@@ -133,11 +133,9 @@ function Hero() {
                 ...titleStyle,
                 position:'absolute', top:0, left:0,
                 color:'#fff',
-                ...(isMobile ? {} : {
-                  clipPath:`inset(0 ${insetRight}% 0 0)`,
-                  WebkitClipPath:`inset(0 ${insetRight}% 0 0)`,
-                  willChange:'clip-path',
-                }),
+                clipPath:`inset(0 ${insetRight}% 0 0)`,
+                WebkitClipPath:`inset(0 ${insetRight}% 0 0)`,
+                willChange:'clip-path',
               }}>
                 JK<br/>PRESTIGE<br/>CONSTRUCTOR
               </h1>
