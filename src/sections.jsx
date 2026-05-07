@@ -632,7 +632,7 @@ function SubcontractingBand() {
           </div>
         </Reveal>
         <Reveal delay={100}>
-          <div className="jk-sub-tile-grid" style={{display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(130px,1fr))', gap:1, background:'rgba(0,0,0,.25)'}}>
+          <div className="jk-sub-tile-grid" style={{display:'grid', gridTemplateColumns:'repeat(3,1fr)', gap:1, background:'rgba(0,0,0,.25)'}}>
             {['Framing','Concrete','Drywall','Finish carpentry','Roofing crews','Self-perform trades'].map((t,i)=>(
               <div key={t} style={{background:'var(--bg-elev)', padding:'22px 20px', display:'flex', flexDirection:'column', gap:8}}>
                 <span style={{width:16, height:16, border:'1px solid var(--accent)', position:'relative'}}>

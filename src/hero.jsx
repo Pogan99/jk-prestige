@@ -1,21 +1,29 @@
 /* =========================================================
-   Hero — video bg + virtual-scroll-locked letter fill
-   Letters fill L→R as the user scrolls. The page is locked
-   (wheel + touch) until progress reaches 100%, at which point
-   events are released and the browser scrolls naturally past.
-   Section is exactly 100vh — zero dead-zone below.
+   Hero — video bg + scroll-filled title
+
+   Desktop (> 720px):
+     - sticky + 200vh section — scroll-driven fill, smooth natural slide-out.
+     - Progress = scroll position through section (0 → 100%).
+
+   Mobile (≤ 720px):
+     - virtual scroll lock — wheel/touch events drive progress directly.
+     - Section is exactly 100vh → zero dead zone below.
+     - On complete: brief CSS fade-out before events release.
    ========================================================= */
 function Hero() {
   const { navigate } = useApp();
+  const sectionRef = useRef(null);
   const videoRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [mounted, setMounted] = useState(false);
+  const [exiting, setExiting] = useState(false);
   const [isMobile, setIsMobile] = useState(()=> typeof window !== 'undefined' && window.innerWidth <= 720);
 
-  /* refs avoid stale closures in event handlers */
-  const progressRef = useRef(0);
+  const progressRef  = useRef(0);
   const virtualScroll = useRef(0);
-  const touchStartY = useRef(0);
+  const touchStartY  = useRef(0);
+  const lockedRef    = useRef(true);  /* mobile scroll lock */
+  const exitingRef   = useRef(false);
 
   useEffect(()=>{ const t=setTimeout(()=>setMounted(true),30); return ()=>clearTimeout(t); },[]);
 
@@ -25,20 +33,17 @@ function Hero() {
     return ()=> window.removeEventListener('resize', check);
   },[]);
 
-  /* ---- Reliable autoplay on every mobile browser ---- */
+  /* ---- Reliable video autoplay ---- */
   useEffect(()=>{
     const v = videoRef.current; if (!v) return;
-    v.muted = true;
-    v.defaultMuted = true;
-    v.setAttribute('muted', '');
-    v.setAttribute('playsinline', '');
-    v.setAttribute('webkit-playsinline', '');
-    const tryPlay = ()=>{ const p = v.play(); if (p) p.catch(()=>{}); };
+    v.muted = true; v.defaultMuted = true;
+    v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('webkit-playsinline','');
+    const tryPlay = ()=>{ const p=v.play(); if(p) p.catch(()=>{}); };
     tryPlay();
     const onGesture = ()=>{ tryPlay(); };
     window.addEventListener('touchstart', onGesture, { passive:true, once:true });
     window.addEventListener('click', onGesture, { once:true });
-    const onVis = ()=>{ if (document.visibilityState==='visible') tryPlay(); };
+    const onVis = ()=>{ if(document.visibilityState==='visible') tryPlay(); };
     document.addEventListener('visibilitychange', onVis);
     return ()=>{
       document.removeEventListener('visibilitychange', onVis);
@@ -47,33 +52,37 @@ function Hero() {
     };
   },[]);
 
-  /* ---- Virtual scroll lock ---- */
+  /* ---- Mobile: virtual scroll lock ---- */
   useEffect(()=>{
-    /* Amount of drag (px) required to fill letters fully.
-       1.2× viewport height feels deliberate but not sluggish. */
-    const DRAG_MAX = window.innerHeight * 1.2;
+    const DRAG_MAX = window.innerHeight * 1.4; /* px of drag to fill letters */
+    const isMob = ()=> window.innerWidth <= 720;
+
+    const complete = ()=>{
+      if (exitingRef.current) return;
+      exitingRef.current = true;
+      setExiting(true);                     /* trigger CSS fade-out */
+      setTimeout(()=>{ lockedRef.current = false; }, 550); /* release after fade */
+    };
 
     const advance = (dy)=>{
-      if (progressRef.current >= 1) return; /* done — let browser handle */
+      if (!isMob() || !lockedRef.current) return;
       virtualScroll.current = Math.max(0, Math.min(DRAG_MAX, virtualScroll.current + dy));
       const p = virtualScroll.current / DRAG_MAX;
       progressRef.current = p;
       setProgress(p);
+      if (p >= 1) complete();
     };
 
-    /* Desktop: mouse wheel */
     const onWheel = (e)=>{
-      if (progressRef.current >= 1) return; /* release */
+      if (!isMob() || !lockedRef.current) return;
       e.preventDefault();
       advance(e.deltaY);
     };
 
-    /* Mobile: touch */
-    const onTouchStart = (e)=>{
-      touchStartY.current = e.touches[0].clientY;
-    };
+    const onTouchStart = (e)=>{ touchStartY.current = e.touches[0].clientY; };
+
     const onTouchMove = (e)=>{
-      if (progressRef.current >= 1) return; /* release */
+      if (!isMob() || !lockedRef.current) return;
       e.preventDefault();
       const dy = touchStartY.current - e.touches[0].clientY;
       touchStartY.current = e.touches[0].clientY;
@@ -91,8 +100,33 @@ function Hero() {
     };
   },[]);
 
+  /* ---- Desktop: scroll-position-based progress (sticky) ---- */
+  useEffect(()=>{
+    const isMob = ()=> window.innerWidth <= 720;
+    let raf = 0;
+    const onScroll = ()=>{
+      if (isMob()) return;
+      if (raf) return;
+      raf = requestAnimationFrame(()=>{
+        raf = 0;
+        const el = sectionRef.current; if (!el) return;
+        const rect = el.getBoundingClientRect();
+        const total = rect.height - window.innerHeight;
+        const p = Math.max(0, Math.min(1, -rect.top / Math.max(1,total)));
+        progressRef.current = p;
+        setProgress(p);
+      });
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive:true });
+    window.addEventListener('resize', onScroll);
+    return ()=>{ window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); if(raf) cancelAnimationFrame(raf); };
+  },[]);
+
   const pct = Math.round(progress*100);
   const insetRight = (1-progress)*100;
+  /* mobile: 100vh = zero dead zone; desktop: 200vh = sticky scroll-out */
+  const sectionHeight = isMobile ? '100vh' : '200vh';
 
   const titleStyle = {
     fontFamily:"'Big Shoulders Display', 'Bebas Neue', 'Archivo Black', sans-serif",
@@ -105,10 +139,20 @@ function Hero() {
     whiteSpace:'nowrap',
   };
 
+  /* Mobile inner div: absolute (no sticky needed, virtual scroll drives animation).
+     Desktop: sticky so the panel stays pinned while the section scrolls. */
+  const innerStyle = {
+    position: isMobile ? 'absolute' : 'sticky',
+    top:0, height:'100vh', overflow:'hidden', isolation:'isolate',
+    /* fade-out on mobile after letters fill */
+    opacity: exiting ? 0 : 1,
+    transform: exiting ? 'scale(0.985) translateY(-6px)' : 'none',
+    transition: exiting ? 'opacity .55s ease, transform .55s ease' : 'none',
+  };
+
   return (
-    /* Section is exactly 100vh — no extra height, no dead zone below */
-    <section style={{ position:'relative', height:'100vh', background:'var(--bg-primary)' }}>
-      <div style={{ position:'absolute', inset:0, overflow:'hidden', isolation:'isolate' }}>
+    <section ref={sectionRef} style={{ position:'relative', height:sectionHeight, background:'var(--bg-primary)' }}>
+      <div style={innerStyle}>
 
         {/* Video bg */}
         <div aria-hidden style={{position:'absolute', inset:0, zIndex:0, overflow:'hidden', background:'#111'}}>
@@ -128,7 +172,7 @@ function Hero() {
           <div style={{position:'absolute', inset:0, background:'rgba(0,0,0,.20)'}}/>
         </div>
 
-        {/* Vignette edges */}
+        {/* Vignette */}
         <div aria-hidden style={{
           position:'absolute', inset:0, zIndex:1,
           background:'radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,.25) 100%)'
@@ -142,7 +186,7 @@ function Hero() {
           <Kicker>BUILDING PRESTIGE SINCE 2017</Kicker>
         </div>
 
-        {/* Title — outline + L→R fill driven by virtual scroll */}
+        {/* Title — outline + L→R fill */}
         <div style={{
           position:'absolute', inset:0, zIndex:3,
           display:'flex', alignItems:'center',
