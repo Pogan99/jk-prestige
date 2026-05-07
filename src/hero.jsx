@@ -16,14 +16,12 @@ function Hero() {
   const videoRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [mounted, setMounted] = useState(false);
-  const [exiting, setExiting] = useState(false);
   const [isMobile, setIsMobile] = useState(()=> typeof window !== 'undefined' && window.innerWidth <= 720);
 
-  const progressRef  = useRef(0);
+  const progressRef   = useRef(0);
   const virtualScroll = useRef(0);
-  const touchStartY  = useRef(0);
-  const lockedRef    = useRef(true);  /* mobile scroll lock */
-  const exitingRef   = useRef(false);
+  const touchStartY   = useRef(0);
+  const lockedRef     = useRef(true);  /* mobile scroll lock */
 
   useEffect(()=>{ const t=setTimeout(()=>setMounted(true),30); return ()=>clearTimeout(t); },[]);
 
@@ -54,15 +52,10 @@ function Hero() {
 
   /* ---- Mobile: virtual scroll lock ---- */
   useEffect(()=>{
-    const DRAG_MAX = window.innerHeight * 1.4; /* px of drag to fill letters */
+    /* Match the old sticky feel: ~0.8× vh of drag fills letters (same as 80vh
+       scroll distance with the old 180vh sticky section on mobile). */
+    const DRAG_MAX = window.innerHeight * 0.8;
     const isMob = ()=> window.innerWidth <= 720;
-
-    const complete = ()=>{
-      if (exitingRef.current) return;
-      exitingRef.current = true;
-      setExiting(true);                     /* trigger CSS fade-out */
-      setTimeout(()=>{ lockedRef.current = false; }, 550); /* release after fade */
-    };
 
     const advance = (dy)=>{
       if (!isMob() || !lockedRef.current) return;
@@ -70,7 +63,7 @@ function Hero() {
       const p = virtualScroll.current / DRAG_MAX;
       progressRef.current = p;
       setProgress(p);
-      if (p >= 1) complete();
+      if (p >= 1) lockedRef.current = false; /* release immediately — section scrolls away naturally */
     };
 
     const onWheel = (e)=>{
@@ -139,16 +132,11 @@ function Hero() {
     whiteSpace:'nowrap',
   };
 
-  /* Mobile: position absolute + inset:0 fills the section completely.
+  /* Mobile: absolute + inset:0 fills the 100vh section edge-to-edge.
      Desktop: sticky so the panel pins while the outer section scrolls. */
-  const innerStyle = isMobile ? {
-    position:'absolute', inset:0, overflow:'hidden', isolation:'isolate',
-    opacity: exiting ? 0 : 1,
-    transform: exiting ? 'scale(0.985) translateY(-6px)' : 'none',
-    transition: exiting ? 'opacity .55s ease, transform .55s ease' : 'none',
-  } : {
-    position:'sticky', top:0, height:'100vh', overflow:'hidden', isolation:'isolate',
-  };
+  const innerStyle = isMobile
+    ? { position:'absolute', inset:0, overflow:'hidden', isolation:'isolate' }
+    : { position:'sticky', top:0, height:'100vh', overflow:'hidden', isolation:'isolate' };
 
   return (
     <section ref={sectionRef} style={{ position:'relative', height:sectionHeight, background:'var(--bg-primary)' }}>
