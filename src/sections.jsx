@@ -108,9 +108,9 @@ function AudienceSwitcher() {
    ========================================================= */
 function WhoWeAre() {
   const { audience } = useApp();
-  const [mob, setMob] = React.useState(()=>window.innerWidth<=720);
+  const [mob, setMob] = React.useState(()=>window.innerWidth<=860);
   React.useEffect(()=>{
-    const check=()=>setMob(window.innerWidth<=720);
+    const check=()=>setMob(window.innerWidth<=860);
     window.addEventListener('resize',check);
     return ()=>window.removeEventListener('resize',check);
   },[]);
@@ -129,8 +129,8 @@ function WhoWeAre() {
     </>
   );
   return (
-    <section className="section" style={{background:'var(--bg-primary)'}}>
-      <div className="wrap jk-who-we-are" style={{display:'grid', gridTemplateColumns:mob?'1fr':'1.15fr 1fr', gap:'clamp(40px,6vw,96px)', alignItems:'stretch'}}>
+    <section className="section" style={{background:'var(--bg-primary)', overflow:'hidden'}}>
+      <div className="wrap jk-who-we-are" style={{display:'grid', gridTemplateColumns:mob?'1fr':'1.15fr 1fr', gap:mob?32:'clamp(40px,6vw,96px)', alignItems:'stretch', maxWidth:'100%'}}>
         <Reveal>
           <Kicker>WHO WE ARE</Kicker>
           <h2 className="display" style={{fontSize:mob?'clamp(28px,8vw,48px)':'clamp(40px,5.6vw,84px)', marginTop:18, marginBottom:28, wordBreak:'normal', overflowWrap:'break-word', hyphens:'none'}}>
@@ -157,8 +157,14 @@ function WhoWeAre() {
 }
 
 function TopoWatermark(){
+  const [mob, setMob] = React.useState(()=>window.innerWidth<=860);
+  React.useEffect(()=>{
+    const check=()=>setMob(window.innerWidth<=860);
+    window.addEventListener('resize',check);
+    return ()=>window.removeEventListener('resize',check);
+  },[]);
   return (
-    <div style={{position:'relative', width:'100%', height:'100%', minHeight:380, border:'1px solid var(--hairline)', overflow:'hidden', background:'var(--bg-primary)'}}>
+    <div style={{position:'relative', width:'100%', minHeight:mob?220:380, border:'1px solid var(--hairline)', overflow:'hidden', background:'var(--bg-primary)'}}>
       <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 600 500" style={{position:'absolute', inset:0, opacity:.6}}>
         {Array.from({length:16}).map((_,i)=>(
           <path key={i}
@@ -166,26 +172,28 @@ function TopoWatermark(){
             fill="none" stroke="#526FAE" strokeWidth=".6" opacity={.2+i*.03}/>
         ))}
       </svg>
-      <div style={{position:'absolute', left:32, top:32, right:32}}>
+      <div style={{position:'absolute', left:mob?18:32, top:mob?20:32, right:mob?18:32}}>
         <div className="mono" style={{color:'var(--accent)'}}>// EST. 2017 · FAMILY OPERATED</div>
-        <div className="jk-topo-headline" style={{fontFamily:'var(--display)', fontSize:'clamp(36px,4vw,56px)', letterSpacing:'-.02em', lineHeight:.95, marginTop:12}}>
+        <div className="jk-topo-headline" style={{fontFamily:'var(--display)', fontSize:mob?'clamp(24px,6vw,36px)':'clamp(36px,4vw,56px)', letterSpacing:'-.02em', lineHeight:.95, marginTop:12}}>
           Built in Florida.<br/>One standard.
         </div>
       </div>
-      <div className="jk-topo-coords" style={{position:'absolute', left:32, bottom:32, right:32, display:'flex', justifyContent:'space-between', alignItems:'flex-end', gap:12}}>
-        <div>
-          <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>LAT</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>30°19′N</div>
+      {!mob && (
+        <div className="jk-topo-coords" style={{position:'absolute', left:32, bottom:32, right:32, display:'flex', justifyContent:'space-between', alignItems:'flex-end', gap:12}}>
+          <div>
+            <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>LAT</div>
+            <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>30°19′N</div>
+          </div>
+          <div>
+            <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>LNG</div>
+            <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>81°39′W</div>
+          </div>
+          <div>
+            <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>FILE</div>
+            <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>JKP-2017-2025</div>
+          </div>
         </div>
-        <div>
-          <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>LNG</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>81°39′W</div>
-        </div>
-        <div>
-          <div className="mono" style={{color:'var(--fg-dim)', fontSize:9}}>FILE</div>
-          <div style={{fontFamily:'var(--mono)', fontSize:13, color:'#fff'}}>JKP-2017-2025</div>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -593,15 +601,15 @@ function Legend({dot,label}){
    ========================================================= */
 function SubcontractingBand() {
   const { navigate } = useApp();
-  const [mob, setMob] = React.useState(()=>window.innerWidth<=720);
+  const [mob, setMob] = React.useState(()=>window.innerWidth<=860);
   React.useEffect(()=>{
-    const check=()=>setMob(window.innerWidth<=720);
+    const check=()=>setMob(window.innerWidth<=860);
     window.addEventListener('resize',check);
     return ()=>window.removeEventListener('resize',check);
   },[]);
   return (
-    <section className="section" style={{background:'var(--bg-elev)'}}>
-      <div className="wrap jk-sub-band" style={{display:'grid', gridTemplateColumns:mob?'1fr':'1.3fr 1fr', gap:'clamp(32px,5vw,72px)', alignItems:'center'}}>
+    <section className="section" style={{background:'var(--bg-elev)', overflow:'hidden'}}>
+      <div className="wrap jk-sub-band" style={{display:'grid', gridTemplateColumns:mob?'1fr':'1.3fr 1fr', gap:mob?32:'clamp(32px,5vw,72px)', alignItems:'center', maxWidth:'100%'}}>
         <Reveal>
           <span className="mono" style={{color:'#fff', opacity:.85}}>// FOR GC PARTNERS</span>
           <h2 className="display" style={{fontSize:mob?'clamp(26px,7vw,40px)':'clamp(36px,4.8vw,72px)', marginTop:16, color:'#fff', wordBreak:'normal', overflowWrap:'break-word', hyphens:'none'}}>
@@ -652,9 +660,9 @@ function StarRating({ count=5 }) {
 
 function TestimonialBlock() {
   const { navigate } = useApp();
-  const [mob, setMob] = React.useState(()=>window.innerWidth<=720);
+  const [mob, setMob] = React.useState(()=>window.innerWidth<=860);
   React.useEffect(()=>{
-    const check=()=>setMob(window.innerWidth<=720);
+    const check=()=>setMob(window.innerWidth<=860);
     window.addEventListener('resize',check);
     return ()=>window.removeEventListener('resize',check);
   },[]);
@@ -676,8 +684,8 @@ function TestimonialBlock() {
     },
   ];
   return (
-    <section style={{background:'var(--bg-invert)', color:'#fff'}}>
-      <div className="wrap jk-testimonial-grid" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:mob?'1fr':'1.1fr 1fr', gap:'clamp(32px,5vw,80px)'}}>
+    <section style={{background:'var(--bg-invert)', color:'#fff', overflow:'hidden'}}>
+      <div className="wrap jk-testimonial-grid" style={{padding: mob?'48px 18px':'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:mob?'1fr':'1.1fr 1fr', gap:mob?32:'clamp(32px,5vw,80px)', maxWidth:'100%'}}>
         <Reveal>
           <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// WHAT PEOPLE SAY</span>
           <h2 className="jk-testimonial-h2" style={{color:'#000', fontFamily:'var(--display)', fontSize:mob?'clamp(32px,9vw,48px)':'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.95, marginTop:20, wordBreak:'normal', overflowWrap:'break-word', hyphens:'none'}}>
