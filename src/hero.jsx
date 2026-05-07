@@ -139,15 +139,15 @@ function Hero() {
     whiteSpace:'nowrap',
   };
 
-  /* Mobile inner div: absolute (no sticky needed, virtual scroll drives animation).
-     Desktop: sticky so the panel stays pinned while the section scrolls. */
-  const innerStyle = {
-    position: isMobile ? 'absolute' : 'sticky',
-    top:0, height:'100vh', overflow:'hidden', isolation:'isolate',
-    /* fade-out on mobile after letters fill */
+  /* Mobile: position absolute + inset:0 fills the section completely.
+     Desktop: sticky so the panel pins while the outer section scrolls. */
+  const innerStyle = isMobile ? {
+    position:'absolute', inset:0, overflow:'hidden', isolation:'isolate',
     opacity: exiting ? 0 : 1,
     transform: exiting ? 'scale(0.985) translateY(-6px)' : 'none',
     transition: exiting ? 'opacity .55s ease, transform .55s ease' : 'none',
+  } : {
+    position:'sticky', top:0, height:'100vh', overflow:'hidden', isolation:'isolate',
   };
 
   return (
