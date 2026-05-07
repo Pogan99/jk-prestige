@@ -130,9 +130,9 @@ function WhoWeAre() {
   );
   return (
     <>
-    <style>{`@media(max-width:860px){.jk-who-we-are .display{font-size:clamp(28px,8vw,42px)!important;hyphens:none!important;word-break:normal!important}}`}</style>
+    <style>{`@media(max-width:860px){.jk-who-we-are{grid-template-columns:1fr!important}.jk-who-we-are>*{grid-column:1/-1!important;min-width:0!important}.jk-who-we-are .display{font-size:clamp(28px,8vw,42px)!important;hyphens:none!important;word-break:normal!important}}`}</style>
     <section className="section" style={{background:'var(--bg-primary)', overflow:'hidden'}}>
-      <div className="wrap jk-who-we-are" style={{display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))', gap:'clamp(32px,5vw,96px)', alignItems:'stretch', maxWidth:'100%'}}>
+      <div className="wrap jk-who-we-are" style={{display:'grid', gridTemplateColumns:'1.15fr 1fr', gap:'clamp(32px,5vw,96px)', alignItems:'stretch', maxWidth:'100%'}}>
         <Reveal>
           <Kicker>WHO WE ARE</Kicker>
           <h2 className="display" style={{fontSize:mob?'clamp(28px,8vw,48px)':'clamp(40px,5.6vw,84px)', marginTop:18, marginBottom:28, wordBreak:'normal', overflowWrap:'break-word', hyphens:'none'}}>
@@ -612,9 +612,9 @@ function SubcontractingBand() {
   },[]);
   return (
     <>
-    <style>{`@media(max-width:860px){.jk-sub-band .display{font-size:clamp(26px,7vw,38px)!important;hyphens:none!important;word-break:normal!important}}`}</style>
+    <style>{`@media(max-width:860px){.jk-sub-band{grid-template-columns:1fr!important}.jk-sub-band>*{grid-column:1/-1!important;min-width:0!important}.jk-sub-band .display{font-size:clamp(26px,7vw,38px)!important;hyphens:none!important;word-break:normal!important}}`}</style>
     <section className="section" style={{background:'var(--bg-elev)', overflow:'hidden'}}>
-      <div className="wrap jk-sub-band" style={{display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))', gap:'clamp(32px,5vw,72px)', alignItems:'center', maxWidth:'100%'}}>
+      <div className="wrap jk-sub-band" style={{display:'grid', gridTemplateColumns:'1.3fr 1fr', gap:'clamp(32px,5vw,72px)', alignItems:'center', maxWidth:'100%'}}>
         <Reveal>
           <span className="mono" style={{color:'#fff', opacity:.85}}>// FOR GC PARTNERS</span>
           <h2 className="display" style={{fontSize:mob?'clamp(26px,7vw,40px)':'clamp(36px,4.8vw,72px)', marginTop:16, color:'#fff', wordBreak:'normal', overflowWrap:'break-word', hyphens:'none'}}>
@@ -691,9 +691,9 @@ function TestimonialBlock() {
   ];
   return (
     <>
-    <style>{`@media(max-width:860px){.jk-testimonial-grid{padding:48px 18px!important}.jk-testimonial-h2{font-size:clamp(32px,9vw,48px)!important;hyphens:none!important;word-break:normal!important}}`}</style>
+    <style>{`@media(max-width:860px){.jk-testimonial-grid{grid-template-columns:1fr!important;padding:48px 18px!important}.jk-testimonial-grid>*{grid-column:1/-1!important;min-width:0!important}.jk-testimonial-h2{font-size:clamp(32px,9vw,48px)!important;hyphens:none!important;word-break:normal!important}}`}</style>
     <section style={{background:'var(--bg-invert)', color:'#fff', overflow:'hidden'}}>
-      <div className="wrap jk-testimonial-grid" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'repeat(auto-fit,minmax(300px,1fr))', gap:'clamp(32px,5vw,80px)', maxWidth:'100%'}}>
+      <div className="wrap jk-testimonial-grid" style={{padding:'clamp(64px,8vw,128px) clamp(20px,4vw,64px)', display:'grid', gridTemplateColumns:'1.1fr 1fr', gap:'clamp(32px,5vw,80px)', maxWidth:'100%'}}>
         <Reveal>
           <span className="mono" style={{color:'rgba(255,255,255,.8)'}}>// WHAT PEOPLE SAY</span>
           <h2 className="jk-testimonial-h2" style={{color:'#000', fontFamily:'var(--display)', fontSize:'clamp(48px,7vw,112px)', letterSpacing:'-.025em', lineHeight:.95, marginTop:20}}>

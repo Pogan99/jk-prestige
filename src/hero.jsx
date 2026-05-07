@@ -1,13 +1,21 @@
 /* =========================================================
-   Hero — video bg + scroll-filled title
+   Hero — video bg + virtual-scroll-locked letter fill
+   Letters fill L→R as the user scrolls. The page is locked
+   (wheel + touch) until progress reaches 100%, at which point
+   events are released and the browser scrolls naturally past.
+   Section is exactly 100vh — zero dead-zone below.
    ========================================================= */
 function Hero() {
   const { navigate } = useApp();
-  const sectionRef = useRef(null);
   const videoRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const [mounted, setMounted] = useState(false);
   const [isMobile, setIsMobile] = useState(()=> typeof window !== 'undefined' && window.innerWidth <= 720);
+
+  /* refs avoid stale closures in event handlers */
+  const progressRef = useRef(0);
+  const virtualScroll = useRef(0);
+  const touchStartY = useRef(0);
 
   useEffect(()=>{ const t=setTimeout(()=>setMounted(true),30); return ()=>clearTimeout(t); },[]);
 
@@ -20,24 +28,16 @@ function Hero() {
   /* ---- Reliable autoplay on every mobile browser ---- */
   useEffect(()=>{
     const v = videoRef.current; if (!v) return;
-    // Force muted before any play attempt (required by all mobile browsers)
     v.muted = true;
     v.defaultMuted = true;
     v.setAttribute('muted', '');
     v.setAttribute('playsinline', '');
     v.setAttribute('webkit-playsinline', '');
-
-    const tryPlay = ()=>{
-      const p = v.play();
-      if (p) p.catch(()=>{});
-    };
+    const tryPlay = ()=>{ const p = v.play(); if (p) p.catch(()=>{}); };
     tryPlay();
-
-    // Retry on first user gesture (strict autoplay policies)
     const onGesture = ()=>{ tryPlay(); };
     window.addEventListener('touchstart', onGesture, { passive:true, once:true });
     window.addEventListener('click', onGesture, { once:true });
-    // Resume when tab becomes visible
     const onVis = ()=>{ if (document.visibilityState==='visible') tryPlay(); };
     document.addEventListener('visibilitychange', onVis);
     return ()=>{
@@ -47,28 +47,52 @@ function Hero() {
     };
   },[]);
 
-  /* ---- Scroll progress ---- */
+  /* ---- Virtual scroll lock ---- */
   useEffect(()=>{
-    let raf = 0;
-    const onScroll = ()=>{
-      if (raf) return;
-      raf = requestAnimationFrame(()=>{
-        raf = 0;
-        const el = sectionRef.current; if (!el) return;
-        const rect = el.getBoundingClientRect();
-        const total = rect.height - window.innerHeight;
-        setProgress(Math.max(0, Math.min(1, -rect.top / Math.max(1,total))));
-      });
+    /* Amount of drag (px) required to fill letters fully.
+       1.2× viewport height feels deliberate but not sluggish. */
+    const DRAG_MAX = window.innerHeight * 1.2;
+
+    const advance = (dy)=>{
+      if (progressRef.current >= 1) return; /* done — let browser handle */
+      virtualScroll.current = Math.max(0, Math.min(DRAG_MAX, virtualScroll.current + dy));
+      const p = virtualScroll.current / DRAG_MAX;
+      progressRef.current = p;
+      setProgress(p);
     };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive:true });
-    window.addEventListener('resize', onScroll);
-    return ()=>{ window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); if(raf) cancelAnimationFrame(raf); };
+
+    /* Desktop: mouse wheel */
+    const onWheel = (e)=>{
+      if (progressRef.current >= 1) return; /* release */
+      e.preventDefault();
+      advance(e.deltaY);
+    };
+
+    /* Mobile: touch */
+    const onTouchStart = (e)=>{
+      touchStartY.current = e.touches[0].clientY;
+    };
+    const onTouchMove = (e)=>{
+      if (progressRef.current >= 1) return; /* release */
+      e.preventDefault();
+      const dy = touchStartY.current - e.touches[0].clientY;
+      touchStartY.current = e.touches[0].clientY;
+      advance(dy);
+    };
+
+    window.addEventListener('wheel', onWheel, { passive:false });
+    window.addEventListener('touchstart', onTouchStart, { passive:true });
+    window.addEventListener('touchmove', onTouchMove, { passive:false });
+
+    return ()=>{
+      window.removeEventListener('wheel', onWheel);
+      window.removeEventListener('touchstart', onTouchStart);
+      window.removeEventListener('touchmove', onTouchMove);
+    };
   },[]);
 
   const pct = Math.round(progress*100);
   const insetRight = (1-progress)*100;
-  const sectionHeight = isMobile ? '150vh' : '200vh';
 
   const titleStyle = {
     fontFamily:"'Big Shoulders Display', 'Bebas Neue', 'Archivo Black', sans-serif",
@@ -82,10 +106,11 @@ function Hero() {
   };
 
   return (
-    <section ref={sectionRef} style={{ position:'relative', height:sectionHeight, background:'var(--bg-primary)' }}>
-      <div style={{ position:'sticky', top:0, height:'100vh', overflow:'hidden', isolation:'isolate' }}>
+    /* Section is exactly 100vh — no extra height, no dead zone below */
+    <section style={{ position:'relative', height:'100vh', background:'var(--bg-primary)' }}>
+      <div style={{ position:'absolute', inset:0, overflow:'hidden', isolation:'isolate' }}>
 
-        {/* Video bg — overlay is flat 20% dark so video shows clearly */}
+        {/* Video bg */}
         <div aria-hidden style={{position:'absolute', inset:0, zIndex:0, overflow:'hidden', background:'#111'}}>
           <video
             ref={videoRef}
@@ -100,11 +125,10 @@ function Hero() {
               pointerEvents:'none',
             }}
           />
-          {/* Flat 20% overlay */}
           <div style={{position:'absolute', inset:0, background:'rgba(0,0,0,.20)'}}/>
         </div>
 
-        {/* Vignette edges only */}
+        {/* Vignette edges */}
         <div aria-hidden style={{
           position:'absolute', inset:0, zIndex:1,
           background:'radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,.25) 100%)'
@@ -118,7 +142,7 @@ function Hero() {
           <Kicker>BUILDING PRESTIGE SINCE 2017</Kicker>
         </div>
 
-        {/* Title — outline + L→R fill */}
+        {/* Title — outline + L→R fill driven by virtual scroll */}
         <div style={{
           position:'absolute', inset:0, zIndex:3,
           display:'flex', alignItems:'center',
@@ -164,7 +188,7 @@ function Hero() {
           </div>
         </div>
 
-        {/* Progress + trust */}
+        {/* Progress bar + trust badges */}
         <div className="wrap" style={{
           position:'absolute', left:0, right:0,
           bottom: isMobile?14:'clamp(18px,3vh,32px)',
