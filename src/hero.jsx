@@ -1,14 +1,11 @@
 /* =========================================================
    Hero — video bg + scroll-filled title
 
-   Desktop (> 720px):
-     - sticky + 200vh section — scroll-driven fill, smooth natural slide-out.
-     - Progress = scroll position through section (0 → 100%).
-
-   Mobile (≤ 720px):
-     - virtual scroll lock — wheel/touch events drive progress directly.
+   Both mobile and desktop:
+     - Virtual scroll lock — wheel/touch events drive progress directly.
+     - Page scroll is blocked until letters reach 100% fill.
      - Section is exactly 100vh → zero dead zone below.
-     - On complete: brief CSS fade-out before events release.
+     - On complete: lock releases, browser scroll takes over naturally.
    ========================================================= */
 function Hero() {
   const { navigate } = useApp();
@@ -50,24 +47,23 @@ function Hero() {
     };
   },[]);
 
-  /* ---- Mobile: virtual scroll lock ---- */
+  /* ---- Virtual scroll lock — blocks page scroll until letters fully filled (all screen sizes) ---- */
   useEffect(()=>{
-    /* Match the old sticky feel: ~0.8× vh of drag fills letters (same as 80vh
-       scroll distance with the old 180vh sticky section on mobile). */
+    /* 0.8× vh matches the old sticky feel on mobile; on desktop a mouse-wheel
+       user fills it in ~7 notches, trackpad feels smooth. */
     const DRAG_MAX = window.innerHeight * 0.8;
-    const isMob = ()=> window.innerWidth <= 720;
 
     const advance = (dy)=>{
-      if (!isMob() || !lockedRef.current) return;
+      if (!lockedRef.current) return;
       virtualScroll.current = Math.max(0, Math.min(DRAG_MAX, virtualScroll.current + dy));
       const p = virtualScroll.current / DRAG_MAX;
       progressRef.current = p;
       setProgress(p);
-      if (p >= 1) lockedRef.current = false; /* release immediately — section scrolls away naturally */
+      if (p >= 1) lockedRef.current = false; /* release — browser scroll takes over naturally */
     };
 
     const onWheel = (e)=>{
-      if (!isMob() || !lockedRef.current) return;
+      if (!lockedRef.current) return;
       e.preventDefault();
       advance(e.deltaY);
     };
@@ -75,7 +71,7 @@ function Hero() {
     const onTouchStart = (e)=>{ touchStartY.current = e.touches[0].clientY; };
 
     const onTouchMove = (e)=>{
-      if (!isMob() || !lockedRef.current) return;
+      if (!lockedRef.current) return;
       e.preventDefault();
       const dy = touchStartY.current - e.touches[0].clientY;
       touchStartY.current = e.touches[0].clientY;
@@ -93,33 +89,10 @@ function Hero() {
     };
   },[]);
 
-  /* ---- Desktop: scroll-position-based progress (sticky) ---- */
-  useEffect(()=>{
-    const isMob = ()=> window.innerWidth <= 720;
-    let raf = 0;
-    const onScroll = ()=>{
-      if (isMob()) return;
-      if (raf) return;
-      raf = requestAnimationFrame(()=>{
-        raf = 0;
-        const el = sectionRef.current; if (!el) return;
-        const rect = el.getBoundingClientRect();
-        const total = rect.height - window.innerHeight;
-        const p = Math.max(0, Math.min(1, -rect.top / Math.max(1,total)));
-        progressRef.current = p;
-        setProgress(p);
-      });
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive:true });
-    window.addEventListener('resize', onScroll);
-    return ()=>{ window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); if(raf) cancelAnimationFrame(raf); };
-  },[]);
-
   const pct = Math.round(progress*100);
   const insetRight = (1-progress)*100;
-  /* mobile: 100vh = zero dead zone; desktop: 200vh = sticky scroll-out */
-  const sectionHeight = isMobile ? '100vh' : '200vh';
+  /* 100vh for all screen sizes — virtual scroll lock means no dead zone */
+  const sectionHeight = '100vh';
 
   const titleStyle = {
     fontFamily:"'Big Shoulders Display', 'Bebas Neue', 'Archivo Black', sans-serif",
@@ -132,11 +105,8 @@ function Hero() {
     whiteSpace:'nowrap',
   };
 
-  /* Mobile: absolute + inset:0 fills the 100vh section edge-to-edge.
-     Desktop: sticky so the panel pins while the outer section scrolls. */
-  const innerStyle = isMobile
-    ? { position:'absolute', inset:0, overflow:'hidden', isolation:'isolate' }
-    : { position:'sticky', top:0, height:'100vh', overflow:'hidden', isolation:'isolate' };
+  /* absolute + inset:0 for all screen sizes — section is always 100vh */
+  const innerStyle = { position:'absolute', inset:0, overflow:'hidden', isolation:'isolate' };
 
   return (
     <section ref={sectionRef} style={{ position:'relative', height:sectionHeight, background:'var(--bg-primary)' }}>
