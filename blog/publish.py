@@ -205,7 +205,7 @@ def md_to_html(md: str) -> str:
 def build_faq_html(md: str) -> str:
     """Extract FAQ section if present and render as accordion."""
     faq_match = re.search(
-        r"##\s+(?:FAQ|Frequently Asked Questions)(.+?)(?=\n##|\Z)",
+        r"##\s+(?:FAQ|Frequently Asked Questions)(.+?)(?=\n##(?!#)|\Z)",
         md, re.DOTALL | re.IGNORECASE
     )
     if not faq_match:
