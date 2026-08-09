@@ -18,7 +18,7 @@ Usage:
 import json
 import re
 import sys
-from html import escape
+from html import unescape
 from pathlib import Path
 
 BLOG_DIR = Path(__file__).parent
@@ -29,7 +29,10 @@ MIN = 70
 def check(slug):
     h = (BLOG_DIR / slug / "index.html").read_text()
     m = re.search(r'<meta name="description" content="(.*?)">', h, re.S)
-    d = m.group(1) if m else ""
+    # Measure the decoded text: entities are what the browser and the crawler
+    # collapse back to single characters, so the escaped length is not the
+    # length Google truncates on.
+    d = unescape(m.group(1)) if m else ""
     ok = MIN <= len(d) <= MAX
     print(f"{'OK  ' if ok else 'BAD '} {slug}: {len(d)} chars")
     return ok
@@ -61,7 +64,13 @@ def main():
         sys.exit(f"ERROR {slug}: no </head>")
     head, rest = html[:i], html[i:]
 
-    attr = escape(new, quote=True)          # safe inside content="..."
+    # Escape only what actually needs it inside a double-quoted attribute.
+    # html.escape(quote=True) also turns ' into &#x27;, six characters for one,
+    # which inflated the measured length enough that ordinary contractions
+    # ("isn't", "Here's") pushed descriptions over the cap and forced stilted
+    # apostrophe-free rewrites. An apostrophe is legal as-is inside "...".
+    attr = (new.replace("&", "&amp;").replace("<", "&lt;")
+               .replace(">", "&gt;").replace('"', "&quot;"))
     js = json.dumps(new)[1:-1]              # safe inside a JSON string
 
     head2, n1 = re.subn(r'(<meta name="description" content=")(.*?)(">)',
