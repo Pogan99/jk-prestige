@@ -7,3 +7,5 @@ dist/
 .vscode/
 .idea/
 .gstack/
+blog/__pycache__/
+*.pyc

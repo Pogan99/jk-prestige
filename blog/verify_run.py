@@ -36,8 +36,11 @@ def preflight():
     """The publisher must actually parse under THIS interpreter before we start."""
     errs = 0
     try:
-        import py_compile
-        py_compile.compile(str(BLOG_DIR / "publish.py"), doraise=True)
+        # Builtin compile() parses in memory and writes nothing. py_compile would
+        # leave a __pycache__ dir behind, and the S3 sync excludes *.py but not
+        # *.pyc, so a compiled publisher could reach the live site.
+        src = BLOG_DIR / "publish.py"
+        compile(src.read_text(), str(src), "exec")
         print("OK   publish.py parses under this interpreter")
     except Exception as e:
         errs += fail(f"publish.py does not parse: {e}\n"
