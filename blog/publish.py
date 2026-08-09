@@ -155,7 +155,8 @@ def md_to_html(md: str) -> str:
             if not in_ul:
                 html_parts.append("<ul>")
                 in_ul = True
-            html_parts.append(f"<li>{inline(re.sub(r'^[-*]\s+', '', stripped))}</li>")
+            li_text = inline(re.sub(r"^[-*]\s+", "", stripped))
+            html_parts.append(f"<li>{li_text}</li>")
             continue
         else:
             flush_ul()
@@ -166,7 +167,8 @@ def md_to_html(md: str) -> str:
             if not in_ol:
                 html_parts.append("<ol>")
                 in_ol = True
-            html_parts.append(f"<li>{inline(re.sub(r'^\d+\.\s+', '', stripped))}</li>")
+            li_text = inline(re.sub(r"^\d+\.\s+", "", stripped))
+            html_parts.append(f"<li>{li_text}</li>")
             continue
         else:
             flush_ol()
