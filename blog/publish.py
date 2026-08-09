@@ -193,6 +193,14 @@ def md_to_html(md: str) -> str:
             flush_p()
             continue
 
+        # Markdown horizontal rule. Drop it: drafts use "---" as a section
+        # separator, but the <h2> that follows already separates the sections,
+        # and the stylesheet has no <hr> rule. Without this the line fell through
+        # to the paragraph buffer and published as a literal "---" on the page.
+        if re.match(r"^(?:-{3,}|\*{3,}|_{3,})$", stripped):
+            flush_p()
+            continue
+
         # Skip frontmatter-like lines
         if re.match(r"^(?:\*\*)?(Meta Title|Meta Description|URL Slug|Target Keyword|Category|Excerpt|Read Time|Read Minutes|Summary)(?:\*\*)?:", stripped):
             flush_p()
