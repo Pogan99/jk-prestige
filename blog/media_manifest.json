@@ -1,0 +1,1564 @@
+{
+ "_doc": {
+  "purpose": "Described image bank for blog illustration. Built by visual inspection of every source file, 2026-08-18.",
+  "source_dir": "assets/images",
+  "derivative_dir": "assets/blog-media",
+  "slots": {
+   "context": "Slot A, after the intro. Matched on article DOMAIN. Answers 'what world is this'.",
+   "action": "Slot B, at a mid-article section break. Matched on WORK MODE. Answers 'what is happening'.",
+   "trust": "Slot C, inside 'When to Call JK Prestige'. Matched on PEOPLE. Answers 'who does this for you'."
+  },
+  "honesty_rules": [
+   "Every image here is AI generated. None is a photograph of a real JK Prestige project.",
+   "Captions must never name a project, address, client, or date, and must never say 'our', 'we built', 'recent project', or 'completed'.",
+   "Captions describe the depicted ACTIVITY or CONDITION and tie it to the adjacent paragraph.",
+   "brand_visible=true images show JK Prestige marks on hardhats, trucks, or site banners. Use only in the trust slot, never beside a specific finished building that could read as a claim of authorship.",
+   "claim_risk=high images are recognizable finished buildings. Do not use them in residential how-to posts at all."
+  ]
+ },
+ "images": [
+  {
+   "id": "custom-home-farmhouse-dusk",
+   "file": "hf_20260422_074618_3c7e330a-766a-4edb-ac46-c312d4678c02.png",
+   "desc": "Modern white board-and-batten farmhouse at dusk, metal roof, wraparound porch, lit windows",
+   "domains": [
+    "custom_home",
+    "residential",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "commercial-corridor-framing",
+   "file": "hf_20260422_074637_b2e0630e-99f9-4eef-a8b1-5be0a42b4ac4.png",
+   "desc": "Worker with rolled plans in a metal-stud commercial corridor, exposed overhead MEP",
+   "domains": [
+    "commercial",
+    "structural_framing",
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work",
+    "plans_permits"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "estimator-truck-laptop",
+   "file": "hf_20260422_074644_b83b6bfb-414c-44d8-a330-f29822e7876f.png",
+   "desc": "Estimator working on a laptop in a pickup cab on a suburban street",
+   "domains": [
+    "residential"
+   ],
+   "modes": [
+    "plans_permits",
+    "inspection"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "hardhat-cards-desk",
+   "file": "hf_20260422_074649_e959b41c-c6ac-429c-b4aa-94c855bfaeff.png",
+   "desc": "White JK Prestige hardhat, licence card and business cards on a wood desk",
+   "domains": [
+    "brand"
+   ],
+   "modes": [
+    "trust_portrait",
+    "plans_permits"
+   ],
+   "people": false,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "aerial-resi-site-dusk",
+   "file": "hf_20260422_074659_f11cd3e6-2c7d-426a-89d3-f05d2dded4ad.png",
+   "desc": "Aerial of a residential and light commercial construction site at dusk, wood framed shells",
+   "domains": [
+    "structural_framing",
+    "residential"
+   ],
+   "modes": [
+    "aerial_context"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "medium"
+  },
+  {
+   "id": "interior-demo-circular-saw",
+   "file": "hf_20260422_074745_2f8c1856-7dc3-4e57-8464-5c91d76f2353.png",
+   "desc": "Carpenter cutting a board with a circular saw in a gutted room, bare studs and dust in the light",
+   "domains": [
+    "interior_finish",
+    "renovation",
+    "structural_framing",
+    "doors_windows"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "roofers-underlayment-suburban",
+   "file": "hf_20260422_074751_429e0c7d-115e-45ec-a295-1d2e6a6cd643.png",
+   "desc": "Two roofers rolling underlayment across a stripped asphalt shingle roof on a suburban house",
+   "domains": [
+    "roofing",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "wall-panel-raising",
+   "file": "hf_20260422_074757_84eb700d-7200-4c76-82f0-04a6fa0dd744.png",
+   "desc": "Crew tilting up a framed wall panel on a residential slab",
+   "domains": [
+    "structural_framing",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "aerial-concrete-commercial",
+   "file": "hf_20260422_074803_534a61f3-bedb-4292-bbf9-ff8a891eaa96.png",
+   "desc": "Aerial of a concrete commercial structure under construction with tower crane at sunset",
+   "domains": [
+    "commercial"
+   ],
+   "modes": [
+    "aerial_context"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "medium"
+  },
+  {
+   "id": "couple-keys-front-door",
+   "file": "hf_20260422_074841_8f7047c1-3a8f-4111-b467-f875c1ee3535.png",
+   "desc": "Couple holding keys at a front door with moving boxes on the porch",
+   "domains": [
+    "residential",
+    "doors_windows"
+   ],
+   "modes": [
+    "trust_portrait",
+    "finished_result"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "executive-rooftop-portrait",
+   "file": "hf_20260422_074848_24ddd171-35c1-4083-af5b-408c336f235e.png",
+   "desc": "Business portrait on a rooftop terrace with a city skyline behind",
+   "domains": [
+    "commercial",
+    "brand"
+   ],
+   "modes": [
+    "trust_portrait"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "handshake-steel-site",
+   "file": "hf_20260422_074854_2fc8c351-68f0-4310-825c-fd7910f41853.png",
+   "desc": "Two people in hi-vis shaking hands at a steel-frame jobsite",
+   "domains": [
+    "commercial",
+    "brand"
+   ],
+   "modes": [
+    "trust_portrait"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "crew-group-portrait-studio",
+   "file": "hf_20260422_074902_d3ce2069-8022-4129-a2fb-c2298a4c18f2.png",
+   "desc": "Group portrait of five crew members in hi-vis with hardhats and tablets",
+   "domains": [
+    "brand"
+   ],
+   "modes": [
+    "trust_portrait"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "roof-inspector-tablet-woman",
+   "file": "hf_20260422_074914_c26bc416-1f91-4c7d-a222-0e150f34343d.png",
+   "desc": "Inspector kneeling on a shingle roof recording findings on a tablet",
+   "domains": [
+    "roofing",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "inspection"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "modern-civic-waterfront",
+   "file": "hf_20260422_074925_07b9ea0d-f6c2-4d7e-b9b5-f8f77eb67595.png",
+   "desc": "Angular modern civic building on the water at dusk",
+   "domains": [
+    "commercial"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "before-after-living-kitchen",
+   "file": "hf_20260422_074936_ee416caf-3cc2-41e4-a84e-833005b7bf6c.png",
+   "desc": "Four panel before and after grid, dated living room and kitchen against their renovated versions",
+   "domains": [
+    "interior_finish",
+    "renovation"
+   ],
+   "modes": [
+    "before_after"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "medium"
+  },
+  {
+   "id": "roofers-underlayment-florida",
+   "file": "hf_20260501_174359_f58bf292-56d0-4d44-bd7c-e18188cfb45e.jpg",
+   "desc": "Two roofers rolling underlayment on a shingle roof framed by Florida oaks",
+   "domains": [
+    "roofing",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "plans-on-tailgate-sunset",
+   "file": "hf_20260501_174410_19d6fb4e-bda3-4062-acbb-81d3143102ae.jpg",
+   "desc": "Supervisor reading drawings on a folding table beside a pickup at sunset",
+   "domains": [
+    "residential",
+    "commercial"
+   ],
+   "modes": [
+    "plans_permits"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "finished-corridor-walkthrough",
+   "file": "hf_20260501_174425_06a5a5ef-fade-4f8c-8f6b-61821c3adb75.jpg",
+   "desc": "Two people with clipboards walking a finished bright commercial corridor",
+   "domains": [
+    "commercial",
+    "interior_finish"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "drywall-corridor-punchlist",
+   "file": "hf_20260501_174436_3967cfc6-11a0-4815-872c-fda18966016d.jpg",
+   "desc": "Two people reviewing drawings in an unfinished drywall corridor",
+   "domains": [
+    "interior_finish",
+    "commercial"
+   ],
+   "modes": [
+    "inspection",
+    "plans_permits"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "ramp-build-modest-home",
+   "file": "hf_20260501_174449_3d873deb-256f-48b3-b190-d4fa4c3a3b15.jpg",
+   "desc": "Crew building a treated wood access ramp at a modest single storey house while the owner watches from the porch",
+   "domains": [
+    "deck_outdoor",
+    "residential",
+    "accessibility"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "two-story-framing-florida",
+   "file": "hf_20260501_174453_6207600b-290c-4599-a252-8c6706bbcfd8.jpg",
+   "desc": "Two storey wood framing on a Florida lot with silt fence and stem wall wrap",
+   "domains": [
+    "structural_framing",
+    "custom_home",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work",
+    "aerial_context"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "medium"
+  },
+  {
+   "id": "hospital-steel-frame",
+   "file": "hf_20260501_174501_820b60d0-99ee-4455-b136-1990c1a3cc37.jpg",
+   "desc": "Steel frame of a hospital expansion behind site fencing with a tower crane",
+   "domains": [
+    "healthcare",
+    "commercial"
+   ],
+   "modes": [
+    "aerial_context"
+   ],
+   "people": false,
+   "brand_visible": true,
+   "claim_risk": "high"
+  },
+  {
+   "id": "warehouse-interior-erection",
+   "file": "hf_20260501_174513_59396b79-de97-4537-99f8-0297dd5c52fa.jpg",
+   "desc": "Warehouse shell under erection, steel columns, forklift and lifts inside",
+   "domains": [
+    "warehouse",
+    "commercial",
+    "structural_framing"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "planning-board-trailer",
+   "file": "hf_20260501_174520_8e97d7a0-924f-4376-8c31-47b46dbe62cf.jpg",
+   "desc": "Crew working a sticky note planning board in a site trailer office",
+   "domains": [
+    "commercial",
+    "brand"
+   ],
+   "modes": [
+    "plans_permits"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "crew-portrait-sunset-vignette",
+   "file": "hf_20260501_174525_82f6ff4b-9691-4d3e-b9bf-3aeaedd7114d.jpg",
+   "desc": "Crew lined up at a jobsite at sunset facing a supervisor",
+   "domains": [
+    "brand"
+   ],
+   "modes": [
+    "trust_portrait"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "bim-model-review",
+   "file": "hf_20260501_174533_2fc30839-3a4d-47fe-8231-18524ac7b56b.jpg",
+   "desc": "Two people reviewing a 3D building model on a monitor in a site office",
+   "domains": [
+    "commercial",
+    "brand"
+   ],
+   "modes": [
+    "plans_permits"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "roofer-carrying-shingles-stucco",
+   "file": "hf_20260501_174539_d6e2468a-2dd1-41e1-93ad-12dc392f7827.jpg",
+   "desc": "Roofer carrying a shingle bundle across the roof of a stucco Florida house with palms behind",
+   "domains": [
+    "roofing",
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "commercial-tpo-roof-crew",
+   "file": "hf_20260501_174546_4a0cdb5e-2476-44c4-a6c9-e42013cbe376.jpg",
+   "desc": "Crew rolling out white membrane across a low slope commercial roof",
+   "domains": [
+    "roofing",
+    "commercial"
+   ],
+   "modes": [
+    "crew_at_work",
+    "aerial_context"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "storm-damage-homeowner-tarp",
+   "file": "hf_20260501_174551_0b35da03-6f83-4b7a-9ab3-109f100bf874.jpg",
+   "desc": "Representative with a tablet talking to a homeowner outside a storm damaged house with a blue tarp on the roof and debris in the yard",
+   "domains": [
+    "storm",
+    "roofing",
+    "residential",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "inspection",
+    "trust_portrait"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "gutted-vs-finished-kitchen",
+   "file": "hf_20260501_174558_f441e1f6-a055-426d-ada1-fb356bea6acc.jpg",
+   "desc": "Split frame of a gutted interior at stud stage against the finished kitchen in the same space",
+   "domains": [
+    "interior_finish",
+    "renovation"
+   ],
+   "modes": [
+    "before_after"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "medium"
+  },
+  {
+   "id": "roof-crew-bare-trees",
+   "file": "hf_20260501_174605_97cb11ae-5314-48a9-8faf-ae4ea2d094b4.jpg",
+   "desc": "Two roofers fastening shingles on a residential roof with bare trees behind",
+   "domains": [
+    "roofing",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "tilt-up-panel-lift",
+   "file": "hf_20260501_174610_438bda6b-f1f5-4eec-89fe-d66529aac53c.jpg",
+   "desc": "Crawler crane setting a tilt up concrete wall panel on a slab",
+   "domains": [
+    "warehouse",
+    "commercial"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "medical-office-exterior",
+   "file": "hf_20260501_174615_bc52d3f1-3560-436e-ab4c-222c18e87599.jpg",
+   "desc": "Glass and stone medical office building exterior at sunrise",
+   "domains": [
+    "healthcare",
+    "commercial"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "pediatric-center-exterior",
+   "file": "hf_20260501_174622_d4e5ee71-855d-4b35-8e49-236179bbc1f7.jpg",
+   "desc": "Colorful children's health center exterior with families arriving",
+   "domains": [
+    "healthcare",
+    "commercial"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "luxury-home-pool-dusk",
+   "file": "hf_20260501_174628_b9ac2329-3c4c-4a44-9273-8b10829a6a78.jpg",
+   "desc": "Large home at dusk with a lit pool, pergola and clipped hedges",
+   "domains": [
+    "custom_home",
+    "residential",
+    "deck_outdoor"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "aerial-farmhouse-autumn",
+   "file": "hf_20260501_174635_17e7358c-bba1-40c9-8eac-bafd643c11e6.jpg",
+   "desc": "Aerial of a two storey white farmhouse with a dark metal roof in autumn",
+   "domains": [
+    "custom_home",
+    "residential",
+    "roofing"
+   ],
+   "modes": [
+    "aerial_context",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "old-farmhouse-rusted-roof",
+   "file": "hf_20260501_174640_9ddf4397-539a-4ad8-8a80-f8ac1191d951.jpg",
+   "desc": "Weathered farmhouse with a rusted standing seam roof and a wraparound porch under live oaks in morning fog",
+   "domains": [
+    "historic",
+    "roofing",
+    "residential",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "medium"
+  },
+  {
+   "id": "aerial-distribution-center",
+   "file": "hf_20260501_174647_193cfc12-0149-46ac-916e-0585d4854c35.jpg",
+   "desc": "Aerial of a large distribution warehouse with loading docks and trailers",
+   "domains": [
+    "warehouse"
+   ],
+   "modes": [
+    "aerial_context",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "aerial-industrial-park",
+   "file": "hf_20260501_174654_167b383b-725d-433b-a264-45c7723b1308.jpg",
+   "desc": "Aerial of a multi building industrial park with truck courts",
+   "domains": [
+    "warehouse"
+   ],
+   "modes": [
+    "aerial_context",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "lifestyle-retail-street",
+   "file": "hf_20260501_174659_7803e113-b006-4945-ae35-22d22533044c.jpg",
+   "desc": "Open air retail street with shoppers, palms and cafe awnings in the evening",
+   "domains": [
+    "retail",
+    "commercial"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "taproom-interior-brick",
+   "file": "hf_20260501_174705_246bb94e-ca30-45c3-881c-6e802e39bfdd.jpg",
+   "desc": "Brewery taproom interior with exposed brick, steel framing and a long bar",
+   "domains": [
+    "retail",
+    "interior_finish",
+    "commercial"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "historic-brick-street",
+   "file": "hf_20260501_174709_54ace871-aedd-4195-aea5-23f5674712cc.jpg",
+   "desc": "Restored red brick building on a cobblestone street at dusk",
+   "domains": [
+    "historic",
+    "commercial"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "colonial-home-spring",
+   "file": "hf_20260501_174716_2950dfd7-923a-4142-bbb3-29727dd3d2de.jpg",
+   "desc": "White colonial house with black shutters and a blossoming tree in spring",
+   "domains": [
+    "residential",
+    "exterior_envelope",
+    "doors_windows"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "high"
+  },
+  {
+   "id": "aerial-florida-subdivision-roofs",
+   "file": "hf_20260501_174721_5b01324c-b3e0-40b0-af61-b9bdb93724c5.jpg",
+   "desc": "Aerial over a Florida subdivision of tile and shingle roofs with a work truck at the curb",
+   "domains": [
+    "roofing",
+    "residential",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "aerial_context"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "medium"
+  },
+  {
+   "id": "principal-hardhat-portrait",
+   "file": "hf_20260501_174730_604fa6a3-483e-44da-9e8d-ac565900d4d5.jpg",
+   "desc": "Close portrait of a principal in a JK Prestige hardhat with the crew out of focus behind",
+   "domains": [
+    "brand"
+   ],
+   "modes": [
+    "trust_portrait"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "roofers-stucco-home-dusk",
+   "file": "hf_20260504_202102_44399bad-f04f-41c9-8569-1e2a84e1d91f.png",
+   "desc": "Two roofers working the slope of a stucco Florida house at dusk",
+   "domains": [
+    "roofing",
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "tpo-roof-waterfront-crew",
+   "file": "hf_20260504_202107_2c36086e-3014-49d4-9514-3ad456136808.png",
+   "desc": "Crew rolling white roof membrane on a low slope roof with a waterfront skyline behind",
+   "domains": [
+    "roofing",
+    "commercial"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "tarp-pull-storm-roof",
+   "file": "hf_20260504_202112_fc714d05-b4d7-44b1-ad71-be0e49b3bb02.png",
+   "desc": "Worker pulling a blue tarp back from damaged roof decking under a dark storm sky",
+   "domains": [
+    "storm",
+    "roofing",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "inspection",
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low"
+  },
+  {
+   "id": "inspector-chalk-shingle-florida",
+   "file": "hf_20260504_202116_27900255-6ba0-49a7-9f49-a8bfcfdc0928.png",
+   "desc": "Inspector kneeling on a shingle roof marking a defect in chalk with a tablet in hand, Florida street behind",
+   "domains": [
+    "roofing",
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "inspection"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "team-plans-steel-sunset",
+   "file": "hf_20260504_202125_660f0b31-714c-4aef-9590-ac207ad9308a.png",
+   "desc": "Team gathered around drawings at a steel frame structure at sunset",
+   "domains": [
+    "commercial",
+    "brand"
+   ],
+   "modes": [
+    "plans_permits",
+    "trust_portrait"
+   ],
+   "people": true,
+   "brand_visible": true,
+   "claim_risk": "low"
+  },
+  {
+   "id": "stock-window-screwdriver-repair",
+   "file": null,
+   "origin": "stock",
+   "desc": "Side view of crop anonymous male mechanic fixing window with screwdriver during renovation process in apartment",
+   "domains": [
+    "doors_windows",
+    "interior_finish",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/workman-screwing-window-frame-during-housework-5768107/",
+   "photographer": "Ksenia Chernaya",
+   "photographer_url": "https://www.pexels.com/@kseniachernaya"
+  },
+  {
+   "id": "stock-window-frame-measuring",
+   "file": null,
+   "origin": "stock",
+   "desc": "From above of crop anonymous workman measuring wooden window frame using metal ruler and pencil in house",
+   "domains": [
+    "doors_windows",
+    "interior_finish",
+    "residential"
+   ],
+   "modes": [
+    "inspection",
+    "plans_permits"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/crop-worker-measuring-window-frame-with-ruler-5691534/",
+   "photographer": "Ksenia Chernaya",
+   "photographer_url": "https://www.pexels.com/@kseniachernaya"
+  },
+  {
+   "id": "stock-vinyl-siding-house",
+   "file": null,
+   "origin": "stock",
+   "desc": "Charming two-story suburban home with green lawn, two-car garage, and blue sky.",
+   "domains": [
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/photo-of-a-house-under-blue-sky-5071141/",
+   "photographer": "Curtis Adams",
+   "photographer_url": "https://www.pexels.com/@curtis-adams-1694007"
+  },
+  {
+   "id": "stock-siding-level-check",
+   "file": null,
+   "origin": "stock",
+   "desc": "Hands in white gloves using spirit level on wall for precise leveling.",
+   "domains": [
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/a-person-using-spirit-level-4981785/",
+   "photographer": "Antoni Shkraba",
+   "photographer_url": "https://www.pexels.com/@shkrabaanthony"
+  },
+  {
+   "id": "stock-gutter-house-exterior",
+   "file": null,
+   "origin": "stock",
+   "desc": "From below of aged dwelling building exterior with window on front wall in city in sunlight",
+   "domains": [
+    "exterior_envelope",
+    "roofing",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/old-residential-house-facade-in-town-on-sunny-day-5667308/",
+   "photographer": "Francesco Ungaro",
+   "photographer_url": "https://www.pexels.com/@francesco-ungaro"
+  },
+  {
+   "id": "stock-downspout-wall",
+   "file": null,
+   "origin": "stock",
+   "desc": "Close-up of a gray metal drainpipe attached to a plain exterior wall.",
+   "domains": [
+    "exterior_envelope",
+    "sitework_drainage"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/gray-rainwater-pipe-19962074/",
+   "photographer": "Jan van der Wolf",
+   "photographer_url": "https://www.pexels.com/@jan-van-der-wolf-11680885"
+  },
+  {
+   "id": "stock-drain-pipe-trench",
+   "file": null,
+   "origin": "stock",
+   "desc": "Detailed view of drainage pipe construction in a trench, Elk Grove, California.",
+   "domains": [
+    "sitework_drainage"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/drainage-pipe-installation-in-elk-grove-trench-37627673/",
+   "photographer": "D Goug",
+   "photographer_url": "https://www.pexels.com/@d-goug-211350543"
+  },
+  {
+   "id": "stock-sliding-door-porch",
+   "file": null,
+   "origin": "stock",
+   "desc": "Spacious veranda connecting indoor and outdoor spaces, ideal for relaxation.",
+   "domains": [
+    "doors_windows",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/wooden-flooring-on-a-veranda-7601159/",
+   "photographer": "Curtis Adams",
+   "photographer_url": "https://www.pexels.com/@curtis-adams-1694007"
+  },
+  {
+   "id": "stock-worn-wood-gate",
+   "file": null,
+   "origin": "stock",
+   "desc": "Weathered wooden gate with wire fence in a rustic outdoor setting.",
+   "domains": [
+    "deck_outdoor",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/rustic-wooden-gate-in-a-natural-landscape-31465772/",
+   "photographer": "Wolfgang Vrede",
+   "photographer_url": "https://www.pexels.com/@wolfgang-vrede-9996223"
+  },
+  {
+   "id": "stock-fence-gate-hinge",
+   "file": null,
+   "origin": "stock",
+   "desc": "Close-up of a rustic wooden gate with a padlock, offering a secure outdoor setting.",
+   "domains": [
+    "deck_outdoor"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/brown-wooden-fence-with-padlock-12494851/",
+   "photographer": "David McElwee",
+   "photographer_url": "https://www.pexels.com/@davidmcelwee"
+  },
+  {
+   "id": "stock-weathered-door-frame",
+   "file": null,
+   "origin": "stock",
+   "desc": "Close-up of an old, weathered wooden door with rusty hinges, showcasing vintage charm.",
+   "domains": [
+    "doors_windows",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/close-up-photo-of-a-broken-door-14739185/",
+   "photographer": "Jessica Lewis 🦋 thepaintedsquare",
+   "photographer_url": "https://www.pexels.com/@thepaintedsquare"
+  },
+  {
+   "id": "stock-carpenter-door-workbench",
+   "file": null,
+   "origin": "stock",
+   "desc": "Unrecognizable male master wearing dirty apron standing near window with white frames on wooden workbench while working in professional studio",
+   "domains": [
+    "doors_windows",
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/crop-man-near-painted-window-5691501/",
+   "photographer": "Ksenia Chernaya",
+   "photographer_url": "https://www.pexels.com/@kseniachernaya"
+  },
+  {
+   "id": "stock-french-doors-exterior",
+   "file": null,
+   "origin": "stock",
+   "desc": "Charming stone courtyard showcasing rustic architecture and elegant design.",
+   "domains": [
+    "doors_windows",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/quaint-stone-courtyard-in-dublin-pennsylvania-30280876/",
+   "photographer": "Gene Samit",
+   "photographer_url": "https://www.pexels.com/@gene-samit-546626702"
+  },
+  {
+   "id": "stock-hinge-install-drill",
+   "file": null,
+   "origin": "stock",
+   "desc": "Close-up of a skilled carpenter using a power drill on wood in a workshop.",
+   "domains": [
+    "doors_windows",
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/close-up-view-of-drilling-hinge-into-wood-7285920/",
+   "photographer": "https://kaboompics.com/",
+   "photographer_url": "https://www.pexels.com/@karola-g"
+  },
+  {
+   "id": "stock-residential-garage-door",
+   "file": null,
+   "origin": "stock",
+   "desc": "Charming suburban house featuring a double garage and lush garden, ideal for real estate listings.",
+   "domains": [
+    "residential",
+    "exterior_envelope"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/suburban-house-with-double-garage-and-greenery-33350023/",
+   "photographer": "Mingyang LIU",
+   "photographer_url": "https://www.pexels.com/@mingyang-liu-301813241"
+  },
+  {
+   "id": "stock-gable-vent-house",
+   "file": null,
+   "origin": "stock",
+   "desc": "A modern house gable against a clear blue sky, highlighting minimalistic architectural design.",
+   "domains": [
+    "roofing",
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/the-attic-window-of-a-house-under-a-blue-sky-4786538/",
+   "photographer": "Erik Schereder",
+   "photographer_url": "https://www.pexels.com/@erik-schereder-3173655"
+  },
+  {
+   "id": "stock-roof-vent-boot",
+   "file": null,
+   "origin": "stock",
+   "desc": "Yellow industrial chimney against a vibrant blue sky, representing modern architecture.",
+   "domains": [
+    "roofing"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/a-white-chimney-on-a-yellow-building-27627823/",
+   "photographer": "Jan van der Wolf",
+   "photographer_url": "https://www.pexels.com/@jan-van-der-wolf-11680885"
+  },
+  {
+   "id": "stock-insulation-batt-hand",
+   "file": null,
+   "origin": "stock",
+   "desc": "Crop unrecognizable worker in gloves sitting on haunches and insulating with pink stone wool",
+   "domains": [
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/unrecognizable-worker-insulating-with-stone-wool-6124239/",
+   "photographer": "Erik Mclean",
+   "photographer_url": "https://www.pexels.com/@introspectivedsgn"
+  },
+  {
+   "id": "stock-drywall-corner-hand",
+   "file": null,
+   "origin": "stock",
+   "desc": "Close-up of a gloved hand applying plaster to a wall indoors in Falun, Sweden.",
+   "domains": [
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/man-wearing-gloves-on-a-renovation-11427055/",
+   "photographer": "Jimmy Nilsson Masth",
+   "photographer_url": "https://www.pexels.com/@jimmy-nilsson-masth-193596566"
+  },
+  {
+   "id": "stock-joint-compound-trowel",
+   "file": null,
+   "origin": "stock",
+   "desc": "Close-up of a hand holding a trowel with cement, perfect for construction themes.",
+   "domains": [
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/plastering-work-with-trowel-and-cement-38561968/",
+   "photographer": "David Antonio Cruz Naira",
+   "photographer_url": "https://www.pexels.com/@davidcruz"
+  },
+  {
+   "id": "stock-room-trim-molding",
+   "file": null,
+   "origin": "stock",
+   "desc": "Spacious interior with carpet flooring and classic architectural details.",
+   "domains": [
+    "interior_finish",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/room-in-building-6303112/",
+   "photographer": "Get Lost Mike",
+   "photographer_url": "https://www.pexels.com/@michaelgaultphotos"
+  },
+  {
+   "id": "stock-drilling-door-casing",
+   "file": null,
+   "origin": "stock",
+   "desc": "Back view of unrecognizable craftsman using cordless screwdriver and assembling window while screwing metal hinge during renovation works in apartment",
+   "domains": [
+    "interior_finish",
+    "doors_windows"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/anonymous-man-installing-window-in-room-5691503/",
+   "photographer": "Ksenia Chernaya",
+   "photographer_url": "https://www.pexels.com/@kseniachernaya"
+  },
+  {
+   "id": "stock-crawl-space-vapor-sheet",
+   "file": null,
+   "origin": "stock",
+   "desc": "Empty basement with exposed beams and plumbing pipes, ideal for renovation.",
+   "domains": [
+    "sitework_drainage",
+    "structural_framing"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/an-empty-basement-4092030/",
+   "photographer": "Curtis Adams",
+   "photographer_url": "https://www.pexels.com/@curtis-adams-1694007"
+  },
+  {
+   "id": "stock-crawl-space-access-work",
+   "file": null,
+   "origin": "stock",
+   "desc": "Senior adult inspecting a crawl space entrance during a home inspection on a sunny day.",
+   "domains": [
+    "sitework_drainage",
+    "structural_framing"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/home-inspector-examining-crawl-space-outdoors-32497163/",
+   "photographer": "Kathleen Austin Kuhn",
+   "photographer_url": "https://www.pexels.com/@kathleen-austin-kuhn-2152973960"
+  },
+  {
+   "id": "stock-backyard-deck",
+   "file": null,
+   "origin": "stock",
+   "desc": "A spacious wooden deck with a view of a vibrant autumn backyard, perfect for relaxation.",
+   "domains": [
+    "deck_outdoor",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/brown-wooden-patio-10847167/",
+   "photographer": "Đỗ Huy Hoàng",
+   "photographer_url": "https://www.pexels.com/@d-huy-hoang-163344088"
+  },
+  {
+   "id": "stock-deck-stair-framing",
+   "file": null,
+   "origin": "stock",
+   "desc": "Wooden staircase basking in sunlight, surrounded by lush trees in an outdoor park setting.",
+   "domains": [
+    "deck_outdoor",
+    "structural_framing"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/brown-wooden-staircase-near-green-trees-13871324/",
+   "photographer": "Matheus Bertelli",
+   "photographer_url": "https://www.pexels.com/@bertellifotografia"
+  },
+  {
+   "id": "stock-house-deck-attached",
+   "file": null,
+   "origin": "stock",
+   "desc": "A sunlit backyard view of a modern grey house with white fencing and AC unit.",
+   "domains": [
+    "deck_outdoor",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/facade-of-a-house-4119844/",
+   "photographer": "Curtis Adams",
+   "photographer_url": "https://www.pexels.com/@curtis-adams-1694007"
+  },
+  {
+   "id": "stock-carpenter-wall-ledger",
+   "file": null,
+   "origin": "stock",
+   "desc": "A construction worker using a power drill on a building site, outdoors during the day.",
+   "domains": [
+    "deck_outdoor",
+    "structural_framing"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/man-in-black-shirt-holding-black-power-tool-8961401/",
+   "photographer": "Mikael Blomkvist",
+   "photographer_url": "https://www.pexels.com/@mikael-blomkvist"
+  },
+  {
+   "id": "stock-glass-shower-door",
+   "file": null,
+   "origin": "stock",
+   "desc": "Luxurious modern bathroom with marble tiled shower and sleek glass doors.",
+   "domains": [
+    "interior_finish",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/an-interior-of-the-bathroom-of-a-house-4258278/",
+   "photographer": "Curtis Adams",
+   "photographer_url": "https://www.pexels.com/@curtis-adams-1694007"
+  },
+  {
+   "id": "stock-sealant-glass-door",
+   "file": null,
+   "origin": "stock",
+   "desc": "A person applies sealant to a sliding glass door, enhancing home aesthetics.",
+   "domains": [
+    "interior_finish",
+    "doors_windows"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": true,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/person-holding-the-door-3615723/",
+   "photographer": "La Miko",
+   "photographer_url": "https://www.pexels.com/@lamiko"
+  },
+  {
+   "id": "stock-tile-tools-floor",
+   "file": null,
+   "origin": "stock",
+   "desc": "A selection of home renovation tools placed on a white tiled floor, ready for use.",
+   "domains": [
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/tools-on-the-floor-3615716/",
+   "photographer": "La Miko",
+   "photographer_url": "https://www.pexels.com/@lamiko"
+  },
+  {
+   "id": "stock-garage-interior-floor",
+   "file": null,
+   "origin": "stock",
+   "desc": "Spacious garage interior with storage shelves, tools, and a wheelbarrow, ideal for home organization.",
+   "domains": [
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/garage-hall-in-house-17181949/",
+   "photographer": "hi room",
+   "photographer_url": "https://www.pexels.com/@hiroom"
+  },
+  {
+   "id": "stock-concrete-crack-closeup",
+   "file": null,
+   "origin": "stock",
+   "desc": "Close-up view of a cracked concrete surface with distinct textures in Logan, Utah.",
+   "domains": [
+    "structural_framing",
+    "residential"
+   ],
+   "modes": [
+    "inspection"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/cracked-concrete-wall-in-close-up-photography-14887766/",
+   "photographer": "Joshua Mueller",
+   "photographer_url": "https://www.pexels.com/@joshua-mueller-403440660"
+  },
+  {
+   "id": "stock-attic-room-context",
+   "file": null,
+   "origin": "stock",
+   "desc": "Spacious attic room with natural light from skylights, featuring a brick pillar and a wooden ladder.",
+   "domains": [
+    "interior_finish",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/room-on-attic-8082327/",
+   "photographer": "Max Vakhtbovych",
+   "photographer_url": "https://www.pexels.com/@artbovich"
+  },
+  {
+   "id": "stock-hex-tile-clean",
+   "file": null,
+   "origin": "stock",
+   "desc": "Minimalist bathroom with a freestanding tub and stylish hexagonal floor tiles, showcasing modern design.",
+   "domains": [
+    "interior_finish",
+    "residential"
+   ],
+   "modes": [
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/clean-bathroom-with-white-and-black-floor-tiles-4154986/",
+   "photographer": "cottonbro studio",
+   "photographer_url": "https://www.pexels.com/@cottonbro"
+  },
+  {
+   "id": "stock-garage-tool-rack",
+   "file": null,
+   "origin": "stock",
+   "desc": "A neatly arranged collection of hand tools including chisels, saws, and screwdrivers in a workshop.",
+   "domains": [
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "inspection"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "license": "Pexels License, free for commercial use, attribution not required",
+   "source": "pexels",
+   "source_url": "https://www.pexels.com/photo/carpentry-tools-hanging-beside-a-wall-7484788/",
+   "photographer": "cottonbro studio",
+   "photographer_url": "https://www.pexels.com/@cottonbro"
+  }
+ ]
+}
