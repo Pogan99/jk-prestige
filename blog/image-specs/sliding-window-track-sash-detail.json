@@ -1,0 +1,10 @@
+{
+  "id": "sliding-window-track-sash-detail",
+  "file": "generated/sliding-window-track-sash-detail.png",
+  "desc": "White horizontal sliding window with a sash raised from its lower track, visible rollers, screen, sill, and exterior trim.",
+  "domains": ["doors_windows", "exterior_envelope", "residential"],
+  "modes": ["replacement", "inspection", "repair_preparation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for horizontal sliding-window replacement, track and roller inspection, sash removal, and window-maintenance planning. Generic editorial illustration; not evidence of a JK Prestige project."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "drywall-hole-patch-prep",
+  "file": "generated/drywall-hole-patch-prep.png",
+  "desc": "Small drywall opening prepared for repair with a backing strip and controlled feathered joint compound.",
+  "domains": ["drywall", "interior_finish", "renovation", "residential"],
+  "modes": ["diagnosis", "repair_preparation", "finish_work"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for contained drywall-hole repairs, patch preparation, backing support, and finish-work guidance. This shows a controlled repair condition, not an emergency or evidence of a JK Prestige project."
+}

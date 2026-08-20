@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "half-bath-under-stairs-rough-in",
+      "alt": "Framed under-stairs half-bath with toilet drain, supply stubs, vent connection, and sloped stair underside",
+      "caption": "Measure the usable height and plan the drain, vent, water lines, and access together before enclosing the small room. The stair geometry limits every fixture and service decision.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "toilet-flange-floor-opening",
+      "alt": "Bathroom floor opening prepared for a toilet flange with plumbing access below",
+      "caption": "Set the toilet location only after confirming the waste route and finished-floor elevation. The flange and finished floor need to work as one detail, not as separate last-minute tasks.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "bathroom-sink-p-trap-vanity",
+      "alt": "Vanity cabinet interior with an accessible sink P-trap and supply valves",
+      "caption": "Keep shutoffs and the trap accessible behind the vanity. A compact half bath still needs practical service space once the cabinet and door are in place.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

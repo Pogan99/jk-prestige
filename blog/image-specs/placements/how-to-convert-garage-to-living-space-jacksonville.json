@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "garage-conversion-wall-assembly",
+      "alt": "Framed garage-conversion wall with insulation, flashed window opening, and protected electrical box",
+      "caption": "Plan the conversion as a wall, insulation, electrical, and weather-control assembly before finishes begin. A garage becomes living space only when its structure and building systems are coordinated.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "garage-floor-concrete-crack-prep",
+      "alt": "Concrete garage floor with a contained crack-preparation area before a finish is installed",
+      "caption": "Inspect the slab, moisture conditions, and level changes before covering the floor. Cosmetic finishes cannot solve movement, water entry, or a floor that needs a different repair scope.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "garage-door-exterior-context",
+      "alt": "Clean sectional garage door at a Florida home's driveway",
+      "caption": "Decide whether the existing garage opening will be retained, enclosed, or rebuilt as part of the envelope. Exterior changes need a coherent weather, framing, and permitting plan rather than a finish-only decision.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

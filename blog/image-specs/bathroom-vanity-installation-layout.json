@@ -1,0 +1,10 @@
+{
+  "id": "bathroom-vanity-installation-layout",
+  "file": "generated/bathroom-vanity-installation-layout.png",
+  "desc": "Light-wood bathroom vanity set in place without its countertop, with accessible drain and supply connections visible at the back.",
+  "domains": ["bathroom", "plumbing", "interior_finish", "renovation", "residential"],
+  "modes": ["installation", "inspection", "service_planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for vanity installation, cabinet-layout checks, bathroom plumbing access, and renovation sequencing. Generic editorial illustration; not evidence of a JK Prestige project."
+}

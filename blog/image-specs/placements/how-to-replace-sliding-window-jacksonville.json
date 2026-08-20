@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "sliding-window-track-sash-detail",
+      "alt": "Horizontal sliding window with sash raised from the track and rollers visible",
+      "caption": "Inspect the frame, track, rollers, sill, and opening before choosing a replacement. A dragging sash can come from hardware, frame condition, or a larger water-management problem.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "exterior-window-flashing-sill-membrane",
+      "alt": "Window opening with sill flashing membrane formed into a drainage pan",
+      "caption": "Prepare the sill and flashing sequence so incidental water has a path back out. Replacement windows rely on the opening details around them, not just the new frame.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "Finish exterior trim and sealant without blocking drainage paths. Jacksonville wind-driven rain makes the sill, corners, and transition details part of the replacement system.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

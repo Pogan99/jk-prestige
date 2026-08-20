@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "interior-door-casing-miter-detail",
+      "alt": "Painted interior door casing with a tight mitered corner",
+      "caption": "Check the rough opening, jamb, floor clearance, and casing plan before final trim. A clean reveal begins with a plumb frame, not with caulk at the end.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "french-door-hinge-detail",
+      "alt": "Aligned door hinges with even spacing along a finished door edge",
+      "caption": "Set hinges and shims so the slab swings freely and maintains even reveals. The hardware example shows the alignment principle; use hinges appropriate to the actual interior door.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "baseboard-trim-miter-layout",
+      "alt": "Interior trim staged for a clean finished-floor and door-edge transition",
+      "caption": "Finish casing, baseboard, and paint after the door is adjusted and latches correctly. Trim should complete a stable opening rather than conceal a door that rubs or drifts.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

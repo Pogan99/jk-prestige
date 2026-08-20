@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "bathroom-vanity-installation-layout",
+      "alt": "Bathroom vanity placed before the countertop with drain and supply access visible",
+      "caption": "Confirm wall backing, level, plumbing locations, and door clearances before the countertop goes on. The cabinet needs to stay secure while leaving room to service the plumbing.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "bathroom-sink-p-trap-vanity",
+      "alt": "Vanity cabinet with accessible sink P-trap and supply valves",
+      "caption": "Reconnect the drain and supplies without forcing their alignment. Accessible shutoffs and a correctly assembled trap make future service far less disruptive.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "bathroom-sink-pop-up-drain",
+      "alt": "Bathroom sink drain body and pop-up linkage inside a vanity cabinet",
+      "caption": "Test the drain, overflow, and pop-up before loading the cabinet. A slow leak is easier to find while the interior is empty and all connection points remain visible.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

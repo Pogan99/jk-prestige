@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "rotted-exterior-door-jamb-diagnosis",
+      "alt": "Localized moisture-softened wood at the lower corner of an exterior door jamb",
+      "caption": "Probe the sill and lower jamb before ordering a new door. Soft wood or repeated water entry can turn a door swap into a broader opening repair.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "exterior-door-threshold-sweep-detail",
+      "alt": "Exterior door with even sweep contact at a clean aluminum threshold",
+      "caption": "Set the frame plumb and protect the threshold drainage path before final trim. A door should seal without binding and shed water toward the exterior.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "exterior-deadbolt-strike-detail",
+      "alt": "Exterior deadbolt latch aligned with a secure strike plate on a finished door jamb",
+      "caption": "Verify hinge alignment, latch engagement, and deadbolt operation after the door is hung. Security hardware performs correctly only when the slab and jamb are square and stable.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

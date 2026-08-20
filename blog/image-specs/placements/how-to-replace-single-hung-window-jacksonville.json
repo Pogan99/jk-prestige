@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "single-hung-window-balance-detail",
+      "alt": "Raised single-hung window sash exposing balance hardware in its jamb channel",
+      "caption": "Confirm whether the issue is the sash balance, weatherstrip, frame, glass, or the entire unit before ordering a replacement. The visible symptom does not always define the right scope.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "exterior-window-flashing-sill-membrane",
+      "alt": "Window opening with sill flashing membrane folded into a drainage pan",
+      "caption": "Set the replacement on a prepared sill and integrate flashing in the correct drainage sequence. A window frame cannot compensate for a sill detail that traps water.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished single-hung window trim with a sloped exterior sill",
+      "caption": "Check operation, reveals, exterior sealant, and drainage after installation. The sash should move freely while water is directed outward at the sill and trim.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

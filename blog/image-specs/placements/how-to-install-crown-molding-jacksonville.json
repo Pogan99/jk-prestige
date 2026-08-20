@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "crown-molding-miter-detail",
+      "alt": "Primed crown molding meeting at a tight inside-corner miter",
+      "caption": "Fit and test corner joints before final fastening. Tight, consistent profiles make caulk a finish material, not a substitute for a poor cut.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "interior-door-casing-miter-detail",
+      "alt": "Clean painted door casing with a precise mitered corner",
+      "caption": "Measure spring angles and account for walls that are not perfectly square. The same careful test-fit approach keeps crown joints from opening after paint.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "baseboard-trim-miter-layout",
+      "alt": "Interior trim pieces staged for a clean mitered layout",
+      "caption": "Plan scarf joints, corners, and paint sequencing across the room before starting a long run. Consistent trim work comes from repeatable layout, not from filling every mismatch later.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

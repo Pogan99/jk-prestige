@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "lvp-flooring-underlayment-layout",
+      "alt": "Luxury vinyl plank layout over underlayment with expansion spacers at the wall",
+      "caption": "Check the substrate, manufacturer requirements, perimeter gaps, and layout before the first row locks together. Straight courses and room transitions are set at the beginning, not rescued at the end.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "garage-floor-concrete-crack-prep",
+      "alt": "Concrete floor condition prepared for assessment before a finish is added",
+      "caption": "Flatness and moisture conditions matter beneath any floating floor. This concrete example is an inspection cue: assess the actual substrate and correct active defects before covering it.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "baseboard-trim-miter-layout",
+      "alt": "Interior baseboard trim staged for a clean finished-floor edge",
+      "caption": "Leave the required expansion space, then use trim to cover the perimeter without pinning the floating floor. Finish details should protect the movement allowance rather than eliminate it.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

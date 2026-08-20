@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "deck-post-footing-frame",
+      "alt": "Pressure-treated deck frame supported by a post base on a concrete pier",
+      "caption": "Start with the footing, post base, framing layout, and approved hardware. A deck's visible boards depend on the load path below them.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "deck-ledger-flashing-detail",
+      "alt": "Deck ledger layered with flashing, membrane, joist hangers, and exterior fasteners",
+      "caption": "Where a deck meets the house, flashing and attachment details control both structural support and water management. Do not bury a ledger connection behind finishes without a complete plan.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "deck-stair-stringer-landing",
+      "alt": "Deck stair framing with a secure landing and handrail post",
+      "caption": "Lay out stairs, landing, railing, and drainage as part of the frame rather than adding them after the platform is finished. Safe access is part of the deck's core structure.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

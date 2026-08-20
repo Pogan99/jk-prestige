@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "kitchen-cabinet-painting-workbench",
+      "alt": "Cabinet door and drawer fronts staged on a clean painting workbench",
+      "caption": "Remove and label doors, drawers, and hardware before coating. A controlled staging area makes surface prep and reinstallation more reliable than painting around hinges.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "kitchen-cabinet-installation-level",
+      "alt": "Kitchen base cabinet run checked level before countertop installation",
+      "caption": "Correct loose boxes, uneven faces, and damaged edges before paint. Coating can improve a sound cabinet finish, but it cannot straighten a poorly supported installation.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "kitchen-backsplash-tile-setting",
+      "alt": "Kitchen wall prepared for backsplash tile beside installed cabinets",
+      "caption": "Protect counters, floors, and adjacent finishes while the coatings cure. Kitchen projects overlap, so schedule painting around tile, plumbing, and hardware work rather than rushing the finish.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

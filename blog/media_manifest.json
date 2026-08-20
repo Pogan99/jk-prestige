@@ -5185,6 +5185,341 @@
       "quality_review": "approved",
       "reuse_notes": "Use for gutter-guard installation, pine-needle maintenance, roofline drainage, and gutter-cleaning articles. It depicts a generic guard detail, never a JK Prestige project or a substitute for roof access safety, gutter sizing, shingle-warranty review, product compatibility, drainage evaluation, or permit requirements.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/gutter-guard-micro-mesh-detail.json"
+    },
+    {
+      "id": "garage-conversion-wall-assembly",
+      "file": "generated/garage-conversion-wall-assembly.png",
+      "origin": "generated",
+      "desc": "Unfinished Florida garage conversion with a framed exterior wall, mineral-wool insulation, flashed window opening, and a protected electrical box.",
+      "domains": [
+        "garage",
+        "renovation",
+        "structural_framing",
+        "interior_finish",
+        "energy",
+        "residential"
+      ],
+      "modes": [
+        "planning",
+        "installation",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for garage conversions, wall assemblies, insulation planning, rough-in coordination, and residential renovation guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/garage-conversion-wall-assembly.json"
+    },
+    {
+      "id": "half-bath-under-stairs-rough-in",
+      "file": "generated/half-bath-under-stairs-rough-in.png",
+      "origin": "generated",
+      "desc": "Compact framed under-stairs half-bath rough-in with a toilet drain stub, supply lines, vent connection, and sloped stair underside.",
+      "domains": [
+        "bathroom",
+        "plumbing",
+        "structural_framing",
+        "interior_finish",
+        "residential"
+      ],
+      "modes": [
+        "installation",
+        "planning",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for half-bath planning, under-stairs layouts, bathroom plumbing rough-in, and renovation sequencing. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/half-bath-under-stairs-rough-in.json"
+    },
+    {
+      "id": "deck-post-footing-frame",
+      "file": "generated/deck-post-footing-frame.png",
+      "origin": "generated",
+      "desc": "Pressure-treated deck frame with a post base fastened to a concrete pier and galvanized structural hardware.",
+      "domains": [
+        "deck_outdoor",
+        "structural_framing",
+        "carpentry",
+        "residential",
+        "storm"
+      ],
+      "modes": [
+        "installation",
+        "framing",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for deck framing, footings, post bases, hardware, and outdoor structural planning. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/deck-post-footing-frame.json"
+    },
+    {
+      "id": "sliding-barn-door-track-hanger",
+      "file": "generated/sliding-barn-door-track-hanger.png",
+      "origin": "generated",
+      "desc": "Matte-black sliding barn-door rail and hangers secured through finished drywall into exposed blocking above a wood door.",
+      "domains": [
+        "doors_windows",
+        "carpentry",
+        "interior_finish",
+        "structural_framing",
+        "residential"
+      ],
+      "modes": [
+        "installation",
+        "hardware_inspection",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for sliding doors, barn-door hardware, wall blocking, interior trim, and hardware-planning guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/sliding-barn-door-track-hanger.json"
+    },
+    {
+      "id": "drywall-hole-patch-prep",
+      "file": "generated/drywall-hole-patch-prep.png",
+      "origin": "generated",
+      "desc": "Small drywall opening prepared for repair with a backing strip and controlled feathered joint compound.",
+      "domains": [
+        "drywall",
+        "interior_finish",
+        "renovation",
+        "residential"
+      ],
+      "modes": [
+        "diagnosis",
+        "repair_preparation",
+        "finish_work"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "diagnostic",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for contained drywall-hole repairs, patch preparation, backing support, and finish-work guidance. This shows a controlled repair condition, not an emergency or evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/drywall-hole-patch-prep.json"
+    },
+    {
+      "id": "bathroom-vanity-installation-layout",
+      "file": "generated/bathroom-vanity-installation-layout.png",
+      "origin": "generated",
+      "desc": "Light-wood bathroom vanity set in place without its countertop, with accessible drain and supply connections visible at the back.",
+      "domains": [
+        "bathroom",
+        "plumbing",
+        "interior_finish",
+        "renovation",
+        "residential"
+      ],
+      "modes": [
+        "installation",
+        "inspection",
+        "service_planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for vanity installation, cabinet-layout checks, bathroom plumbing access, and renovation sequencing. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/bathroom-vanity-installation-layout.json"
+    },
+    {
+      "id": "ceiling-fan-rated-box-detail",
+      "file": "generated/ceiling-fan-rated-box-detail.png",
+      "origin": "generated",
+      "desc": "Metal ceiling electrical box and fan mounting bracket secured to framing above a circular ceiling opening.",
+      "domains": [
+        "electrical",
+        "interior_finish",
+        "structural_framing",
+        "residential"
+      ],
+      "modes": [
+        "installation",
+        "inspection",
+        "safety"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for ceiling-fan support, electrical-box inspection, mounting-bracket planning, and qualified electrical-work guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/ceiling-fan-rated-box-detail.json"
+    },
+    {
+      "id": "lvp-flooring-underlayment-layout",
+      "file": "generated/lvp-flooring-underlayment-layout.png",
+      "origin": "generated",
+      "desc": "Light-oak luxury vinyl plank flooring installed over underlayment with spacers and a visible perimeter expansion gap.",
+      "domains": [
+        "flooring",
+        "interior_finish",
+        "renovation",
+        "residential"
+      ],
+      "modes": [
+        "installation",
+        "layout",
+        "finish_work"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for luxury vinyl plank installation, underlayment, expansion gaps, transitions, and flooring-layout guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/lvp-flooring-underlayment-layout.json"
+    },
+    {
+      "id": "hardwood-floor-sanding-prep",
+      "file": "generated/hardwood-floor-sanding-prep.png",
+      "origin": "generated",
+      "desc": "Strip-oak hardwood floor with a controlled sanded matte section and a parked floor sander in a clean empty room.",
+      "domains": [
+        "flooring",
+        "interior_finish",
+        "renovation",
+        "residential"
+      ],
+      "modes": [
+        "repair_preparation",
+        "finishing",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for hardwood refinishing, finish removal, floor-preparation checks, and room-protection guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/hardwood-floor-sanding-prep.json"
+    },
+    {
+      "id": "crown-molding-miter-detail",
+      "file": "generated/crown-molding-miter-detail.png",
+      "origin": "generated",
+      "desc": "Primed traditional crown molding meeting at a clean, tight inside-corner miter with paint-ready seams.",
+      "domains": [
+        "carpentry",
+        "trim",
+        "interior_finish",
+        "residential"
+      ],
+      "modes": [
+        "installation",
+        "finish_detail",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for crown molding, trim joints, miter fitting, caulk-and-paint preparation, and finish-carpentry guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/crown-molding-miter-detail.json"
+    },
+    {
+      "id": "sliding-window-track-sash-detail",
+      "file": "generated/sliding-window-track-sash-detail.png",
+      "origin": "generated",
+      "desc": "White horizontal sliding window with a sash raised from its lower track, visible rollers, screen, sill, and exterior trim.",
+      "domains": [
+        "doors_windows",
+        "exterior_envelope",
+        "residential"
+      ],
+      "modes": [
+        "replacement",
+        "inspection",
+        "repair_preparation"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for horizontal sliding-window replacement, track and roller inspection, sash removal, and window-maintenance planning. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/sliding-window-track-sash-detail.json"
     }
   ]
 }

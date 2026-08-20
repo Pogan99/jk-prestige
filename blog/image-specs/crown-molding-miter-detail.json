@@ -1,0 +1,10 @@
+{
+  "id": "crown-molding-miter-detail",
+  "file": "generated/crown-molding-miter-detail.png",
+  "desc": "Primed traditional crown molding meeting at a clean, tight inside-corner miter with paint-ready seams.",
+  "domains": ["carpentry", "trim", "interior_finish", "residential"],
+  "modes": ["installation", "finish_detail", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for crown molding, trim joints, miter fitting, caulk-and-paint preparation, and finish-carpentry guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

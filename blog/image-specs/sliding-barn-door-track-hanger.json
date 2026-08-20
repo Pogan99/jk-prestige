@@ -1,0 +1,10 @@
+{
+  "id": "sliding-barn-door-track-hanger",
+  "file": "generated/sliding-barn-door-track-hanger.png",
+  "desc": "Matte-black sliding barn-door rail and hangers secured through finished drywall into exposed blocking above a wood door.",
+  "domains": ["doors_windows", "carpentry", "interior_finish", "structural_framing", "residential"],
+  "modes": ["installation", "hardware_inspection", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for sliding doors, barn-door hardware, wall blocking, interior trim, and hardware-planning guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

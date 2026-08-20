@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "hardwood-floor-sanding-prep",
+      "alt": "Strip-oak floor with a controlled sanded matte section and a parked floor sander",
+      "caption": "Test the species, wear layer, fasteners, and existing finish before committing to sanding. Refinishing removes material, so a floor with limited thickness or movement may need a different approach.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "baseboard-trim-miter-layout",
+      "alt": "Interior baseboard trim at a clean finished-floor edge",
+      "caption": "Protect trim, transitions, and adjacent rooms before sanding and coating. The floor finish should be planned with the edge conditions instead of stopping abruptly at them.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "interior-door-casing-miter-detail",
+      "alt": "Painted interior door casing with clean mitered trim",
+      "caption": "Sequence the work so dust control, ventilation, and cure time do not damage nearby finishes. Floor refinishing is as much about controlling the room as it is about the wood surface.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

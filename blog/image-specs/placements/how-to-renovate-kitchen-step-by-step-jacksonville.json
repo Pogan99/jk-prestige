@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "kitchen-cabinet-installation-level",
+      "alt": "Kitchen cabinet run being aligned level during renovation",
+      "caption": "Set the renovation sequence around layout, services, cabinets, and countertop dependencies. Finishes land better when the boxes and utility locations are already verified.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "kitchen-backsplash-tile-setting",
+      "alt": "Kitchen backsplash tile laid out on a prepared wall",
+      "caption": "Plan finish work after the larger cabinet and countertop decisions are stable. Tile, paint, and trim should complete the kitchen rather than force a change to the underlying layout.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "kitchen-sink-under-cabinet-plumbing",
+      "alt": "Kitchen sink base with accessible plumbing connections",
+      "caption": "Leave access for water, drains, appliances, and future service as the room comes together. A renovation is successful when the finished kitchen is both usable and maintainable.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

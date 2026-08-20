@@ -1,0 +1,10 @@
+{
+  "id": "half-bath-under-stairs-rough-in",
+  "file": "generated/half-bath-under-stairs-rough-in.png",
+  "desc": "Compact framed under-stairs half-bath rough-in with a toilet drain stub, supply lines, vent connection, and sloped stair underside.",
+  "domains": ["bathroom", "plumbing", "structural_framing", "interior_finish", "residential"],
+  "modes": ["installation", "planning", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for half-bath planning, under-stairs layouts, bathroom plumbing rough-in, and renovation sequencing. Generic editorial illustration; not evidence of a JK Prestige project."
+}

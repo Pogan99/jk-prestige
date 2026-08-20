@@ -1,0 +1,10 @@
+{
+  "id": "ceiling-fan-rated-box-detail",
+  "file": "generated/ceiling-fan-rated-box-detail.png",
+  "desc": "Metal ceiling electrical box and fan mounting bracket secured to framing above a circular ceiling opening.",
+  "domains": ["electrical", "interior_finish", "structural_framing", "residential"],
+  "modes": ["installation", "inspection", "safety"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for ceiling-fan support, electrical-box inspection, mounting-bracket planning, and qualified electrical-work guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

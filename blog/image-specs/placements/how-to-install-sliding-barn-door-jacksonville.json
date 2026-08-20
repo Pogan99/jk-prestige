@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "sliding-barn-door-track-hanger",
+      "alt": "Black sliding barn-door rail and hangers fastened through drywall into blocking",
+      "caption": "Locate adequate blocking or framing before the rail is installed. The decorative door is only as secure as the structure carrying the rail.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "pocket-door-wall-cavity-inspection",
+      "alt": "Open interior wall cavity showing framing and clear service space",
+      "caption": "Check the wall for studs, utilities, and the support strategy before drilling. Sliding-door hardware needs a planned load path rather than fasteners placed wherever the finish surface happens to be.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "interior-door-casing-miter-detail",
+      "alt": "Clean painted interior door casing with a tight mitered corner",
+      "caption": "Set the rail and door clearances before completing surrounding trim. The finished opening should still read cleanly and allow the door to move without rubbing the casing.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

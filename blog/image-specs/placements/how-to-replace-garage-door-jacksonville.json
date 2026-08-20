@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "garage-door-exterior-context",
+      "alt": "White sectional garage door on a modest Florida home",
+      "caption": "Confirm opening dimensions, headroom, side room, and the condition of the jambs before ordering a replacement. The door system must fit the actual opening and its support conditions.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "garage-door-roller-hinge-detail",
+      "alt": "Garage-door roller seated in a hinge track detail",
+      "caption": "Inspect rollers, hinges, tracks, and brackets before assuming a new panel solves the problem. Spring and counterbalance work remains a professional safety task.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "garage-door-bottom-seal-detail",
+      "alt": "Garage door meeting a clean bottom seal at a concrete slab",
+      "caption": "Finish by checking the bottom seal, slab contact, photo-eyes, and full travel. A replacement should close evenly without scraping, binding, or leaving a weather gap.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

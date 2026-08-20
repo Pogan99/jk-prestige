@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "kitchen-backsplash-tile-setting",
+      "alt": "Kitchen backsplash tile being set in a clean prepared wall field",
+      "caption": "Plan the layout from visible focal points and confirm the wall is flat before mixing mortar. Small alignment errors grow as tile approaches cabinets, outlets, and corners.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "kitchen-cabinet-installation-level",
+      "alt": "Kitchen cabinets aligned level before finish work",
+      "caption": "Use the cabinet run as a reference only after it has been checked for level and plane. A backsplash should fit the finished kitchen geometry, not hide an uneven installation.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "kitchen-sink-drop-in-countertop",
+      "alt": "Kitchen sink seated in a clean countertop cutout",
+      "caption": "Protect countertops, sinks, and open electrical boxes while tile is cut and grouted. Sequence the work so the backsplash finishes cleanly at fixtures and hardware.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

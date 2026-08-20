@@ -1,0 +1,10 @@
+{
+  "id": "garage-conversion-wall-assembly",
+  "file": "generated/garage-conversion-wall-assembly.png",
+  "desc": "Unfinished Florida garage conversion with a framed exterior wall, mineral-wool insulation, flashed window opening, and a protected electrical box.",
+  "domains": ["garage", "renovation", "structural_framing", "interior_finish", "energy", "residential"],
+  "modes": ["planning", "installation", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for garage conversions, wall assemblies, insulation planning, rough-in coordination, and residential renovation guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

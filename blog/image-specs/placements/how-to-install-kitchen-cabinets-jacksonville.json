@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "kitchen-cabinet-installation-level",
+      "alt": "Kitchen cabinet run checked level and aligned before countertop installation",
+      "caption": "Find studs, establish a level reference, and secure the boxes in sequence. Countertops and doors depend on the cabinet run being straight, plumb, and properly supported.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "kitchen-sink-under-cabinet-plumbing",
+      "alt": "Kitchen sink base cabinet with supply valves, drain, and service access",
+      "caption": "Coordinate sink, drain, water, and appliance connections before the final cabinet faces are locked in. The sink base needs access as well as a clean exterior alignment.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "kitchen-sink-undermount-clips",
+      "alt": "Undermount kitchen sink hardware secured beneath a countertop opening",
+      "caption": "Verify countertop and sink requirements before final fastening. Cabinet installation should leave the supports and clearances needed for the finished sink assembly.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

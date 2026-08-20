@@ -1,0 +1,10 @@
+{
+  "id": "hardwood-floor-sanding-prep",
+  "file": "generated/hardwood-floor-sanding-prep.png",
+  "desc": "Strip-oak hardwood floor with a controlled sanded matte section and a parked floor sander in a clean empty room.",
+  "domains": ["flooring", "interior_finish", "renovation", "residential"],
+  "modes": ["repair_preparation", "finishing", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for hardwood refinishing, finish removal, floor-preparation checks, and room-protection guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

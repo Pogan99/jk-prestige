@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "drywall-hole-patch-prep",
+      "alt": "Small drywall opening prepared with a backing strip and feathered joint compound",
+      "caption": "Match the repair method to the hole size and create solid backing before compound is applied. A thin surface skim over an unsupported opening will crack or telegraph through paint.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "drywall-corner-bead-repair-prep",
+      "alt": "Drywall corner bead prepared for a controlled finish repair",
+      "caption": "Keep the repair plane flat and feather transitions wider than the patch itself. Corners and edges reveal poor prep more quickly than broad wall fields.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "water-damaged-ceiling-diagnosis",
+      "alt": "Localized ceiling staining prepared for moisture-source evaluation",
+      "caption": "If a hole or stain follows moisture damage, identify and correct the source before closing the wall. A neat patch is not a repair if water is still reaching the assembly.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

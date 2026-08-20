@@ -1,0 +1,10 @@
+{
+  "id": "lvp-flooring-underlayment-layout",
+  "file": "generated/lvp-flooring-underlayment-layout.png",
+  "desc": "Light-oak luxury vinyl plank flooring installed over underlayment with spacers and a visible perimeter expansion gap.",
+  "domains": ["flooring", "interior_finish", "renovation", "residential"],
+  "modes": ["installation", "layout", "finish_work"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for luxury vinyl plank installation, underlayment, expansion gaps, transitions, and flooring-layout guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

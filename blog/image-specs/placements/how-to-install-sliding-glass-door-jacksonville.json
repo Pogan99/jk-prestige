@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "sliding-glass-door-porch-context",
+      "alt": "Florida porch opening with a sliding glass door and screened-lanai context",
+      "caption": "Confirm the opening, sill condition, drainage plane, and exterior transition before setting a patio door. The threshold is part of the home's weather boundary, not just an interior finish edge.",
+      "before": "<h2>Tools You Need</h2>"
+    },
+    {
+      "image": "sliding-glass-door-track-roller",
+      "alt": "Sliding glass door roller and lower track detail",
+      "caption": "Keep the frame square and the track clean so the panel moves without being forced. Roller adjustment should refine an aligned installation, not compensate for a distorted opening.",
+      "before": "<h2>Step-by-Step Instructions</h2>"
+    },
+    {
+      "image": "sliding-door-mortise-lock-detail",
+      "alt": "Sliding door mortise lock and aligned strike detail",
+      "caption": "Test the latch, panel alignment, screen, and water path before the trim is closed. A patio door needs to secure, slide, and drain as one system.",
+      "before": "<h2>When to Hire a Pro Instead</h2>"
+    }
+  ]
+}

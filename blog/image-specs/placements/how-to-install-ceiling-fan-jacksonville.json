@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "ceiling-fan-rated-box-detail",
+      "alt": "Metal ceiling electrical box and fan mounting bracket secured to framing",
+      "caption": "Verify that the box and framing support are appropriate for the fan before hanging it. A standard light fixture box is not automatically a fan-support detail.",
+      "before": "<h2>Tools you need</h2>"
+    },
+    {
+      "image": "bathroom-exhaust-fan-attic-housing",
+      "alt": "Ceiling-mounted ventilation housing visible from attic framing",
+      "caption": "Access above the ceiling often reveals framing, ducts, and wiring that affect a fan location. This is a different ceiling device, but it illustrates why the cavity should be checked before cutting or fastening.",
+      "before": "<h2>Step-by-step instructions</h2>"
+    },
+    {
+      "image": "whole-house-surge-panel-context",
+      "alt": "Residential electrical panel context with organized branch circuits",
+      "caption": "Confirm the circuit, switch, and electrical condition before final assembly. When the scope reaches panel work or uncertain wiring, use a qualified electrician rather than treating a fan installation as a cosmetic task.",
+      "before": "<h2>When to hire a pro instead</h2>"
+    }
+  ]
+}

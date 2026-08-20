@@ -1,0 +1,10 @@
+{
+  "id": "deck-post-footing-frame",
+  "file": "generated/deck-post-footing-frame.png",
+  "desc": "Pressure-treated deck frame with a post base fastened to a concrete pier and galvanized structural hardware.",
+  "domains": ["deck_outdoor", "structural_framing", "carpentry", "residential", "storm"],
+  "modes": ["installation", "framing", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for deck framing, footings, post bases, hardware, and outdoor structural planning. Generic editorial illustration; not evidence of a JK Prestige project."
+}
