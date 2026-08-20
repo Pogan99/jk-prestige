@@ -1,0 +1,10 @@
+{
+  "id": "attic-pull-down-stairs-open",
+  "file": "generated/attic-pull-down-stairs-open.png",
+  "desc": "Open wooden folding attic stair at a white-trimmed ceiling hatch in a modest finished room, with straight ladder sections, visible hinge hardware, a framed opening, and clear floor landing space below.",
+  "domains": ["attic", "carpentry", "interior_finish", "residential"],
+  "modes": ["installation", "inspection", "access"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for attic pull-down stairs, ceiling-hatch access, attic-service planning, and residential carpentry articles. It depicts a generic installed stair context, never a JK Prestige project or a substitute for confirming opening size, framing, spring adjustment, load rating, clearance, insulation, or safety requirements."
+}

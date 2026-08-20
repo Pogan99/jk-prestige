@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "window-glass-pane-replacement-prep",
+      "alt": "Window sash prepared on a padded surface beside an intact insulated replacement pane",
+      "caption": "Replacement glass needs the right measurements, construction, and safe handling plan. Protect the sash and nearby surfaces before the old pane or unit is removed.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "single-hung-window-balance-detail",
+      "alt": "Raised single-hung sash exposing balance hardware and a jamb channel",
+      "caption": "Window glass is only one part of the assembly. Check how the sash, balances, frame, and weather seals are working before assuming a pane is the entire repair.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "After glass work, recheck the exterior water-control details. A cracked pane can be obvious while a failed sill joint or soft surrounding trim remains the longer-term concern.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

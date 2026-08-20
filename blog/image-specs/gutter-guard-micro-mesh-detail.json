@@ -1,0 +1,10 @@
+{
+  "id": "gutter-guard-micro-mesh-detail",
+  "file": "generated/gutter-guard-micro-mesh-detail.png",
+  "desc": "White rain gutter fitted with a fine black micro-mesh guard tucked beneath a shingle edge, with a small amount of dry pine-needle debris resting on top.",
+  "domains": ["roofing", "sitework_drainage", "exterior_envelope", "storm", "residential"],
+  "modes": ["installation", "maintenance", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for gutter-guard installation, pine-needle maintenance, roofline drainage, and gutter-cleaning articles. It depicts a generic guard detail, never a JK Prestige project or a substitute for roof access safety, gutter sizing, shingle-warranty review, product compatibility, drainage evaluation, or permit requirements."
+}

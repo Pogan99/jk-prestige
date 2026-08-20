@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "sliding-glass-door-porch-context",
+      "alt": "White sliding glass patio door opening to a Florida screened porch",
+      "caption": "Start with the whole opening. Frame condition, track drainage, door weight, and lock alignment help determine whether rollers are the real problem.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "sliding-glass-door-track-roller",
+      "alt": "Sliding glass door threshold track with roller opening, weatherstrip, and drainage path",
+      "caption": "Clean grit from the track and identify the roller arrangement before removing panels. A door that still drags after cleaning may need the correct roller and adjustment procedure.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "sliding-door-mortise-lock-detail",
+      "alt": "Sliding patio-door handle and mortise lock at a Florida porch opening",
+      "caption": "After the door rolls smoothly, test the lock and meeting edge again. A heavy or misaligned panel can make hardware problems look like a simple roller issue.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

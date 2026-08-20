@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "rotted-window-sill-diagnosis",
+      "alt": "Window sill with localized soft wood and peeling finish at a contained moisture-damaged area",
+      "caption": "Probe the sill, jambs, casing, and nearby sheathing before cutting. Rotted wood is often the visible edge of a longer water path, not simply a failed paint surface.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "exterior-window-flashing-sill-membrane",
+      "alt": "Window opening with flexible sill flashing membrane folded into a pan shape",
+      "caption": "Remove unsound material back to solid wood and preserve the drainage path. The replacement sill has to shed water outward while the flashing behind it manages the water that gets past the trim.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "Before sealing the new trim, confirm the sill slope, end returns, and flashings suit the actual opening. A joint can look tight and still hold water if the geometry is wrong.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

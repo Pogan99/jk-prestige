@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "rotted-deck-board-diagnosis",
+      "alt": "Weathered deck board with localized darkened end grain and a small split near a fastener",
+      "caption": "Probe the boards and the framing below before replacing only the softest pieces. Rot at fasteners and joist tops can spread beyond the visible surface and change the actual repair scope.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "deck-ledger-flashing-detail",
+      "alt": "Deck ledger with flashing, membrane, joist hangers, and exterior fasteners",
+      "caption": "Cut replacement boards to maintain drainage gaps and fasten into sound framing. If water is moving behind the deck or the ledger area is compromised, a board swap is not the full repair.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "deck-stair-stringer-landing",
+      "alt": "Pressure-treated deck stair framing with a secure landing and handrail post",
+      "caption": "Seal cut ends and keep leaves from holding moisture against the boards. Jacksonville's wet seasons reward ventilation beneath and between deck components, not a surface that stays damp after every storm.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

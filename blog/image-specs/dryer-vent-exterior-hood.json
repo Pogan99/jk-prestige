@@ -1,0 +1,10 @@
+{
+  "id": "dryer-vent-exterior-hood",
+  "file": "generated/dryer-vent-exterior-hood.png",
+  "desc": "White louvered exterior dryer-vent hood with an apparent backdraft flap and neat wall penetration on a light stucco home exterior.",
+  "domains": ["dryer", "ventilation", "safety", "exterior_envelope", "residential"],
+  "modes": ["replacement", "inspection", "maintenance"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for dryer-vent replacement, exterior termination, lint-management, and ventilation-safety articles. It depicts generic exterior hardware, never a JK Prestige project or a substitute for duct-length calculations, appliance requirements, ignition-safety assessment, termination-clearance rules, or code requirements."
+}

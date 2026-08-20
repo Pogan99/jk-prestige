@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "gutter-corner-downspout-transition",
+      "alt": "White aluminum gutter section meeting a fitted corner and downspout transition at a Florida roofline",
+      "caption": "Trace the leak and check adjacent joints, hangers, fascia, and downspouts before replacing one section. Local damage can be a symptom of a longer sag or a water path that begins farther along the roof edge.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "roof-drip-edge-underlayment-detail",
+      "alt": "Roof drip edge and underlayment layered correctly above a shingle eave",
+      "caption": "Match the profile and slope, overlap the new section in the correct direction, and support the joint so it does not pull apart during a storm. The gutter must work with the drip edge and fascia behind it.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-underground-drain-extension",
+      "alt": "Downspout connected to a buried drain extension with a cleanout beside a Florida home",
+      "caption": "Run water through the full system after the repair and watch the discharge point for erosion. Gutter work is complete only when the runoff path remains controlled all the way away from the house.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

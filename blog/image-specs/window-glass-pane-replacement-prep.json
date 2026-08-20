@@ -1,0 +1,10 @@
+{
+  "id": "window-glass-pane-replacement-prep",
+  "file": "generated/window-glass-pane-replacement-prep.png",
+  "desc": "White residential window sash with an empty, undamaged glass opening resting on a padded work surface beside an intact insulated replacement pane, glazing tape, and plain suction-cup lifter.",
+  "domains": ["doors_windows", "exterior_envelope", "residential", "storm"],
+  "modes": ["repair-preparation", "material-selection", "replacement"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for residential window-glass replacement preparation, sash handling, insulated-glass selection, storm-repair planning, and exterior-envelope repair articles. It depicts a generic safe preparation scene, never a JK Prestige project or a substitute for glass measurement, sash type, glazing method, tempered-glass requirements, or professional handling."
+}

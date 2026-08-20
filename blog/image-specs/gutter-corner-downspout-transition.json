@@ -1,0 +1,10 @@
+{
+  "id": "gutter-corner-downspout-transition",
+  "file": "generated/gutter-corner-downspout-transition.png",
+  "desc": "White aluminum rain gutter at a Florida stucco-home corner with a fitted outside miter, soffit, fascia, and a neatly routed downspout transition.",
+  "domains": ["exterior_envelope", "sitework_drainage", "roofing", "residential"],
+  "modes": ["inspection", "finished_result"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for gutter miters, end caps, hangers, fascia alignment, downspout replacement, rainwater routing, and exterior-maintenance articles. It is a generic editorial illustration, not evidence of a JK Prestige project."
+}

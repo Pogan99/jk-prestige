@@ -1,0 +1,10 @@
+{
+  "id": "drywall-corner-bead-repair-prep",
+  "file": "generated/drywall-corner-bead-repair-prep.png",
+  "desc": "Straight galvanized metal corner bead dry-fitted on a clean interior drywall outside corner, with thin feathered joint compound, a taping knife, sanding block, and compound pan on protected flooring.",
+  "domains": ["interior_finish", "renovation", "residential"],
+  "modes": ["repair-preparation", "finish-work", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for drywall corner bead repair, joint-compound finishing, interior patching, surface preparation, and similar renovation articles. It depicts a generic repair-preparation scene, never a JK Prestige project or proof that a cracked corner is purely cosmetic rather than related to movement behind the wall."
+}

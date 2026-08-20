@@ -1,0 +1,10 @@
+{
+  "id": "sliding-glass-door-track-roller",
+  "file": "generated/sliding-glass-door-track-roller.png",
+  "desc": "White-framed sliding glass patio door at a Florida lanai with its aluminum threshold track, roller opening, weatherstrip, and drainage path in close view.",
+  "domains": ["doors_windows", "exterior_envelope", "residential"],
+  "modes": ["inspection", "finished_result"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for sliding-door rollers, tracks, thresholds, patio-door adjustment, weatherstripping, drainage weeps, and screen-porch opening articles. It is a generic editorial illustration, not evidence of a JK Prestige project."
+}

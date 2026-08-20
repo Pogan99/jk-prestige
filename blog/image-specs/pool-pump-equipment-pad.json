@@ -1,0 +1,10 @@
+{
+  "id": "pool-pump-equipment-pad",
+  "file": "generated/pool-pump-equipment-pad.png",
+  "desc": "Generic unbranded pool pump on a clean exterior equipment pad, with white PVC suction and return lines, accessible unions and isolation valves, plus a closed gray disconnect enclosure at a screened Florida pool.",
+  "domains": ["pool", "plumbing", "electrical", "exterior_systems", "residential"],
+  "modes": ["replacement", "inspection", "service-planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for pool-pump replacement, outdoor pool-equipment inspection, plumbing-union context, pool service planning, and screened-lanai articles. It depicts a generic system, never a JK Prestige project or a substitute for pump sizing, bonding, electrical, plumbing, flow, priming, permit, or manufacturer requirements."
+}

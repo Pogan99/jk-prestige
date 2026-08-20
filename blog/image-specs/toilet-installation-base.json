@@ -1,0 +1,10 @@
+{
+  "id": "toilet-installation-base",
+  "file": "generated/toilet-installation-base.png",
+  "desc": "Generic modern white porcelain toilet installed squarely on neutral ceramic tile, with a plain level resting on a folded drop cloth nearby.",
+  "domains": ["bathroom", "plumbing", "toilet", "installation", "residential"],
+  "modes": ["replacement", "installation-planning", "finish-detail"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for toilet-replacement context, bathroom fixture installation, base alignment, and finish-planning articles. It depicts a generic finished installation, never a JK Prestige project or a substitute for flange assessment, wax-ring selection, supply-line condition, shutoff operation, code requirements, or licensed plumbing guidance."
+}

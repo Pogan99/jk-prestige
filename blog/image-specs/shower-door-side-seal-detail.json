@@ -1,0 +1,10 @@
+{
+  "id": "shower-door-side-seal-detail",
+  "file": "generated/shower-door-side-seal-detail.png",
+  "desc": "Vertical closing edge of a clear framed shower door nearly closed against a white tiled jamb, with a continuous transparent vinyl side seal, narrow even gap, and clean metal frame in close view.",
+  "domains": ["interior_finish", "plumbing", "renovation", "residential"],
+  "modes": ["maintenance", "hardware-inspection", "finish-work"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for shower-door side seals, glass-door alignment, jamb gaps, water-containment checks, and related bathroom maintenance articles. It depicts a generic shower-door closing detail, never a JK Prestige project or a guarantee that a side seal alone resolves all water escape."
+}

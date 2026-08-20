@@ -1,0 +1,10 @@
+{
+  "id": "thermostat-wall-return-context",
+  "file": "generated/thermostat-wall-return-context.png",
+  "desc": "Generic blank-display white thermostat mounted level on a neutral interior wall, with a return-air grille visible in a modest Florida home hallway.",
+  "domains": ["hvac", "electrical", "interior_systems", "residential", "humidity"],
+  "modes": ["replacement", "inspection", "service-planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for thermostat replacement, HVAC control context, return-air discussions, and home comfort articles. It depicts a generic thermostat location, never a JK Prestige project or a substitute for compatibility, voltage, wiring, programming, HVAC diagnosis, or manufacturer requirements."
+}

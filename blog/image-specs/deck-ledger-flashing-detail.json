@@ -1,0 +1,10 @@
+{
+  "id": "deck-ledger-flashing-detail",
+  "file": "generated/deck-ledger-flashing-detail.png",
+  "desc": "Pressure-treated deck ledger bolted to a Florida stucco wall with continuous metal Z-flashing, visible water-resistive layer, joist hangers, and clean in-progress framing.",
+  "domains": ["deck_outdoor", "structural_framing", "exterior_envelope", "residential"],
+  "modes": ["installation", "water-management", "framing"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for deck-ledger flashing, deck framing, attachment details, water-management sequencing, joist-hanger, and outdoor-construction articles. It depicts a generic in-progress assembly, never a JK Prestige project or proof that a particular attachment method suits every house."
+}

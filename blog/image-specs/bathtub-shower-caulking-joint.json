@@ -1,0 +1,10 @@
+{
+  "id": "bathtub-shower-caulking-joint",
+  "file": "generated/bathtub-shower-caulking-joint.png",
+  "desc": "Clean white bathtub-to-subway-tile transition with a crisp continuous fresh silicone caulk bead and a plain finishing tool on a folded cloth.",
+  "domains": ["bathroom", "caulking", "tile", "water-management", "residential"],
+  "modes": ["maintenance", "repair", "finish-detail"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for bathtub or shower recaulk guidance, bathroom joint maintenance, tile-to-tub transition context, and moisture-management articles. It depicts a generic finished condition, never a JK Prestige project or a substitute for manufacturer cure-time, surface-preparation, ventilation, mold-remediation, or waterproofing requirements."
+}

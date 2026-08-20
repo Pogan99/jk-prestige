@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "single-hung-window-balance-detail",
+      "alt": "Raised single-hung window sash exposing a coil balance and jamb channel",
+      "caption": "A sash that will not stay open should be identified by its exact window style and balance hardware before a replacement part is ordered.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "exterior-window-flashing-sill-membrane",
+      "alt": "Vinyl window opening with sill flashing and a visible jamb channel",
+      "caption": "Dimensions, sash travel, and the jamb channel need to be recorded carefully. Similar-looking balances can have different weight ratings and attachment points.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished white exterior window trim on a Florida home after opening work",
+      "caption": "After the sash operates smoothly, the frame should remain square, the weather seal even, and the exterior trim maintained through humid weather.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

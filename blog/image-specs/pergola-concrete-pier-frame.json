@@ -1,0 +1,10 @@
+{
+  "id": "pergola-concrete-pier-frame",
+  "file": "generated/pergola-concrete-pier-frame.png",
+  "desc": "Free-standing pressure-treated wood pergola with straight double beams, open rafters, and black metal post bases bolted to distinct square concrete piers set among a Florida paver patio.",
+  "domains": ["deck_outdoor", "structural_framing", "residential", "storm"],
+  "modes": ["installation", "framing", "repair-scope"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for pergolas, outdoor posts, concrete-pier support context, deck and patio structures, exterior framing, and storm-ready connector articles. It depicts a generic free-standing assembly, never a JK Prestige project or a substitute for site-specific footing, wind-load, setback, or permit requirements."
+}

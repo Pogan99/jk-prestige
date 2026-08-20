@@ -1,0 +1,10 @@
+{
+  "id": "garage-door-roller-hinge-detail",
+  "file": "generated/garage-door-roller-hinge-detail.png",
+  "desc": "Nylon garage-door roller seated in a galvanized vertical track beside a properly mounted metal hinge joining white sectional door panels inside a Florida residential garage.",
+  "domains": ["doors_windows", "exterior_envelope", "residential", "garage"],
+  "modes": ["maintenance", "hardware-inspection", "repair-scope"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for garage-door rollers, hinges, track alignment, hardware maintenance, and garage-door service scope articles. It depicts generic door hardware, never a JK Prestige project or instructions to service high-tension springs without the appropriate expertise."
+}

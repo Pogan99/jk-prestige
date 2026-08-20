@@ -1,0 +1,10 @@
+{
+  "id": "stucco-hairline-crack-prep",
+  "file": "generated/stucco-hairline-crack-prep.png",
+  "desc": "Contained exterior stucco condition showing one thin, dry vertical hairline crack beside an intact architectural corner detail.",
+  "domains": ["stucco", "exterior", "masonry", "humidity", "residential"],
+  "modes": ["diagnosis", "repair-preparation", "maintenance"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for non-alarmist stucco-crack diagnosis, repair-scope planning, exterior finish maintenance, and water-entry discussion. It shows a bounded repairable condition, never a JK Prestige project or a substitute for structural assessment, water-intrusion tracing, stucco-system specification, or permit requirements."
+}

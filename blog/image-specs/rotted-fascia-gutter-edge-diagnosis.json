@@ -1,0 +1,10 @@
+{
+  "id": "rotted-fascia-gutter-edge-diagnosis",
+  "file": "generated/rotted-fascia-gutter-edge-diagnosis.png",
+  "desc": "Contained fascia condition showing localized darkened softened wood and peeling paint behind an otherwise intact gutter edge, soffit, and shingle roofline.",
+  "domains": ["roofing", "exterior_envelope", "carpentry", "humidity", "residential"],
+  "modes": ["diagnosis", "repair-planning", "replacement"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for fascia-rot diagnosis, gutter-edge water-path discussion, eave repair planning, and exterior wood-maintenance articles. It shows a bounded repairable condition, never a JK Prestige project or a substitute for roof assessment, structural rafter-tail inspection, gutter slope, water-source tracing, permit, or code requirements."
+}

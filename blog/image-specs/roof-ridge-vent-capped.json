@@ -1,0 +1,10 @@
+{
+  "id": "roof-ridge-vent-capped",
+  "file": "generated/roof-ridge-vent-capped.png",
+  "desc": "Finished gray asphalt-shingle roof with a continuous low-profile dark ridge vent capped by matching ridge shingles, plus visible roof planes, soffit, and a louvered gable vent on a Florida home.",
+  "domains": ["roofing", "attic", "exterior_envelope", "humidity", "residential"],
+  "modes": ["installation", "inspection", "ventilation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for roof ridge vents, attic exhaust context, asphalt-shingle roof ventilation, and humidity-management articles. It depicts a generic completed roof detail, never a JK Prestige project or a substitute for determining ventilation area, roof compatibility, intake balance, wind ratings, or code requirements."
+}

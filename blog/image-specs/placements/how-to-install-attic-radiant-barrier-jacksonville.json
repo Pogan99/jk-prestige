@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "attic-radiant-barrier-rafter-bay",
+      "alt": "Reflective radiant barrier installed beneath attic rafters above insulation and a service walkway",
+      "caption": "Confirm the roof assembly, ventilation path, electrical clearances, and safe work route before adding a radiant barrier. It should support the attic strategy without covering vents or trapping moisture.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "attic-insulation-airflow-clearance",
+      "alt": "Attic insulation held clear of an airflow path near the roof edge",
+      "caption": "The reflective layer needs the specified air space and must stay clear of hot electrical equipment, recessed lights, and intake routes. A well-installed material still fails its purpose if it blocks the ventilation path.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "attic-safe-footing-access",
+      "alt": "Plywood attic walkway leading safely over ceiling framing",
+      "caption": "Do not trade cooling performance for unsafe footing or crushed insulation. Plan durable service paths before the barrier goes in so future work does not damage the ceiling below.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

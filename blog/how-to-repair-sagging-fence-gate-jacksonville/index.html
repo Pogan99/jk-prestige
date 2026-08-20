@@ -111,6 +111,41 @@
       .article-body h2 { font-size: 1.25rem; }
     }
   </style>
+
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<style id="article-visual-v2">
+/* Additive visual refresh for existing published articles. */
+body { background: #f7f7f5; color: #252a35; }
+header { box-shadow: 0 1px 0 rgba(255,255,255,.08), 0 7px 20px rgba(0,0,0,.18); }
+.article-hero { background: radial-gradient(circle at 82% -20%, rgba(177,12,42,.34), transparent 36%), linear-gradient(135deg, #171b25 0%, #30303a 100%); padding: clamp(3.25rem, 8vw, 5.75rem) 20px clamp(2.75rem, 6vw, 4.75rem); }
+.article-hero-inner { max-width: 760px; }
+.breadcrumb { color: #a9b5ce; font-size: .76rem; letter-spacing: .01em; }
+.breadcrumb a { color: #c5d2ee; }
+.post-category { color: #ff5a79; font-size: .69rem; letter-spacing: .16em; }
+.article-hero h1, .article-body h2, .article-body h3, .faq-section h2 { font-family: Georgia, 'Times New Roman', serif; }
+.article-hero h1 { max-width: 20ch; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 700; letter-spacing: -.03em; line-height: 1.08; }
+.article-meta { color: #c0c8d9; font-size: .8rem; }
+.article-wrap { max-width: 760px; padding: clamp(2.75rem, 7vw, 5rem) 20px 5rem; }
+.article-body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.075rem; line-height: 1.78; }
+.article-body > p:first-child { font-family: Georgia, 'Times New Roman', serif; color: #353c4c; font-size: clamp(1.18rem, 2.25vw, 1.38rem); line-height: 1.58; }
+.article-body h2 { color: #202632; font-size: clamp(1.65rem, 3vw, 2.05rem); font-weight: 700; letter-spacing: -.018em; line-height: 1.2; margin-top: clamp(3rem, 7vw, 5rem); padding-top: 1.5rem; border-top: 1px solid #dce1e9; }
+.article-body h3 { font-size: 1.24rem; letter-spacing: -.012em; }
+.article-body table { background: #fff; border: 1px solid #dde2ea; border-radius: 10px; overflow: hidden; box-shadow: 0 8px 20px rgba(30, 38, 54, .05); }
+.article-body th { background: #272d39; }
+.article-body td { border-bottom-color: #e7eaf0; }
+.article-body blockquote { border-left-width: 3px; border-radius: 0 8px 8px 0; }
+.cta-callout { background: linear-gradient(135deg, #1a202c, #343945); border: 1px solid rgba(255,255,255,.1); box-shadow: 0 18px 36px rgba(21,26,36,.18); }
+@media (max-width: 640px) { .article-hero h1 { max-width: none; } .article-body { font-size: 1.02rem; } }
+</style>
+<meta property="og:image" content="https://jkprestigeconstruction.com/assets/blog-media/wood-fence-gate-hinge-brace-1600.jpg">
+<meta property="og:image:alt" content="Wood fence gate with strap hinges, diagonal bracing, and a latch post">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jkprestigeconstruction.com/assets/blog-media/wood-fence-gate-hinge-brace-1600.jpg">
+<meta name="twitter:image:alt" content="Wood fence gate with strap hinges, diagonal bracing, and a latch post">
+<script id="article-lead-image-schema" type="application/ld+json">{"@context": "https://schema.org", "@type": "ImageObject", "contentUrl": "https://jkprestigeconstruction.com/assets/blog-media/wood-fence-gate-hinge-brace-1600.jpg", "name": "Wood fence gate with strap hinges, diagonal bracing, and a latch post", "caption": "Check the hinge post, rails, grade, and gate frame before adjusting the latch. Sandy soil and moisture can loosen support below the visible hardware.", "width": 1600, "height": 900, "encodingFormat": "image/jpeg", "representativeOfPage": true, "contentLocation": {"@type": "Place", "name": "Jacksonville, Florida"}}</script>
 </head>
 <body>
 
@@ -146,17 +181,33 @@
 
     <p>If your wood fence gate has started dragging on the ground, catching on the latch, or hanging at a visible angle, you are not alone. It is one of the most common repair calls we get around Jacksonville, and it is usually fixable in an afternoon without replacing the whole gate. The culprits are almost always the same three things: a hinge post loosened in our sandy soil, hardware corroded by salt air, or a frame never braced against racking. This guide covers diagnosing the cause, choosing between an anti-sag cable kit and a diagonal brace, resetting a wobbly hinge post, and picking hardware that will hold up here.</p>
 <style id="post-figure-css">
-.post-figure { margin: 32px 0; }
-.post-figure img { width: 100%; height: auto; display: block; border-radius: 6px; background: #eef1f6; }
-.post-figure figcaption { font-size: 0.88rem; color: #5b6070; line-height: 1.5; margin-top: 10px; padding-left: 12px; border-left: 3px solid #B10C2A; }
+/* Reviewed editorial media system. Image subjects are illustrative, not job claims. */
+.post-figure { margin: clamp(2.25rem, 5vw, 4.5rem) 0; }
+.post-figure img { width: 100%; aspect-ratio: 16 / 9; height: auto; object-fit: cover; display: block; border: 1px solid #e3e7ed; border-radius: 12px; background: #eef1f6; box-shadow: 0 18px 42px rgba(24, 30, 44, .12); }
+.post-figure figcaption { max-width: 46rem; color: #596174; font-size: .91rem; line-height: 1.55; margin: 13px auto 0; padding: 0 0 0 14px; border-left: 2px solid #b10c2a; }
+.post-figure-kicker { display: block; color: #7b3142; font-size: .67rem; font-weight: 800; letter-spacing: .12em; line-height: 1.2; margin-bottom: 4px; text-transform: uppercase; }
+.post-figure--lead { margin-top: clamp(1.75rem, 4vw, 3.25rem); }
+.post-figure--lead img { border-radius: 14px; box-shadow: 0 22px 50px rgba(24, 30, 44, .16); }
+.post-figure--lead figcaption { color: #4d5668; }
+.post-figure--diagnostic img { border-color: #d6b7a8; }
+.post-figure--diagnostic figcaption { border-left-color: #9c4a2b; }
+@media (min-width: 900px) {
+  .post-figure--lead { width: calc(100% + 8rem); margin-left: -4rem; }
+  .post-figure--lead figcaption { padding-left: 0; border-left: 0; }
+}
+@media (max-width: 640px) {
+  .post-figure { margin: 2.25rem 0; }
+  .post-figure img { border-radius: 9px; }
+  .post-figure figcaption { font-size: .86rem; }
+}
 </style>
-<figure class="post-figure">
-  <img src="/assets/blog-media/stock-worn-wood-gate-1600.jpg"
-       srcset="/assets/blog-media/stock-worn-wood-gate-800.jpg 800w, /assets/blog-media/stock-worn-wood-gate-1600.jpg 1600w"
-       sizes="(max-width: 840px) 100vw, 800px"
-       width="1600" height="900" loading="lazy" decoding="async"
-       alt="Weathered wooden gate with wire fencing in an outdoor setting">
-  <figcaption>Outdoor wood structures anchored into Jacksonville's sandy soil all face the same slow enemy over time. A gate hinge post loosens for the same reason this one has, the ground around it never fully firms back up.</figcaption>
+<figure class="post-figure post-figure--lead" data-image-id="wood-fence-gate-hinge-brace" data-origin="generated" data-claim-risk="low">
+  <img src="/assets/blog-media/wood-fence-gate-hinge-brace-1600.jpg"
+       srcset="/assets/blog-media/wood-fence-gate-hinge-brace-800.jpg 800w, /assets/blog-media/wood-fence-gate-hinge-brace-1600.jpg 1600w"
+       sizes="(max-width: 840px) 100vw, 920px"
+       width="1600" height="900" loading="eager" decoding="async" fetchpriority="high"
+       alt="Wood fence gate with strap hinges, diagonal bracing, and a latch post">
+  <figcaption><span class="post-figure-kicker">Editorial illustration</span>Check the hinge post, rails, grade, and gate frame before adjusting the latch. Sandy soil and moisture can loosen support below the visible hardware.</figcaption>
 </figure>
 
 <h2>When You Need a Permit in Jacksonville</h2>
@@ -174,13 +225,17 @@
 <li>Exterior wood glue and deck screws for frame joints</li>
 <li>Wood filler or epoxy consolidant for minor rot</li>
 </ul>
-<figure class="post-figure">
-  <img src="/assets/blog-media/stock-fence-gate-hinge-1600.jpg"
-       srcset="/assets/blog-media/stock-fence-gate-hinge-800.jpg 800w, /assets/blog-media/stock-fence-gate-hinge-1600.jpg 1600w"
-       sizes="(max-width: 840px) 100vw, 800px"
+
+
+
+
+<figure class="post-figure" data-image-id="fence-gate-hinge-post-detail" data-origin="generated" data-claim-risk="low">
+  <img src="/assets/blog-media/fence-gate-hinge-post-detail-1600.jpg"
+       srcset="/assets/blog-media/fence-gate-hinge-post-detail-800.jpg 800w, /assets/blog-media/fence-gate-hinge-post-detail-1600.jpg 1600w"
+       sizes="(max-width: 840px) 100vw, 760px"
        width="1600" height="900" loading="lazy" decoding="async"
-       alt="Close-up of a wooden gate with visible hardware and a padlock">
-  <figcaption>Hardware at the hinge side takes the full weight of the gate every time it swings. Rust or a stripped screw hole here is usually the actual reason a gate drags, not the latch end.</figcaption>
+       alt="Black gate strap hinge fastened to a sturdy wood post with exterior screws">
+  <figcaption><span class="post-figure-kicker">Editorial illustration</span>The hinge side carries the gate&#x27;s full weight. Sound fasteners, a stable post, and a properly braced frame matter more than forcing the latch end upward for a quick visual fix.</figcaption>
 </figure>
 
 <h2>Step-by-Step</h2>
@@ -210,13 +265,17 @@
 <tr><td>Hinge post reset (footing repair)</td><td>$40 to $90</td><td>$250 to $450</td></tr>
 <tr><td>Full gate rebuild</td><td>$150 to $300</td><td>$400 to $700</td></tr>
 </tbody></table>
-<figure class="post-figure">
-  <img src="/assets/blog-media/team-plans-steel-sunset-1600.jpg"
-       srcset="/assets/blog-media/team-plans-steel-sunset-800.jpg 800w, /assets/blog-media/team-plans-steel-sunset-1600.jpg 1600w"
-       sizes="(max-width: 840px) 100vw, 800px"
+
+
+
+
+<figure class="post-figure" data-image-id="downspout-yard-drainage-swale" data-origin="generated" data-claim-risk="low">
+  <img src="/assets/blog-media/downspout-yard-drainage-swale-1600.jpg"
+       srcset="/assets/blog-media/downspout-yard-drainage-swale-800.jpg 800w, /assets/blog-media/downspout-yard-drainage-swale-1600.jpg 1600w"
+       sizes="(max-width: 840px) 100vw, 760px"
        width="1600" height="900" loading="lazy" decoding="async"
-       alt="Team gathered around drawings at a steel frame structure at sunset">
-  <figcaption>A pool barrier gate has to meet self-closing and self-latching standards with certainty, not just look level. That is the kind of detail worth a second opinion before anyone signs off on it.</figcaption>
+       alt="Runoff directed through a rock-lined swale away from outdoor structures">
+  <figcaption><span class="post-figure-kicker">Editorial illustration</span>For a gate near a pool or other safety-sensitive opening, level appearance is not enough. Confirm the post, latch, self-closing behavior, and surrounding drainage together.</figcaption>
 </figure>
 
 <h2>When to Call JK Prestige</h2>

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "window-screen-spline-replacement",
+      "alt": "White aluminum window-screen frame with taut dark mesh, spline, roller, and spare spline",
+      "caption": "Measure the screen frame, spline channel, and corner geometry before buying mesh. A few millimeters of error can leave the finished panel loose, bowed, or unable to sit correctly in the window.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "single-hung-window-balance-detail",
+      "alt": "Raised single-hung window sash exposing balance hardware and a jamb channel",
+      "caption": "Remove the old spline without bending the frame, then roll the new mesh in evenly from a sound corner. Check how the screen, sash, and frame work together instead of treating the mesh as an isolated part.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "Check the finished screen for gaps, loose corners, and brittle mesh. Sun, salt air, and insects make small perimeter failures noticeable quickly in Jacksonville, especially when surrounding window details are weathered too.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

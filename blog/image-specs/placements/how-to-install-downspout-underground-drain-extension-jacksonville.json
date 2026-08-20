@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "downspout-underground-drain-extension",
+      "alt": "Downspout connected to a buried drain pipe and cleanout beside a Florida home",
+      "caption": "Flat, sandy lots need a planned discharge route. Start at the downspout and determine where water can go without returning to the foundation.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "gutter-corner-downspout-transition",
+      "alt": "Gutter corner and downspout transition at a Florida stucco home",
+      "caption": "Keep the buried pipe at a steady grade away from the house. A dip in the route traps water and silt instead of carrying runoff outward.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Downspout discharge transitioning to a shallow swale away from a foundation",
+      "caption": "Drainage work is judged by where water ends up, not only by the pipe installation. Confirm the discharge point and local requirements before opening a route.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

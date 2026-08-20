@@ -1,0 +1,10 @@
+{
+  "id": "soffit-vented-eave-intake",
+  "file": "generated/soffit-vented-eave-intake.png",
+  "desc": "Clean close three-quarter view of a white perforated soffit beneath a tiled Florida roof eave, showing the protected intake side of a continuous attic ventilation system.",
+  "domains": ["roofing", "attic", "exterior_envelope", "residential", "humidity"],
+  "modes": ["inspection", "installation", "ventilation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for soffit vents, attic intake-air context, roof-eave details, ventilation planning, and humidity-related exterior-envelope articles. It depicts a generic finished eave, never a JK Prestige project or a substitute for determining net free vent area, baffle continuity, pest screening, or local code requirements."
+}

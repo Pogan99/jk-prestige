@@ -1,0 +1,10 @@
+{
+  "id": "hurricane-window-film-prep",
+  "file": "generated/hurricane-window-film-prep.png",
+  "desc": "Clean white residential window with a subtle clear film edge on the interior glass and unlabeled application supplies: squeegee, spray bottle, and rolled transparent film on a folded cloth.",
+  "domains": ["doors_windows", "exterior_envelope", "storm", "residential"],
+  "modes": ["installation", "material-selection", "preparation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for window-film preparation, storm-readiness discussions, window-protection planning, and interior glass-care articles. It depicts a generic application context, never a JK Prestige project or proof that a film meets impact, wind-borne debris, insurance, code, warranty, or performance requirements."
+}

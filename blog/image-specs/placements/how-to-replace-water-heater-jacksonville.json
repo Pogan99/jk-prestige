@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "electric-water-heater-service-context",
+      "alt": "Generic electric tank water heater in an accessible utility closet with a drain pan",
+      "caption": "A water-heater replacement starts with the site: access, electrical or fuel type, shutoff location, drain provisions, and the size of the existing equipment all affect the real scope.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "water-heater-supply-shutoff-detail",
+      "alt": "Electric water-heater top with flexible supply connectors, accessible shutoff valve, and closed electrical cover",
+      "caption": "Connections have to be identified before the old tank is disturbed. A qualified installer can confirm the water shutoff, electrical arrangement, fittings, and safe isolation for the specific unit.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "water-heater-drain-pan-detail",
+      "alt": "Tank water heater seated in a galvanized drain pan with a routed pan drain line",
+      "caption": "A pan and drain path are part of moisture-risk planning, especially when a tank sits over finished space. Their details should be verified for the actual location rather than assumed from a generic setup.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

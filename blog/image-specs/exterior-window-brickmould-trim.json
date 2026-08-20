@@ -1,0 +1,10 @@
+{
+  "id": "exterior-window-brickmould-trim",
+  "file": "generated/exterior-window-brickmould-trim.png",
+  "desc": "Finished white composite brickmould trim around a white vinyl window on a Florida stucco exterior, with straight miters, a sloped sill, and a narrow caulk joint.",
+  "domains": ["doors_windows", "exterior_envelope", "residential"],
+  "modes": ["finished_result", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for window brickmould trim, exterior casing, caulking, sills, water shedding, window finish work, and stucco-wall interface articles. It is a generic editorial illustration, not evidence of a JK Prestige project."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "soffit-vented-eave-intake",
+      "alt": "White perforated soffit beneath a tiled Florida roof eave",
+      "caption": "Soffit vents supply the intake side of the attic system. Before cutting anything, confirm that the eave construction and existing ventilation path can actually stay open.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "attic-insulation-airflow-clearance",
+      "alt": "Attic insulation held clear of an airflow path near the roof edge",
+      "caption": "Inside the attic, insulation and storage need to stay out of the intake route. A vent opening that is blocked immediately behind the soffit will not do its intended job.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "attic-gable-vent-exterior",
+      "alt": "White louvered gable vent beneath an intact Florida shingle roof",
+      "caption": "Ventilation is a system, not a collection of holes. Consider the intake, any high exhaust path, insect screening, moisture conditions, and the roof assembly together.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

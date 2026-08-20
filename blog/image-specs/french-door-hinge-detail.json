@@ -1,0 +1,10 @@
+{
+  "id": "french-door-hinge-detail",
+  "file": "generated/french-door-hinge-detail.png",
+  "desc": "White French-door leaves with aligned black butt hinges and even meeting-edge spacing, with a plain screwdriver and spare hinge screws on a folded cloth below.",
+  "domains": ["doors_windows", "interior_finish", "residential"],
+  "modes": ["hardware-inspection", "maintenance", "repair-preparation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for French-door hinges, loose-screw checks, double-door alignment, hardware maintenance, and related repair-scope articles. It depicts generic door hardware, never a JK Prestige project or proof that hinge adjustment resolves structural movement in an opening."
+}

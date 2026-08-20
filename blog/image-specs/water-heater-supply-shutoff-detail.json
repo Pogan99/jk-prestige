@@ -1,0 +1,10 @@
+{
+  "id": "water-heater-supply-shutoff-detail",
+  "file": "generated/water-heater-supply-shutoff-detail.png",
+  "desc": "Tight upper-tank detail of a generic electric water heater with two neat flexible supply connectors, accessible cold-side shutoff valve, unbranded fittings, and gray conduit entering a closed top junction cover.",
+  "domains": ["plumbing", "electrical", "interior_systems", "residential"],
+  "modes": ["inspection", "replacement", "service-planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for electric water-heater supply connections, accessible shutoff context, utility-closet inspection, and replacement-planning articles. It depicts a generic service detail, never a JK Prestige project or a substitute for water shutoff, electrical disconnect, fitting, pressure-relief, permit, code, or manufacturer requirements."
+}

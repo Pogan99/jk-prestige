@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "sliding-screen-door-track-detail",
+      "alt": "White sliding screen door seated in a track beside a glass patio door",
+      "caption": "Salt air, sandy grit, and UV exposure affect the screen, rollers, and track together. Check the whole opening before replacing only the mesh panel.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "sliding-glass-door-porch-context",
+      "alt": "White sliding patio-door opening to a Florida screened porch with pavers",
+      "caption": "If the frame or spline channel is bent, measure and cut carefully so the replacement panel returns square instead of forcing a damaged track to work.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "sliding-glass-door-track-roller",
+      "alt": "Sliding door threshold track with roller opening, weatherstrip, and drainage path",
+      "caption": "A frame that is twisted, corroded, or part of a larger lanai failure may need a broader repair than a replacement screen panel.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

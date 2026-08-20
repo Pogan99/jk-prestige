@@ -1,0 +1,10 @@
+{
+  "id": "interior-door-casing-miter-detail",
+  "file": "generated/interior-door-casing-miter-detail.png",
+  "desc": "White painted interior door opening with clean mitered casing, an even jamb reveal, a small base gap before caulking, and a plain finish nailer resting on protected medium-oak flooring.",
+  "domains": ["interior_finish", "renovation", "doors_windows", "residential"],
+  "modes": ["installation", "finish-work", "repair-scope"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for interior door casing, trim miters, jamb reveals, finish carpentry, repainting and small renovation articles. It depicts a generic interior trim scene, never a JK Prestige project or proof that trim should be used to correct a misaligned door jamb."
+}

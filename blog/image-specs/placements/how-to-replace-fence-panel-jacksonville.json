@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "wood-fence-panel-replacement",
+      "alt": "New pressure-treated wood privacy-fence panel set straight between plumb posts",
+      "caption": "Check posts, rails, grade, and the neighboring panels before replacing one section. A new panel will not stay aligned on a failed post or a fence line that is already moving.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "rotted-fence-post-replacement-prep",
+      "alt": "Weathered fence post with decay at grade beside a braced replacement post and footing excavation",
+      "caption": "Set the replacement panel plumb, keep its bottom clear of soil, and fasten into sound rails with exterior-rated hardware. A soft or loose post should be corrected before it is asked to support a fresh panel.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Downspout runoff directed through a rock-lined swale away from a Florida foundation",
+      "caption": "Protect cut ends and maintain drainage around the fence line. Ground contact, trapped mulch, and roof runoff are common paths to repeat rot in Jacksonville yards.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

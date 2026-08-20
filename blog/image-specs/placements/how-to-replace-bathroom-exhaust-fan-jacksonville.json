@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "bathroom-exhaust-fan-attic-housing",
+      "alt": "Bathroom exhaust-fan housing between attic joists with supported duct and clear insulation",
+      "caption": "A fan replacement includes the housing, duct, electrical connection, and the path to the exterior. The grille in the bathroom is only the visible end of that system.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "soffit-vented-eave-intake",
+      "alt": "Vented soffit at a finished Florida roof eave",
+      "caption": "Humidity control depends on the larger roof and attic environment too. Do not confuse an attic intake vent with the dedicated exterior exhaust path a bathroom fan needs.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "attic-insulation-airflow-clearance",
+      "alt": "Attic insulation held clear of a ventilation path near roof trusses",
+      "caption": "Service access and clear airflow matter after the installation. A duct that is crushed, disconnected, or buried in an inaccessible attic will not solve moisture problems in the bathroom below.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

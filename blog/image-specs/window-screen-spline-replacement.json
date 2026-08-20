@@ -1,0 +1,10 @@
+{
+  "id": "window-screen-spline-replacement",
+  "file": "generated/window-screen-spline-replacement.png",
+  "desc": "White aluminum window-screen frame with charcoal insect mesh held straight by dark spline, with a plain roller and spare spline on a padded work surface.",
+  "domains": ["doors_windows", "screen", "exterior_envelope", "residential"],
+  "modes": ["replacement", "repair", "maintenance"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for window-screen replacement, spline-and-frame repair, insect-screen selection, and exterior window-maintenance articles. It depicts generic screen work, never a JK Prestige project or a substitute for opening measurements, window-operation assessment, egress, impact requirements, or code requirements."
+}

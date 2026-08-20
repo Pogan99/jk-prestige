@@ -1,0 +1,10 @@
+{
+  "id": "pool-screen-enclosure-door-closer",
+  "file": "generated/pool-screen-enclosure-door-closer.png",
+  "desc": "Closed black aluminum pool-screen enclosure door that sits square in its frame, with taut mesh, a top hydraulic closer, plain latch handle, aligned hinges, and Florida pool context beyond.",
+  "domains": ["screen_enclosure", "pool", "doors_windows", "residential", "storm"],
+  "modes": ["repair-scope", "inspection", "replacement"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for pool-cage door repair, enclosure closer and latch inspection, lanai screen-door alignment, and storm-maintenance articles. It depicts a generic enclosure door, never a JK Prestige project or a substitute for pool-safety, self-closing, latch, screen, structural, or local code requirements."
+}

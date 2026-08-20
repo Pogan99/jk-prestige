@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "paver-patio-base-preparation",
+      "alt": "Compacted paver-patio base with edge restraint, bedding section, string line, and staged pavers",
+      "caption": "The visible pavers depend on the base below. Layout, edge restraint, compaction, and the planned slope should be right before the surface pattern begins.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "pergola-concrete-pier-frame",
+      "alt": "Free-standing pergola supported on concrete piers within a Florida paver patio",
+      "caption": "Plan permanent supports and hardscape in the right sequence. A patio can look finished while still needing a dedicated footing or pier for anything that carries structural load.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Downspout runoff carried away from a home through a rock-lined drainage swale",
+      "caption": "Pavers should support outdoor use without sending stormwater back to the house. Check how the completed surface connects to nearby downspouts, lawn, and drainage paths.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

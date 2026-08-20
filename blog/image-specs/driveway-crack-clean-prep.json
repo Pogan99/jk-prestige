@@ -1,0 +1,10 @@
+{
+  "id": "driveway-crack-clean-prep",
+  "file": "generated/driveway-crack-clean-prep.png",
+  "desc": "Broom-finished concrete driveway with one modest narrow diagonal crack in a clean, controlled repair-preparation setting.",
+  "domains": ["concrete", "driveway", "exterior", "drainage", "residential"],
+  "modes": ["diagnosis", "repair-preparation", "maintenance"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for minor driveway-crack diagnosis, cleaning and repair preparation, concrete-maintenance planning, and drainage-related context. It shows a bounded repairable crack, never a JK Prestige project or a substitute for diagnosing movement, slab failure, root pressure, drainage conditions, or permit requirements."
+}

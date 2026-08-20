@@ -1,0 +1,10 @@
+{
+  "id": "hurricane-shutter-panel-system",
+  "file": "generated/hurricane-shutter-panel-system.png",
+  "desc": "Closed light-colored aluminum hurricane-shutter panel system covering a single stucco-home window, with straight perimeter tracks and evenly placed visible fasteners.",
+  "domains": ["doors_windows", "storm", "exterior_envelope", "residential"],
+  "modes": ["installation", "inspection", "storm-preparation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for hurricane-shutter planning, shutter-panel installation context, storm-preparation, and exterior-opening articles. It depicts a generic shutter system, never a JK Prestige project or a substitute for product approval, opening-specific engineering, anchorage design, permit, insurance-credit, impact-rating, or code requirements."
+}

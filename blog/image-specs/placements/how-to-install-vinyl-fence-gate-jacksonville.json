@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "vinyl-fence-gate-alignment",
+      "alt": "White vinyl fence gate aligned squarely between two posts with black hinges and latch",
+      "caption": "Set the opening from the finished fence line, posts, grade, and swing clearance before the hardware is tightened. A gate needs a square, well-supported opening rather than a stronger latch alone.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "fence-gate-hinge-post-detail",
+      "alt": "Exterior gate hinge attached to a sturdy wood post with a diagonal brace behind it",
+      "caption": "Hinges and latch hardware need solid support at the posts. Keep enough adjustment for seasonal movement and a clean latch, especially where wind can load the open gate.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "rotted-fence-post-replacement-prep",
+      "alt": "Weathered fence post with decay at grade beside a braced replacement post and footing excavation",
+      "caption": "After rain, check the bottom rail and posts as well as the gate panel. A gate that drags often needs grade, post, or hinge correction instead of more force at the latch.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

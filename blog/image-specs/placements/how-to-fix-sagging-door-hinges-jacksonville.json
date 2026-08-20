@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "french-door-alignment-context",
+      "alt": "White exterior French doors with even gaps at a shaded Florida porch",
+      "caption": "A sagging door should be judged by the full reveal around the opening. Hinges, jamb movement, the threshold, and the latch side all tell you whether the problem is really limited to hardware.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "french-door-hinge-detail",
+      "alt": "Aligned black door hinges and even meeting-edge spacing on white French doors",
+      "caption": "Tightening or replacing hinge fasteners only helps when the hinge leaf still sits flat on sound material. Record which screws are stripped or loose before changing the adjustment.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "rotted-exterior-door-jamb-diagnosis",
+      "alt": "Localized moisture-softened wood at the lower corner of an exterior door jamb",
+      "caption": "If an exterior door keeps dropping after a hinge fix, softened jamb material or repeated water exposure may be moving the opening. That is a broader repair than a new hinge alone.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

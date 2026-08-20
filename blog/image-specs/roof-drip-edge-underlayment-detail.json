@@ -1,0 +1,10 @@
+{
+  "id": "roof-drip-edge-underlayment-detail",
+  "file": "generated/roof-drip-edge-underlayment-detail.png",
+  "desc": "Straight white-painted metal drip edge at a Florida asphalt-shingle eave, with black synthetic underlayment lapped over the upper flange, intact fascia, soffit, and gutter edge visible in close view.",
+  "domains": ["roofing", "exterior_envelope", "storm", "residential"],
+  "modes": ["installation", "water-management", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for roof drip edge, eave flashing, underlayment sequencing, fascia inspection, gutter-edge context, and roof-edge repair articles. It depicts a generic roofing detail, never a JK Prestige project or a substitute for site-specific roof-system requirements."
+}

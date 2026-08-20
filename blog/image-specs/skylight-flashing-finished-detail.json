@@ -1,0 +1,10 @@
+{
+  "id": "skylight-flashing-finished-detail",
+  "file": "generated/skylight-flashing-finished-detail.png",
+  "desc": "Curb-mounted rectangular skylight correctly integrated into a Florida asphalt-shingle roof with neat metal step flashing and counterflashing around the curb.",
+  "domains": ["roofing", "exterior_envelope", "residential"],
+  "modes": ["finished_result", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for skylight flashing, roof maintenance, shingle-to-curb integration, water management, and repair-scope articles. It is a generic editorial illustration, not a JK Prestige project or a code-compliance claim."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "kitchen-sink-drop-in-countertop",
+      "alt": "Stainless kitchen sink in a clean countertop with a faucet opening and drain basket",
+      "caption": "Confirm the sink-hole pattern, faucet height, supply shutoffs, and access below the cabinet before buying a replacement. The visual match above the counter is only one part of the fit.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "kitchen-sink-under-cabinet-plumbing",
+      "alt": "Kitchen sink cabinet with supply valves, drain piping, and disposal context",
+      "caption": "Close the stops, disconnect the old supply lines, and support the faucet while its mounting hardware is removed. Tight access below the sink is where a simple swap can become a plumbing or cabinet repair.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "kitchen-sink-undermount-clips",
+      "alt": "Underside of a kitchen counter showing sink support clips and a clean drain opening",
+      "caption": "Hand-check the new connections before tightening, then run hot and cold water while inspecting the supply nuts, spray hose route, faucet base, and the surrounding sink support details.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "paver-patio-base-preparation",
+  "file": "generated/paver-patio-base-preparation.png",
+  "desc": "Prepared Florida patio footprint with compacted crushed-stone base, straight black edge restraint, an even bedding-sand section, string line, level, and plain pavers staged at the perimeter.",
+  "domains": ["deck_outdoor", "masonry", "drainage", "residential"],
+  "modes": ["site-preparation", "installation", "drainage"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for paver-patio base preparation, edge restraint, bedding-sand layout, hardscape planning, and drainage-conscious exterior projects. It depicts a generic preparation stage, never a JK Prestige project or a substitute for confirming excavation depth, base compaction, slope, utilities, material compatibility, or permit requirements."
+}

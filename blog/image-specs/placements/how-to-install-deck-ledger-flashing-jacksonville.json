@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "deck-ledger-flashing-detail",
+      "alt": "Deck ledger with metal flashing, membrane, joist hangers, and fasteners",
+      "caption": "Before flashing, inspect the ledger attachment, wall assembly, fastener layout, and any softened wood. Flashing cannot make an unsound connection safe.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "deck-stair-stringer-landing",
+      "alt": "Pressure-treated deck framing with a stair connection and metal supports",
+      "caption": "Compatible hardware, solid structural connections, and correct drainage at exterior assemblies need attention before the deck surface closes over the work.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Downspout runoff directed through a rock-lined swale away from a home",
+      "caption": "After heavy Florida rain, observe how runoff moves away from the house. Water that lingers at exterior connections can undermine otherwise clean flashing details.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

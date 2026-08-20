@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "french-drain-gravel-pipe-section",
+      "alt": "Perforated black French-drain pipe in washed gravel and white filter fabric in a yard trench",
+      "caption": "Locate utilities, property lines, discharge points, and the low end before digging. A French drain needs a real outlet and a continuous route rather than a trench that simply moves water to another low spot.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "downspout-underground-drain-extension",
+      "alt": "Downspout connected to a buried drain extension with a cleanout beside a Florida home",
+      "caption": "Coordinate roof runoff with groundwater paths so the drain is not overloaded during a Jacksonville storm. Buried drainage remains serviceable only when its route, outlet, and cleanout strategy are planned together.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Rock-lined swale receiving controlled roof runoff away from a Florida foundation",
+      "caption": "Use clean stone, properly oriented perforated pipe, and a filter layer so sandy soil does not fill the system before it can move water. Surface grading and discharge control still matter around every trench.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "rotted-fence-post-replacement-prep",
+  "file": "generated/rotted-fence-post-replacement-prep.png",
+  "desc": "Contained fence-post replacement scene with a lower section of one weathered, decayed post leaning beside a clean round footing excavation and a separate new pressure-treated post temporarily braced plumb.",
+  "domains": ["fence", "deck_outdoor", "carpentry", "residential", "humidity"],
+  "modes": ["diagnosis", "repair-preparation", "replacement"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for rotted fence-post diagnosis, wood-fence replacement planning, temporary bracing context, footing preparation, and exterior repair-scope articles. It shows a bounded and realistic problem condition, never a JK Prestige project or a substitute for locating utilities, checking property lines, selecting footing depth, or verifying permit requirements."
+}

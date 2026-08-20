@@ -1,0 +1,10 @@
+{
+  "id": "garage-door-bottom-seal-detail",
+  "file": "generated/garage-door-bottom-seal-detail.png",
+  "desc": "White sectional garage door seated at a concrete slab with a black bottom weather seal, lower roller, track, and bracket in close view.",
+  "domains": ["exterior_envelope", "doors_windows", "residential"],
+  "modes": ["inspection", "finished_result"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for garage-door seals, bottom weatherstripping, alignment, rollers, tracks, threshold contact, and rain/pest-exclusion articles. It is a generic editorial illustration, not evidence of a JK Prestige project."
+}

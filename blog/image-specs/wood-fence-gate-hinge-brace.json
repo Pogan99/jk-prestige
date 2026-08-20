@@ -1,0 +1,10 @@
+{
+  "id": "wood-fence-gate-hinge-brace",
+  "file": "generated/wood-fence-gate-hinge-brace.png",
+  "desc": "Modest wood privacy-fence gate in a Florida backyard with black strap hinges, a diagonal brace, latch post, sandy grade, and surrounding fence framing visible for inspection context.",
+  "domains": ["deck_outdoor", "structural_framing", "residential", "storm"],
+  "modes": ["inspection", "maintenance", "repair-scope"],
+  "visual_tone": "clean",
+  "messiness": "moderate",
+  "reuse_notes": "Use for fence gates, hinge and latch adjustments, gate bracing, post-support inspection, yard-gate maintenance, and outdoor repair-scope articles. It depicts a generic gate setting, never a JK Prestige project or proof that a hinge adjustment alone resolves a gate-support issue."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "deck-railing-alignment-detail",
+  "file": "generated/deck-railing-alignment-detail.png",
+  "desc": "Finished pressure-treated deck guardrail with a straight top rail, evenly aligned vertical wood balusters, solid square newel post, matching stair handrail, and a plain bubble level staged for inspection.",
+  "domains": ["deck_outdoor", "carpentry", "safety", "residential"],
+  "modes": ["inspection", "repair-scope", "finish-work"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for deck-railing repair, guardrail condition checks, exterior carpentry, stair-handrail context, and deck-maintenance articles. It depicts a generic finished railing condition, never a JK Prestige project or a substitute for verifying guard height, baluster spacing, post connection, fasteners, load resistance, or code requirements."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "shower-door-side-seal-detail",
+      "alt": "Vertical clear shower-door side seal meeting an even tiled jamb gap",
+      "caption": "Door seals work only when the door and jamb meet evenly. Check the bottom sweep, vertical seals, threshold, and frame as one water-control path.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "shower-door-bottom-sweep-detail",
+      "alt": "Clear shower-door bottom sweep aligned above a tile threshold",
+      "caption": "Old residue has to be removed and the new sweep trimmed to fit without bowing or leaving an opening at either bottom corner.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "bathroom-floor-grout-prep",
+      "alt": "Bathroom floor and shower threshold prepared for careful wet-area finish work",
+      "caption": "At the lower corners, tile joints and sealant condition affect where water travels. After a test shower, persistent leakage may point to frame or curb repairs.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "rotted-deck-board-diagnosis",
+  "file": "generated/rotted-deck-board-diagnosis.png",
+  "desc": "Contained deck-board condition with localized darkened end grain and a small split near a fastener, beside otherwise intact weathered pressure-treated boards.",
+  "domains": ["deck_outdoor", "carpentry", "humidity", "residential"],
+  "modes": ["diagnosis", "repair-planning", "replacement"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for rotted-deck-board diagnosis, deck-board replacement planning, moisture-damage discussion, and fastener-area inspection articles. It shows a bounded repairable condition, never a JK Prestige project or a substitute for checking joists, ledger condition, guardrail support, structural safety, or permit requirements."
+}

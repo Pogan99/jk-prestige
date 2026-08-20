@@ -1,0 +1,10 @@
+{
+  "id": "vinyl-fence-gate-alignment",
+  "file": "generated/vinyl-fence-gate-alignment.png",
+  "desc": "Clean white vinyl privacy-fence gate closed squarely between white posts, with black hinges, plain latch, straight rails, even reveal, and dry sandy soil at the post bases.",
+  "domains": ["fence", "deck_outdoor", "residential", "storm"],
+  "modes": ["installation", "inspection", "repair-scope"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for vinyl fence gates, gate alignment, latch and hinge context, HOA-ready exterior upgrades, and storm-maintenance articles. It depicts a generic finished gate, never a JK Prestige project or a substitute for property lines, post depth, concrete, gate hardware, pool safety, HOA, permit, or code requirements."
+}

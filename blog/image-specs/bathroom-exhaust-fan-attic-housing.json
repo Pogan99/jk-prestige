@@ -1,0 +1,10 @@
+{
+  "id": "bathroom-exhaust-fan-attic-housing",
+  "file": "generated/bathroom-exhaust-fan-attic-housing.png",
+  "desc": "Attic-side view of a generic bathroom exhaust-fan housing mounted between ceiling joists, with a supported insulated duct, closed junction box, insulation held clear, and a plywood service walkway nearby.",
+  "domains": ["attic", "hvac", "electrical", "bathroom", "residential", "humidity"],
+  "modes": ["installation", "inspection", "ventilation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for bathroom exhaust-fan replacement, attic duct-routing context, humidity management, ventilation inspection, and service-access articles. It depicts a generic installation context, never a JK Prestige project or a substitute for evaluating duct length, termination, airflow, electrical work, insulation clearance, or local requirements."
+}

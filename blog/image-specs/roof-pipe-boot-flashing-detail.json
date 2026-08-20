@@ -1,0 +1,10 @@
+{
+  "id": "roof-pipe-boot-flashing-detail",
+  "file": "generated/roof-pipe-boot-flashing-detail.png",
+  "desc": "Close roof detail of a plain white plumbing-vent pipe passing through intact gray asphalt shingles with a clean black pipe boot and water-shedding flashing flange.",
+  "domains": ["roofing", "plumbing", "exterior_envelope", "residential", "storm"],
+  "modes": ["inspection", "replacement", "weather-protection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for roof pipe boots, plumbing-vent flashings, asphalt-shingle roof inspection, and rain-control articles. It depicts a generic finished detail, never a JK Prestige project or proof that a particular boot, shingle course, vent termination, sealant, or roof assembly meets a specific manufacturer or code requirement."
+}

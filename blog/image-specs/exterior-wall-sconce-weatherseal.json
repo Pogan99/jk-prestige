@@ -1,0 +1,10 @@
+{
+  "id": "exterior-wall-sconce-weatherseal",
+  "file": "generated/exterior-wall-sconce-weatherseal.png",
+  "desc": "Unbranded dark exterior wall sconce securely mounted on a Florida stucco wall beside a garage, with a clean round mounting plate, intact weather seal, and closed glass fixture in daylight.",
+  "domains": ["electrical", "exterior_envelope", "residential", "storm"],
+  "modes": ["replacement", "inspection", "weather-protection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for exterior light-fixture replacement, weather-sealed wall boxes, garage-entry lighting, and exterior electrical maintenance articles. It depicts a generic completed fixture, never a JK Prestige project or a substitute for circuit work, box rating, grounding, weather sealing, bulb type, or permit requirements."
+}

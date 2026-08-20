@@ -1,0 +1,10 @@
+{
+  "id": "outdoor-hose-bib-anti-siphon",
+  "file": "generated/outdoor-hose-bib-anti-siphon.png",
+  "desc": "Generic dry brass anti-siphon outdoor hose bib on a stucco wall, with a neat escutcheon, clean caulk perimeter, and paver path below.",
+  "domains": ["plumbing", "water-management", "exterior_envelope", "residential"],
+  "modes": ["replacement", "inspection", "maintenance"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for outdoor hose-bib replacement, exterior plumbing, anti-siphon context, and leak-inspection articles. It depicts generic hardware, never a JK Prestige project or a substitute for interior shutoff location, pipe-material compatibility, freeze protection, backflow requirements, permit, or code requirements."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "roof-pipe-boot-flashing-detail",
+      "alt": "White plumbing vent passing through shingles with a clean black pipe boot and flashing flange",
+      "caption": "A pipe boot is a small roof detail with a big job: it has to shed water around a moving roof penetration without interrupting the shingle courses above it.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "roof-drip-edge-underlayment-detail",
+      "alt": "Metal roof drip edge and underlayment layered with asphalt shingles at an eave",
+      "caption": "The same overlap logic applies across the roof. A new boot belongs in an intact water-shedding sequence, not on top of weak shingles or compromised decking.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "skylight-flashing-finished-detail",
+      "alt": "Finished curb-mounted skylight flashing integrated with an asphalt-shingle roof",
+      "caption": "If multiple roof penetrations show failed sealant, brittle shingles, or staining, it is worth evaluating the broader roof condition instead of replacing isolated parts one at a time.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "water-heater-drain-pan-detail",
+  "file": "generated/water-heater-drain-pan-detail.png",
+  "desc": "Low utility-closet detail of a generic tank water heater sitting inside a galvanized drain pan, with a visible pan drain fitting and a neat drain line routed into an adjacent wall.",
+  "domains": ["plumbing", "interior_systems", "residential", "humidity"],
+  "modes": ["inspection", "replacement", "drainage"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for water-heater pan and drain context, plumbing replacement planning, utility-closet inspection, and moisture-risk articles. It depicts a generic equipment detail, never a JK Prestige project or proof that any depicted piping, drain termination, or pan configuration meets a specific code."
+}

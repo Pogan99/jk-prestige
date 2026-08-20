@@ -1,0 +1,10 @@
+{
+  "id": "vinyl-siding-profile-match",
+  "file": "generated/vinyl-siding-profile-match.png",
+  "desc": "Intact light-gray vinyl siding wall beside a white-trimmed Florida window, with matching siding profile samples and a plain zip tool staged on a clean folded cloth for comparison.",
+  "domains": ["exterior_envelope", "doors_windows", "residential", "storm"],
+  "modes": ["material-selection", "repair-preparation", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for vinyl siding panel matching, profile comparison, siding-material selection, exterior-envelope repair preparation, and storm-repair articles. It depicts a generic material-matching scene, never a JK Prestige project or a substitute for manufacturer-specific panel, fastening, and weather-resistive-barrier requirements."
+}

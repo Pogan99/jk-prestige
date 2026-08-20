@@ -1,0 +1,10 @@
+{
+  "id": "rotted-exterior-door-jamb-diagnosis",
+  "file": "generated/rotted-exterior-door-jamb-diagnosis.png",
+  "desc": "Localized moisture-softened painted wood and failed caulk at the lower hinge-side corner of a white exterior door jamb beside an aluminum threshold and brick stoop.",
+  "domains": ["doors_windows", "exterior_envelope", "residential", "storm"],
+  "modes": ["inspection", "repair-scope"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for exterior door-jamb rot, lower-opening moisture clues, failed caulk, threshold inspection, and repair-scope articles. It depicts a generic localized existing condition, never a JK Prestige project or proof of the exact source or extent of damage."
+}

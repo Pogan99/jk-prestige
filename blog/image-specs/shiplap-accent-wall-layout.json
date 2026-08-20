@@ -1,0 +1,10 @@
+{
+  "id": "shiplap-accent-wall-layout",
+  "file": "generated/shiplap-accent-wall-layout.png",
+  "desc": "Bright finished interior with a white horizontal shiplap accent wall, deliberately even board gaps, a level, and neatly staged trim materials for a careful layout check.",
+  "domains": ["interior_finish", "carpentry", "residential"],
+  "modes": ["layout", "installation", "finish-work"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for shiplap accent walls, horizontal panel layout, interior trim coordination, finish carpentry, and repainting or remodeling articles. It depicts a generic editorial installation-preparation scene, never a JK Prestige project or a substitute for confirming substrate, fastener, moisture, fire, or manufacturer requirements."
+}

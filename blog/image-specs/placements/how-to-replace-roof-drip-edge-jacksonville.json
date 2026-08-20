@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "roof-drip-edge-underlayment-detail",
+      "alt": "Metal roof drip edge with underlayment and dark shingles at a Florida eave",
+      "caption": "Sun, salt air, and driving rain expose the drip edge along the lower eave. Inspect the fascia and roof deck before treating it as a simple metal swap.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "skylight-flashing-finished-detail",
+      "alt": "Layered roof flashing integrated with asphalt shingles around a curb-mounted skylight",
+      "caption": "Eave drip edge belongs in a layered water-management sequence. Replacing it later means working existing fasteners and roof layers carefully instead of simply covering the old metal.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "gutter-corner-downspout-transition",
+      "alt": "Gutter edge, soffit, fascia, and downspout transition at a Florida roof corner",
+      "caption": "If old metal exposes soft fascia or a spongy roof deck, the scope has changed from a parts swap into a roof-edge repair.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "attic-pull-down-stairs-open",
+      "alt": "Open wooden folding attic stair through a white trimmed ceiling hatch",
+      "caption": "Pull-down stairs change a ceiling opening into a load-bearing access route. Confirm the opening, framing, landing space, and attic conditions before choosing a stair unit.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "attic-access-hatch-insulation-detail",
+      "alt": "Insulated attic hatch with weatherstrip, rigid foam, and raised insulation dam",
+      "caption": "The new access still belongs in the home's thermal boundary. Plan how the stair or hatch will be insulated and sealed so easier attic access does not become a permanent air leak.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "attic-safe-footing-access",
+      "alt": "Plywood attic walkway leading safely from an access opening over ceiling framing",
+      "caption": "Work does not end at the top step. A safe path across the attic protects the ceiling and gives future service work a stable route instead of loose insulation to walk on.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

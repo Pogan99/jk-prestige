@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "garage-door-exterior-context",
+      "alt": "Florida home with a white sectional garage door and dry concrete driveway",
+      "caption": "A garage-floor crack should be considered in the context of the whole slab, driveway transition, roof runoff, and whether the surrounding ground has been moving.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "garage-floor-concrete-crack-prep",
+      "alt": "V-grooved garage-floor crack prepared for flexible filler in a Florida home",
+      "caption": "Once a crack is confirmed as a surface repair, loose material and dust need to be removed so the repair material can bond to sound, dry concrete.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "garage-door-bottom-seal-detail",
+      "alt": "Garage door bottom seal meeting a concrete slab beside the lower track",
+      "caption": "Monitoring continues after repair: slab moisture and the weather seal at the garage opening can help explain why a crack reopens after storms or seasonal changes.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

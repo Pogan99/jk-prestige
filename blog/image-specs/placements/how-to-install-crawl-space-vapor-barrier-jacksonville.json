@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "crawl-space-access-door-replacement",
+      "alt": "Weather-resistant crawl-space access door below siding on a Florida home",
+      "caption": "Inspect the crawl space for standing water, sharp debris, damaged supports, and ventilation conditions before spreading a vapor barrier.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "crawl-space-vapor-barrier-seams",
+      "alt": "White crawl-space vapor barrier with overlapping taped seams around block piers",
+      "caption": "Continuous coverage requires overlapped seams, sealed penetrations, and careful turns at supports. Loose plastic scattered over soil does not manage ground moisture well.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Downspout discharge routed through a swale away from a Florida foundation",
+      "caption": "Crawl-space moisture control begins outside as well. Roof runoff should leave the foundation area instead of continually adding moisture beneath the house.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

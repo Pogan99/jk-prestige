@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "exterior-pet-door-weatherseal",
+      "alt": "White exterior door with a clean installed pet door and dry perimeter weather seal",
+      "caption": "Choose the opening from the pet's size, the host door construction, security, and the path rainwater would take across the threshold. The pet door needs a square frame and a weather-conscious location before the cutout begins.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "french-door-alignment-context",
+      "alt": "White exterior French doors with even reveals at a shaded Florida porch",
+      "caption": "The host door should be sound and properly aligned before adding an opening. Check how it closes, whether the lower edge is dry, and whether the new frame can be kept square without weakening a damaged panel.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "rotted-exterior-door-jamb-diagnosis",
+      "alt": "Localized moisture-softened wood at the lower corner of an exterior door jamb",
+      "caption": "If nearby exterior wood is soft or repeatedly wet, fix that water path before creating another opening. A new pet door cannot compensate for a compromised jamb, threshold, or door edge.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

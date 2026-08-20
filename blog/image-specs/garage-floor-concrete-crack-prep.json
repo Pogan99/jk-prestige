@@ -1,0 +1,10 @@
+{
+  "id": "garage-floor-concrete-crack-prep",
+  "file": "generated/garage-floor-concrete-crack-prep.png",
+  "desc": "Repairable diagonal crack in a broom-finished residential garage slab, cleanly V-grooved and vacuumed beside a white sectional garage door in a Florida home.",
+  "domains": ["residential", "structural_framing", "interior_finish", "garage"],
+  "modes": ["repair-preparation", "concrete-repair"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for garage-floor crack repair, non-structural concrete maintenance, slab-preparation, joint-repair, and related scope-explanation articles. It depicts a generic repair-preparation scene, never a JK Prestige project or a structural diagnosis."
+}

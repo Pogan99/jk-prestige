@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "skylight-flashing-leak-diagnosis",
+      "alt": "Localized split seal at a skylight flashing corner on a shingle roof",
+      "caption": "A roof patch begins with tracing the entry point, not with the ceiling stain. Flashing, penetrations, roof covering, and the attic side of the assembly all need inspection before a permanent repair is selected.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "roof-pipe-boot-flashing-detail",
+      "alt": "Plumbing vent passing through shingles with a clean black pipe boot and flashing flange",
+      "caption": "Roof penetrations are common leak paths because they interrupt the shingle field. A temporary cover may control immediate water, but the permanent repair must restore the layered water-shedding sequence.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "roof-drip-edge-underlayment-detail",
+      "alt": "Roof drip edge and underlayment layered correctly at a shingle eave",
+      "caption": "After the repair, inspect from the attic during the next rain and look beyond the original stain. Lifted shingles, wet insulation, or new staining can point to a larger water path than one surface patch.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

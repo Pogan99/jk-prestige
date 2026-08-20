@@ -1,0 +1,10 @@
+{
+  "id": "exterior-door-threshold-sweep-detail",
+  "file": "generated/exterior-door-threshold-sweep-detail.png",
+  "desc": "White exterior door closing evenly onto a clean aluminum threshold with a straight dark sweep and intact jamb weatherstripping above a dry paver stoop.",
+  "domains": ["doors_windows", "exterior_envelope", "water-management", "weatherstripping", "residential"],
+  "modes": ["replacement", "installation", "maintenance"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for door-threshold or sweep replacement, exterior weatherstripping, water-entry prevention, and door-alignment articles. It depicts a generic finished detail, never a JK Prestige project or a substitute for diagnosing framing movement, threshold height, accessibility, drainage, product fit, or code requirements."
+}

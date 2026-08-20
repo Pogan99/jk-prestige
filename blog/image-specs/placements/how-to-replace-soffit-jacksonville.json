@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "soffit-vented-eave-intake",
+      "alt": "White perforated soffit beneath a finished Florida roof eave",
+      "caption": "Inspect the soffit, fascia, vents, wiring, and roof edge before removing panels. Rot can continue behind an apparently small damaged section, and the intake path needs to be understood before it is covered again.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "attic-insulation-airflow-clearance",
+      "alt": "Attic insulation held clear of a roof-edge airflow path",
+      "caption": "Cut replacement panels to land on sound framing, keep vent openings clear, and fasten without crushing the material. The interior side of the eave must leave room for air to move past insulation.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "attic-gable-vent-exterior",
+      "alt": "White louvered gable vent beneath an intact Florida shingle roof",
+      "caption": "Verify that the repaired soffit restores intake airflow and that insulation is not pushed into the vent path. Moisture control depends on both sides of the roof edge, not a vented panel alone.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "french-door-alignment-context",
+      "alt": "White exterior French doors with straight threshold, even reveals, and aligned hardware",
+      "caption": "French-door replacement starts with the rough opening, sill, structural support, swing, and any impact or permitting requirements for the location. The visible doors depend on the opening and water-management plan behind them.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "french-door-hinge-detail",
+      "alt": "Aligned black French-door hinges with even meeting-edge spacing",
+      "caption": "Set the frame plumb and square, support the sill, and fasten through sound material before adjusting the active and inactive leaves. Even reveals make the hinge, lock, and weatherseal checks meaningful.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "rotted-exterior-door-jamb-diagnosis",
+      "alt": "Localized moisture-softened wood at the lower hinge-side corner of an exterior door jamb",
+      "caption": "Check the meeting stile, locks, weather seals, and sill after the first rain. If jamb material is wet or softened, small alignment errors can turn into drafts and water paths in coastal weather.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

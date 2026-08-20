@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "bathtub-shower-caulking-joint",
+      "alt": "Fresh continuous white silicone caulk bead at a white bathtub and subway-tile joint",
+      "caption": "Inspect the tub or shower joint, corners, trim, and movement before removing old caulk. Recaulking will not fix a leaking substrate or a loose surround.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "shower-door-side-seal-detail",
+      "alt": "Clear shower-door side seal meeting an even tiled jamb gap",
+      "caption": "Remove loose bead and residue, dry the joint, and tool one continuous bead without leaving pinholes at corners or changes in plane. Protect nearby seals while the work is done.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "bathroom-floor-grout-prep",
+      "alt": "Clean bathroom tile floor with a controlled grout-joint preparation area",
+      "caption": "Respect the product cure time before running water. Jacksonville humidity can slow the set, and an early shower test can make a sound new bead look like a failed seal.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "exterior-pet-door-weatherseal",
+  "file": "generated/exterior-pet-door-weatherseal.png",
+  "desc": "Finished white exterior back door with a clean rectangular pet-door insert, closed dark flap, neat frame, intact jamb weatherstripping, and a dry Florida paver stoop.",
+  "domains": ["doors_windows", "exterior_envelope", "carpentry", "residential"],
+  "modes": ["installation", "inspection", "weather-protection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for exterior pet-door installation, door weather sealing, back-door modification planning, and threshold articles. It depicts a generic completed detail, never a JK Prestige project or a substitute for door construction, cutout layout, security, weather exposure, fire rating, or manufacturer requirements."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "mailbox-post-concrete-footing",
+      "alt": "Generic white roadside mailbox on a straight wood post set into a round concrete footing",
+      "caption": "Confirm the property line, postal and HOA placement rules, road clearance, and the condition of the box before digging out the old post. The footing location has to work for both safe delivery access and the actual site.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "rotted-fence-post-replacement-prep",
+      "alt": "Weathered exterior wood post with decay at grade beside a braced replacement post and footing excavation",
+      "caption": "A failed lower post is a reminder to plan the removal and support strategy before the new footing is poured. Keep the replacement post plumb and supported while the concrete gains strength.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "paver-patio-base-preparation",
+      "alt": "Prepared outdoor base with compacted material, straight string lines, and a level",
+      "caption": "Check the finished height, plumb, and drainage around the post before mounting the box. Protect cut wood and avoid a flat top or joint that lets rain sit against fasteners.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

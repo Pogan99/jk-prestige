@@ -1,0 +1,10 @@
+{
+  "id": "pool-cage-screen-spline-detail",
+  "file": "generated/pool-cage-screen-spline-detail.png",
+  "desc": "Black fiberglass pool-cage screen mesh tensioned in a dark aluminum frame with a straight spline seated in the groove and a plain roller tool nearby.",
+  "domains": ["screen_enclosure", "pool", "doors_windows", "storm", "residential"],
+  "modes": ["repair", "replacement", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for pool-cage or lanai rescreening, spline replacement, screen-tension context, and enclosure-maintenance articles. It depicts generic repair details, never a JK Prestige project or a substitute for structural enclosure assessment, screen-rating selection, wind-load evaluation, permit, or code requirements."
+}

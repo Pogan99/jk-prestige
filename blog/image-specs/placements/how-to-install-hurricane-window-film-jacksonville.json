@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "hurricane-window-film-prep",
+      "alt": "Clean residential window with film-installation tools staged on an unbranded sill",
+      "caption": "Measure each pane and inspect the frame, glazing, and hardware first. Film is only appropriate on a sound window and is not a substitute for a failed attachment or damaged glass.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "window-glass-pane-replacement-prep",
+      "alt": "Window sash prepared on a padded surface beside an intact insulated replacement pane",
+      "caption": "The glass must be clean, stable, and compatible with the selected film. Follow the specified edge gap and application process so dust, trapped moisture, and creases do not undermine the finish.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "Treat window film as one layer of storm preparation, not a code-rated replacement for every opening. Inspect the wider window, door, roof, and shutter strategy before the next hurricane threat.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

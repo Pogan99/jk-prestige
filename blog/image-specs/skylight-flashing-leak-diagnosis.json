@@ -1,0 +1,10 @@
+{
+  "id": "skylight-flashing-leak-diagnosis",
+  "file": "generated/skylight-flashing-leak-diagnosis.png",
+  "desc": "Curb-mounted skylight on a Florida asphalt-shingle roof with a localized split seal and light staining at the lower flashing corner, shown as a repairable existing condition.",
+  "domains": ["roofing", "exterior_envelope", "storm", "residential"],
+  "modes": ["inspection"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for leaking skylights, flashing inspections, roof water-intrusion clues, failed sealant, and repair-scope articles. It depicts a generic existing condition, never proof of a JK Prestige project or a definitive leak diagnosis."
+}

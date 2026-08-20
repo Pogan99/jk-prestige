@@ -1,0 +1,10 @@
+{
+  "id": "attic-radiant-barrier-rafter-bay",
+  "file": "generated/attic-radiant-barrier-rafter-bay.png",
+  "desc": "Truss-framed attic with reflective foil radiant barrier neatly fastened beneath roof rafters, continuous ventilation paths, intact blown insulation, louvered vents, and a plywood service walkway.",
+  "domains": ["attic", "roofing", "energy", "humidity", "residential"],
+  "modes": ["installation", "inspection", "energy-efficiency"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for attic radiant barriers, roof-rafter insulation context, energy-efficiency planning, attic ventilation, and hot-humid climate articles. It depicts a generic attic condition, never a JK Prestige project or a substitute for calculating performance, venting needs, roof assembly, fire safety, insulation, or local requirements."
+}

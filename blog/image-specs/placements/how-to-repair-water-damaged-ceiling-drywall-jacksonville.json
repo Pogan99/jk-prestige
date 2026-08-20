@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "water-damaged-ceiling-diagnosis",
+      "alt": "Contained ceiling water stain and neat drywall inspection opening above protected flooring",
+      "caption": "A ceiling stain is a reason to find the source before repairing the surface. Drywall can be patched, but trapped moisture or an active leak needs to be resolved first.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "drywall-corner-bead-repair-prep",
+      "alt": "Drywall finish materials staged for a thin, controlled repair coat",
+      "caption": "Once the area is dry and stable, the repair is a sequence of sound backing, compatible patch material, thin coats, and careful sanding, not a single heavy layer of compound.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "skylight-flashing-leak-diagnosis",
+      "alt": "Repairable localized split seal at a skylight flashing corner on a shingle roof",
+      "caption": "The stain location does not prove the leak source. Roof penetrations, flashing, plumbing, and HVAC all deserve a site-specific check before a ceiling is closed again.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

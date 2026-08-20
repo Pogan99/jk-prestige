@@ -1,0 +1,10 @@
+{
+  "id": "bathroom-floor-grout-prep",
+  "file": "generated/bathroom-floor-grout-prep.png",
+  "desc": "Light porcelain bathroom floor with selected grout joints carefully cleared for repair, beside a grout saw, float, and a small neat dustpan of dry grout debris.",
+  "domains": ["interior_finish", "renovation", "residential", "plumbing"],
+  "modes": ["repair-preparation", "tile-maintenance", "finish-work"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for bathroom-floor regrouting, tile-joint maintenance, shower-threshold finish work, small bathroom renovation, and similar preparation articles. It depicts a generic repair-preparation scene, never a JK Prestige project or a guarantee that surface regrouting resolves underlying moisture problems."
+}

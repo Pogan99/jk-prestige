@@ -1,0 +1,10 @@
+{
+  "id": "fence-gate-hinge-post-detail",
+  "file": "generated/fence-gate-hinge-post-detail.png",
+  "desc": "Black galvanized strap hinge fastened to a sturdy wood gate post with bright exterior-rated fasteners, a diagonal wood brace behind it, and dry sandy Florida soil at the post base.",
+  "domains": ["deck_outdoor", "structural_framing", "residential", "storm"],
+  "modes": ["hardware-inspection", "maintenance", "repair-scope"],
+  "visual_tone": "clean",
+  "messiness": "moderate",
+  "reuse_notes": "Use for fence-gate hinges, hinge posts, exterior fasteners, diagonal bracing, gate support, and outdoor repair-scope articles. It depicts a generic gate-hardware detail, never a JK Prestige project or proof that a particular fastener layout is appropriate for every gate."
+}

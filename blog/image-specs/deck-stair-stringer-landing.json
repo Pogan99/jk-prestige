@@ -1,0 +1,10 @@
+{
+  "id": "deck-stair-stringer-landing",
+  "file": "generated/deck-stair-stringer-landing.png",
+  "desc": "Pressure-treated deck stair framing with aligned notched stringers, tread boards, upper deck connection, handrail post, and secure metal bases on a concrete landing in a Florida backyard.",
+  "domains": ["deck_outdoor", "structural_framing", "residential", "storm"],
+  "modes": ["installation", "repair-scope", "framing"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for deck-stair stringers, stair-landings, outdoor framing, handrail-support context, and storm-ready outdoor construction articles. It depicts a generic in-progress stair assembly, never a JK Prestige project or a substitute for site-specific code, geometry, or support evaluation."
+}

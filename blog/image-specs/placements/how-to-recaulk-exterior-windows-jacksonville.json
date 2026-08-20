@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "Inspect the window perimeter, sill, casing, and drainage before removing caulk. Sealant is not a substitute for rotten trim, missing flashing, or a sill that holds water.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "rotted-window-sill-diagnosis",
+      "alt": "Window sill with localized moisture-softened wood and an open lower caulk joint",
+      "caption": "Remove loose material to a clean, dry joint and apply a continuous exterior-rated bead without sealing over the window's drainage openings. If the surrounding wood is soft, the repair has to extend beyond a new bead.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-window-flashing-sill-membrane",
+      "alt": "Window opening with sill flashing membrane folded into a drainage pan shape",
+      "caption": "Check the joint after a wet-weather cycle. Jacksonville wind-driven rain will find gaps at corners, end joints, and transitions, while properly layered flashing still gives water a path back out.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

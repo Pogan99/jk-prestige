@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "pergola-concrete-pier-frame",
+      "alt": "Free-standing pressure-treated pergola on concrete piers beside a Florida paver patio",
+      "caption": "A pergola starts with its support plan: post locations, pier or footing strategy, property setbacks, and wind exposure should be sorted out before the framing goes up.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "pergola-beam-connector-detail",
+      "alt": "Pergola double beams connected to a wood post with clean black structural hardware",
+      "caption": "Straight beams and repeatable connections make the layout easier to inspect. Hardware and fastener choices should suit the framing and the conditions at the site rather than just look substantial.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "shed-hurricane-anchor-bracket",
+      "alt": "Galvanized exterior anchor bracket securing a small wood structure to a concrete slab",
+      "caption": "Jacksonville weather adds wind and rain to the planning. Outdoor structures need a support and connection strategy that stays reliable after ordinary summer storms, not only on a dry installation day.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

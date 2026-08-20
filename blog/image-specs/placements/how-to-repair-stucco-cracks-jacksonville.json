@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "stucco-hairline-crack-prep",
+      "alt": "Contained dry hairline crack in an off-white stucco wall beside intact exterior trim",
+      "caption": "Classify the crack before filling it. Hairline shrinkage, recurring joints, impact damage, and movement around openings do not call for the same repair or the same level of investigation.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "Open the repair enough to remove loose material and keep the patch compatible with the existing finish. At nearby trim and penetrations, preserve the drainage path instead of sealing water into the wall.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "roof-drip-edge-underlayment-detail",
+      "alt": "Roof drip edge and underlayment layered to shed water at a shingle eave",
+      "caption": "Watch the repair through wet weather and seasonal movement. A crack that returns can point to moisture or substrate movement, which needs a broader assessment than another surface patch.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

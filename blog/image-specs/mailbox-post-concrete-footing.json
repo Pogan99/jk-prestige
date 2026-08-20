@@ -1,0 +1,10 @@
+{
+  "id": "mailbox-post-concrete-footing",
+  "file": "generated/mailbox-post-concrete-footing.png",
+  "desc": "Generic white roadside mailbox on a straight pressure-treated wood post set in a clean small round concrete footing beside a suburban lawn.",
+  "domains": ["exterior", "carpentry", "concrete", "residential"],
+  "modes": ["replacement", "installation-planning", "repair"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for mailbox-post replacement, concrete-footing context, exterior post installation, and curbside repair-planning articles. It depicts a generic installation, never a JK Prestige project or a substitute for utility locating, postal placement guidance, property-line verification, footing-depth selection, or permit requirements."
+}

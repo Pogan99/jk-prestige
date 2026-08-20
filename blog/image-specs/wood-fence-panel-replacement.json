@@ -1,0 +1,10 @@
+{
+  "id": "wood-fence-panel-replacement",
+  "file": "generated/wood-fence-panel-replacement.png",
+  "desc": "New pressure-treated wood privacy-fence panel with straight horizontal rails, evenly spaced pickets, exterior fasteners, and plumb posts beside older adjacent fence sections.",
+  "domains": ["fence", "carpentry", "storm", "residential"],
+  "modes": ["replacement", "installation", "repair"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for wood-fence-panel replacement, privacy-fence repair, fence-line alignment, and exterior carpentry articles. It depicts a generic fence section, never a JK Prestige project or a substitute for property-line verification, HOA approval, utility locating, post depth, wind design, or permit requirements."
+}

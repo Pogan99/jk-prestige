@@ -1,0 +1,10 @@
+{
+  "id": "storm-door-closer-threshold",
+  "file": "generated/storm-door-closer-threshold.png",
+  "desc": "White full-view aluminum storm door installed squarely before a white entry door, with a slim black hydraulic closer, straight hinge side, even sweep, and dry paver stoop.",
+  "domains": ["doors_windows", "exterior_envelope", "carpentry", "storm", "residential"],
+  "modes": ["installation", "replacement", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for storm-door installation, closer adjustment context, exterior entry protection, and threshold-weatherseal articles. It depicts a generic installed door, never a JK Prestige project or a substitute for door-opening measurements, egress, wind-load suitability, product approval, permit, or code requirements."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "sliding-screen-door-track-detail",
+  "file": "generated/sliding-screen-door-track-detail.png",
+  "desc": "White aluminum sliding screen door seated squarely in a lower track beside a white sliding glass door, with screen mesh, bottom roller housing, replacement spline, and screen roller tool at a Florida porch threshold.",
+  "domains": ["doors_windows", "exterior_envelope", "residential"],
+  "modes": ["maintenance", "repair-preparation", "hardware-inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for sliding screen doors, screen rollers, lower tracks, spline replacement, screened-porch maintenance, and related repair articles. It depicts a generic door setting, never a JK Prestige project or proof that a replacement panel corrects a damaged frame or track."
+}

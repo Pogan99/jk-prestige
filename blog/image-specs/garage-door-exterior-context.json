@@ -1,0 +1,10 @@
+{
+  "id": "garage-door-exterior-context",
+  "file": "generated/garage-door-exterior-context.png",
+  "desc": "Clean white double sectional garage door on a modest Florida stucco home, with shaded soffit, trim, a dry concrete driveway, and simple landscaping.",
+  "domains": ["exterior_envelope", "doors_windows", "residential"],
+  "modes": ["finished_result", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for garage doors, weather-sealing, insulation context, bottom-seal exposure, garage-door service, and residential-envelope articles. It is a generic editorial illustration, not evidence of a JK Prestige project."
+}

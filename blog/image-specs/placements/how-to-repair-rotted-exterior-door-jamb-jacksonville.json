@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "rotted-exterior-door-jamb-diagnosis",
+      "alt": "Localized moisture-softened wood at the lower corner of an exterior door jamb",
+      "caption": "The lower jamb takes standing water and splashback. Probe the jamb, threshold, trim, and adjacent wall before deciding how much material must be replaced.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished composite exterior trim with a sloped sill and narrow caulk joint",
+      "caption": "A durable repair has to return the opening to a straight, drainable exterior face. New trim and sealant cannot protect wood that remains wet behind the surface.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Roof runoff moving through a shallow swale away from a Florida foundation",
+      "caption": "If roof water or grade keeps wetting the opening, correct that water path as part of the repair. Otherwise a clean jamb splice can inherit the same failure.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

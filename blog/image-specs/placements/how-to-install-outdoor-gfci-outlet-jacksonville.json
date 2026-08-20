@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "outdoor-gfci-in-use-cover",
+      "alt": "Weather-resistant GFCI receptacle protected by a clear closed in-use cover on stucco",
+      "caption": "Exterior power needs protection from water and everyday use. Start by identifying the circuit, location, box condition, and the type of cover the finished outlet will need.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "generator-transfer-switch-exterior",
+      "alt": "Closed exterior electrical enclosure and weatherproof generator inlet on a Florida stucco wall",
+      "caption": "Outdoor electrical work belongs in a planned system. Equipment location, conduit routing, weather exposure, and available capacity should be considered together rather than adding an outlet in isolation.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "whole-house-surge-protector-detail",
+      "alt": "Whole-house surge-protection module beside organized panel conductors",
+      "caption": "Jacksonville storms add a separate electrical risk. A qualified electrician can evaluate grounding, circuit protection, and surge strategy for the home, not only the new receptacle.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

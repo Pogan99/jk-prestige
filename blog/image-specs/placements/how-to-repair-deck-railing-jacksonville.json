@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "deck-railing-alignment-detail",
+      "alt": "Pressure-treated deck guardrail with straight top rail, even balusters, and a level",
+      "caption": "A railing repair starts with the whole guard section: post condition, rail alignment, baluster spacing, and the deck framing that supports it all matter together.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "deck-stair-stringer-landing",
+      "alt": "Pressure-treated deck stair framing with a secure landing and handrail post",
+      "caption": "Stairs and railings meet at high-use connections. Keep the stair run, handrail, landing, and rail post working as one stable exterior assembly.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "deck-ledger-flashing-detail",
+      "alt": "Deck ledger with flashing, membrane, joist hangers, and exterior fasteners",
+      "caption": "If a railing is loose because the deck itself is moving or wet, a cosmetic rail repair is not enough. Inspect the larger framing and water-control details before closing the scope.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

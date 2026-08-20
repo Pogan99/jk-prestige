@@ -1,0 +1,10 @@
+{
+  "id": "water-damaged-ceiling-diagnosis",
+  "file": "generated/water-damaged-ceiling-diagnosis.png",
+  "desc": "Realistic room-preparation scene with a contained tan ceiling water stain, a neatly cut drywall inspection opening, floor protection, and a moisture meter staged below.",
+  "domains": ["drywall", "interior_finish", "roofing", "plumbing", "residential", "humidity"],
+  "modes": ["inspection", "repair-preparation", "diagnosis"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for water-damaged ceiling diagnosis, leak-source investigation, drywall repair planning, moisture inspection, and post-leak remediation articles. It conveys a bounded, realistic repair scope rather than an emergency or a completed JK Prestige project; do not use it to diagnose a cause without site inspection."
+}

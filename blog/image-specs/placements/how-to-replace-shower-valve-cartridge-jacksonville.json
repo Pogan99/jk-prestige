@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "shower-valve-cartridge-access",
+      "alt": "Shower valve cartridge accessible through a clean tiled trim opening with puller tool staged nearby",
+      "caption": "Before selecting a cartridge, identify the valve and shut off water safely. Similar-looking trim can conceal very different internal parts and removal methods.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "shower-door-side-seal-detail",
+      "alt": "Clear shower-door side seal meeting an even tiled jamb gap",
+      "caption": "The valve repair happens inside a broader wet area. Keep adjacent seals, tile, and shower hardware protected while the trim is removed and the valve is tested.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "bathroom-sink-p-trap-vanity",
+      "alt": "Clean bathroom sink drain and P-trap inside an open vanity cabinet",
+      "caption": "Bathroom plumbing repairs often reveal larger moisture or access concerns. If shutoffs are seized, finishes are wet, or a valve body is damaged, the scope may be more than a cartridge swap.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

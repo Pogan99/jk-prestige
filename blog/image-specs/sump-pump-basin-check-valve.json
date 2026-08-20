@@ -1,0 +1,10 @@
+{
+  "id": "sump-pump-basin-check-valve",
+  "file": "generated/sump-pump-basin-check-valve.png",
+  "desc": "Clean accessible sump basin in a concrete utility-room floor with a generic submersible pump, float, white vertical discharge pipe, visible check valve, and dry removable lid set on a folded cloth.",
+  "domains": ["plumbing", "drainage", "interior_systems", "residential"],
+  "modes": ["replacement", "inspection", "service-planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for sump-pump replacement, drainage-system inspection, check-valve context, and water-management articles. It depicts a generic dry service condition, never a JK Prestige project or a substitute for discharge routing, electrical safety, float testing, basin sizing, backflow, permit, or local requirements."
+}

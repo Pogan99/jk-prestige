@@ -1,0 +1,10 @@
+{
+  "id": "electric-water-heater-service-context",
+  "file": "generated/electric-water-heater-service-context.png",
+  "desc": "Generic electric tank water heater in a clean accessible utility closet, set in a metal drain pan with unbranded supply connections, a shutoff valve, and a visible copper relief discharge pipe.",
+  "domains": ["plumbing", "electrical", "interior_systems", "residential"],
+  "modes": ["replacement", "inspection", "service-planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for electric water-heater replacement, utility-closet access, plumbing service planning, water-heater inspection, and home-system upgrade articles. It depicts a generic equipment context, never a JK Prestige project or a substitute for gas/electrical/plumbing scope, local permit, relief-valve, pan, drain, seismic, or code requirements."
+}

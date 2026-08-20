@@ -1,0 +1,10 @@
+{
+  "id": "baseboard-trim-miter-layout",
+  "file": "generated/baseboard-trim-miter-layout.png",
+  "desc": "Clean white painted baseboard along a pale oak floor, showing a precise mitered outside-corner transition and an unbranded carpenter square on a cloth.",
+  "domains": ["carpentry", "interior", "trim", "finish-work", "residential"],
+  "modes": ["installation", "repair", "finish-detail"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for baseboard replacement, interior trim repair, mitered-corner context, and finish-carpentry articles. It depicts a generic finish detail, never a JK Prestige project or a substitute for substrate assessment, expansion-gap planning, paint specifications, or manufacturer installation requirements."
+}

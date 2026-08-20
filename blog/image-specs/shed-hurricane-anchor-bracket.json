@@ -1,0 +1,10 @@
+{
+  "id": "shed-hurricane-anchor-bracket",
+  "file": "generated/shed-hurricane-anchor-bracket.png",
+  "desc": "Wood storage shed corner connected to a concrete slab with a galvanized hurricane anchor bracket and expansion bolt in a Florida backyard.",
+  "domains": ["deck_outdoor", "structural_framing", "storm", "residential"],
+  "modes": ["inspection", "crew_at_work"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for shed anchoring, hurricane preparation, outdoor-structure hold-downs, concrete fasteners, and wind-resistance articles. Treat it as a generic illustrative connection, never an engineering detail or evidence of a JK Prestige project."
+}

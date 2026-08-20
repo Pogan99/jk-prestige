@@ -1,0 +1,10 @@
+{
+  "id": "rotted-window-sill-diagnosis",
+  "file": "generated/rotted-window-sill-diagnosis.png",
+  "desc": "Older painted exterior window sill with localized moisture-softened wood, flaking paint, darkened end grain, and an open caulk joint at the lower corner.",
+  "domains": ["doors_windows", "exterior_envelope", "residential"],
+  "modes": ["inspection"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for rotted window sills, exterior trim leaks, failed caulk joints, moisture intrusion, and repair-vs-replace assessment articles. It shows a generic existing condition, not an actual JK Prestige project or a claim about structural severity."
+}

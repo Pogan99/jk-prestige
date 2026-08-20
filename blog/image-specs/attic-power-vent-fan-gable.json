@@ -1,0 +1,10 @@
+{
+  "id": "attic-power-vent-fan-gable",
+  "file": "generated/attic-power-vent-fan-gable.png",
+  "desc": "Stationary round motorized gable attic exhaust fan with visible blades behind a wire safety grille, framed in a Florida truss attic above intact insulation and a plywood walkway.",
+  "domains": ["interior_finish", "electrical", "roofing", "residential"],
+  "modes": ["inspection", "finished_result"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for attic power vents, gable fans, ventilation, fan replacement, attic access, and insulation-clearance articles. It is a generic editorial illustration, not electrical instruction or evidence of a JK Prestige project."
+}

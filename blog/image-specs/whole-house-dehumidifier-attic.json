@@ -1,0 +1,10 @@
+{
+  "id": "whole-house-dehumidifier-attic",
+  "file": "generated/whole-house-dehumidifier-attic.png",
+  "desc": "Ducted whole-house humidity-control equipment on a raised service platform in a Florida attic, with insulated ducts, a condensate line, and a clear plywood walkway.",
+  "domains": ["interior_finish", "plumbing", "electrical", "residential"],
+  "modes": ["inspection", "finished_result"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for whole-house dehumidifiers, humidity control, attic equipment placement, ducted air quality equipment, condensate routing, and service-access articles. It is a generic editorial illustration, not a specific brand, code-compliance record, or JK Prestige project."
+}

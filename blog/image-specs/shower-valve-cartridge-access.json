@@ -1,0 +1,10 @@
+{
+  "id": "shower-valve-cartridge-access",
+  "file": "generated/shower-valve-cartridge-access.png",
+  "desc": "Clean tiled shower-wall access view with the trim removed, a generic brass valve body and cartridge seated straight in the opening, and a plain cartridge-puller tool staged on a folded cloth.",
+  "domains": ["plumbing", "bathroom", "interior_finish", "residential"],
+  "modes": ["inspection", "repair-preparation", "replacement"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for shower-valve cartridge access, bathroom plumbing diagnosis, trim removal context, and controlled repair-planning articles. It depicts a generic valve arrangement, never a JK Prestige project or a substitute for shutting off water, identifying a cartridge, protecting finishes, testing for leaks, or confirming manufacturer requirements."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "garage-door-exterior-context",
+      "alt": "White sectional garage door on a modest Florida home with driveway context",
+      "caption": "A garage door is a large moving assembly. Confirm that the problem is limited to rollers or hinges before disturbing springs, cables, or bottom brackets.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "garage-door-roller-hinge-detail",
+      "alt": "Nylon garage door roller seated in a vertical track beside a metal hinge",
+      "caption": "Support the door and address one hardware component at a time. Keep clear of the spring and bottom-bracket hardware while the panel is loaded.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "garage-door-bottom-seal-detail",
+      "alt": "Garage door bottom seal, lower roller, track, and slab in close view",
+      "caption": "If the door remains heavy, crooked, or unsafe after a simple roller or hinge repair, stop before spring or cable work and have the system assessed.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

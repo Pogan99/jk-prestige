@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "driveway-crack-clean-prep",
+      "alt": "Broom-finished residential driveway with a modest narrow crack in a controlled repair setting",
+      "caption": "Clean and evaluate the crack before sealing. Width, edge movement, vegetation, and water below the slab determine whether a flexible seal is enough or the condition needs a different repair plan.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "garage-floor-concrete-crack-prep",
+      "alt": "Concrete floor crack prepared with clean edges and controlled repair materials",
+      "caption": "Remove dirt and loose edges, let the joint dry, and use the product at the intended depth. A clean repair zone gives sealant room to move instead of peeling away from dust or weak concrete.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Downspout runoff moving through a rock-lined swale away from a Florida home",
+      "caption": "Keep water away from the repaired joint by correcting nearby downspout discharge and low spots. Surface sealing cannot overcome constant saturation beneath or beside the driveway.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

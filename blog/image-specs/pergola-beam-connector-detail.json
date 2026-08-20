@@ -1,0 +1,10 @@
+{
+  "id": "pergola-beam-connector-detail",
+  "file": "generated/pergola-beam-connector-detail.png",
+  "desc": "Tight exterior framing detail of a pressure-treated free-standing pergola: straight double beams and rafters aligned at a wood post with clean black structural connector hardware and through-bolts.",
+  "domains": ["deck_outdoor", "structural_framing", "residential", "storm"],
+  "modes": ["framing", "inspection", "repair-scope"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for pergola beam connections, exterior wood framing, connector inspection, patio structures, and wind-aware backyard improvements. It depicts a generic framing condition, never a JK Prestige project or a substitute for engineered connection, footing, span, fastener, wind-load, setback, or permit requirements."
+}

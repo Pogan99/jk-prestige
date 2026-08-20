@@ -1,0 +1,10 @@
+{
+  "id": "attic-gable-vent-exterior",
+  "file": "generated/attic-gable-vent-exterior.png",
+  "desc": "White louvered rectangular gable vent with clean trim on a painted fiber-cement-sided Florida home beneath an intact shingle roof and soffit.",
+  "domains": ["roofing", "exterior_envelope", "interior_finish", "residential"],
+  "modes": ["replacement", "inspection", "water-management"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for attic gable vents, roof-edge ventilation, exterior trim, louver inspections, and related replacement articles. It depicts a generic exterior condition, never a JK Prestige project or proof that a single vent configuration is appropriate for every attic system."
+}

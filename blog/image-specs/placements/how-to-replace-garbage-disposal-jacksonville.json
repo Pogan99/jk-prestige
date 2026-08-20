@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "kitchen-sink-under-cabinet-plumbing",
+      "alt": "Kitchen sink cabinet with drain piping, garbage-disposal body, and accessible shutoff valves",
+      "caption": "Confirm the sink flange, cabinet clearance, drain configuration, electrical connection, and dishwasher discharge before ordering a disposal. The appliance has to fit the plumbing and the available service space.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "kitchen-sink-undermount-clips",
+      "alt": "Underside of a kitchen counter showing sink support clips and a clean drain opening",
+      "caption": "Support the sink and loosen the mounting ring carefully. A disposal is heavy, and disturbing a sink support or seal can create a leak at the opening above it.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "kitchen-sink-drop-in-countertop",
+      "alt": "Stainless kitchen sink seated in a clean countertop with faucet opening and drain basket",
+      "caption": "After wiring and drain connections are restored, run water through every joint and inspect the flange, trap, dishwasher inlet, and discharge for seepage before closing the cabinet.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

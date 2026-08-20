@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "exterior-door-threshold-sweep-detail",
+      "alt": "White exterior door with an even sweep contact on a clean aluminum threshold",
+      "caption": "Inspect the sill, jambs, sweep, and floor before replacing a threshold. A new threshold cannot correct rot, a damaged subfloor, or a door that is out of square.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "rotted-exterior-door-jamb-diagnosis",
+      "alt": "Localized moisture-softened wood at the lower corner of an exterior door jamb",
+      "caption": "Fit the threshold to sound material, preserve its drainage slope, and seal the ends without trapping water. Soft jamb or sill material is a broader repair than simply changing the metal cap.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-pet-door-weatherseal",
+      "alt": "Exterior door with a dry, neatly sealed lower opening and intact jamb weatherstrip",
+      "caption": "Test the sweep, latch, and full water-shedding path with the door closed. Wind-driven rain should move outward across the stoop, not collect at the interior edge of the threshold.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

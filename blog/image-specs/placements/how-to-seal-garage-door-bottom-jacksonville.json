@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "garage-door-exterior-context",
+      "alt": "White sectional garage door and dry driveway at a modest Florida home",
+      "caption": "Start at the whole opening: driveway slope, slab condition, door travel, and where rainwater collects can matter as much as the rubber seal itself.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "garage-door-bottom-seal-detail",
+      "alt": "Garage door bottom weather seal meeting a concrete slab beside lower track hardware",
+      "caption": "A replacement seal needs a clean, even contact line across the slab. Gaps at either corner or a warped door edge can defeat a brand-new strip.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Downspout runoff directed through a rock-lined swale away from a Florida foundation",
+      "caption": "Water control outside the garage matters too. When roof runoff is sent away from the slab, a door-bottom seal is less likely to be asked to solve a grading problem.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

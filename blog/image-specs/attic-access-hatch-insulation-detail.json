@@ -1,0 +1,10 @@
+{
+  "id": "attic-access-hatch-insulation-detail",
+  "file": "generated/attic-access-hatch-insulation-detail.png",
+  "desc": "Opaque attic access hatch seen from the attic side with a thick rigid foam insulation panel, foil-taped perimeter, weatherstrip gasket, raised insulation dam, and plywood service walkway in a Florida truss attic.",
+  "domains": ["interior_finish", "structural_framing", "residential", "exterior_envelope"],
+  "modes": ["installation", "energy-efficiency", "maintenance"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for attic-access hatches, thermal-boundary details, hatch weatherstripping, attic insulation, and safe service-access articles. It depicts a generic insulated hatch assembly, never a JK Prestige project or proof that a hatch upgrade alone resolves a home's comfort or moisture issues."
+}

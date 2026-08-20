@@ -1,0 +1,10 @@
+{
+  "id": "outdoor-gfci-in-use-cover",
+  "file": "generated/outdoor-gfci-in-use-cover.png",
+  "desc": "White weather-resistant exterior GFCI receptacle mounted on a stucco wall, protected by a clear closed in-use weatherproof cover with neat gray conduit below.",
+  "domains": ["electrical", "exterior_envelope", "residential", "storm"],
+  "modes": ["installation", "inspection", "weather-protection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for outdoor GFCI outlets, weatherproof covers, patio and garage electrical details, exterior electrical inspection, and storm-aware improvements. It depicts a generic completed detail, never a JK Prestige project or a substitute for circuit sizing, wiring method, box rating, grounding, test procedure, or permit requirements."
+}

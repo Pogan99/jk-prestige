@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "hurricane-shutter-panel-system",
+      "alt": "Closed aluminum hurricane-shutter panel system covering a stucco-home window",
+      "caption": "Record each opening, anchor condition, sill geometry, and the shutter system's required clearances before storm preparation begins. Every opening should be matched to the approved product and its intended attachment method.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "hurricane-window-film-prep",
+      "alt": "Clean residential window with film-preparation tools staged on the sill",
+      "caption": "Install anchors into sound framing or approved substrates and keep any removable components organized by opening. Window film may be part of a broader strategy, but it is not a substitute for an opening-specific shutter system when shutters are required.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "Inspect and stage the system before the forecast turns. Shutters are one part of storm readiness alongside sound windows, roof details, doors, drainage, and a power plan for the home.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

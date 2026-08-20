@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "bathroom-floor-grout-prep",
+      "alt": "Bathroom tile floor with selected grout joints cleared for repair",
+      "caption": "Open joints only make sense to regrout when the tile remains sound. A hollow, loose, or moisture-driven floor needs the cause addressed before a cosmetic finish.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "toilet-flange-repair-ring",
+      "alt": "Bathroom floor opening with a stainless toilet flange repair ring",
+      "caption": "Fixture openings are one place to observe how the finished floor plane, grout joints, and penetrations work together. Grout should not be asked to correct movement.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "shower-door-side-seal-detail",
+      "alt": "Clear shower-door side seal closing evenly against a tiled bathroom jamb",
+      "caption": "New grout and adjacent wet-area seals need their full cure period. Humidity and poor ventilation can make an otherwise neat repair fail early.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

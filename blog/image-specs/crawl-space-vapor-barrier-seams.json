@@ -1,0 +1,10 @@
+{
+  "id": "crawl-space-vapor-barrier-seams",
+  "file": "generated/crawl-space-vapor-barrier-seams.png",
+  "desc": "White reinforced vapor barrier covering the ground in a conventional Florida crawl space, with overlapped taped seams, turns at concrete block piers, exposed joists, and a clear service path.",
+  "domains": ["sitework_drainage", "structural_framing", "exterior_envelope", "residential"],
+  "modes": ["installation", "moisture-management", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for crawl-space vapor barriers, ground-moisture control, crawl-space access, raised-home moisture planning, and related inspection articles. It depicts a generic prepared assembly, never a JK Prestige project or proof that a vapor barrier alone resolves all crawl-space moisture issues."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "chimney-step-flashing-installation",
+      "alt": "Galvanized step-flashing pieces staged course by course beside a red-brick chimney and shingle roof",
+      "caption": "Step flashing is a layered roof-to-masonry transition, not a single sheet of metal. The sequence needs to work with the shingle courses before the chimney counterflashing finishes the system.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "roof-drip-edge-underlayment-detail",
+      "alt": "Roof drip edge integrated with underlayment at a Florida shingle eave",
+      "caption": "Roof details shed water by overlap and order. Use the same layered thinking at a chimney rather than depending on surface sealant to make up for a broken transition.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "skylight-flashing-finished-detail",
+      "alt": "Finished layered flashing integrated with shingles around a curb-mounted skylight",
+      "caption": "A watertight roof transition only works when the surrounding roof layers are sound. If shingles, decking, or masonry are deteriorated, the chimney scope may be larger than flashing alone.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

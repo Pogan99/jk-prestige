@@ -1,0 +1,10 @@
+{
+  "id": "generator-transfer-switch-exterior",
+  "file": "generated/generator-transfer-switch-exterior.png",
+  "desc": "Closed gray electrical enclosure and weatherproof generator inlet on a Florida stucco wall, with neatly routed exterior conduit and an adjacent equipment pad.",
+  "domains": ["electrical", "storm", "residential"],
+  "modes": ["inspection", "plans_permits"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for generator transfer switches, backup-power planning, exterior electrical enclosures, permits, and hurricane-preparedness articles. It is generic installation context, never proof of code compliance or a JK Prestige project."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "garage-door-opener-rail-context",
+      "alt": "Ceiling-mounted garage door opener with straight rail, trolley, and sectional door",
+      "caption": "An opener replacement begins by checking the moving door system it will control. Door balance, rail alignment, upper bracket condition, and mounting location need to be sound before a new motor is selected.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "garage-door-roller-hinge-detail",
+      "alt": "Garage door roller seated in its track beside a metal hinge",
+      "caption": "Rollers, hinges, tracks, and springs affect how hard an opener has to work. A new motor cannot safely compensate for a door that is binding or out of alignment.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "garage-door-exterior-context",
+      "alt": "White sectional garage door on a modest Florida home with driveway context",
+      "caption": "After an upgrade, test the full door system and the weather exposure at the opening. If the door remains heavy, crooked, or unsafe, stop before spring or cable work and get the assembly assessed.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

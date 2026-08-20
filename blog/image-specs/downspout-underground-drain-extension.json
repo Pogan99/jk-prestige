@@ -1,0 +1,10 @@
+{
+  "id": "downspout-underground-drain-extension",
+  "file": "generated/downspout-underground-drain-extension.png",
+  "desc": "White downspout connected to a black underground drain adapter beside a Florida stucco home, with a short controlled excavation, solid drain pipe, green cleanout cap, sandy soil, and a plain shovel staged nearby.",
+  "domains": ["sitework_drainage", "exterior_envelope", "residential", "storm"],
+  "modes": ["installation", "repair-preparation", "water-management"],
+  "visual_tone": "clean",
+  "messiness": "moderate",
+  "reuse_notes": "Use for underground downspout drains, drain extensions, stormwater routing, cleanouts, site drainage, and related repair-scope articles. It depicts a generic controlled installation scene, never a JK Prestige project or proof that a particular discharge location complies with every local requirement."
+}

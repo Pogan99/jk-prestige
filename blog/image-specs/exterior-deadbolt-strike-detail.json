@@ -1,0 +1,10 @@
+{
+  "id": "exterior-deadbolt-strike-detail",
+  "file": "generated/exterior-deadbolt-strike-detail.png",
+  "desc": "Generic matte-black single-cylinder exterior deadbolt on a white door, partially open to show aligned latch bolt, strike plate, dry threshold edge, and intact weatherstripping.",
+  "domains": ["doors_windows", "hardware", "security", "exterior_envelope", "residential"],
+  "modes": ["replacement", "installation", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for exterior-deadbolt replacement, latch-and-strike alignment, exterior-door hardware, and weatherstrip-context articles. It depicts generic hardware, never a JK Prestige project or a substitute for egress, fire-rating, key-control, door-core, strike reinforcement, or code requirements."
+}

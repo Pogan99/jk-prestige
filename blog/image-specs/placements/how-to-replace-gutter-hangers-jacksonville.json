@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "gutter-corner-downspout-transition",
+      "alt": "White rain gutter at a roof corner with fascia, soffit, and downspout transition",
+      "caption": "Summer storms load gutters heavily. Inspect failed hangers, the gutter slope, fascia, and the wood behind each fastener before replacing hardware.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "rain-barrel-downspout-diverter",
+      "alt": "Downspout diverter and rain barrel connected to a stable paver base",
+      "caption": "A gutter system only works when each component stays supported and aligned. Soft fascia or a sagging run should be corrected before fastening new hangers into the same edge.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "downspout-yard-drainage-swale",
+      "alt": "Downspout runoff routed into a swale away from a Florida home foundation",
+      "caption": "When hanger failure and fascia rot meet, coordinate the repair so the new gutter is not fastened back into the same unsound roof edge.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "french-door-alignment-context",
+      "alt": "White French doors with an even reveal opening to a shaded Florida porch",
+      "caption": "A French-door pair depends on both leaves sharing the same reveal. Check hinges, frame movement, threshold, and the meeting edge before adjusting the strike.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "french-door-hinge-detail",
+      "alt": "French-door hinges with snug screws and an even gap between door leaves",
+      "caption": "Resetting a loose hinge screw or adding sound backing can correct alignment. Keep hinge leaves seated flat and the jamb plumb before changing latch hardware.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "interior-door-casing-miter-detail",
+      "alt": "Straight interior door casing and jamb reveal in a finished room",
+      "caption": "If the doors still will not latch, check for movement in the opening or wall above it before forcing the hardware into a new position.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

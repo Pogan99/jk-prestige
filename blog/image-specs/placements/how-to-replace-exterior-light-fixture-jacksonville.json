@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "exterior-wall-sconce-weatherseal",
+      "alt": "Exterior wall sconce mounted on a clean wall with a neat weather-sealed perimeter",
+      "caption": "Before changing an exterior fixture, identify the circuit, box, grounding path, and weather exposure. A decorative replacement cannot correct a loose or wet electrical box.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "outdoor-gfci-in-use-cover",
+      "alt": "Weather-resistant exterior receptacle protected by a clear in-use cover on stucco",
+      "caption": "Turn off and verify the circuit, then maintain the weather-rated details at the wall. Outdoor electrical components need suitable boxes, covers, and sealing practices for the exposure they will receive.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "whole-house-surge-protector-detail",
+      "alt": "Whole-house surge-protection module beside organized panel conductors",
+      "caption": "Jacksonville lightning and wind-driven rain add electrical risk beyond the fixture itself. Use an exterior-rated unit and keep the top and sides sealed without blocking the drainage path below.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

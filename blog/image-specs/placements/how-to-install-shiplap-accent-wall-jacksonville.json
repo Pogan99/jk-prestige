@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "shiplap-accent-wall-layout",
+      "alt": "White horizontal shiplap wall with even board gaps, level, and neatly staged trim materials",
+      "caption": "The visual result depends on the first layout line. Confirm the wall is reasonably flat, choose the reveal, and plan the board sequence before fastening the visible rows.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "interior-door-casing-miter-detail",
+      "alt": "Clean interior trim miters and an even jamb reveal beside a finished wall",
+      "caption": "An accent wall has to resolve cleanly at trim, corners, and outlets. Small spacing decisions become very visible when the boards reach a door casing or painted edge.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "drywall-corner-bead-repair-prep",
+      "alt": "Straight drywall corner bead and thin finish compound prepared on an interior wall",
+      "caption": "Finish carpentry lasts better over a stable surface. Repair damaged drywall or a proud corner first instead of using shiplap to disguise movement or an uneven wall plane.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

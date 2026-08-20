@@ -1,0 +1,10 @@
+{
+  "id": "garage-door-opener-rail-context",
+  "file": "generated/garage-door-opener-rail-context.png",
+  "desc": "Clean residential garage interior with a generic unbranded ceiling-mounted door opener, straight rail and trolley, tidy hanging supports, upper reinforcement bracket, and white sectional garage door.",
+  "domains": ["garage", "electrical", "mechanical", "residential", "storm"],
+  "modes": ["replacement", "inspection", "service-planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for garage-door opener replacement, rail alignment, ceiling-mount context, garage-door system inspection, and service-planning articles. It depicts a generic moving-door system, never a JK Prestige project or a substitute for spring, cable, electrical, mounting, safety-sensor, compatibility, or manufacturer requirements."
+}

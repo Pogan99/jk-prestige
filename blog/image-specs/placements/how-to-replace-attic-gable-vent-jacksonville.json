@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "attic-gable-vent-exterior",
+      "alt": "White louvered attic gable vent beneath a Florida roof peak",
+      "caption": "A gable vent sits high in the roofline, where wind, rain, and pests can enter. Inspect the louver, trim, and surrounding wall before ordering a replacement.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "attic-power-vent-fan-gable",
+      "alt": "Attic ventilation equipment framed above insulation and a service walkway",
+      "caption": "Ventilation works as a system. The replacement vent, attic airflow, intake path, and roof assembly should be considered together instead of as isolated parts.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "attic-insulation-airflow-clearance",
+      "alt": "Raised attic platform preserving insulation depth and a clear airflow path",
+      "caption": "A damaged opening, widespread trim rot, or a combined ridge, soffit, and gable ventilation problem is a reason to evaluate the whole roof edge.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

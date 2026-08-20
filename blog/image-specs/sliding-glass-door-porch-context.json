@@ -1,0 +1,10 @@
+{
+  "id": "sliding-glass-door-porch-context",
+  "file": "generated/sliding-glass-door-porch-context.png",
+  "desc": "White-framed sliding glass patio door with visible handle/lock area and threshold opening onto a modest Florida screened porch with paver flooring.",
+  "domains": ["doors_windows", "exterior_envelope", "residential"],
+  "modes": ["finished_result", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for sliding glass doors, patio-door handles, porch access, weatherstripping, door replacement, and screened-lanai opening articles. It is a generic editorial illustration, not evidence of a JK Prestige project."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "chimney-step-flashing-installation",
+  "file": "generated/chimney-step-flashing-installation.png",
+  "desc": "In-progress roof transition at a red-brick chimney, showing individual galvanized step-flashing pieces staged course by course with gray asphalt shingles before the masonry counterflashing is completed.",
+  "domains": ["roofing", "exterior_envelope", "masonry", "residential", "storm"],
+  "modes": ["installation", "inspection", "repair-scope"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for chimney step-flashing sequencing, roof-to-masonry transition planning, asphalt-shingle repairs, and weather-management articles. It depicts an intentionally in-progress generic installation stage, never a JK Prestige project or a substitute for evaluating chimney condition, roof slope, counterflashing, code, or manufacturer-specific requirements."
+}

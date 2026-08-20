@@ -1,0 +1,10 @@
+{
+  "id": "french-door-alignment-context",
+  "file": "generated/french-door-alignment-context.png",
+  "desc": "White double French doors opening to a shaded Florida porch, with aligned black hinges and handles, a straight threshold, and a plain level and loose hinge screws set on a folded cloth nearby.",
+  "domains": ["doors_windows", "interior_finish", "exterior_envelope", "residential"],
+  "modes": ["inspection", "maintenance", "repair-preparation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for French-door alignment, hinge and strike checks, threshold context, double-door latch problems, and related repair-scope articles. It depicts a generic door setting, never a JK Prestige project or a guarantee that hinge adjustment resolves opening movement."
+}

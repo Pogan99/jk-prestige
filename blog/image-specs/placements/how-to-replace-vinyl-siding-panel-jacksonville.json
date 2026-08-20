@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "vinyl-siding-profile-match",
+      "alt": "Matching vinyl siding profile samples beside an intact Florida exterior wall",
+      "caption": "A cracked or storm-damaged panel rarely means the whole run must be replaced. Match the color, profile, and locking edge before ordering material.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "exterior-window-flashing-sill-membrane",
+      "alt": "Window opening with sill flashing and weather-resistive barrier before exterior trim",
+      "caption": "Keep the replacement panel level before engaging the locking edge. A small error can telegraph through the wall and hide a larger water-control issue behind the siding.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior trim and siding transition on a Florida home",
+      "caption": "If the wall behind a panel is soft or the surrounding siding is brittle, inspect the wider envelope before buying another piece that will not solve the cause.",
+      "before": "<h2>When to Call JK Prestige</h2>"
+    }
+  ]
+}

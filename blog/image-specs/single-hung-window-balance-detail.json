@@ -1,0 +1,10 @@
+{
+  "id": "single-hung-window-balance-detail",
+  "file": "generated/single-hung-window-balance-detail.png",
+  "desc": "White single-hung residential window with the lower sash lifted to reveal a recessed jamb channel, coil-balance hardware, and a plain replacement balance component on the interior sill.",
+  "domains": ["doors_windows", "exterior_envelope", "residential"],
+  "modes": ["hardware-identification", "repair-preparation", "maintenance"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for single-hung window balances, sash-support hardware, window operation, measuring replacement parts, and related repair-scope articles. It depicts generic window hardware, never a JK Prestige project or a guarantee that visually similar balances are interchangeable."
+}

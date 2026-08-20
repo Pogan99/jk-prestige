@@ -1,0 +1,10 @@
+{
+  "id": "french-drain-gravel-pipe-section",
+  "file": "generated/french-drain-gravel-pipe-section.png",
+  "desc": "Clean shallow yard trench with perforated black drain pipe placed in washed gravel and white filter fabric beside a Florida lawn and downspout area.",
+  "domains": ["sitework_drainage", "storm", "exterior_envelope", "residential"],
+  "modes": ["installation", "repair-planning", "drainage"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for French-drain planning, trench drainage, gravel-and-filter-fabric context, and yard-water-management articles. It depicts a generic installation stage, never a JK Prestige project or a substitute for utility locating, outlet design, grading, soil evaluation, easement review, engineering, or permit requirements."
+}

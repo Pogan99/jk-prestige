@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "attic-raised-storage-deck",
+      "alt": "Raised attic storage platform set above intact blown insulation in a Florida truss attic",
+      "caption": "Inspect air leaks, moisture, wiring, and ventilation before adding insulation. More material is not a substitute for a sound attic assembly or a safe path for future service.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "attic-insulation-airflow-clearance",
+      "alt": "Attic insulation held clear of a roof-edge airflow path",
+      "caption": "Install insulation to a consistent depth while keeping soffit intake paths, service clearances, and recessed-light requirements visible. The insulation plan must leave the ventilation system able to work.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "attic-safe-footing-access",
+      "alt": "Plywood attic walkway leading safely from an access opening over ceiling framing",
+      "caption": "Create safe walk boards or service paths before covering the joists. Jacksonville attic heat makes rushed footing decisions especially risky, and crushed insulation loses both performance and access value.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

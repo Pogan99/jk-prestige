@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "pool-screen-enclosure-door-closer",
+      "alt": "Black aluminum pool-screen enclosure door with closer, latch, and intact mesh",
+      "caption": "Start with the enclosure door as a system: inspect the frame, closer, latch, hinges or rollers, and screen tension before replacing one part. A shifted opening can make a hardware repair look ineffective.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "sliding-screen-door-track-detail",
+      "alt": "Clean sliding screen door track and lower guide detail at an exterior opening",
+      "caption": "Support the panel while worn hardware is changed, then clear grit from the lower track and threshold. Smooth travel and a consistent latch line are more useful checks than forcing a closer to overcome a dragging door.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "sliding-glass-door-porch-context",
+      "alt": "Sliding patio door opening to a covered Florida porch",
+      "caption": "Look beyond the moving panel too. Wet debris, salt air, and standing water at the surrounding porch or enclosure sill can shorten the life of otherwise sound screen-door hardware.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}

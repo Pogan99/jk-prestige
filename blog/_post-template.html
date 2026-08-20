@@ -34,7 +34,15 @@
       }
     },
     "mainEntityOfPage": "https://jkprestigeconstruction.com/blog/{{SLUG}}/",
-    "keywords": "{{PRIMARY_KEYWORD}}"
+    "keywords": "{{PRIMARY_KEYWORD}}",
+    "about": {
+      "@type": "Thing",
+      "name": "{{PRIMARY_KEYWORD}}"
+    },
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Jacksonville, Florida"
+    }
   }
   </script>
   <style>
@@ -110,6 +118,29 @@
       .header-phone { display: none; }
       .article-body h2 { font-size: 1.25rem; }
     }
+
+    /* Premium editorial layer. Lead figures are inserted by add_images.py. */
+    body { background: #f7f7f5; color: #252a35; }
+    header { box-shadow: 0 1px 0 rgba(255,255,255,.08), 0 7px 20px rgba(0,0,0,.18); }
+    .article-hero { background: radial-gradient(circle at 82% -20%, rgba(177,12,42,.34), transparent 36%), linear-gradient(135deg, #171b25 0%, #30303A 100%); padding: clamp(3.25rem, 8vw, 5.75rem) 20px clamp(2.75rem, 6vw, 4.75rem); }
+    .article-hero-inner { max-width: 760px; }
+    .breadcrumb { color: #a9b5ce; font-size: .76rem; letter-spacing: .01em; }
+    .breadcrumb a { color: #c5d2ee; }
+    .post-category { color: #ff5a79; font-size: .69rem; letter-spacing: .16em; }
+    .article-hero h1, .article-body h2, .article-body h3, .faq-section h2 { font-family: Georgia, 'Times New Roman', serif; }
+    .article-hero h1 { max-width: 20ch; font-size: clamp(2rem, 4.5vw, 3.2rem); font-weight: 700; letter-spacing: -.03em; line-height: 1.08; }
+    .article-meta { color: #c0c8d9; font-size: .8rem; }
+    .article-wrap { max-width: 760px; padding: clamp(2.75rem, 7vw, 5rem) 20px 5rem; }
+    .article-body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 1.075rem; line-height: 1.78; }
+    .article-body > p:first-child { font-family: Georgia, 'Times New Roman', serif; color: #353c4c; font-size: clamp(1.18rem, 2.25vw, 1.38rem); line-height: 1.58; }
+    .article-body h2 { color: #202632; font-size: clamp(1.65rem, 3vw, 2.05rem); font-weight: 700; letter-spacing: -.018em; line-height: 1.2; margin-top: clamp(3rem, 7vw, 5rem); padding-top: 1.5rem; border-top: 1px solid #dce1e9; }
+    .article-body h3 { font-size: 1.24rem; letter-spacing: -.012em; }
+    .article-body table { background: #fff; border: 1px solid #dde2ea; border-radius: 10px; overflow: hidden; box-shadow: 0 8px 20px rgba(30,38,54,.05); }
+    .article-body th { background: #272d39; }
+    .article-body td { border-bottom-color: #e7eaf0; }
+    .article-body blockquote { border-left-width: 3px; border-radius: 0 8px 8px 0; }
+    .cta-callout { background: linear-gradient(135deg, #1a202c, #343945); border: 1px solid rgba(255,255,255,.1); box-shadow: 0 18px 36px rgba(21,26,36,.18); }
+    @media (max-width: 640px) { .article-hero h1 { max-width: none; } .article-body { font-size: 1.02rem; } }
   </style>
 </head>
 <body>

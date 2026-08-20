@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors were retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "pool-pump-equipment-pad",
+      "alt": "Generic pool pump on a clean Florida equipment pad with PVC unions and closed disconnect enclosure",
+      "caption": "Before choosing a replacement pump, compare the existing pad, plumbing connections, electrical disconnect, filter layout, and service clearance. The right pump has to fit the whole equipment arrangement, not only the old motor's footprint.",
+      "before": "<h2>When You Need a Permit in Jacksonville</h2>"
+    },
+    {
+      "image": "whole-house-surge-panel-context",
+      "alt": "Organized residential electrical panel with a whole-house surge device in a utility setting",
+      "caption": "Electrical isolation comes before plumbing cuts. A qualified installer can identify the correct circuit, disconnect method, grounding, and available capacity for the actual pool equipment instead of relying on assumptions from a generic setup.",
+      "before": "<h2>Step-by-Step</h2>"
+    },
+    {
+      "image": "florida-lightning-surge-context",
+      "alt": "Florida summer storm clouds beyond a residential roofline and palm trees",
+      "caption": "Jacksonville storms add weather and surge exposure to pool equipment planning. After startup, check for leaks, air at the lid, vibration, and proper flow, then keep the equipment area ready for ordinary rain and lightning season.",
+      "before": "<h2>Jacksonville Climate Considerations</h2>"
+    }
+  ]
+}
