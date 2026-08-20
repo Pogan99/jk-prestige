@@ -1,0 +1,10 @@
+{
+  "id": "architectural-shingle-wind-installation",
+  "file": "generated/architectural-shingle-wind-installation.png",
+  "desc": "Architectural asphalt shingle roof installation with staggered courses, starter strip, underlayment, and eave edge.",
+  "domains": ["roofing", "residential", "wind_resistance", "exterior_envelope"],
+  "modes": ["installation", "detail", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for architectural-shingle installation, wind-resistance planning, roof-edge detailing, and metal-versus-shingle comparisons."
+}

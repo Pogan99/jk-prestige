@@ -1,0 +1,10 @@
+{
+  "id": "first-generation-commercial-vanilla-shell",
+  "file": "generated/first-generation-commercial-vanilla-shell.png",
+  "desc": "First-generation commercial vanilla shell with concrete slab, demising walls, capped plumbing, electrical panel, sprinkler mains, ductwork, and storefront glazing.",
+  "domains": ["commercial", "tenant_fit_out", "preconstruction", "mep"],
+  "modes": ["new_construction", "planning", "handoff"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for first-generation commercial space, tenant build-outs, vanilla-shell conditions, MEP handoff, and lease-planning guidance."
+}

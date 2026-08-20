@@ -1,0 +1,10 @@
+{
+  "id": "behavioral-health-ligature-resistant-room",
+  "file": "generated/behavioral-health-ligature-resistant-room.png",
+  "desc": "Unoccupied behavioral-health room and bathroom with rounded ligature-resistant fixtures, seamless transitions, and observation window.",
+  "domains": ["healthcare", "behavioral_health", "commercial", "life_safety"],
+  "modes": ["fit_out", "code_coordination", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for behavioral-health construction, fixture coordination, observation design, and healthcare safety planning. Depicts no patients or operational claims."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial renovation planning table with abstract drawings, measuring tools, and a blank notebook",
+      "caption": "Commercial renovation in a historic overlay benefits from an early scope review that connects existing conditions, approvals, tenant needs, budget, and construction sequence.",
+      "before": "<h2>The San Marco Historic Overlay</h2>"
+    },
+    {
+      "image": "brewery-taproom-rough-in",
+      "alt": "Commercial tenant fit-out with framed bar, plumbing, electrical work, and open ceiling services",
+      "caption": "Older commercial interiors often require coordinated work behind the finishes. Plumbing, power, ventilation, framing, and layout need to fit the existing building as well as the tenant program.",
+      "before": "<h2>What Commercial Renovation in San Marco's Older Buildings Actually Involves</h2>"
+    },
+    {
+      "image": "commercial-accessible-restroom-rough-in",
+      "alt": "Commercial accessible restroom rough-in with backing, plumbing connections, and clear floor area",
+      "caption": "Tenant improvements should identify accessibility, occupancy, restroom, route, service, and inspection requirements before finishes make corrective work expensive.",
+      "before": "<h2>Tenant Fit-Out Requirements for Commercial Tenants in San Marco</h2>"
+    }
+  ]
+}

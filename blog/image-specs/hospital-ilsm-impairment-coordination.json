@@ -1,0 +1,10 @@
+{
+  "id": "hospital-ilsm-impairment-coordination",
+  "file": "generated/hospital-ilsm-impairment-coordination.png",
+  "desc": "Hospital renovation containment with protected route, blank temporary fire-notification equipment, and sprinkler impairment coordination.",
+  "domains": ["healthcare", "commercial", "life_safety", "renovation"],
+  "modes": ["containment", "phased_construction", "coordination"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for hospital ILSM, fire-protection coordination, active-facility phasing, and protected-circulation guidance."
+}

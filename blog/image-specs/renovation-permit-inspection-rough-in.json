@@ -1,0 +1,10 @@
+{
+  "id": "renovation-permit-inspection-rough-in",
+  "file": "generated/renovation-permit-inspection-rough-in.png",
+  "desc": "Inspection-ready residential renovation wall with organized framing, plumbing, electrical boxes, review folder, level, and tape measure.",
+  "domains": ["residential", "renovation", "permitting", "mep"],
+  "modes": ["inspection", "rough_in", "coordination"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for renovation permits, inspection readiness, MEP rough-in, scope review, and contractor due diligence. No jurisdiction or permit claims are depicted."
+}

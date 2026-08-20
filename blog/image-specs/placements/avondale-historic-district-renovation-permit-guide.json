@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Historic renovation planning table with abstract drawings, material samples, and a blank project notebook",
+      "caption": "The review process is easier to manage when existing conditions, proposed changes, materials, and project documents are organized before the application is submitted.",
+      "before": "<h2>The HPC Review Process</h2>"
+    },
+    {
+      "image": "historic-window-sill-repair",
+      "alt": "Historic wood double-hung window with localized sill repair and retained surrounding trim",
+      "caption": "Historic review often turns on the difference between targeted repair and unnecessary replacement. The visible condition, water path, and retained character all matter.",
+      "before": "<h2>What the HPC Typically Approves and Denies in Avondale</h2>"
+    },
+    {
+      "image": "exterior-window-flashing-sill-membrane",
+      "alt": "Window opening with sill flashing membrane formed into a drainage pan before exterior trim",
+      "caption": "A historic exterior still needs durable water management. When repair or replacement is approved, flashing and sill details protect the surrounding wall assembly.",
+      "before": "<h2>How Renovations Work Inside Avondale's Historic Homes</h2>"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "trade-qualification-document-review",
+  "file": "generated/trade-qualification-document-review.png",
+  "desc": "Clean contractor qualification review workspace with blank certificate-style documentation, binder, hardhat, and framing sample.",
+  "domains": ["commercial", "preconstruction", "trade_partners", "risk_management"],
+  "modes": ["qualification", "documentation", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for contractor qualification, insurance and license verification, trade mobilization, subcontractor screening, and SDI guidance. Documents are intentionally blank and generic."
+}

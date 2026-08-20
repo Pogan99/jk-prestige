@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial preconstruction table with abstract plans, measuring tools, and estimating materials",
+      "caption": "A useful renovation estimate starts with a defined scope and current conditions. Square-foot ranges are only a starting point for comparing the actual work.",
+      "before": "<h2>Why Cost Per Square Foot Has Wide Ranges</h2>"
+    },
+    {
+      "image": "brewery-production-trench-drain",
+      "alt": "Commercial production room with sealed floor, linear trench drain, equipment pad, and plumbing rough-in",
+      "caption": "Specialty interior requirements such as durable floors, drainage, plumbing, power, and equipment coordination can change the cost of a commercial renovation materially.",
+      "before": "<h2>What Changes the Number Most on Any Commercial Renovation</h2>"
+    },
+    {
+      "image": "commercial-accessible-restroom-rough-in",
+      "alt": "Commercial accessible restroom rough-in with fixture backing, plumbing connections, and clear floor area",
+      "caption": "Accessibility and code coordination affect room geometry, rough-in, fixtures, and finish sequencing. They belong in the scope before a fixed price is finalized.",
+      "before": "<h2>Fixed-Price vs. Allowance Contracts for Commercial Renovation</h2>"
+    }
+  ]
+}

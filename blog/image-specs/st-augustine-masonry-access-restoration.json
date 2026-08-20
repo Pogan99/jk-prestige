@@ -1,0 +1,10 @@
+{
+  "id": "st-augustine-masonry-access-restoration",
+  "file": "generated/st-augustine-masonry-access-restoration.png",
+  "desc": "Historic Florida coquina/tabby masonry repair on a narrow protected district street with compact staged materials and pedestrian protection.",
+  "domains": ["historic_renovation", "masonry", "site_logistics", "residential"],
+  "modes": ["repair_planning", "access_coordination", "restoration"],
+  "visual_tone": "clean",
+  "messiness": "moderate",
+  "reuse_notes": "Use for historic masonry restoration, constrained district access, localized compatible-mortar repair, and careful renovation logistics. This is a controlled repair condition, not evidence of a JK project."
+}

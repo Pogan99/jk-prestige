@@ -1,0 +1,10 @@
+{
+  "id": "standing-seam-roof-concealed-clip-detail",
+  "file": "generated/standing-seam-roof-concealed-clip-detail.png",
+  "desc": "Standing-seam metal roof installation detail with raised seams, concealed clips, solid deck, underlayment, and eave flashing.",
+  "domains": ["roofing", "residential", "wind_resistance", "exterior_envelope"],
+  "modes": ["installation", "detail", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for standing-seam roofing, concealed-clip fastening, wind-resistance planning, roof-edge detailing, and metal-roof comparison guidance."
+}

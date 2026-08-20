@@ -1,0 +1,10 @@
+{
+  "id": "behavioral-health-observation-corridor",
+  "file": "generated/behavioral-health-observation-corridor.png",
+  "desc": "Unoccupied behavioral-health corridor with observation window, clear sightlines, rounded wall corners, and controlled access point.",
+  "domains": ["healthcare", "behavioral_health", "commercial", "life_safety"],
+  "modes": ["fit_out", "access_control", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for behavioral-health natural surveillance, controlled access, observation design, and healthcare safety planning. Depicts no patients or operational claims."
+}

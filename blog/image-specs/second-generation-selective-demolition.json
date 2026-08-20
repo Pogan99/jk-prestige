@@ -1,0 +1,10 @@
+{
+  "id": "second-generation-selective-demolition",
+  "file": "generated/second-generation-selective-demolition.png",
+  "desc": "Second-generation commercial suite with retained ceiling grid and ductwork, opened partition bays, capped utility stubs, and a controlled demolition boundary.",
+  "domains": ["commercial", "tenant_fit_out", "renovation", "due_diligence"],
+  "modes": ["selective_demolition", "existing_conditions", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for second-generation commercial space, tenant fit-outs, due diligence, existing-condition reviews, and selective-demolition planning."
+}

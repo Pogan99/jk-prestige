@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Historic renovation planning table with abstract drawings, ruler, material samples, and a project notebook",
+      "caption": "Historic work needs a clear documentation and review path before construction begins. Existing conditions, proposed scope, materials, approvals, and sequencing should be understood together.",
+      "before": "<h2>The HARB Review Process</h2>"
+    },
+    {
+      "image": "st-augustine-masonry-access-restoration",
+      "alt": "Historic coquina masonry restoration on a narrow protected work route with contained access",
+      "caption": "Historic masonry and constrained access make field conditions matter. Repair methods, material compatibility, protection, staging, and access need practical coordination before work begins.",
+      "before": "<h2>Construction Challenges in St. Augustine's Historic Building Stock</h2>"
+    },
+    {
+      "image": "historic-window-sill-repair",
+      "alt": "Historic wood double-hung window with localized sill repair and retained surrounding trim",
+      "caption": "Historic repairs work best when the scope is based on actual conditions. Localized deterioration, water path, repairability, and protected character all affect the final approach.",
+      "before": "<h2>How to Structure the Project for a Successful Outcome</h2>"
+    }
+  ]
+}

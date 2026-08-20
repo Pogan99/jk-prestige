@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "warehouse-steel-frame-construction",
+      "alt": "High-bay warehouse shell with exposed steel frame, concrete slab, and dock doors",
+      "caption": "Clear height is set by the structural and mechanical envelope, not just a number on a plan. The building section needs to support the intended storage and operations.",
+      "before": "<h2>Why Clear Height Is the Primary Value Driver</h2>"
+    },
+    {
+      "image": "warehouse-feasibility-massing-model",
+      "alt": "Physical warehouse feasibility model with generic loading bays, blank plans, material sample, and calculator",
+      "caption": "Column grid, docks, circulation, office area, equipment, and expansion need to be tested together. A feasibility model helps expose the tradeoffs before the structure is fixed.",
+      "before": "<h2>Column Grid Decisions</h2>"
+    },
+    {
+      "image": "tilt-up-panel-erection",
+      "alt": "Tilt-up concrete warehouse wall panel lifted by crane and stabilized with temporary braces",
+      "caption": "The structural system carries through the slab, foundations, panels, steel, and connections. Early decisions about grid and clear height affect all of those components.",
+      "before": "<h2>Structural Implications for the Foundation</h2>"
+    }
+  ]
+}

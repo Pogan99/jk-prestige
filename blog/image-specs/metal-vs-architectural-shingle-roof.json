@@ -1,0 +1,10 @@
+{
+  "id": "metal-vs-architectural-shingle-roof",
+  "file": "generated/metal-vs-architectural-shingle-roof.png",
+  "desc": "Florida residential roof comparison showing standing-seam metal panels adjacent to architectural asphalt shingles on consistent gable geometry.",
+  "domains": ["roofing", "residential", "wind_resistance", "exterior_envelope"],
+  "modes": ["comparison", "planning", "installation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for metal-versus-shingle comparisons, roofing decisions, wind-resistance planning, and exterior-envelope guidance."
+}

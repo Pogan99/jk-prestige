@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "trade-qualification-document-review",
+      "alt": "Commercial contractor qualification binder beside a blank insurance certificate and project notebook",
+      "caption": "Ask for the contractor license, insurance certificate, references, and scope documentation early. Qualification records should support the specific work being proposed.",
+      "before": "<h2>1. They Can't Produce a License Number Immediately</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial planning table with abstract drawings, estimating tools, and a blank notebook",
+      "caption": "A written scope gives the owner a way to compare bids, exclusions, allowances, schedule expectations, and the actual work behind the price.",
+      "before": "<h2>3. They Won't Provide a Written Scope of Work</h2>"
+    },
+    {
+      "image": "renovation-permit-inspection-rough-in",
+      "alt": "Commercial renovation rough-in with exposed plumbing and electrical work beside a blank permit folder",
+      "caption": "Permits and inspections are field milestones, not paperwork to address after work starts. The project sequence should identify when each review will occur.",
+      "before": "<h2>8. They Avoid Discussing Permits, Inspections, and Code Compliance</h2>"
+    }
+  ]
+}

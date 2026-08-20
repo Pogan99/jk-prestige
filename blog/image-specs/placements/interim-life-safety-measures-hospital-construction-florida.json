@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "hospital-ilsm-impairment-coordination",
+      "alt": "Hospital corridor construction zone with temporary protection, sprinkler work, and a blank impairment-monitoring board",
+      "caption": "ILSM begins when construction affects a life-safety feature or operational route. The assessment identifies the temporary conditions that require managed controls.",
+      "before": "<h2>What ILSM Is and Why It Exists</h2>"
+    },
+    {
+      "image": "healthcare-containment-documentation",
+      "alt": "Hospital corridor containment with a protected route and blank monitoring documentation setup",
+      "caption": "The ILSM record should connect the assessed condition, mitigation, responsible team members, inspections, and changes in the active work area.",
+      "before": "<h2>ILSM Documentation Requirements</h2>"
+    },
+    {
+      "image": "healthcare-corridor-containment-renovation",
+      "alt": "Active healthcare corridor protected by a temporary containment wall and zipper door",
+      "caption": "A GC's field coordination must protect active routes, containment, access, work hours, and utility sequencing while construction proceeds beside hospital operations.",
+      "before": "<h2>The GC's Role in ILSM Documentation</h2>"
+    }
+  ]
+}

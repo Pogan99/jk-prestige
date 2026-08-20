@@ -6288,6 +6288,336 @@
       "quality_review": "approved",
       "reuse_notes": "Use for roof drainage review, TPO layouts, crickets, roof drains, and reroofing guidance.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/flat-roof-drainage-layout-review.json"
+    },
+    {
+      "id": "trade-qualification-document-review",
+      "file": "generated/trade-qualification-document-review.png",
+      "origin": "generated",
+      "desc": "Clean contractor qualification review workspace with blank certificate-style documentation, binder, hardhat, and framing sample.",
+      "domains": [
+        "commercial",
+        "preconstruction",
+        "trade_partners",
+        "risk_management"
+      ],
+      "modes": [
+        "qualification",
+        "documentation",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for contractor qualification, insurance and license verification, trade mobilization, subcontractor screening, and SDI guidance. Documents are intentionally blank and generic.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/trade-qualification-document-review.json"
+    },
+    {
+      "id": "renovation-permit-inspection-rough-in",
+      "file": "generated/renovation-permit-inspection-rough-in.png",
+      "origin": "generated",
+      "desc": "Inspection-ready residential renovation wall with organized framing, plumbing, electrical boxes, review folder, level, and tape measure.",
+      "domains": [
+        "residential",
+        "renovation",
+        "permitting",
+        "mep"
+      ],
+      "modes": [
+        "inspection",
+        "rough_in",
+        "coordination"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for renovation permits, inspection readiness, MEP rough-in, scope review, and contractor due diligence. No jurisdiction or permit claims are depicted.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/renovation-permit-inspection-rough-in.json"
+    },
+    {
+      "id": "second-generation-selective-demolition",
+      "file": "generated/second-generation-selective-demolition.png",
+      "origin": "generated",
+      "desc": "Second-generation commercial suite with retained ceiling grid and ductwork, opened partition bays, capped utility stubs, and a controlled demolition boundary.",
+      "domains": [
+        "commercial",
+        "tenant_fit_out",
+        "renovation",
+        "due_diligence"
+      ],
+      "modes": [
+        "selective_demolition",
+        "existing_conditions",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for second-generation commercial space, tenant fit-outs, due diligence, existing-condition reviews, and selective-demolition planning.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/second-generation-selective-demolition.json"
+    },
+    {
+      "id": "metal-vs-architectural-shingle-roof",
+      "file": "generated/metal-vs-architectural-shingle-roof.png",
+      "origin": "generated",
+      "desc": "Florida residential roof comparison showing standing-seam metal panels adjacent to architectural asphalt shingles on consistent gable geometry.",
+      "domains": [
+        "roofing",
+        "residential",
+        "wind_resistance",
+        "exterior_envelope"
+      ],
+      "modes": [
+        "comparison",
+        "planning",
+        "installation"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for metal-versus-shingle comparisons, roofing decisions, wind-resistance planning, and exterior-envelope guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/metal-vs-architectural-shingle-roof.json"
+    },
+    {
+      "id": "behavioral-health-ligature-resistant-room",
+      "file": "generated/behavioral-health-ligature-resistant-room.png",
+      "origin": "generated",
+      "desc": "Unoccupied behavioral-health room and bathroom with rounded ligature-resistant fixtures, seamless transitions, and observation window.",
+      "domains": [
+        "healthcare",
+        "behavioral_health",
+        "commercial",
+        "life_safety"
+      ],
+      "modes": [
+        "fit_out",
+        "code_coordination",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for behavioral-health construction, fixture coordination, observation design, and healthcare safety planning. Depicts no patients or operational claims.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/behavioral-health-ligature-resistant-room.json"
+    },
+    {
+      "id": "first-generation-commercial-vanilla-shell",
+      "file": "generated/first-generation-commercial-vanilla-shell.png",
+      "origin": "generated",
+      "desc": "First-generation commercial vanilla shell with concrete slab, demising walls, capped plumbing, electrical panel, sprinkler mains, ductwork, and storefront glazing.",
+      "domains": [
+        "commercial",
+        "tenant_fit_out",
+        "preconstruction",
+        "mep"
+      ],
+      "modes": [
+        "new_construction",
+        "planning",
+        "handoff"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for first-generation commercial space, tenant build-outs, vanilla-shell conditions, MEP handoff, and lease-planning guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/first-generation-commercial-vanilla-shell.json"
+    },
+    {
+      "id": "standing-seam-roof-concealed-clip-detail",
+      "file": "generated/standing-seam-roof-concealed-clip-detail.png",
+      "origin": "generated",
+      "desc": "Standing-seam metal roof installation detail with raised seams, concealed clips, solid deck, underlayment, and eave flashing.",
+      "domains": [
+        "roofing",
+        "residential",
+        "wind_resistance",
+        "exterior_envelope"
+      ],
+      "modes": [
+        "installation",
+        "detail",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for standing-seam roofing, concealed-clip fastening, wind-resistance planning, roof-edge detailing, and metal-roof comparison guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/standing-seam-roof-concealed-clip-detail.json"
+    },
+    {
+      "id": "architectural-shingle-wind-installation",
+      "file": "generated/architectural-shingle-wind-installation.png",
+      "origin": "generated",
+      "desc": "Architectural asphalt shingle roof installation with staggered courses, starter strip, underlayment, and eave edge.",
+      "domains": [
+        "roofing",
+        "residential",
+        "wind_resistance",
+        "exterior_envelope"
+      ],
+      "modes": [
+        "installation",
+        "detail",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for architectural-shingle installation, wind-resistance planning, roof-edge detailing, and metal-versus-shingle comparisons.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/architectural-shingle-wind-installation.json"
+    },
+    {
+      "id": "behavioral-health-observation-corridor",
+      "file": "generated/behavioral-health-observation-corridor.png",
+      "origin": "generated",
+      "desc": "Unoccupied behavioral-health corridor with observation window, clear sightlines, rounded wall corners, and controlled access point.",
+      "domains": [
+        "healthcare",
+        "behavioral_health",
+        "commercial",
+        "life_safety"
+      ],
+      "modes": [
+        "fit_out",
+        "access_control",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for behavioral-health natural surveillance, controlled access, observation design, and healthcare safety planning. Depicts no patients or operational claims.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/behavioral-health-observation-corridor.json"
+    },
+    {
+      "id": "hospital-ilsm-impairment-coordination",
+      "file": "generated/hospital-ilsm-impairment-coordination.png",
+      "origin": "generated",
+      "desc": "Hospital renovation containment with protected route, blank temporary fire-notification equipment, and sprinkler impairment coordination.",
+      "domains": [
+        "healthcare",
+        "commercial",
+        "life_safety",
+        "renovation"
+      ],
+      "modes": [
+        "containment",
+        "phased_construction",
+        "coordination"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for hospital ILSM, fire-protection coordination, active-facility phasing, and protected-circulation guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/hospital-ilsm-impairment-coordination.json"
+    },
+    {
+      "id": "st-augustine-masonry-access-restoration",
+      "file": "generated/st-augustine-masonry-access-restoration.png",
+      "origin": "generated",
+      "desc": "Historic Florida coquina/tabby masonry repair on a narrow protected district street with compact staged materials and pedestrian protection.",
+      "domains": [
+        "historic_renovation",
+        "masonry",
+        "site_logistics",
+        "residential"
+      ],
+      "modes": [
+        "repair_planning",
+        "access_coordination",
+        "restoration"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for historic masonry restoration, constrained district access, localized compatible-mortar repair, and careful renovation logistics. This is a controlled repair condition, not evidence of a JK project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/st-augustine-masonry-access-restoration.json"
     }
   ]
 }

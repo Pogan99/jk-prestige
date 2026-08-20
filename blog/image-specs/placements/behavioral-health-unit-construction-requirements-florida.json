@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "behavioral-health-ligature-resistant-room",
+      "alt": "Dignified behavioral health room with rounded ligature-resistant fixtures, durable surfaces, and no occupants",
+      "caption": "Ligature resistance is a coordinated construction requirement. Fixtures, hardware, openings, finishes, and service access need to be evaluated as a complete room assembly.",
+      "before": "<h2>What Ligature Resistance Means in Construction</h2>"
+    },
+    {
+      "image": "behavioral-health-observation-corridor",
+      "alt": "Empty behavioral health observation corridor with durable finishes, protected glazing, and controlled room entry",
+      "caption": "Observation, circulation, visibility, and access control influence the physical layout of a behavioral health unit. These elements need coordinated design and construction decisions.",
+      "before": "<h2>CPTED Principles in Behavioral Health Design</h2>"
+    },
+    {
+      "image": "healthcare-corridor-containment-renovation",
+      "alt": "Healthcare renovation containment protecting an active corridor beside organized construction work",
+      "caption": "In a licensed setting, construction must coordinate the active environment, life-safety measures, access routes, controls, and inspection requirements throughout the work.",
+      "before": "<h2>AHCA Licensing Requirements for Florida Behavioral Health Units</h2>"
+    }
+  ]
+}

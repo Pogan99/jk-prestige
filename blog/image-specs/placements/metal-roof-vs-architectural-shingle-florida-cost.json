@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only hand-reviewed placement spec. Each image is inserted before the article section it directly supports.",
+  "figures": [
+    {
+      "image": "metal-vs-architectural-shingle-roof",
+      "alt": "Residential roof comparison showing standing-seam metal beside architectural shingles at a clean valley transition",
+      "caption": "Metal and architectural shingle roofs differ in material, attachment, detailing, maintenance, and replacement planning. Compare the complete assembly, not only the visible surface.",
+      "before": "<h2>What Each System Is</h2>"
+    },
+    {
+      "image": "standing-seam-roof-concealed-clip-detail",
+      "alt": "Standing-seam metal roof eave with concealed clips, underlayment, and clean flashing layers",
+      "caption": "Metal roof performance depends on the concealed clip system, panels, underlayment, flashing, and drainage details working together at the roof edge.",
+      "before": "<h2>Wind Performance: Where the Products Diverge</h2>"
+    },
+    {
+      "image": "architectural-shingle-wind-installation",
+      "alt": "Architectural shingle roof eave under installation with layered underlayment and starter course",
+      "caption": "Architectural shingle performance depends on the installed system, including starter course, underlayment, fastening, flashing, and edge details.",
+      "before": "<h2>Insurance Impact in Florida</h2>"
+    }
+  ]
+}
