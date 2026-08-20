@@ -104,11 +104,9 @@ function Nav() {
   return (
     <div
       onMouseLeave={handleLeave}
+      className={"jk-nav"+(scrolled?" is-scrolled":"")+(hovered?" is-open":"")}
       style={{
         position:'sticky', top:0, zIndex:50,
-        background:'var(--bg-primary)',
-        borderBottom: scrolled ? '1px solid var(--hairline)' : '1px solid transparent',
-        transition:'border-color .2s',
       }}
     >
       <div style={{height:72, display:'flex', alignItems:'center', padding:'0 clamp(20px,4vw,48px)', gap:24, position:'relative'}}>

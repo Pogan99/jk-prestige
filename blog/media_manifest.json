@@ -1560,5 +1560,576 @@
    "photographer": "cottonbro studio",
    "photographer_url": "https://www.pexels.com/@cottonbro"
   }
- ]
+  ,{
+   "id": "pool-deck-crack-diagnosis",
+   "file": "generated-pilot/pool-deck-crack-diagnosis.png",
+   "origin": "generated",
+   "desc": "Close editorial view of a broom-finished concrete pool deck with one visible diagonal crack, screened lanai, and blue pool water in a Florida backyard.",
+   "domains": [
+    "residential",
+    "sitework_drainage",
+    "deck_outdoor",
+    "structural_framing"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for pool-deck crack diagnosis, settlement, resurfacing, and concrete maintenance articles. Do not describe it as a JK Prestige project."
+  },
+  {
+   "id": "whole-house-surge-panel-context",
+   "file": "generated/whole-house-surge-panel-context.png",
+   "origin": "generated",
+   "desc": "Open residential electrical panel with a whole-house surge protection module mounted beside the main breaker in a clean Florida utility room.",
+   "domains": [
+    "residential",
+    "electrical"
+   ],
+   "modes": [
+    "inspection",
+    "plans_permits"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for whole-house surge protection, breaker-panel, electrical permit, and residential power-quality articles. Editorial reference only, not evidence of a JK Prestige installation."
+  },
+  {
+   "id": "whole-house-surge-protector-detail",
+   "file": "generated/whole-house-surge-protector-detail.png",
+   "origin": "generated",
+   "desc": "Close view of a whole-house surge protection module beside the main breaker with organized copper and green grounding conductors.",
+   "domains": [
+    "residential",
+    "electrical"
+   ],
+   "modes": [
+    "inspection",
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use beside paragraphs about SPD placement, short leads, grounding, or indicator checks. Do not infer exact code compliance from the image."
+  },
+  {
+   "id": "florida-lightning-surge-context",
+   "file": "generated/florida-lightning-surge-context.png",
+   "origin": "generated",
+   "desc": "Generic Florida single-family home under a summer thunderstorm with wet pavement and a distant soft lightning flash.",
+   "domains": [
+    "residential",
+    "storm",
+    "electrical"
+   ],
+   "modes": [
+    "aerial_context",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for Jacksonville lightning, storm-season, power-restoration, and surge-risk context. Never present the house as a JK Prestige project."
+  },
+  {
+   "id": "pool-deck-v-groove-repair",
+   "file": "generated/pool-deck-v-groove-repair.png",
+   "origin": "generated",
+   "desc": "Close view of a broom-finished concrete pool deck crack cleanly V-grooved and prepared for flexible filler beside a Florida pool.",
+   "domains": [
+    "residential",
+    "deck_outdoor",
+    "structural_framing"
+   ],
+   "modes": [
+    "inspection",
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use beside pool-deck crack cleaning, V-grooving, polyurethane filler, and resurfacing guidance. Editorial reference only."
+  },
+  {
+   "id": "pool-deck-settlement-lip",
+   "file": "generated/pool-deck-settlement-lip.png",
+   "origin": "generated",
+   "desc": "Two broom-finished concrete pool-deck sections with a subtle vertical offset from settlement beside the pool coping.",
+   "domains": [
+    "residential",
+    "deck_outdoor",
+    "sitework_drainage",
+    "structural_framing"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for settlement, soil washout, slab lifting, mudjacking, and foam injection articles. Do not infer exact severity from the image."
+  },
+  {
+   "id": "crawl-space-access-door-replacement",
+   "file": "generated/crawl-space-access-door-replacement.png",
+   "origin": "generated",
+   "desc": "Closed weather-resistant crawl-space access hatch fitted into a Florida home's foundation below white siding and beside tropical landscaping.",
+   "domains": [
+    "sitework_drainage",
+    "structural_framing",
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for crawl-space doors, foundation access, pest exclusion, flood vents, and exterior hatch replacement. Editorial reference only."
+  },
+  {
+   "id": "attic-raised-storage-deck",
+   "file": "generated/attic-raised-storage-deck.png",
+   "origin": "generated",
+   "desc": "Raised plywood attic storage platform supported above intact blown-in insulation in a Florida truss-framed attic.",
+   "domains": [
+    "residential",
+    "structural_framing",
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for attic storage platforms, raised sleepers, insulation clearance, and truss-safe layout articles. Editorial reference only."
+  },
+  {
+   "id": "attic-insulation-airflow-clearance",
+   "file": "generated/attic-insulation-airflow-clearance.png",
+   "origin": "generated",
+   "desc": "Raised attic platform above intact insulation with an unobstructed ventilation path near a soffit vent and roof trusses.",
+   "domains": [
+    "residential",
+    "structural_framing",
+    "interior_finish"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for insulation depth, soffit-to-ridge airflow, and raised deck clearance. Do not treat the image as an engineering load calculation."
+  },
+  {
+   "id": "attic-safe-footing-access",
+   "file": "generated/attic-safe-footing-access.png",
+   "origin": "generated",
+   "desc": "Narrow plywood walkway from an attic access opening over ceiling framing, with exposed insulation on both sides.",
+   "domains": [
+    "residential",
+    "structural_framing",
+    "interior_finish"
+   ],
+   "modes": [
+    "inspection",
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for attic access, safe footing, walkways, and storage platform entry. Editorial reference only."
+  },
+  {
+   "id": "garage-door-insulation-detail",
+   "file": "generated/garage-door-insulation-detail.png",
+   "origin": "generated",
+   "desc": "Reflective insulation panel fitted inside one section of a white residential sectional garage door with hardware clearance.",
+   "domains": [
+    "residential",
+    "exterior_envelope",
+    "interior_finish"
+   ],
+   "modes": [
+    "crew_at_work",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for garage-door insulation, panel hardware clearance, and garage heat-management articles. Editorial reference only."
+  },
+  {
+   "id": "toilet-flange-floor-opening",
+   "file": "generated/toilet-flange-floor-opening.png",
+   "origin": "generated",
+   "desc": "Worn metal toilet flange exposed around a bathroom drain opening after the toilet is removed from a tiled floor.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for toilet flange diagnosis, replacement, leaks, rocking toilets, and bathroom floor repairs. Editorial reference only."
+  },
+  {
+   "id": "toilet-flange-sunken-diagnosis",
+   "file": "generated/toilet-flange-sunken-diagnosis.png",
+   "origin": "generated",
+   "desc": "Toilet flange visibly recessed below the finished bathroom tile surface with mounting studs exposed.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "inspection"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for recessed flange, wax-ring failure, toilet rocking, and finished-floor height articles. Editorial reference only."
+  },
+  {
+   "id": "toilet-flange-repair-ring",
+   "file": "generated/toilet-flange-repair-ring.png",
+   "origin": "generated",
+   "desc": "Stainless toilet flange repair ring secured around a worn flange on a tiled bathroom floor.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "crew_at_work",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for flange reinforcement, repair rings, replacement hardware, and bathroom plumbing repair articles. Editorial reference only."
+  },
+  {
+   "id": "bathroom-sink-p-trap-vanity",
+   "file": "generated/bathroom-sink-p-trap-vanity.png",
+   "origin": "generated",
+   "desc": "Clean white PVC P-trap and tailpiece connected beneath a porcelain bathroom sink inside an open wood vanity cabinet.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for bathroom sink P-trap, tailpiece, vanity plumbing, and leak diagnosis articles. Editorial reference only."
+  },
+  {
+   "id": "bathroom-p-trap-slip-joint-detail",
+   "file": "generated/bathroom-p-trap-slip-joint-detail.png",
+   "origin": "generated",
+   "desc": "Close plumbing detail of a tubular sink P-trap slip-joint connection with the beveled washer seated at the joint.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "inspection",
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for slip-joint washers, hand-tightening, compression seals, and repeat-leak diagnosis. Editorial reference only."
+  },
+  {
+   "id": "bathroom-sink-pop-up-drain",
+   "file": "generated/bathroom-sink-pop-up-drain.png",
+   "origin": "generated",
+   "desc": "Underside view of a bathroom sink pop-up drain, tailpiece, and white PVC P-trap connected inside an open vanity cabinet.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for pop-up drain assemblies, tailpieces, trap connections, and bathroom sink drain replacement articles. Editorial reference only."
+  },
+  {
+   "id": "kitchen-sink-drop-in-countertop",
+   "file": "generated/kitchen-sink-drop-in-countertop.png",
+   "origin": "generated",
+   "desc": "Bright Florida kitchen with a stainless drop-in sink seated in a light countertop, showing the visible rim and surrounding counter.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "finished_result",
+    "inspection"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for drop-in kitchen sink replacement, countertop cutout, rim sealing, and like-for-like sink articles. Editorial reference only."
+  },
+  {
+   "id": "kitchen-sink-undermount-clips",
+   "file": "generated/kitchen-sink-undermount-clips.png",
+   "origin": "generated",
+   "desc": "Stainless undermount kitchen sink secured beneath a stone countertop with visible mounting clips and a finished counter edge.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "crew_at_work",
+    "inspection"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for undermount sink requirements, stone countertops, mounting clips, and countertop-change scope. Editorial reference only."
+  },
+  {
+   "id": "kitchen-sink-under-cabinet-plumbing",
+   "file": "generated/kitchen-sink-under-cabinet-plumbing.png",
+   "origin": "generated",
+   "desc": "Open kitchen cabinet showing two-basin drain plumbing, P-trap, supply lines, and garbage disposal beneath a replacement sink.",
+   "domains": [
+    "interior_finish",
+    "residential",
+    "plumbing"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for kitchen sink drains, garbage disposals, supply connections, cabinet moisture, and scope-change articles. Editorial reference only."
+  },
+  {
+   "id": "sliding-door-mortise-lock-detail",
+   "file": "generated/sliding-door-mortise-lock-detail.png",
+   "origin": "generated",
+   "desc": "Weathered sliding glass patio door handle and mortise lock assembly on a white frame opening to a Florida screened porch.",
+   "domains": [
+    "doors_windows",
+    "exterior_envelope",
+    "residential"
+   ],
+   "modes": [
+    "inspection",
+    "crew_at_work"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for sliding-door handles, mortise locks, coastal corrosion, hardware measurement, and patio-door repair articles. Editorial reference only."
+  },
+  {
+   "id": "pocket-door-wall-cavity-inspection",
+   "file": "generated/pocket-door-wall-cavity-inspection.png",
+   "origin": "generated",
+   "desc": "Interior wall opened for a pocket-door inspection, with exposed wood framing, a clean cavity, and a visible utility route at the edge.",
+   "domains": [
+    "doors_windows",
+    "structural_framing",
+    "residential"
+   ],
+   "modes": [
+    "inspection",
+    "plans_permits"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for pocket-door feasibility, wall-cavity inspection, load-bearing checks, and utility-clearance articles. Editorial reference only."
+  },
+  {
+   "id": "pocket-door-split-stud-frame",
+   "file": "generated/pocket-door-split-stud-frame.png",
+   "origin": "generated",
+   "desc": "Metal pocket-door split-stud frame installed plumb in an open interior wall, with the door cavity ready for the next finish stage.",
+   "domains": [
+    "doors_windows",
+    "structural_framing",
+    "interior_finish",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for pocket-door framing, split studs, plumb-and-level checks, and drywall-preparation articles. Editorial reference only."
+  },
+  {
+   "id": "pocket-door-track-roller-detail",
+   "file": "generated/pocket-door-track-roller-detail.png",
+   "origin": "generated",
+   "desc": "Close detail of a pocket-door top track and roller hangers attached to the upper edge of a plain wood door inside an open wall frame.",
+   "domains": [
+    "doors_windows",
+    "interior_finish",
+    "residential"
+   ],
+   "modes": [
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for pocket-door track, rollers, door alignment, and pre-drywall function checks. Editorial reference only."
+  },
+  {
+   "id": "kitchen-cabinet-painting-workbench",
+   "file": "generated/kitchen-cabinet-painting-workbench.png",
+   "origin": "generated",
+   "desc": "Unbranded shaker cabinet door on a protected workbench with a roller, brush, sanding block, and paint tray in a bright kitchen renovation setting.",
+   "domains": [
+    "interior_finish",
+    "renovation",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work",
+    "inspection"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for cabinet painting, cabinet-door preparation, sanding, priming, coating, and kitchen finish-work articles. Editorial reference only."
+  },
+  {
+   "id": "kitchen-cabinet-installation-level",
+   "file": "generated/kitchen-cabinet-installation-level.png",
+   "origin": "generated",
+   "desc": "Partially installed unbranded white kitchen cabinets with a spirit level, wood shims, fasteners, and exposed wall framing at one section.",
+   "domains": [
+    "interior_finish",
+    "renovation",
+    "residential",
+    "structural_framing"
+   ],
+   "modes": [
+    "crew_at_work",
+    "inspection",
+    "plans_permits"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for cabinet layout, leveling, shimming, stud fastening, upper-cabinet hanging, and kitchen installation articles. Editorial reference only."
+  },
+  {
+   "id": "kitchen-backsplash-tile-setting",
+   "file": "generated/kitchen-backsplash-tile-setting.png",
+   "origin": "generated",
+   "desc": "Partially tiled white kitchen backsplash with gray grout joints, tile spacers, a notched trowel, grout float, and plain cut tiles on a protected counter.",
+   "domains": [
+    "interior_finish",
+    "renovation",
+    "residential"
+   ],
+   "modes": [
+    "crew_at_work",
+    "inspection",
+    "finished_result"
+   ],
+   "people": false,
+   "brand_visible": false,
+   "claim_risk": "low",
+   "source": "codex_imagegen",
+   "generated_date": "2026-08-20",
+   "reuse_notes": "Use for kitchen backsplash layout, tile setting, spacers, thinset, grouting, and finish-work articles. Editorial reference only."
+  }
+  ]
 }
