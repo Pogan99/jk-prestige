@@ -1,0 +1,8 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the reviewed placement file.",
+  "figures": [
+    {"image": "warehouse-dock-leveler-pit-formed", "alt": "Empty warehouse loading dock with a dry formed concrete dock-leveler pit, embedded steel curb angles, and dock opening", "caption": "Dock leveler selection begins with the pit. Its dimensions, embedded steel, door location, and equipment requirements need to be coordinated before the concrete work is complete.", "before": "<h2>Dock Leveler Types and What Each Requires From the Pit</h2>"},
+    {"image": "warehouse-floor-flatness-check", "alt": "Industrial warehouse concrete slab checked with a laser level and straightedge across a normal floor joint", "caption": "Concrete tolerances, joints, reinforcement, and embedded items affect dock performance. Field checks help confirm that the built conditions support the intended equipment installation.", "before": "<h2>Concrete Specification for Dock Pits in Florida</h2>"},
+    {"image": "warehouse-dock-bumper-anchor-detail", "alt": "Commercial dock face with heavy rubber bumpers, galvanized plates, and visible anchor bolts at a concrete loading dock", "caption": "Dock bumpers transfer repeated vehicle contact into the concrete structure. Their mounting plates, anchors, wall condition, and door relationship should be coordinated as part of the dock package.", "before": "<h2>Dock Bumper Anchoring</h2>"}
+  ]
+}

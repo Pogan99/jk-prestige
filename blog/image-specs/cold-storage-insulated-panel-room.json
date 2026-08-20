@@ -1,0 +1,10 @@
+{
+  "id": "cold-storage-insulated-panel-room",
+  "file": "generated/cold-storage-insulated-panel-room.png",
+  "desc": "Empty commercial cold-storage room with insulated metal wall panels, sealed joints, ceiling refrigeration lines, concrete floor, and insulated doorway.",
+  "domains": ["warehouse", "cold_storage", "commercial", "building_envelope"],
+  "modes": ["fit_out", "insulation", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for cold storage, freezer and cooler construction, insulated panel systems, refrigeration coordination, and commercial warehouse fit-out guidance."
+}

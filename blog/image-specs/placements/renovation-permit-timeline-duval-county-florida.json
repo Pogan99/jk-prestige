@@ -1,0 +1,8 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the reviewed placement file.",
+  "figures": [
+    {"image": "renovation-permit-inspection-rough-in", "alt": "Renovation wall rough-in with organized framing, plumbing, electrical boxes, review folder, level, and tape measure", "caption": "A permit timeline tracks the real project sequence: scope, plans, review, inspections, and the points where framing or services must remain open for verification.", "before": "<h2>How Duval County Permits Work</h2>"},
+    {"image": "commercial-preconstruction-plan-table", "alt": "Commercial preconstruction table with abstract plans, measuring tools, blank clipboard, and coordination materials", "caption": "Complete, coordinated information helps avoid review comments that reset the schedule. Scope, existing conditions, product choices, and technical details should align before submittal.", "before": "<h2>What Causes Permit Delays</h2>"},
+    {"image": "trade-qualification-document-review", "alt": "Contractor qualification binder beside blank insurance documentation and a project notebook", "caption": "A managed permit process has clear responsibility for documents, corrections, inspections, and field records. The owner should know who is tracking each step before work starts.", "before": "<h2>How JK Prestige Manages the Permit Process</h2>"}
+  ]
+}

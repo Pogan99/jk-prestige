@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the reviewed placement file.",
+  "figures": [
+    {
+      "image": "cold-storage-insulated-panel-room",
+      "alt": "Empty commercial cold-storage room with insulated metal wall panels, sealed joints, refrigeration lines, and insulated doorway",
+      "caption": "Cold storage relies on a continuous insulated enclosure. Panel joints, penetrations, door openings, and the refrigeration layout must work together to control moisture movement and heat gain.",
+      "before": "<h2>The Physics Problem: Dew Point in a Florida Climate</h2>"
+    },
+    {
+      "image": "cold-storage-evaporator-ceiling-detail",
+      "alt": "Commercial cold-room ceiling with insulated panels, refrigeration evaporator unit, supported lines, and vapor-tight transition",
+      "caption": "Wall and ceiling panel systems need sealed transitions around refrigeration equipment and services. The durable envelope is a coordinated assembly, not insulation added after the mechanical work.",
+      "before": "<h2>Wall Panel Systems for Florida Cold Storage</h2>"
+    },
+    {
+      "image": "cold-storage-insulated-threshold-detail",
+      "alt": "Insulated cold-storage door threshold with sealed panel base, protective curb detail, and smooth floor transition",
+      "caption": "Floor and doorway transitions are part of the insulated enclosure. A coordinated threshold, panel base, and durable floor detail helps protect the cold-room boundary during daily operations.",
+      "before": "<h2>Floor Systems for Cold Storage</h2>"
+    }
+  ]
+}

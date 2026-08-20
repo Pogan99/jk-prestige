@@ -1,0 +1,10 @@
+{
+  "id": "cold-storage-insulated-threshold-detail",
+  "file": "generated/cold-storage-insulated-threshold-detail.png",
+  "desc": "Insulated cold-storage door threshold with sealed panel base, protective curb detail, and smooth commercial floor transition.",
+  "domains": ["warehouse", "cold_storage", "commercial", "building_envelope"],
+  "modes": ["door_detail", "floor_transition", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for cold-storage doorway details, insulated panel bases, floor transitions, freezer and cooler fit-outs, and envelope coordination guidance."
+}

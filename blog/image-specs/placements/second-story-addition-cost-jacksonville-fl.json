@@ -1,0 +1,8 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the reviewed placement file.",
+  "figures": [
+    {"image": "home-addition-foundation-hvac-tie-in", "alt": "Florida room addition with new slab, plumbing stubs, framed walls, HVAC connection, and existing-home tie-in", "caption": "A second-story project starts below the new framing. Existing foundation, load path, utilities, and the connection to the original home need review before a cost or schedule can be trusted.", "before": "<h2>Is Your Foundation Ready for a Second Story?</h2>"},
+    {"image": "second-story-addition-framing-tie-in", "alt": "Florida second-story addition under wood framing with tied-in existing stucco home, roof sheathing, and weather protection", "caption": "The price of a second story reflects structural work, roof integration, weather protection, utilities, finishes, permits, and the complexity of building above an occupied home.", "before": "<h2>What a Second Story Addition Costs in Jacksonville</h2>"},
+    {"image": "renovation-permit-inspection-rough-in", "alt": "Renovation wall rough-in with organized framing, plumbing, electrical boxes, review folder, level, and tape measure", "caption": "Permit and inspection milestones need to follow the structural and rough-in sequence. Early documentation makes it easier to resolve questions before the work is covered.", "before": "<h2>What the Permit Process Looks Like</h2>"}
+  ]
+}

@@ -6618,6 +6618,216 @@
       "quality_review": "approved",
       "reuse_notes": "Use for historic masonry restoration, constrained district access, localized compatible-mortar repair, and careful renovation logistics. This is a controlled repair condition, not evidence of a JK project.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/st-augustine-masonry-access-restoration.json"
+    },
+    {
+      "id": "cold-storage-insulated-panel-room",
+      "file": "generated/cold-storage-insulated-panel-room.png",
+      "origin": "generated",
+      "desc": "Empty commercial cold-storage room with insulated metal wall panels, sealed joints, ceiling refrigeration lines, concrete floor, and insulated doorway.",
+      "domains": [
+        "warehouse",
+        "cold_storage",
+        "commercial",
+        "building_envelope"
+      ],
+      "modes": [
+        "fit_out",
+        "insulation",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for cold storage, freezer and cooler construction, insulated panel systems, refrigeration coordination, and commercial warehouse fit-out guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/cold-storage-insulated-panel-room.json"
+    },
+    {
+      "id": "cold-storage-evaporator-ceiling-detail",
+      "file": "generated/cold-storage-evaporator-ceiling-detail.png",
+      "origin": "generated",
+      "desc": "Commercial cold-room ceiling assembly with insulated panels, refrigeration evaporator unit, supported insulated lines, and vapor-tight wall-to-ceiling transition.",
+      "domains": [
+        "warehouse",
+        "cold_storage",
+        "commercial",
+        "mep"
+      ],
+      "modes": [
+        "refrigeration",
+        "ceiling_detail",
+        "coordination"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for cold-storage ceiling insulation, refrigeration coordination, vapor-tight panel construction, and specialized warehouse build-out guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/cold-storage-evaporator-ceiling-detail.json"
+    },
+    {
+      "id": "cold-storage-insulated-threshold-detail",
+      "file": "generated/cold-storage-insulated-threshold-detail.png",
+      "origin": "generated",
+      "desc": "Insulated cold-storage door threshold with sealed panel base, protective curb detail, and smooth commercial floor transition.",
+      "domains": [
+        "warehouse",
+        "cold_storage",
+        "commercial",
+        "building_envelope"
+      ],
+      "modes": [
+        "door_detail",
+        "floor_transition",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for cold-storage doorway details, insulated panel bases, floor transitions, freezer and cooler fit-outs, and envelope coordination guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/cold-storage-insulated-threshold-detail.json"
+    },
+    {
+      "id": "warehouse-dock-leveler-pit-formed",
+      "file": "generated/warehouse-dock-leveler-pit-formed.png",
+      "origin": "generated",
+      "desc": "Empty warehouse loading dock with a dry formed concrete dock-leveler pit, embedded steel curb angles, control joints, and dock opening.",
+      "domains": [
+        "warehouse",
+        "commercial",
+        "concrete",
+        "loading_dock"
+      ],
+      "modes": [
+        "structural",
+        "concrete",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for dock-leveler pits, warehouse dock construction, formed concrete coordination, embedded steel, and industrial planning guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/warehouse-dock-leveler-pit-formed.json"
+    },
+    {
+      "id": "warehouse-dock-bumper-anchor-detail",
+      "file": "generated/warehouse-dock-bumper-anchor-detail.png",
+      "origin": "generated",
+      "desc": "Commercial dock face with heavy rubber bumpers on galvanized plates and visible anchor bolts at a concrete loading dock.",
+      "domains": [
+        "warehouse",
+        "commercial",
+        "loading_dock",
+        "concrete"
+      ],
+      "modes": [
+        "detail",
+        "hardware",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for dock bumper anchoring, loading dock hardware, concrete anchor details, warehouse operations, and industrial fit-out guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/warehouse-dock-bumper-anchor-detail.json"
+    },
+    {
+      "id": "second-story-addition-framing-tie-in",
+      "file": "generated/second-story-addition-framing-tie-in.png",
+      "origin": "generated",
+      "desc": "Florida second-story residential addition under wood framing with a tied-in existing stucco home, roof sheathing, and temporary weather protection.",
+      "domains": [
+        "residential",
+        "addition",
+        "structural_framing",
+        "renovation"
+      ],
+      "modes": [
+        "framing",
+        "addition",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for second-story additions, structural framing, residential expansion, roof tie-ins, construction planning, and Florida renovation guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/second-story-addition-framing-tie-in.json"
+    },
+    {
+      "id": "load-bearing-wall-temporary-shoring",
+      "file": "generated/load-bearing-wall-temporary-shoring.png",
+      "origin": "generated",
+      "desc": "Residential interior with an installed wood header, adjustable steel temporary support posts, opened framing, and protected floor during load-bearing wall work.",
+      "domains": [
+        "residential",
+        "structural_framing",
+        "renovation",
+        "engineering"
+      ],
+      "modes": [
+        "temporary_shoring",
+        "framing",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for load-bearing wall removal, temporary shoring, residential structural work, framing sequences, engineering coordination, and renovation safety guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/load-bearing-wall-temporary-shoring.json"
     }
   ]
 }

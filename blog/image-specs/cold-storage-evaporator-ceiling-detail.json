@@ -1,0 +1,10 @@
+{
+  "id": "cold-storage-evaporator-ceiling-detail",
+  "file": "generated/cold-storage-evaporator-ceiling-detail.png",
+  "desc": "Commercial cold-room ceiling assembly with insulated panels, refrigeration evaporator unit, supported insulated lines, and vapor-tight wall-to-ceiling transition.",
+  "domains": ["warehouse", "cold_storage", "commercial", "mep"],
+  "modes": ["refrigeration", "ceiling_detail", "coordination"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for cold-storage ceiling insulation, refrigeration coordination, vapor-tight panel construction, and specialized warehouse build-out guidance."
+}

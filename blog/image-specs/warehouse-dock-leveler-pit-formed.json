@@ -1,0 +1,10 @@
+{
+  "id": "warehouse-dock-leveler-pit-formed",
+  "file": "generated/warehouse-dock-leveler-pit-formed.png",
+  "desc": "Empty warehouse loading dock with a dry formed concrete dock-leveler pit, embedded steel curb angles, control joints, and dock opening.",
+  "domains": ["warehouse", "commercial", "concrete", "loading_dock"],
+  "modes": ["structural", "concrete", "planning"],
+  "visual_tone": "clean",
+  "messiness": "moderate",
+  "reuse_notes": "Use for dock-leveler pits, warehouse dock construction, formed concrete coordination, embedded steel, and industrial planning guidance."
+}

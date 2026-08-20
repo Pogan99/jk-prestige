@@ -1,0 +1,10 @@
+{
+  "id": "second-story-addition-framing-tie-in",
+  "file": "generated/second-story-addition-framing-tie-in.png",
+  "desc": "Florida second-story residential addition under wood framing with a tied-in existing stucco home, roof sheathing, and temporary weather protection.",
+  "domains": ["residential", "addition", "structural_framing", "renovation"],
+  "modes": ["framing", "addition", "planning"],
+  "visual_tone": "clean",
+  "messiness": "moderate",
+  "reuse_notes": "Use for second-story additions, structural framing, residential expansion, roof tie-ins, construction planning, and Florida renovation guidance."
+}

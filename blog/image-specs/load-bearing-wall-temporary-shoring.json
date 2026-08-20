@@ -1,0 +1,10 @@
+{
+  "id": "load-bearing-wall-temporary-shoring",
+  "file": "generated/load-bearing-wall-temporary-shoring.png",
+  "desc": "Residential interior with an installed wood header, adjustable steel temporary support posts, opened framing, and protected floor during load-bearing wall work.",
+  "domains": ["residential", "structural_framing", "renovation", "engineering"],
+  "modes": ["temporary_shoring", "framing", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "moderate",
+  "reuse_notes": "Use for load-bearing wall removal, temporary shoring, residential structural work, framing sequences, engineering coordination, and renovation safety guidance."
+}

@@ -1,0 +1,8 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the reviewed placement file.",
+  "figures": [
+    {"image": "load-bearing-wall-temporary-shoring", "alt": "Residential interior with wood header, adjustable steel temporary support posts, opened framing, and protected floor", "caption": "A load-bearing wall opening is a structural sequence. The load path, engineered header, temporary support, connections, and final framing need to be resolved before demolition begins.", "before": "<h2>First Question: Is It Actually Load-Bearing?</h2>"},
+    {"image": "second-generation-selective-demolition", "alt": "Commercial space under selective demolition with retained ceiling grid, opened partition bays, and controlled work areas", "caption": "Controlled demolition exposes existing conditions without getting ahead of the structural plan. Unknown utilities, framing, and interfaces can affect the final scope and price.", "before": "<h2>What Drives the Price Up</h2>"},
+    {"image": "renovation-permit-inspection-rough-in", "alt": "Renovation wall rough-in with organized framing, plumbing, electrical boxes, review folder, level, and tape measure", "caption": "Engineering, permits, and inspections are part of the wall-removal scope. They should be sequenced with the framing work instead of treated as paperwork after the opening is built.", "before": "<h2>The Permit and Engineering Process in Jacksonville</h2>"}
+  ]
+}

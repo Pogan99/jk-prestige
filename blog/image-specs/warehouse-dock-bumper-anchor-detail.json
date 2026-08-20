@@ -1,0 +1,10 @@
+{
+  "id": "warehouse-dock-bumper-anchor-detail",
+  "file": "generated/warehouse-dock-bumper-anchor-detail.png",
+  "desc": "Commercial dock face with heavy rubber bumpers on galvanized plates and visible anchor bolts at a concrete loading dock.",
+  "domains": ["warehouse", "commercial", "loading_dock", "concrete"],
+  "modes": ["detail", "hardware", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for dock bumper anchoring, loading dock hardware, concrete anchor details, warehouse operations, and industrial fit-out guidance."
+}
