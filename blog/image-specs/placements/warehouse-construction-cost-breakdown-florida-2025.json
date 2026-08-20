@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "tilt-up-panel-erection",
+      "alt": "Tilt-up concrete warehouse wall panel lifted by crane and stabilized with temporary braces",
+      "caption": "Tilt-up panel casting, lifting, bracing, connections, and finish requirements are distinct shell costs. They should be carried separately from roof framing, MEP, and tenant work.",
+      "before": "<h2>Base Project: 50,000 SF Tilt-Up Distribution Warehouse</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial planning table with abstract drawings and estimating tools",
+      "caption": "Use a defined scope and current site information to compare costs. A credible estimate separates shell work, tenant improvements, engineering, permitting, allowances, and contingency.",
+      "before": "<h2>Category 2: Building Shell</h2>"
+    },
+    {
+      "image": "warehouse-steel-frame-construction",
+      "alt": "High-bay warehouse shell with exposed steel frame, concrete slab, and dock doors",
+      "caption": "The base warehouse scope still includes structure, slab, docks, utilities, and clear height. Pricing only visible interior finishes leaves major shell and site items unaccounted for.",
+      "before": "<h2>Category 7: Soft Costs</h2>"
+    }
+  ]
+}

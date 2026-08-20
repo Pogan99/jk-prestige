@@ -1,0 +1,18 @@
+{
+  "id": "warehouse-office-mezzanine-guardrail",
+  "file": "generated/warehouse-office-mezzanine-guardrail.png",
+  "desc": "Warehouse office mezzanine with continuous guardrails, protected stairs, support columns, and enclosed office below.",
+  "domains": [
+    "commercial",
+    "warehouse",
+    "mezzanine",
+    "office_buildout"
+  ],
+  "modes": [
+    "construction",
+    "structure"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for warehouse office mezzanines, safe stairs, structural support, guardrails, and industrial build-outs."
+}

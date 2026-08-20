@@ -1,0 +1,18 @@
+{
+  "id": "tilt-up-panel-erection",
+  "file": "generated/tilt-up-panel-erection.png",
+  "desc": "Tilt-up concrete warehouse wall panel being lifted and temporarily braced on a Florida industrial site.",
+  "domains": [
+    "commercial",
+    "warehouse",
+    "tilt_up",
+    "preconstruction"
+  ],
+  "modes": [
+    "construction",
+    "structure"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for tilt-up warehouse shell costs, panel erection, structural sequencing, and industrial construction guidance."
+}

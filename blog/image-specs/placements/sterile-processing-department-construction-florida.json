@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "sterile-processing-zoned-buildout",
+      "alt": "Sterile processing build-out with separated cleanable work zones, pass-through opening, MEP rough-in, and floor drain",
+      "caption": "Sterile processing depends on separated workflow, cleanable finishes, coordinated utilities, and verified turnover. Those requirements need to be visible in the room before equipment and finishes lock the layout in.",
+      "before": "<h2>The Three Zones of Sterile Processing</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial planning workspace with drawings and coordination tools",
+      "caption": "Coordinate equipment, plumbing, electrical, HVAC, and inspection requirements before walls close. Specialized healthcare rooms leave little room for improvising after finishes are installed.",
+      "before": "<h2>MEP Complexity in SPD Construction</h2>"
+    },
+    {
+      "image": "healthcare-corridor-containment-renovation",
+      "alt": "Healthcare renovation containment beside organized MEP rough-in",
+      "caption": "Active-facility phasing protects the operational areas beside a specialized interior. The boundary, access path, and service coordination are part of the sterile-processing scope, not an afterthought.",
+      "before": "<h2>Common Design and Construction Mistakes in SPD Projects</h2>"
+    }
+  ]
+}

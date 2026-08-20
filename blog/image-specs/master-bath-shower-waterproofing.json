@@ -1,0 +1,10 @@
+{
+  "id": "master-bath-shower-waterproofing",
+  "file": "generated/master-bath-shower-waterproofing.png",
+  "desc": "Master-bath shower renovation at the waterproofing stage with sloped pan, bonded membrane, curb, drain, wall framing, and plumbing rough-in.",
+  "domains": ["bathroom", "waterproofing", "plumbing", "renovation", "interior_finish"],
+  "modes": ["installation", "inspection", "sequencing"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for shower waterproofing, master-bath renovation, shower-pan preparation, tile sequencing, and plumbing coordination. Generic editorial illustration; not evidence of a JK Prestige project."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "coastal-residential-site-layout",
+  "file": "generated/coastal-residential-site-layout.png",
+  "desc": "Coastal residential lot with survey stakes, string lines, graded house footprint, and mature vegetation.",
+  "domains": [
+    "residential",
+    "coastal",
+    "sitework",
+    "permitting"
+  ],
+  "modes": [
+    "site_planning",
+    "layout"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for coastal home site planning, setbacks, footprint layout, permit coordination, and buildable-envelope guidance."
+}

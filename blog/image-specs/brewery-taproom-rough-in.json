@@ -1,0 +1,10 @@
+{
+  "id": "brewery-taproom-rough-in",
+  "file": "generated/brewery-taproom-rough-in.png",
+  "desc": "Commercial taproom fit-out in progress with exposed brick, framed bar front, protected floor, plumbing rough-in, and ceiling services.",
+  "domains": ["commercial", "hospitality", "interior_finish", "plumbing", "electrical"],
+  "modes": ["fit_out", "coordination", "installation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for taproom, restaurant, hospitality, commercial fit-out, bar-plumbing, and adaptive-reuse construction guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "occupied-home-renovation-dust-barrier",
+      "alt": "Occupied home separated from renovation work by a zip-wall and protected floor route",
+      "caption": "An occupied renovation needs a deliberate plan for dust, access, daily cleanup, storage, and work sequencing. Living through construction is feasible only when the temporary conditions are treated as part of the scope.",
+      "before": "<h2>The Core Principle: Rooms Come Online, Not Off-Line</h2>"
+    },
+    {
+      "image": "master-bath-shower-waterproofing",
+      "alt": "Master-bath shower at waterproofing stage with pan, curb, membrane, and plumbing rough-in",
+      "caption": "Bathrooms demonstrate why renovation sequencing matters: rough-in, waterproofing, inspection, tile, and finish work cannot be collapsed into one convenient weekend.",
+      "before": "<h2>Phase-Based Sequencing for a Whole-House Renovation</h2>"
+    },
+    {
+      "image": "home-addition-roof-tie-in",
+      "alt": "Florida addition framing at a layered roof and wall connection",
+      "caption": "Whole-house work often exposes connections between old and new assemblies. Plan those interfaces early so weather protection and structural details are not delayed by finish decisions.",
+      "before": "<h2>Dust Containment in Occupied Renovation</h2>"
+    }
+  ]
+}

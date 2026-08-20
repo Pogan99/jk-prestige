@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "historic-window-sill-repair",
+      "alt": "Historic wood double-hung window with a removed lower sash and localized sill repair condition",
+      "caption": "Start by distinguishing repairable sash and sill deterioration from a full replacement need. Preservation work is scope-sensitive: the correct answer depends on water path, wood condition, operation, and historic character.",
+      "before": "<h2>Why Windows Are a Defining Feature in Historic Preservation Review</h2>"
+    },
+    {
+      "image": "exterior-window-flashing-sill-membrane",
+      "alt": "Window opening with sill flashing membrane formed into a drainage pan",
+      "caption": "If replacement or major repair is required, give the opening a reliable drainage strategy. New or restored windows still depend on the sill and flashing details around them.",
+      "before": "<h2>What Self-Perform Framing Changes on Window Replacement Projects</h2>"
+    },
+    {
+      "image": "exterior-window-brickmould-trim",
+      "alt": "Finished exterior window trim with a sloped sill and narrow caulk joint",
+      "caption": "Finish trim and sealant should direct water outward without trapping it. The visible exterior joint is only the last layer of the window's water-management assembly.",
+      "before": "<h2>Exterior Trim and Casing: The Finishing Detail That Matters</h2>"
+    }
+  ]
+}

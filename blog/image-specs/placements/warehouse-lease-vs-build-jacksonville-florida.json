@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "warehouse-steel-frame-construction",
+      "alt": "Empty high-bay warehouse shell with steel frame, dock doors, and concrete floor",
+      "caption": "Lease-versus-build starts with the operating requirements: clear height, docks, power, site circulation, office area, and expansion. A generic square-foot comparison misses the features that determine usability.",
+      "before": "<h2>The Jacksonville Industrial Market Context</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial preconstruction table with abstract plan sheets and cost-planning tools",
+      "caption": "Compare the real constraints, costs, timeline, and control of each option before deciding. A well-defined needs list makes the financial comparison more credible.",
+      "before": "<h2>What Ground-Up Warehouse Construction Costs in Northeast Florida</h2>"
+    },
+    {
+      "image": "warehouse-feasibility-massing-model",
+      "alt": "Physical warehouse massing model with generic loading bays, blank plans, material sample, and calculator",
+      "caption": "A retained developer or owner needs to compare requirements before deciding whether to lease or build. Clear height, docks, circulation, expansion, cost, and schedule belong in the feasibility work, not in a generic square-foot comparison.",
+      "before": "<h2>The Hybrid Option: Design-Build with a Retained Developer</h2>"
+    }
+  ]
+}

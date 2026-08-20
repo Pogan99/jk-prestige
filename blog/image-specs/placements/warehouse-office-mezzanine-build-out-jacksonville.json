@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "warehouse-office-mezzanine-guardrail",
+      "alt": "Warehouse office mezzanine with continuous guardrails, protected stairs, support columns, and enclosed office below",
+      "caption": "An office mezzanine is a structural and circulation project: load path, deck, stairs, guardrails, support bases, utilities, and office enclosure all need to be resolved as one package.",
+      "before": "<h2>Why a Mezzanine Is the Right Answer for Most Warehouses</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial planning workspace with plans, laptop, hardhat, and estimating tools",
+      "caption": "Coordinate code, structural support, stairs, utilities, office layout, and permits as one package. A mezzanine adds multiple scopes that need to be resolved before fabrication.",
+      "before": "<h2>The Construction Sequence</h2>"
+    },
+    {
+      "image": "warehouse-floor-flatness-check",
+      "alt": "Warehouse floor condition inspected with a laser level and straightedge",
+      "caption": "Review the slab and base conditions where new supports, equipment, and partitions may land. The office build-out has to respect the industrial floor and operating environment below it.",
+      "before": "<h2>How JK Structures the Contract</h2>"
+    }
+  ]
+}

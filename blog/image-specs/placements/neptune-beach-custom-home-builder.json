@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "coastal-residential-site-layout",
+      "alt": "Coastal residential lot laid out with survey stakes, string lines, graded footprint, and mature vegetation",
+      "caption": "A coastal custom home starts with the buildable envelope. Survey layout, setbacks, drainage, and the house footprint need to be understood before a permit set can be treated as complete.",
+      "before": "<h2>Neptune Beach Lot Sizes and What They Allow</h2>"
+    },
+    {
+      "image": "coastal-home-elevated-foundation",
+      "alt": "Coastal Florida home framing on a raised foundation with roof trusses and graded sandy lot",
+      "caption": "Coastal construction needs the foundation, roof structure, site drainage, and exposure conditions to work together before finishes make the project look complete.",
+      "before": "<h2>Construction Cost in Neptune Beach</h2>"
+    },
+    {
+      "image": "hurricane-shutter-panel-system",
+      "alt": "Closed aluminum hurricane-shutter panel system at a Florida residential window",
+      "caption": "Opening protection and exterior detailing should be planned with the home's architecture rather than added as an emergency accessory. Every window and door needs an opening-specific strategy.",
+      "before": "<h2>The Neptune Beach Permit Process</h2>"
+    }
+  ]
+}

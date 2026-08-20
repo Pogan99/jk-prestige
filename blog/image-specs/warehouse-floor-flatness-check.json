@@ -1,0 +1,10 @@
+{
+  "id": "warehouse-floor-flatness-check",
+  "file": "generated/warehouse-floor-flatness-check.png",
+  "desc": "Industrial warehouse concrete slab checked with a tripod laser level and straightedge across a normal localized floor joint elevation difference.",
+  "domains": ["commercial", "warehouse", "concrete", "racking_systems"],
+  "modes": ["inspection", "layout", "diagnosis"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for warehouse floor flatness, racking layout, concrete-joint evaluation, anchor planning, and industrial-build-out guidance. This is a controlled inspection condition, not evidence of a JK Prestige project."
+}

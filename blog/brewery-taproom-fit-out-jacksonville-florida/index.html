@@ -111,6 +111,20 @@
       .article-body h2 { font-size: 1.25rem; }
     }
   </style>
+
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:image" content="https://jkprestigeconstruction.com/assets/blog-media/brewery-taproom-rough-in-1600.jpg">
+<meta property="og:image:alt" content="Brick commercial taproom under construction with framed bar, plumbing, and ceiling services">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://jkprestigeconstruction.com/assets/blog-media/brewery-taproom-rough-in-1600.jpg">
+<meta name="twitter:image:alt" content="Brick commercial taproom under construction with framed bar, plumbing, and ceiling services">
+<script id="article-lead-image-schema" type="application/ld+json">{"@context": "https://schema.org", "@type": "ImageObject", "contentUrl": "https://jkprestigeconstruction.com/assets/blog-media/brewery-taproom-rough-in-1600.jpg", "name": "Brick commercial taproom under construction with framed bar, plumbing, and ceiling services", "caption": "A taproom fit-out has to coordinate the bar, plumbing, electrical, ventilation, floor protection, and finish sequence. The visible room comes together only after those systems have a workable route.", "width": 1600, "height": 900, "encodingFormat": "image/jpeg", "representativeOfPage": true, "contentLocation": {"@type": "Place", "name": "Jacksonville, Florida"}}</script>
 </head>
 <body>
 
@@ -152,17 +166,33 @@
 <p><strong>Taproom zone:</strong> Where beer is served to guests. This is a food service and assembly occupancy — bar construction, ADA compliance, restrooms sized for the occupancy load, seating, and a ventilation system appropriate for an occupied space.</p>
 <p>The Florida Division of Alcoholic Beverages and Tobacco (ABT) licenses both zones under the brewery license, but the construction must meet the requirements of both occupancy types. The building permit application must correctly classify the occupancy (typically B or F-2 for production, A-2 for the taproom assembly area) and the plans must show the required egress, restroom counts, and accessibility features for each.</p>
 <style id="post-figure-css">
-.post-figure { margin: 32px 0; }
-.post-figure img { width: 100%; height: auto; display: block; border-radius: 6px; background: #eef1f6; }
-.post-figure figcaption { font-size: 0.88rem; color: #5b6070; line-height: 1.5; margin-top: 10px; padding-left: 12px; border-left: 3px solid #B10C2A; }
+/* Reviewed editorial media system. Image subjects are illustrative, not job claims. */
+.post-figure { margin: clamp(2.25rem, 5vw, 4.5rem) 0; }
+.post-figure img { width: 100%; aspect-ratio: 16 / 9; height: auto; object-fit: cover; display: block; border: 1px solid #e3e7ed; border-radius: 12px; background: #eef1f6; box-shadow: 0 18px 42px rgba(24, 30, 44, .12); }
+.post-figure figcaption { max-width: 46rem; color: #596174; font-size: .91rem; line-height: 1.55; margin: 13px auto 0; padding: 0 0 0 14px; border-left: 2px solid #b10c2a; }
+.post-figure-kicker { display: block; color: #7b3142; font-size: .67rem; font-weight: 800; letter-spacing: .12em; line-height: 1.2; margin-bottom: 4px; text-transform: uppercase; }
+.post-figure--lead { margin-top: clamp(1.75rem, 4vw, 3.25rem); }
+.post-figure--lead img { border-radius: 14px; box-shadow: 0 22px 50px rgba(24, 30, 44, .16); }
+.post-figure--lead figcaption { color: #4d5668; }
+.post-figure--diagnostic img { border-color: #d6b7a8; }
+.post-figure--diagnostic figcaption { border-left-color: #9c4a2b; }
+@media (min-width: 900px) {
+  .post-figure--lead { width: calc(100% + 8rem); margin-left: -4rem; }
+  .post-figure--lead figcaption { padding-left: 0; border-left: 0; }
+}
+@media (max-width: 640px) {
+  .post-figure { margin: 2.25rem 0; }
+  .post-figure img { border-radius: 9px; }
+  .post-figure figcaption { font-size: .86rem; }
+}
 </style>
-<figure class="post-figure">
-  <img src="/assets/blog-media/commercial-corridor-framing-1600.jpg"
-       srcset="/assets/blog-media/commercial-corridor-framing-800.jpg 800w, /assets/blog-media/commercial-corridor-framing-1600.jpg 1600w"
-       sizes="(max-width: 840px) 100vw, 800px"
-       width="1600" height="900" loading="lazy" decoding="async"
-       alt="Commercial interior framing and overhead work in an active fit-out">
-  <figcaption>The production side of a brewery fit-out is an industrial process space, so drains, utilities, ventilation, and equipment clearances must be coordinated before finishes close the walls.</figcaption>
+<figure class="post-figure post-figure--lead" data-image-id="brewery-taproom-rough-in" data-origin="generated" data-claim-risk="low">
+  <img src="/assets/blog-media/brewery-taproom-rough-in-1600.jpg"
+       srcset="/assets/blog-media/brewery-taproom-rough-in-800.jpg 800w, /assets/blog-media/brewery-taproom-rough-in-1600.jpg 1600w"
+       sizes="(max-width: 840px) 100vw, 920px"
+       width="1600" height="900" loading="eager" decoding="async" fetchpriority="high"
+       alt="Brick commercial taproom under construction with framed bar, plumbing, and ceiling services">
+  <figcaption><span class="post-figure-kicker">Editorial illustration</span>A taproom fit-out has to coordinate the bar, plumbing, electrical, ventilation, floor protection, and finish sequence. The visible room comes together only after those systems have a workable route.</figcaption>
 </figure>
 
 <h2>Production Zone Construction Requirements</h2>
@@ -189,13 +219,19 @@
 <p>Natural ventilation through wall louvers or roll-up doors is sometimes used in Florida's climate for smaller production facilities, but a mechanical system with CO2 monitoring is the standard for permitted production facilities.</p>
 <h3>Gas Service</h3>
 <p>Gas-fired brewing systems (steam or direct-fire) require gas service sized for the peak BTU load of all connected equipment. A 10-barrel brewhouse may require 2,500,000 BTU per hour of gas service. JK coordinates gas service sizing with FPL/Peoples Gas and the plumbing engineer during pre-construction.</p>
-<figure class="post-figure">
-  <img src="/assets/blog-media/taproom-interior-brick-1600.jpg"
-       srcset="/assets/blog-media/taproom-interior-brick-800.jpg 800w, /assets/blog-media/taproom-interior-brick-1600.jpg 1600w"
-       sizes="(max-width: 840px) 100vw, 800px"
+
+
+
+
+
+
+<figure class="post-figure" data-image-id="brewery-production-trench-drain" data-origin="generated" data-claim-risk="low">
+  <img src="/assets/blog-media/brewery-production-trench-drain-1600.jpg"
+       srcset="/assets/blog-media/brewery-production-trench-drain-800.jpg 800w, /assets/blog-media/brewery-production-trench-drain-1600.jpg 1600w"
+       sizes="(max-width: 840px) 100vw, 760px"
        width="1600" height="900" loading="lazy" decoding="async"
-       alt="Brick-walled taproom interior with bar seating and pendant lighting">
-  <figcaption>A taproom combines guest circulation, bar service, accessible routes, restrooms, and finish durability in one occupied commercial zone.</figcaption>
+       alt="Brewery production room with sealed floor, linear trench drain, equipment pad, and plumbing rough-in">
+  <figcaption><span class="post-figure-kicker">Editorial illustration</span>Brewery production depends on a floor that can handle cleaning water. Drain location, slope, durable finishes, and equipment-pad coordination need to be resolved before brewing equipment arrives.</figcaption>
 </figure>
 
 <h2>Taproom Zone Construction Requirements</h2>
@@ -207,13 +243,19 @@
 <h3>Bar Construction</h3>
 <p>JK self-performs finish carpentry, which means the bar, back bar, and millwork are built by our own crew — not brokered to a casework sub we have never worked with before. This matters because bar builds on brewery projects often involve custom dimensions, integrated draft beer tap systems, and plumbing coordination that a finish carpenter who has not seen the tap system rough-in drawing will get wrong.</p>
 <p>JK reviews the draft beer system equipment layout during pre-construction and coordinates bar rough-in dimensions with the draught system supplier.</p>
-<figure class="post-figure">
-  <img src="/assets/blog-media/planning-board-trailer-1600.jpg"
-       srcset="/assets/blog-media/planning-board-trailer-800.jpg 800w, /assets/blog-media/planning-board-trailer-1600.jpg 1600w"
-       sizes="(max-width: 840px) 100vw, 800px"
+
+
+
+
+
+
+<figure class="post-figure" data-image-id="commercial-accessible-restroom-rough-in" data-origin="generated" data-claim-risk="low">
+  <img src="/assets/blog-media/commercial-accessible-restroom-rough-in-1600.jpg"
+       srcset="/assets/blog-media/commercial-accessible-restroom-rough-in-800.jpg 800w, /assets/blog-media/commercial-accessible-restroom-rough-in-1600.jpg 1600w"
+       sizes="(max-width: 840px) 100vw, 760px"
        width="1600" height="900" loading="lazy" decoding="async"
-       alt="Construction planning board and drawing set arranged beside a site trailer">
-  <figcaption>The permit path crosses building, plumbing, electrical, mechanical, fire protection, health, and beverage licensing reviews, so the approval sequence belongs in the fit-out schedule.</figcaption>
+       alt="Commercial accessible-restroom rough-in with fixture backing, plumbing connections, and clear floor area">
+  <figcaption><span class="post-figure-kicker">Editorial illustration</span>Taproom occupancy affects restroom capacity, routes, and fixture layout. Accessibility is most reliable when the required room geometry and rough-in are coordinated before finishes close the walls.</figcaption>
 </figure>
 
 <h2>Permitting: What to Expect in Jacksonville</h2>

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial planning workspace with abstract drawings, laptop, and hardhat",
+      "caption": "A useful submittal and RFI process turns unanswered field questions into tracked decisions. The objective is to resolve details before they become change orders or rework.",
+      "before": "<h2>What Submittals Are Required from a Framing or Drywall Sub</h2>"
+    },
+    {
+      "image": "brewery-taproom-rough-in",
+      "alt": "Commercial fit-out with bar framing and coordinated plumbing and electrical rough-in",
+      "caption": "Complex interiors show why coordination matters: equipment, plumbing, electrical, and finishes all compete for the same space. RFIs should clarify the intended assembly before trades build past the conflict.",
+      "before": "<h2>Submittal Schedule: How JK Manages It</h2>"
+    },
+    {
+      "image": "home-addition-roof-tie-in",
+      "alt": "Addition roof tie-in with visible flashing and framing coordination",
+      "caption": "Interfaces between new and existing construction are especially sensitive to incomplete information. Detail approvals should protect the water, structure, and finish sequence before work proceeds.",
+      "before": "<h2>What Happens When Submittals Are Late (From Any Party)</h2>"
+    }
+  ]
+}

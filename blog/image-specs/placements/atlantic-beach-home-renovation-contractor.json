@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Preconstruction table with abstract plans, measuring tools, and coordinated project materials",
+      "caption": "A renovation permit path starts with a defined scope, existing conditions, and coordinated drawings. Good planning reduces late revisions once field work exposes the actual assembly.",
+      "before": "<h2>The Atlantic Beach Building Department</h2>"
+    },
+    {
+      "image": "historic-window-sill-repair",
+      "alt": "Historic-style wood window under localized sill repair assessment",
+      "caption": "Coastal renovation often begins with an honest assessment of water-exposed details. Repair scope should follow the actual condition of the window, trim, and surrounding assembly.",
+      "before": "<h2>What Renovation Projects Are Most Common in Atlantic Beach</h2>"
+    },
+    {
+      "image": "home-addition-roof-tie-in",
+      "alt": "Florida addition framing connected to existing stucco wall and roof flashing",
+      "caption": "When the renovation reaches an exterior connection, roof and wall integration becomes a technical project, not just an interior finish upgrade.",
+      "before": "<h2>What to Expect from a Fixed-Price Renovation Estimate</h2>"
+    }
+  ]
+}

@@ -121,6 +121,8 @@ def is_approved_generated(im):
         and im.get("source") == "codex_imagegen"
         and im.get("approved_for_blog") is True
         and im.get("asset_status", "active") == "active"
+        and im.get("metadata_stripped") is True
+        and im.get("quality_review") == "approved"
     )
 
 

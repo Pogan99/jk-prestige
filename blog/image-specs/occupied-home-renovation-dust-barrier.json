@@ -1,0 +1,10 @@
+{
+  "id": "occupied-home-renovation-dust-barrier",
+  "file": "generated/occupied-home-renovation-dust-barrier.png",
+  "desc": "Occupied home with a temporary zip-wall work-zone barrier, floor-protection route, intact adjacent rooms, and a neatly staged closed tool tote.",
+  "domains": ["renovation", "project_management", "interior_finish", "residential"],
+  "modes": ["phased_construction", "containment", "planning"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for occupied-home renovation, dust containment, phased construction, homeowner planning, and work-zone protection guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

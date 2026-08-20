@@ -1,0 +1,18 @@
+{
+  "id": "commercial-accessible-restroom-rough-in",
+  "file": "generated/commercial-accessible-restroom-rough-in.png",
+  "desc": "Commercial accessible-restroom rough-in with clear floor area, fixture backing, and plumbing connections.",
+  "domains": [
+    "commercial",
+    "accessibility",
+    "plumbing",
+    "fit_out"
+  ],
+  "modes": [
+    "rough_in",
+    "code_coordination"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for commercial restroom capacity, accessibility coordination, rough-in, and tenant fit-out guidance."
+}

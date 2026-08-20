@@ -1,0 +1,18 @@
+{
+  "id": "home-addition-foundation-hvac-tie-in",
+  "file": "generated/home-addition-foundation-hvac-tie-in.png",
+  "desc": "Florida room addition showing new slab, plumbing stubs, framing, HVAC connection, and existing-home tie-in.",
+  "domains": [
+    "residential",
+    "addition",
+    "foundation",
+    "hvac"
+  ],
+  "modes": [
+    "construction",
+    "rough_in"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for room additions, foundation tie-ins, HVAC extensions, residential scheduling, and permit-scope guidance."
+}

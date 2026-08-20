@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "multi-tenant-industrial-shell-drainage",
+      "alt": "Tilt-up multi-tenant industrial shell with dock openings, demising framing bay, pavement, and stormwater inlet",
+      "caption": "Multi-tenant industrial work needs a shell that can accommodate demising, docks, service distribution, tenant delivery, and site drainage. Early flexibility is designed into both the building and civil work.",
+      "before": "<h2>Site Planning Considerations That Affect Construction Cost</h2>"
+    },
+    {
+      "image": "tilt-up-panel-erection",
+      "alt": "Tilt-up concrete warehouse wall panel lifted and temporarily braced during shell construction",
+      "caption": "Panel erection, connections, and structural sequencing establish the shell that future tenant areas inherit. Those decisions need to anticipate how the building will be divided and served.",
+      "before": "<h2>Tilt-Up Shell Construction for Multi-Tenant Parks</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial planning workspace with drawings and estimating tools",
+      "caption": "Coordinate common areas, tenant interfaces, permit sequencing, and utility responsibility before construction locks in the wrong assumptions.",
+      "before": "<h2>The Tenant Delivery Sequence</h2>"
+    }
+  ]
+}

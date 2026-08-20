@@ -1,0 +1,18 @@
+{
+  "id": "flat-roof-primary-emergency-scupper",
+  "file": "generated/flat-roof-primary-emergency-scupper.png",
+  "desc": "TPO roof parapet with separate lower primary scupper and higher emergency-overflow scupper.",
+  "domains": [
+    "commercial",
+    "roofing",
+    "drainage",
+    "scupper"
+  ],
+  "modes": [
+    "detail",
+    "inspection"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for primary and secondary roof drainage, scuppers, parapets, and reroofing guidance."
+}

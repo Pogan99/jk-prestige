@@ -1,0 +1,10 @@
+{
+  "id": "warehouse-steel-frame-construction",
+  "file": "generated/warehouse-steel-frame-construction.png",
+  "desc": "Empty high-bay warehouse shell with exposed steel framing, dock doors, concrete slab, demising opening, and early MEP rough-in.",
+  "domains": ["commercial", "warehouse", "industrial", "structural_framing"],
+  "modes": ["new_construction", "planning", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for warehouse construction, industrial shell planning, lease-versus-build, warehouse office build-outs, and commercial GC articles. Generic editorial illustration; not evidence of a JK Prestige project."
+}

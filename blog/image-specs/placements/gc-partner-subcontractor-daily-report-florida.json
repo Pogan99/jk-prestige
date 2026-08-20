@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial coordination table with plans, clipboard, and laptop",
+      "caption": "A daily report should connect work performed, manpower, deliveries, decisions, and constraints to the actual plan. Useful reporting makes a developing problem visible while it can still be managed.",
+      "before": "<h2>What a Useful Daily Report Must Contain</h2>"
+    },
+    {
+      "image": "healthcare-corridor-containment-renovation",
+      "alt": "Temporary containment wall protecting an active facility corridor",
+      "caption": "Phased sites make daily reporting essential because access, containment, and operational constraints change the work plan from one shift to the next.",
+      "before": "<h2>What Most Trade Subs Send vs. What JK Sends</h2>"
+    },
+    {
+      "image": "home-addition-roof-tie-in",
+      "alt": "New addition framing and roof tie-in meeting an existing stucco home",
+      "caption": "Record weather protection, inspections, and interface work as it happens. Once a connection is covered, the project needs a clear record of how it was assembled.",
+      "before": "<h2>How Daily Reports Affect Schedule and Cost Management</h2>"
+    }
+  ]
+}

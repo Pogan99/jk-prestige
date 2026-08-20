@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "warehouse-floor-flatness-check",
+      "alt": "Concrete warehouse floor checked with a laser level and straightedge across a joint",
+      "caption": "Racking layout begins with verified floor condition, flatness, joints, and anchor strategy. A subtle elevation change can matter when tall storage systems and precise aisles are planned.",
+      "before": "<h2>Why the Slab and the Rack System Are Not Separate Decisions</h2>"
+    },
+    {
+      "image": "warehouse-rack-anchor-slab-interface",
+      "alt": "Warehouse rack upright base plate with anchor bolts, shims, concrete joint, and straightedge",
+      "caption": "Racking anchors, base plates, shims, joints, and slab tolerance have to work together. The rack plan should be based on verified floor performance, not an idealized slab drawing.",
+      "before": "<h2>When the Slab Is Already Poured (What to Do)</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial planning table with drawings and coordination tools",
+      "caption": "Use a coordinated specification for loads, anchors, aisle widths, equipment, and inspection. Those decisions cross structural, operational, and safety requirements.",
+      "before": "<h2>What JK Delivers</h2>"
+    }
+  ]
+}

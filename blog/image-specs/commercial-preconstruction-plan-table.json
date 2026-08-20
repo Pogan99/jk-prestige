@@ -1,0 +1,10 @@
+{
+  "id": "commercial-preconstruction-plan-table",
+  "file": "generated/commercial-preconstruction-plan-table.png",
+  "desc": "Commercial preconstruction worktable in a jobsite trailer with abstract plan sheets, a ruler, color swatches, blank clipboard, laptop, and hardhat.",
+  "domains": ["commercial", "preconstruction", "project_management", "residential"],
+  "modes": ["planning", "coordination", "estimation"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for preconstruction, RFI/submittal coordination, estimating, bidding, GC-partner expectations, and construction-planning guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

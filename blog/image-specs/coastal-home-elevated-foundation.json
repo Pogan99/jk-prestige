@@ -1,0 +1,18 @@
+{
+  "id": "coastal-home-elevated-foundation",
+  "file": "generated/coastal-home-elevated-foundation.png",
+  "desc": "Coastal Florida custom home framing on a raised foundation with roof trusses and graded sandy lot.",
+  "domains": [
+    "residential",
+    "coastal",
+    "custom_home",
+    "foundation"
+  ],
+  "modes": [
+    "construction",
+    "site_planning"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for coastal custom-home planning, elevated foundations, roof framing, drainage, and buildable-envelope guidance."
+}

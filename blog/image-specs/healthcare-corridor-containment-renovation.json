@@ -1,0 +1,10 @@
+{
+  "id": "healthcare-corridor-containment-renovation",
+  "file": "generated/healthcare-corridor-containment-renovation.png",
+  "desc": "Clean active-facility corridor protected by a temporary containment wall and zipper door beside organized MEP rough-in.",
+  "domains": ["commercial", "healthcare", "renovation", "project_management"],
+  "modes": ["phased_construction", "containment", "coordination"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for active-facility renovation, infection-control coordination, corridor phasing, sterile-processing build-outs, and commercial project-management guidance. Generic editorial illustration; not evidence of a JK Prestige project."
+}

@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "site-grading-stormwater-basin",
+      "alt": "Raised commercial building pad beside a stormwater basin, swale, culvert inlet, and erosion-control fence",
+      "caption": "Flood-zone diligence is not abstract: confirm the building pad elevation, finished grades, drainage path, and stormwater approach before the site plan is fixed.",
+      "before": "<h2>2. Flood Zones Are Not Uniform Across the Westside</h2>"
+    },
+    {
+      "image": "warehouse-steel-frame-construction",
+      "alt": "High-bay warehouse shell with steel structure, concrete slab, and dock doors",
+      "caption": "Industrial zoning still has a practical envelope. Setbacks, buffers, impervious area, utilities, access, and the intended use have to work together before a warehouse site becomes buildable.",
+      "before": "<h2>3. Westside Industrial Zoning Is Favorable for Warehouse and Light Industrial</h2>"
+    },
+    {
+      "image": "commercial-driveway-access-layout",
+      "alt": "Commercial driveway throat and curb layout joining a prepared site to a wide arterial corridor",
+      "caption": "Driveway access on a controlled corridor needs to be considered with site circulation and civil work, early enough that the permit path does not force a late redesign.",
+      "before": "<h2>4. Blanding Boulevard Is a DOT Corridor \u2014 Access Is Controlled</h2>"
+    }
+  ]
+}

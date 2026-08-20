@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial planning workspace with abstract plans and estimating tools",
+      "caption": "Bonding and qualification start with a defined scope, responsible parties, and documentation that can be reviewed. Good paperwork reflects real capacity rather than a generic promise.",
+      "before": "<h2>What Bonds Actually Do</h2>"
+    },
+    {
+      "image": "warehouse-steel-frame-construction",
+      "alt": "High-bay warehouse shell with steel frame and concrete slab",
+      "caption": "Larger commercial work combines structure, schedule, and trade coordination. A subcontractor's package should make its exclusions, interfaces, and manpower plan clear before work is awarded.",
+      "before": "<h2>When JK Requires Bonds from Trade Subs</h2>"
+    },
+    {
+      "image": "home-addition-roof-tie-in",
+      "alt": "Residential addition framing and roof tie-in at an existing wall",
+      "caption": "Even smaller scopes have consequential interfaces. Clear responsibility for framing, flashing, permits, and inspection protects the owner and the trade partner alike.",
+      "before": "<h2>How Bonding Interacts with Subcontract Language</h2>"
+    }
+  ]
+}

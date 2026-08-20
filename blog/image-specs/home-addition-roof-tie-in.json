@@ -1,0 +1,10 @@
+{
+  "id": "home-addition-roof-tie-in",
+  "file": "generated/home-addition-roof-tie-in.png",
+  "desc": "Florida residential addition framed against an existing stucco home, with roof sheathing, new wall framing, a window opening, and layered roof tie-in flashing.",
+  "domains": ["home_addition", "structural_framing", "roofing", "exterior_envelope", "residential"],
+  "modes": ["new_construction", "planning", "inspection"],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for home additions, roof tie-ins, framing, Orange Park/Beaches renovation context, custom-home planning, and exterior-envelope coordination. Generic editorial illustration; not evidence of a JK Prestige project."
+}

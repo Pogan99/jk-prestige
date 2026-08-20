@@ -1,0 +1,18 @@
+{
+  "id": "commercial-driveway-access-layout",
+  "file": "generated/commercial-driveway-access-layout.png",
+  "desc": "Commercial driveway throat and curb layout connecting a prepared site to a Florida arterial corridor.",
+  "domains": [
+    "commercial",
+    "sitework",
+    "access",
+    "permitting"
+  ],
+  "modes": [
+    "site_planning",
+    "civil"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for controlled access, driveway permits, site circulation, civil coordination, and commercial due diligence."
+}

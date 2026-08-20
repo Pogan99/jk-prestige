@@ -1,0 +1,18 @@
+{
+  "id": "brewery-production-trench-drain",
+  "file": "generated/brewery-production-trench-drain.png",
+  "desc": "Commercial brewery production room with sealed floor, linear trench drain, equipment pad, and plumbing rough-in.",
+  "domains": [
+    "commercial",
+    "brewery",
+    "plumbing",
+    "drainage"
+  ],
+  "modes": [
+    "fit_out",
+    "construction"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for brewery production zones, trench drains, sanitary finishes, floor slopes, and utility coordination."
+}

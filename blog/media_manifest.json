@@ -5520,6 +5520,774 @@
       "quality_review": "approved",
       "reuse_notes": "Use for horizontal sliding-window replacement, track and roller inspection, sash removal, and window-maintenance planning. Generic editorial illustration; not evidence of a JK Prestige project.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/sliding-window-track-sash-detail.json"
+    },
+    {
+      "id": "commercial-preconstruction-plan-table",
+      "file": "generated/commercial-preconstruction-plan-table.png",
+      "origin": "generated",
+      "desc": "Commercial preconstruction worktable in a jobsite trailer with abstract plan sheets, a ruler, color swatches, blank clipboard, laptop, and hardhat.",
+      "domains": [
+        "commercial",
+        "preconstruction",
+        "project_management",
+        "residential"
+      ],
+      "modes": [
+        "planning",
+        "coordination",
+        "estimation"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for preconstruction, RFI/submittal coordination, estimating, bidding, GC-partner expectations, and construction-planning guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/commercial-preconstruction-plan-table.json"
+    },
+    {
+      "id": "warehouse-steel-frame-construction",
+      "file": "generated/warehouse-steel-frame-construction.png",
+      "origin": "generated",
+      "desc": "Empty high-bay warehouse shell with exposed steel framing, dock doors, concrete slab, demising opening, and early MEP rough-in.",
+      "domains": [
+        "commercial",
+        "warehouse",
+        "industrial",
+        "structural_framing"
+      ],
+      "modes": [
+        "new_construction",
+        "planning",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for warehouse construction, industrial shell planning, lease-versus-build, warehouse office build-outs, and commercial GC articles. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/warehouse-steel-frame-construction.json"
+    },
+    {
+      "id": "flat-roof-scupper-drainage-detail",
+      "file": "generated/flat-roof-scupper-drainage-detail.png",
+      "origin": "generated",
+      "desc": "Low-slope commercial roof parapet with a flashed metal scupper, TPO membrane, and a small contained leaf accumulation at the drainage opening.",
+      "domains": [
+        "commercial",
+        "roofing",
+        "drainage",
+        "exterior_envelope"
+      ],
+      "modes": [
+        "inspection",
+        "maintenance",
+        "diagnosis"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "diagnostic",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for scuppers, low-slope roof drainage, TPO detailing, roof-maintenance planning, and contained drainage-condition guidance. This is a controlled maintenance condition, not an emergency or evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/flat-roof-scupper-drainage-detail.json"
+    },
+    {
+      "id": "healthcare-corridor-containment-renovation",
+      "file": "generated/healthcare-corridor-containment-renovation.png",
+      "origin": "generated",
+      "desc": "Clean active-facility corridor protected by a temporary containment wall and zipper door beside organized MEP rough-in.",
+      "domains": [
+        "commercial",
+        "healthcare",
+        "renovation",
+        "project_management"
+      ],
+      "modes": [
+        "phased_construction",
+        "containment",
+        "coordination"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for active-facility renovation, infection-control coordination, corridor phasing, sterile-processing build-outs, and commercial project-management guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/healthcare-corridor-containment-renovation.json"
+    },
+    {
+      "id": "brewery-taproom-rough-in",
+      "file": "generated/brewery-taproom-rough-in.png",
+      "origin": "generated",
+      "desc": "Commercial taproom fit-out in progress with exposed brick, framed bar front, protected floor, plumbing rough-in, and ceiling services.",
+      "domains": [
+        "commercial",
+        "hospitality",
+        "interior_finish",
+        "plumbing",
+        "electrical"
+      ],
+      "modes": [
+        "fit_out",
+        "coordination",
+        "installation"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for taproom, restaurant, hospitality, commercial fit-out, bar-plumbing, and adaptive-reuse construction guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/brewery-taproom-rough-in.json"
+    },
+    {
+      "id": "master-bath-shower-waterproofing",
+      "file": "generated/master-bath-shower-waterproofing.png",
+      "origin": "generated",
+      "desc": "Master-bath shower renovation at the waterproofing stage with sloped pan, bonded membrane, curb, drain, wall framing, and plumbing rough-in.",
+      "domains": [
+        "bathroom",
+        "waterproofing",
+        "plumbing",
+        "renovation",
+        "interior_finish"
+      ],
+      "modes": [
+        "installation",
+        "inspection",
+        "sequencing"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for shower waterproofing, master-bath renovation, shower-pan preparation, tile sequencing, and plumbing coordination. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/master-bath-shower-waterproofing.json"
+    },
+    {
+      "id": "historic-window-sill-repair",
+      "file": "generated/historic-window-sill-repair.png",
+      "origin": "generated",
+      "desc": "Historic painted wood double-hung window under careful repair, with a removed lower sash and localized moisture-softened lower sill wood being evaluated.",
+      "domains": [
+        "doors_windows",
+        "historic_renovation",
+        "exterior_envelope",
+        "carpentry"
+      ],
+      "modes": [
+        "inspection",
+        "repair_planning",
+        "diagnosis"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "diagnostic",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for historic-window restoration, wood-sill repair, sash planning, localized moisture assessment, and window-replacement scope guidance. This is a controlled repair condition, not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/historic-window-sill-repair.json"
+    },
+    {
+      "id": "occupied-home-renovation-dust-barrier",
+      "file": "generated/occupied-home-renovation-dust-barrier.png",
+      "origin": "generated",
+      "desc": "Occupied home with a temporary zip-wall work-zone barrier, floor-protection route, intact adjacent rooms, and a neatly staged closed tool tote.",
+      "domains": [
+        "renovation",
+        "project_management",
+        "interior_finish",
+        "residential"
+      ],
+      "modes": [
+        "phased_construction",
+        "containment",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for occupied-home renovation, dust containment, phased construction, homeowner planning, and work-zone protection guidance. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/occupied-home-renovation-dust-barrier.json"
+    },
+    {
+      "id": "home-addition-roof-tie-in",
+      "file": "generated/home-addition-roof-tie-in.png",
+      "origin": "generated",
+      "desc": "Florida residential addition framed against an existing stucco home, with roof sheathing, new wall framing, a window opening, and layered roof tie-in flashing.",
+      "domains": [
+        "home_addition",
+        "structural_framing",
+        "roofing",
+        "exterior_envelope",
+        "residential"
+      ],
+      "modes": [
+        "new_construction",
+        "planning",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for home additions, roof tie-ins, framing, Orange Park/Beaches renovation context, custom-home planning, and exterior-envelope coordination. Generic editorial illustration; not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/home-addition-roof-tie-in.json"
+    },
+    {
+      "id": "warehouse-floor-flatness-check",
+      "file": "generated/warehouse-floor-flatness-check.png",
+      "origin": "generated",
+      "desc": "Industrial warehouse concrete slab checked with a tripod laser level and straightedge across a normal localized floor joint elevation difference.",
+      "domains": [
+        "commercial",
+        "warehouse",
+        "concrete",
+        "racking_systems"
+      ],
+      "modes": [
+        "inspection",
+        "layout",
+        "diagnosis"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "diagnostic",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for warehouse floor flatness, racking layout, concrete-joint evaluation, anchor planning, and industrial-build-out guidance. This is a controlled inspection condition, not evidence of a JK Prestige project.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/warehouse-floor-flatness-check.json"
+    },
+    {
+      "id": "tilt-up-panel-erection",
+      "file": "generated/tilt-up-panel-erection.png",
+      "origin": "generated",
+      "desc": "Tilt-up concrete warehouse wall panel being lifted and temporarily braced on a Florida industrial site.",
+      "domains": [
+        "commercial",
+        "warehouse",
+        "tilt_up",
+        "preconstruction"
+      ],
+      "modes": [
+        "construction",
+        "structure"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for tilt-up warehouse shell costs, panel erection, structural sequencing, and industrial construction guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/tilt-up-panel-erection.json"
+    },
+    {
+      "id": "warehouse-rack-anchor-slab-interface",
+      "file": "generated/warehouse-rack-anchor-slab-interface.png",
+      "origin": "generated",
+      "desc": "Warehouse rack upright base plate, anchor bolts, control joint, and slab flatness check.",
+      "domains": [
+        "commercial",
+        "warehouse",
+        "concrete",
+        "racking_systems"
+      ],
+      "modes": [
+        "inspection",
+        "layout",
+        "diagnosis"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "diagnostic",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for warehouse racking, anchor planning, slab condition, floor flatness, and industrial fit-out guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/warehouse-rack-anchor-slab-interface.json"
+    },
+    {
+      "id": "site-grading-stormwater-basin",
+      "file": "generated/site-grading-stormwater-basin.png",
+      "origin": "generated",
+      "desc": "Florida commercial building pad, swale, stormwater basin, culvert inlet, and erosion-control fence.",
+      "domains": [
+        "commercial",
+        "sitework",
+        "drainage",
+        "flood"
+      ],
+      "modes": [
+        "site_planning",
+        "civil"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for flood-zone diligence, finished grade, drainage, stormwater, civil planning, and commercial site guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/site-grading-stormwater-basin.json"
+    },
+    {
+      "id": "commercial-driveway-access-layout",
+      "file": "generated/commercial-driveway-access-layout.png",
+      "origin": "generated",
+      "desc": "Commercial driveway throat and curb layout connecting a prepared site to a Florida arterial corridor.",
+      "domains": [
+        "commercial",
+        "sitework",
+        "access",
+        "permitting"
+      ],
+      "modes": [
+        "site_planning",
+        "civil"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for controlled access, driveway permits, site circulation, civil coordination, and commercial due diligence.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/commercial-driveway-access-layout.json"
+    },
+    {
+      "id": "brewery-production-trench-drain",
+      "file": "generated/brewery-production-trench-drain.png",
+      "origin": "generated",
+      "desc": "Commercial brewery production room with sealed floor, linear trench drain, equipment pad, and plumbing rough-in.",
+      "domains": [
+        "commercial",
+        "brewery",
+        "plumbing",
+        "drainage"
+      ],
+      "modes": [
+        "fit_out",
+        "construction"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for brewery production zones, trench drains, sanitary finishes, floor slopes, and utility coordination.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/brewery-production-trench-drain.json"
+    },
+    {
+      "id": "commercial-accessible-restroom-rough-in",
+      "file": "generated/commercial-accessible-restroom-rough-in.png",
+      "origin": "generated",
+      "desc": "Commercial accessible-restroom rough-in with clear floor area, fixture backing, and plumbing connections.",
+      "domains": [
+        "commercial",
+        "accessibility",
+        "plumbing",
+        "fit_out"
+      ],
+      "modes": [
+        "rough_in",
+        "code_coordination"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for commercial restroom capacity, accessibility coordination, rough-in, and tenant fit-out guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/commercial-accessible-restroom-rough-in.json"
+    },
+    {
+      "id": "flat-roof-primary-emergency-scupper",
+      "file": "generated/flat-roof-primary-emergency-scupper.png",
+      "origin": "generated",
+      "desc": "TPO roof parapet with separate lower primary scupper and higher emergency-overflow scupper.",
+      "domains": [
+        "commercial",
+        "roofing",
+        "drainage",
+        "scupper"
+      ],
+      "modes": [
+        "detail",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for primary and secondary roof drainage, scuppers, parapets, and reroofing guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/flat-roof-primary-emergency-scupper.json"
+    },
+    {
+      "id": "healthcare-containment-documentation",
+      "file": "generated/healthcare-containment-documentation.png",
+      "origin": "generated",
+      "desc": "Hospital corridor containment with protected route and blank documentation/monitoring setup.",
+      "domains": [
+        "healthcare",
+        "commercial",
+        "containment",
+        "renovation"
+      ],
+      "modes": [
+        "phasing",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for active-facility phasing, infection-control planning, documentation, and protected circulation.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/healthcare-containment-documentation.json"
+    },
+    {
+      "id": "sterile-processing-zoned-buildout",
+      "file": "generated/sterile-processing-zoned-buildout.png",
+      "origin": "generated",
+      "desc": "Sterile processing department build-out with separated cleanable work zones, pass-through, MEP rough-in, and floor drain.",
+      "domains": [
+        "healthcare",
+        "sterile_processing",
+        "commercial",
+        "mep"
+      ],
+      "modes": [
+        "fit_out",
+        "coordination"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for sterile-processing renovations, airflow and utility coordination, cleanable finishes, and healthcare fit-outs.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/sterile-processing-zoned-buildout.json"
+    },
+    {
+      "id": "home-addition-foundation-hvac-tie-in",
+      "file": "generated/home-addition-foundation-hvac-tie-in.png",
+      "origin": "generated",
+      "desc": "Florida room addition showing new slab, plumbing stubs, framing, HVAC connection, and existing-home tie-in.",
+      "domains": [
+        "residential",
+        "addition",
+        "foundation",
+        "hvac"
+      ],
+      "modes": [
+        "construction",
+        "rough_in"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for room additions, foundation tie-ins, HVAC extensions, residential scheduling, and permit-scope guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/home-addition-foundation-hvac-tie-in.json"
+    },
+    {
+      "id": "warehouse-office-mezzanine-guardrail",
+      "file": "generated/warehouse-office-mezzanine-guardrail.png",
+      "origin": "generated",
+      "desc": "Warehouse office mezzanine with continuous guardrails, protected stairs, support columns, and enclosed office below.",
+      "domains": [
+        "commercial",
+        "warehouse",
+        "mezzanine",
+        "office_buildout"
+      ],
+      "modes": [
+        "construction",
+        "structure"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for warehouse office mezzanines, safe stairs, structural support, guardrails, and industrial build-outs.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/warehouse-office-mezzanine-guardrail.json"
+    },
+    {
+      "id": "coastal-home-elevated-foundation",
+      "file": "generated/coastal-home-elevated-foundation.png",
+      "origin": "generated",
+      "desc": "Coastal Florida custom home framing on a raised foundation with roof trusses and graded sandy lot.",
+      "domains": [
+        "residential",
+        "coastal",
+        "custom_home",
+        "foundation"
+      ],
+      "modes": [
+        "construction",
+        "site_planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for coastal custom-home planning, elevated foundations, roof framing, drainage, and buildable-envelope guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/coastal-home-elevated-foundation.json"
+    },
+    {
+      "id": "coastal-residential-site-layout",
+      "file": "generated/coastal-residential-site-layout.png",
+      "origin": "generated",
+      "desc": "Coastal residential lot with survey stakes, string lines, graded house footprint, and mature vegetation.",
+      "domains": [
+        "residential",
+        "coastal",
+        "sitework",
+        "permitting"
+      ],
+      "modes": [
+        "site_planning",
+        "layout"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for coastal home site planning, setbacks, footprint layout, permit coordination, and buildable-envelope guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/coastal-residential-site-layout.json"
+    },
+    {
+      "id": "multi-tenant-industrial-shell-drainage",
+      "file": "generated/multi-tenant-industrial-shell-drainage.png",
+      "origin": "generated",
+      "desc": "Tilt-up multi-tenant industrial shell with dock openings, a demising framing bay, pavement, and stormwater inlet.",
+      "domains": [
+        "commercial",
+        "warehouse",
+        "multi_tenant",
+        "sitework"
+      ],
+      "modes": [
+        "construction",
+        "site_planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for multi-tenant industrial parks, tilt-up shells, tenant delivery, docks, and site drainage.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/multi-tenant-industrial-shell-drainage.json"
+    },
+    {
+      "id": "warehouse-feasibility-massing-model",
+      "file": "generated/warehouse-feasibility-massing-model.png",
+      "origin": "generated",
+      "desc": "Physical warehouse massing model with loading bays, blank plans, material sample, and calculator.",
+      "domains": [
+        "commercial",
+        "warehouse",
+        "preconstruction",
+        "feasibility"
+      ],
+      "modes": [
+        "planning",
+        "estimating"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for warehouse feasibility, build-versus-lease planning, project requirements, and early cost coordination.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/warehouse-feasibility-massing-model.json"
+    },
+    {
+      "id": "flat-roof-drainage-layout-review",
+      "file": "generated/flat-roof-drainage-layout-review.png",
+      "origin": "generated",
+      "desc": "Wide TPO commercial roof view with roof drains, tapered crickets, seams, and parapet scuppers.",
+      "domains": [
+        "commercial",
+        "roofing",
+        "drainage",
+        "tpo"
+      ],
+      "modes": [
+        "inspection",
+        "detail"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for roof drainage review, TPO layouts, crickets, roof drains, and reroofing guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/flat-roof-drainage-layout-review.json"
     }
   ]
 }

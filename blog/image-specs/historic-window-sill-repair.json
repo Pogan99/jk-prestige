@@ -1,0 +1,10 @@
+{
+  "id": "historic-window-sill-repair",
+  "file": "generated/historic-window-sill-repair.png",
+  "desc": "Historic painted wood double-hung window under careful repair, with a removed lower sash and localized moisture-softened lower sill wood being evaluated.",
+  "domains": ["doors_windows", "historic_renovation", "exterior_envelope", "carpentry"],
+  "modes": ["inspection", "repair_planning", "diagnosis"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for historic-window restoration, wood-sill repair, sash planning, localized moisture assessment, and window-replacement scope guidance. This is a controlled repair condition, not evidence of a JK Prestige project."
+}

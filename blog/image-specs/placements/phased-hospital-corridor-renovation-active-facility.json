@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "healthcare-corridor-containment-renovation",
+      "alt": "Active-facility corridor protected by a temporary containment wall and zipper door",
+      "caption": "In an active facility, containment, clean routes, work hours, and access need to be designed before demolition begins. The construction zone must coexist with the operational corridor.",
+      "before": "<h2>What Makes Corridor Renovation Unique in an Occupied Hospital</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial project-planning table with abstract drawings and coordination tools",
+      "caption": "Phase work around clinical operations, utilities, inspections, and turnover criteria. A written sequence is what keeps temporary conditions from becoming an uncontrolled schedule problem.",
+      "before": "<h2>The Phasing Approach for Corridor Renovation</h2>"
+    },
+    {
+      "image": "healthcare-containment-documentation",
+      "alt": "Hospital corridor containment with a protected route and blank documentation and monitoring setup",
+      "caption": "Documentation belongs with the controlled work zone. Containment checks, route protection, cleaning, and field records need to be reliable enough for the facility to review them during the phase.",
+      "before": "<h2>Documentation and Reporting</h2>"
+    }
+  ]
+}

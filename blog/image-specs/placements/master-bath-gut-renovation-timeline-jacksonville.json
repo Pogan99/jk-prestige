@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "master-bath-shower-waterproofing",
+      "alt": "Shower waterproofing stage with sloped pan, curb, membrane, and plumbing rough-in",
+      "caption": "The waterproofing stage is one of the points where a bath timeline cannot be rushed. The pan, curb, drain, wall transitions, and inspection sequence must be right before tile hides the work.",
+      "before": "<h2>What \"Gut Renovation\" Means</h2>"
+    },
+    {
+      "image": "bathroom-sink-p-trap-vanity",
+      "alt": "Vanity cabinet with accessible sink P-trap and supply valves",
+      "caption": "Coordinate vanity dimensions and plumbing access before countertop and finish work. A beautiful cabinet is still a poor installation if shutoffs and drains cannot be serviced.",
+      "before": "<h2>Week-by-Week Timeline</h2>"
+    },
+    {
+      "image": "shower-valve-cartridge-access",
+      "alt": "Shower valve access point prepared for service behind finished wall material",
+      "caption": "Plan serviceability with the finished wall assembly in mind. Valve, trim, and access details should be confirmed before the final closeout phase.",
+      "before": "<h2>What Extends the Timeline</h2>"
+    }
+  ]
+}

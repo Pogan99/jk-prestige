@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "warehouse-steel-frame-construction",
+      "alt": "High-bay commercial warehouse shell with steel framing and dock doors",
+      "caption": "Commercial construction starts with site, structure, utilities, access, and the intended operating use. The shell has to support the tenant or owner plan before interior work begins.",
+      "before": "<h2>Nassau County Permitting vs. Duval County</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Commercial project-planning table with drawings and coordination tools",
+      "caption": "Early coordination around permits, civil work, utilities, and long-lead items protects the schedule. A capable GC aligns these decisions before crews are waiting on site.",
+      "before": "<h2>What Commercial Projects Are Active in Yulee</h2>"
+    },
+    {
+      "image": "flat-roof-scupper-drainage-detail",
+      "alt": "Low-slope roof scupper and membrane drainage detail",
+      "caption": "Envelope and drainage details are part of the commercial scope from the outset. Local rain exposure makes roof and site water management a design and maintenance issue, not a cosmetic item.",
+      "before": "<h2>Working in Nassau County as a Jacksonville GC</h2>"
+    }
+  ]
+}

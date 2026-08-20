@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "flat-roof-scupper-drainage-detail",
+      "alt": "Flashed metal roof scupper with clean TPO membrane and a small leaf accumulation",
+      "caption": "A scupper must drain a properly sloped roof assembly, not merely create a hole through the parapet. Even a small debris accumulation is a reason to inspect the drainage path before wet weather exposes a weakness.",
+      "before": "<h2>Florida's Rainfall Intensity: The Number That Drives Drain Sizing</h2>"
+    },
+    {
+      "image": "flat-roof-primary-emergency-scupper",
+      "alt": "TPO parapet with a lower primary scupper and a separate higher emergency-overflow scupper",
+      "caption": "Primary and emergency drainage need to be reviewed together. The overflow path should communicate a problem before water reaches a roof edge or an unintended opening.",
+      "before": "<h2>Primary vs. Secondary (Emergency) Drainage</h2>"
+    },
+    {
+      "image": "flat-roof-drainage-layout-review",
+      "alt": "Wide TPO roof with drains, tapered crickets, membrane seams, and parapet scuppers",
+      "caption": "A drainage review belongs before the membrane specification. Drains, crickets, scuppers, seams, and the roof geometry must work as one water-management system.",
+      "before": "<h2>What JK Does Differently</h2>"
+    }
+  ]
+}

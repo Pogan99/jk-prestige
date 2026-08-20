@@ -1,0 +1,23 @@
+{
+  "_doc": "Generated-only replacement placement spec. Heading anchors retained from the original reviewed placement file.",
+  "figures": [
+    {
+      "image": "home-addition-foundation-hvac-tie-in",
+      "alt": "Florida room addition with new slab, plumbing stubs, framed walls, HVAC connection, and existing-home tie-in",
+      "caption": "An addition starts with a real connection between old and new: foundation, framing, utilities, HVAC, roof, and drainage. The scope has to resolve those interfaces before finish choices take over.",
+      "before": "<h2>Clay County, Not Jacksonville</h2>"
+    },
+    {
+      "image": "commercial-preconstruction-plan-table",
+      "alt": "Planning table with abstract drawings, ruler, and estimating tools",
+      "caption": "Define scope, setbacks, utilities, permit needs, and finish priorities before construction begins. A clear planning phase prevents the addition from becoming a chain of late decisions.",
+      "before": "<h2>The Construction Timeline</h2>"
+    },
+    {
+      "image": "home-addition-roof-tie-in",
+      "alt": "Florida home addition framing meeting an existing stucco wall at a layered roof tie-in",
+      "caption": "Roof and wall integration are high-consequence addition details. Resolve flashing, framing, windows, and drainage as one assembly before the work is covered.",
+      "before": "<h2>What Room Additions Cost in Orange Park</h2>"
+    }
+  ]
+}

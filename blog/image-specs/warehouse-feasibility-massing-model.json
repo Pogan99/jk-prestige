@@ -1,0 +1,18 @@
+{
+  "id": "warehouse-feasibility-massing-model",
+  "file": "generated/warehouse-feasibility-massing-model.png",
+  "desc": "Physical warehouse massing model with loading bays, blank plans, material sample, and calculator.",
+  "domains": [
+    "commercial",
+    "warehouse",
+    "preconstruction",
+    "feasibility"
+  ],
+  "modes": [
+    "planning",
+    "estimating"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for warehouse feasibility, build-versus-lease planning, project requirements, and early cost coordination."
+}

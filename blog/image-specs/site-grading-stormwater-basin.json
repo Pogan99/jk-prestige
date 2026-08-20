@@ -1,0 +1,18 @@
+{
+  "id": "site-grading-stormwater-basin",
+  "file": "generated/site-grading-stormwater-basin.png",
+  "desc": "Florida commercial building pad, swale, stormwater basin, culvert inlet, and erosion-control fence.",
+  "domains": [
+    "commercial",
+    "sitework",
+    "drainage",
+    "flood"
+  ],
+  "modes": [
+    "site_planning",
+    "civil"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for flood-zone diligence, finished grade, drainage, stormwater, civil planning, and commercial site guidance."
+}

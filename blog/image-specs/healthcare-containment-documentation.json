@@ -1,0 +1,18 @@
+{
+  "id": "healthcare-containment-documentation",
+  "file": "generated/healthcare-containment-documentation.png",
+  "desc": "Hospital corridor containment with protected route and blank documentation/monitoring setup.",
+  "domains": [
+    "healthcare",
+    "commercial",
+    "containment",
+    "renovation"
+  ],
+  "modes": [
+    "phasing",
+    "inspection"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for active-facility phasing, infection-control planning, documentation, and protected circulation."
+}

@@ -1,0 +1,18 @@
+{
+  "id": "sterile-processing-zoned-buildout",
+  "file": "generated/sterile-processing-zoned-buildout.png",
+  "desc": "Sterile processing department build-out with separated cleanable work zones, pass-through, MEP rough-in, and floor drain.",
+  "domains": [
+    "healthcare",
+    "sterile_processing",
+    "commercial",
+    "mep"
+  ],
+  "modes": [
+    "fit_out",
+    "coordination"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for sterile-processing renovations, airflow and utility coordination, cleanable finishes, and healthcare fit-outs."
+}

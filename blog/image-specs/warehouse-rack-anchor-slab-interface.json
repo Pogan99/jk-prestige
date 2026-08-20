@@ -1,0 +1,19 @@
+{
+  "id": "warehouse-rack-anchor-slab-interface",
+  "file": "generated/warehouse-rack-anchor-slab-interface.png",
+  "desc": "Warehouse rack upright base plate, anchor bolts, control joint, and slab flatness check.",
+  "domains": [
+    "commercial",
+    "warehouse",
+    "concrete",
+    "racking_systems"
+  ],
+  "modes": [
+    "inspection",
+    "layout",
+    "diagnosis"
+  ],
+  "visual_tone": "diagnostic",
+  "messiness": "clean",
+  "reuse_notes": "Use for warehouse racking, anchor planning, slab condition, floor flatness, and industrial fit-out guidance."
+}

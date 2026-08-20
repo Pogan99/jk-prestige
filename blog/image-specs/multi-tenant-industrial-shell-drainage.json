@@ -1,0 +1,18 @@
+{
+  "id": "multi-tenant-industrial-shell-drainage",
+  "file": "generated/multi-tenant-industrial-shell-drainage.png",
+  "desc": "Tilt-up multi-tenant industrial shell with dock openings, a demising framing bay, pavement, and stormwater inlet.",
+  "domains": [
+    "commercial",
+    "warehouse",
+    "multi_tenant",
+    "sitework"
+  ],
+  "modes": [
+    "construction",
+    "site_planning"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for multi-tenant industrial parks, tilt-up shells, tenant delivery, docks, and site drainage."
+}

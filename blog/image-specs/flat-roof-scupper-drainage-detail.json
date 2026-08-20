@@ -1,0 +1,10 @@
+{
+  "id": "flat-roof-scupper-drainage-detail",
+  "file": "generated/flat-roof-scupper-drainage-detail.png",
+  "desc": "Low-slope commercial roof parapet with a flashed metal scupper, TPO membrane, and a small contained leaf accumulation at the drainage opening.",
+  "domains": ["commercial", "roofing", "drainage", "exterior_envelope"],
+  "modes": ["inspection", "maintenance", "diagnosis"],
+  "visual_tone": "diagnostic",
+  "messiness": "moderate",
+  "reuse_notes": "Use for scuppers, low-slope roof drainage, TPO detailing, roof-maintenance planning, and contained drainage-condition guidance. This is a controlled maintenance condition, not an emergency or evidence of a JK Prestige project."
+}

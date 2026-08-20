@@ -1,0 +1,18 @@
+{
+  "id": "flat-roof-drainage-layout-review",
+  "file": "generated/flat-roof-drainage-layout-review.png",
+  "desc": "Wide TPO commercial roof view with roof drains, tapered crickets, seams, and parapet scuppers.",
+  "domains": [
+    "commercial",
+    "roofing",
+    "drainage",
+    "tpo"
+  ],
+  "modes": [
+    "inspection",
+    "detail"
+  ],
+  "visual_tone": "clean",
+  "messiness": "clean",
+  "reuse_notes": "Use for roof drainage review, TPO layouts, crickets, roof drains, and reroofing guidance."
+}
