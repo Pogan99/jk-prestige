@@ -7128,6 +7128,36 @@
       "quality_review": "approved",
       "reuse_notes": "Use for MEP coordination, BIM and VDC guides, commercial rough-in, mechanical-electrical-plumbing coordination, commissioning, and construction management articles.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/commercial-mep-ceiling-coordination.json"
+    },
+    {
+      "id": "commercial-roof-drain-cricket-detail",
+      "file": "generated/commercial-roof-drain-cricket-detail.png",
+      "origin": "generated",
+      "desc": "Clean Florida commercial low-slope membrane roof with drain bowl, tapered insulation cricket, flashed penetration, parapet, and equipment curb.",
+      "domains": [
+        "commercial",
+        "roofing",
+        "drainage",
+        "maintenance"
+      ],
+      "modes": [
+        "inspection",
+        "planning",
+        "maintenance"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for commercial roof systems, drainage, roof inspections, membrane maintenance, insurance scope, low-slope roofing, and roof-replacement guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/commercial-roof-drain-cricket-detail.json"
     }
   ]
 }
