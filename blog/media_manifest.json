@@ -6828,6 +6828,156 @@
       "quality_review": "approved",
       "reuse_notes": "Use for load-bearing wall removal, temporary shoring, residential structural work, framing sequences, engineering coordination, and renovation safety guidance.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/load-bearing-wall-temporary-shoring.json"
+    },
+    {
+      "id": "institutional-warehouse-esfr-highbay",
+      "file": "generated/institutional-warehouse-esfr-highbay.png",
+      "origin": "generated",
+      "desc": "Empty institutional-grade warehouse with high clear height, ESFR sprinkler infrastructure, high-bay lighting, wide column grid, polished concrete floor, and dock doors.",
+      "domains": [
+        "warehouse",
+        "commercial",
+        "fire_suppression",
+        "industrial"
+      ],
+      "modes": [
+        "shell",
+        "operations",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for warehouse specifications, clear height, ESFR fire suppression, high-bay lighting, institutional industrial construction, and property-value guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/institutional-warehouse-esfr-highbay.json"
+    },
+    {
+      "id": "pemb-steel-frame-anchor-bolts",
+      "file": "generated/pemb-steel-frame-anchor-bolts.png",
+      "origin": "generated",
+      "desc": "Pre-engineered metal building erection with rigid steel frames, base plates, exposed anchor bolts, purlins, bracing, and concrete foundations.",
+      "domains": [
+        "warehouse",
+        "commercial",
+        "structural_framing",
+        "pemb"
+      ],
+      "modes": [
+        "erection",
+        "foundation",
+        "planning"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for pre-engineered metal buildings, steel erection, anchor-bolt coordination, industrial foundations, wind design, and warehouse construction guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/pemb-steel-frame-anchor-bolts.json"
+    },
+    {
+      "id": "occupied-hospital-expansion-icra-corridor",
+      "file": "generated/occupied-hospital-expansion-icra-corridor.png",
+      "origin": "generated",
+      "desc": "Active hospital corridor protected beside a contained expansion work zone with rigid dust barrier, zipper access, negative-air machine, and protected route.",
+      "domains": [
+        "healthcare",
+        "hospital",
+        "icra",
+        "life_safety"
+      ],
+      "modes": [
+        "occupied_renovation",
+        "containment",
+        "phasing"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for occupied hospital expansion, ICRA, containment, protected routes, healthcare phasing, and infection-control construction guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/occupied-hospital-expansion-icra-corridor.json"
+    },
+    {
+      "id": "mri-suite-rf-shielding-construction",
+      "file": "generated/mri-suite-rf-shielding-construction.png",
+      "origin": "generated",
+      "desc": "MRI suite under specialist construction with continuous copper RF shielding panels, equipment doorway, protected floor, and organized service penetrations.",
+      "domains": [
+        "healthcare",
+        "imaging",
+        "mri",
+        "specialty_construction"
+      ],
+      "modes": [
+        "rf_shielding",
+        "fit_out",
+        "coordination"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for MRI suite construction, RF shielding, imaging projects, specialty healthcare fit-outs, and MEP coordination guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/mri-suite-rf-shielding-construction.json"
+    },
+    {
+      "id": "concrete-pour-prep-rebar-vapor-barrier",
+      "file": "generated/concrete-pour-prep-rebar-vapor-barrier.png",
+      "origin": "generated",
+      "desc": "Concrete pour-preparation workfront with formed slab edge, rebar mat, vapor barrier, sleeves, screed rails, and laser level.",
+      "domains": [
+        "concrete",
+        "commercial",
+        "residential",
+        "sitework"
+      ],
+      "modes": [
+        "pre_pour",
+        "inspection",
+        "coordination"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for concrete subcontractor expectations, slab preparation, pre-pour inspections, embedded sleeves, vapor barriers, and construction coordination guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/concrete-pour-prep-rebar-vapor-barrier.json"
     }
   ]
 }
