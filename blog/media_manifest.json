@@ -7158,6 +7158,276 @@
       "quality_review": "approved",
       "reuse_notes": "Use for commercial roof systems, drainage, roof inspections, membrane maintenance, insurance scope, low-slope roofing, and roof-replacement guidance.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/commercial-roof-drain-cricket-detail.json"
+    },
+    {
+      "id": "gc-hiring-preconstruction-scope-review",
+      "file": "generated/gc-hiring-preconstruction-scope-review.png",
+      "origin": "generated",
+      "desc": "Architectural plans, finish samples, and blank project documents organized on a worktable in a clean kitchen renovation.",
+      "domains": [
+        "residential",
+        "preconstruction",
+        "renovation",
+        "contractor-selection"
+      ],
+      "modes": [
+        "planning",
+        "budgeting",
+        "selection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for general-contractor selection, scope planning, construction estimates, renovation planning, and finish coordination.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/gc-hiring-preconstruction-scope-review.json"
+    },
+    {
+      "id": "gc-subcontractor-trade-coordination",
+      "file": "generated/gc-subcontractor-trade-coordination.png",
+      "origin": "generated",
+      "desc": "Orderly residential rough-in showing coordinated plumbing, electrical, and HVAC work inside clean wood framing.",
+      "domains": [
+        "residential",
+        "coordination",
+        "mechanical",
+        "construction-management"
+      ],
+      "modes": [
+        "planning",
+        "inspection",
+        "construction"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for multi-trade coordination, rough-in inspections, construction sequencing, and general-contractor oversight.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/gc-subcontractor-trade-coordination.json"
+    },
+    {
+      "id": "gc-license-insurance-document-review",
+      "file": "generated/gc-license-insurance-document-review.png",
+      "origin": "generated",
+      "desc": "Blank contractor qualification documents, protective equipment, and a tablet arranged on a jobsite desk.",
+      "domains": [
+        "residential",
+        "contractor-selection",
+        "safety",
+        "documentation"
+      ],
+      "modes": [
+        "selection",
+        "planning",
+        "compliance"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for contractor credentials, insurance, licensing, safety documentation, and preconstruction review.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/gc-license-insurance-document-review.json"
+    },
+    {
+      "id": "fixed-price-subsurface-validation",
+      "file": "generated/fixed-price-subsurface-validation.png",
+      "origin": "generated",
+      "desc": "Open residential wall framing with visible utilities, protected floors, and an inspection camera documenting existing conditions.",
+      "domains": [
+        "residential",
+        "preconstruction",
+        "renovation",
+        "fixed-price"
+      ],
+      "modes": [
+        "inspection",
+        "planning",
+        "budgeting"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for existing-condition review, fixed-price planning, renovation investigation, and scope validation.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/fixed-price-subsurface-validation.json"
+    },
+    {
+      "id": "fixed-price-estimate-scope-table",
+      "file": "generated/fixed-price-estimate-scope-table.png",
+      "origin": "generated",
+      "desc": "Blank estimate grid sheets, finish samples, a scale ruler, and a calculator organized on a renovation planning table.",
+      "domains": [
+        "residential",
+        "preconstruction",
+        "budgeting",
+        "fixed-price"
+      ],
+      "modes": [
+        "planning",
+        "budgeting",
+        "selection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for estimate review, allowance planning, material selection, construction budgets, and fixed-price contracts.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/fixed-price-estimate-scope-table.json"
+    },
+    {
+      "id": "fixed-price-change-order-control",
+      "file": "generated/fixed-price-change-order-control.png",
+      "origin": "generated",
+      "desc": "Blank project board, rolled plans, finish samples, and measuring tools on an orderly framed-home workbench.",
+      "domains": [
+        "residential",
+        "construction-management",
+        "fixed-price",
+        "renovation"
+      ],
+      "modes": [
+        "planning",
+        "construction",
+        "budgeting"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for change-order control, owner communication, jobsite planning, and renovation scope decisions.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/fixed-price-change-order-control.json"
+    },
+    {
+      "id": "fitout-medical-office-roughin",
+      "file": "generated/fitout-medical-office-roughin.png",
+      "origin": "generated",
+      "desc": "Clean commercial medical-office rough-in with metal-stud rooms, mechanical ductwork, capped utility piping, and electrical boxes.",
+      "domains": [
+        "commercial",
+        "healthcare",
+        "tenant-improvement",
+        "mechanical"
+      ],
+      "modes": [
+        "planning",
+        "construction",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for medical-office fit-outs, commercial rough-in coordination, tenant improvement planning, and healthcare construction guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/fitout-medical-office-roughin.json"
+    },
+    {
+      "id": "fitout-adaptive-reuse-shell",
+      "file": "generated/fitout-adaptive-reuse-shell.png",
+      "origin": "generated",
+      "desc": "Clean brick-and-concrete commercial shell with layout lines and organized metal-stud materials ready for adaptive reuse.",
+      "domains": [
+        "commercial",
+        "tenant-improvement",
+        "adaptive-reuse",
+        "planning"
+      ],
+      "modes": [
+        "planning",
+        "construction",
+        "selection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for adaptive reuse, commercial shells, tenant improvements, office conversions, and preconstruction planning.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/fitout-adaptive-reuse-shell.json"
+    },
+    {
+      "id": "fitout-lab-clean-utility-coordination",
+      "file": "generated/fitout-lab-clean-utility-coordination.png",
+      "origin": "generated",
+      "desc": "Commercial service wall with organized pipes, cable tray, ductwork, and framed utility coordination above a protected worktable.",
+      "domains": [
+        "commercial",
+        "laboratory",
+        "mechanical",
+        "tenant-improvement"
+      ],
+      "modes": [
+        "planning",
+        "construction",
+        "inspection"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for laboratory fit-outs, utility coordination, commercial MEP planning, and technical interior build-outs.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/fitout-lab-clean-utility-coordination.json"
     }
   ]
 }
