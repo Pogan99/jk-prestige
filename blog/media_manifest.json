@@ -7098,6 +7098,36 @@
       "quality_review": "approved",
       "reuse_notes": "Use for hurricane-season preparation, roof inspections, shingle roofing, roof penetrations, preventative maintenance, and Florida weather-readiness guidance.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/hurricane-roof-preparation-inspection.json"
+    },
+    {
+      "id": "commercial-mep-ceiling-coordination",
+      "file": "generated/commercial-mep-ceiling-coordination.png",
+      "origin": "generated",
+      "desc": "Commercial interior rough-in with coordinated HVAC ductwork, sprinkler mains, conduit racks, cable tray, piping, and support systems installed before drywall.",
+      "domains": [
+        "commercial",
+        "mep",
+        "interior",
+        "coordination"
+      ],
+      "modes": [
+        "rough_in",
+        "planning",
+        "construction"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for MEP coordination, BIM and VDC guides, commercial rough-in, mechanical-electrical-plumbing coordination, commissioning, and construction management articles.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/commercial-mep-ceiling-coordination.json"
     }
   ]
 }
