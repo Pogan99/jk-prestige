@@ -6978,6 +6978,36 @@
       "quality_review": "approved",
       "reuse_notes": "Use for concrete subcontractor expectations, slab preparation, pre-pour inspections, embedded sleeves, vapor barriers, and construction coordination guidance.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/concrete-pour-prep-rebar-vapor-barrier.json"
+    },
+    {
+      "id": "coastal-elevated-home-construction",
+      "file": "generated/coastal-elevated-home-construction.png",
+      "origin": "generated",
+      "desc": "Coastal Florida custom home under framing on an elevated foundation with roof trusses, sandy graded lot, erosion-control fence, and native vegetation.",
+      "domains": [
+        "custom_home",
+        "coastal",
+        "residential",
+        "sitework"
+      ],
+      "modes": [
+        "framing",
+        "foundation",
+        "coastal_construction"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "moderate",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for Ponte Vedra beach construction, coastal elevated homes, wind and flood planning, erosion control, custom-home framing, and coastal-site sequencing guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/coastal-elevated-home-construction.json"
     }
   ]
 }
