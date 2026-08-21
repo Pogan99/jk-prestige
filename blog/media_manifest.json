@@ -7008,6 +7008,66 @@
       "quality_review": "approved",
       "reuse_notes": "Use for Ponte Vedra beach construction, coastal elevated homes, wind and flood planning, erosion control, custom-home framing, and coastal-site sequencing guidance.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/coastal-elevated-home-construction.json"
+    },
+    {
+      "id": "tilt-up-concrete-panels-warehouse-shell",
+      "file": "generated/tilt-up-concrete-panels-warehouse-shell.png",
+      "origin": "generated",
+      "desc": "Tilt-up warehouse shell under construction with tall concrete panels, temporary braces, a finished slab, and staged roof joists.",
+      "domains": [
+        "warehouse",
+        "commercial",
+        "industrial",
+        "structural"
+      ],
+      "modes": [
+        "shell",
+        "planning",
+        "construction"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for tilt-up warehouse construction, structural-system comparisons, industrial shell sequencing, concrete panels, and commercial feasibility guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/tilt-up-concrete-panels-warehouse-shell.json"
+    },
+    {
+      "id": "dental-clinic-treatment-room-rough-in",
+      "file": "generated/dental-clinic-treatment-room-rough-in.png",
+      "origin": "generated",
+      "desc": "Unoccupied dental clinic treatment room under fit-out with metal studs, gypsum board, electrical conduit, plumbing rough-ins, equipment niche, and a partial ceiling grid.",
+      "domains": [
+        "commercial",
+        "interior",
+        "healthcare",
+        "tenant_improvement"
+      ],
+      "modes": [
+        "rough_in",
+        "planning",
+        "construction"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for dental office fit-outs, clinical tenant improvements, MEP rough-in coordination, treatment-room construction, and commercial interior renovation guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/dental-clinic-treatment-room-rough-in.json"
     }
   ]
 }
