@@ -7068,6 +7068,36 @@
       "quality_review": "approved",
       "reuse_notes": "Use for dental office fit-outs, clinical tenant improvements, MEP rough-in coordination, treatment-room construction, and commercial interior renovation guidance.",
       "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/dental-clinic-treatment-room-rough-in.json"
+    },
+    {
+      "id": "hurricane-roof-preparation-inspection",
+      "file": "generated/hurricane-roof-preparation-inspection.png",
+      "origin": "generated",
+      "desc": "Florida asphalt-shingle roof inspected before hurricane season with ridge vent, sound penetration boot, drip edge, and an orderly inspection kit.",
+      "domains": [
+        "roofing",
+        "residential",
+        "hurricane",
+        "maintenance"
+      ],
+      "modes": [
+        "inspection",
+        "planning",
+        "maintenance"
+      ],
+      "people": false,
+      "brand_visible": false,
+      "claim_risk": "low",
+      "source": "codex_imagegen",
+      "generated_date": "2026-08-20",
+      "approved_for_blog": true,
+      "asset_status": "active",
+      "visual_tone": "clean",
+      "messiness": "clean",
+      "metadata_stripped": true,
+      "quality_review": "approved",
+      "reuse_notes": "Use for hurricane-season preparation, roof inspections, shingle roofing, roof penetrations, preventative maintenance, and Florida weather-readiness guidance.",
+      "prompt_spec": "/Users/carlosguerrero/jk-prestige/blog/image-specs/hurricane-roof-preparation-inspection.json"
     }
   ]
 }
